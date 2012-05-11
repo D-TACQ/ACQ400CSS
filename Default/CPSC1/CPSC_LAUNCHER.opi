@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <wuid>-5dbfdbfe:137315ab263:-7d51</wuid>
+  <boy_version>3.1.0.20120201</boy_version>
+  <scripts />
+  <show_ruler>true</show_ruler>
+  <height>600</height>
+  <name />
+  <snap_to_geometry>true</snap_to_geometry>
+  <show_grid>true</show_grid>
+  <background_color>
+    <color red="240" green="240" blue="240" />
+  </background_color>
+  <foreground_color>
+    <color red="192" green="192" blue="192" />
+  </foreground_color>
+  <widget_type>Display</widget_type>
+  <show_close_button>true</show_close_button>
+  <width>800</width>
+  <rules />
+  <show_edit_range>true</show_edit_range>
+  <grid_space>6</grid_space>
+  <actions hook="false" hook_all="false" />
+  <y>-1</y>
+  <x>-1</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-5dbfdbfe:137315ab263:-7d2e</wuid>
+    <scripts />
+    <height>29</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>UUT_COMBO</name>
+    <pv_name>loc://UUT</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Combo Box</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <pv_value />
+    <items>
+      <s>cpsc_010</s>
+      <s>cpsc_011</s>
+      <s>cpsc_012</s>
+      <s>cpsc_013</s>
+    </items>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <items_from_pv>false</items_from_pv>
+    <actions hook="false" hook_all="false" />
+    <y>42</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-5dbfdbfe:137315ab263:-7cf6</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>25</height>
+    <name>Label</name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>UUT</text>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>12</y>
+    <wrap_words>true</wrap_words>
+    <tooltip />
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-5dbfdbfe:137315ab263:-7cbf</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://SYSTEM</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>SYSTEM</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>SYSTEM</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>12</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://SYSTEM</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>228</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
+    <wuid>-5dbfdbfe:137315ab263:-7c88</wuid>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Text Update</name>
+    <format_type>0</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>loc://FUN</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>0</precision>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="Rule" prop_id="name" out_exp="true">
+        <pv trig="true">local://UUT</pv>
+      </rule>
+    </rules>
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>228</y>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-5dbfdbfe:137315ab263:-7c3b</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://SLOW_AO</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>SLOW_AO</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>SLOW AO</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>12</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://SLOW_AO</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>360</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>64ba2db0:13732eaf3c8:-7cc5</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://UUT_AI</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>cpsc_UUT_AI</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>AI MONITOR</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>12</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://UUT_AI</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>474</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>64ba2db0:13732eaf3c8:-7c44</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>20</height>
+    <name>Label_1</name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Scopes</text>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>144</y>
+    <wrap_words>true</wrap_words>
+    <tooltip />
+    <x>237</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>64ba2db0:13732eaf3c8:-7c36</wuid>
+    <scripts>
+      <path pathString="LaunchOpi_UUT_FUN.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://FUN</pv>
+        <pv trig="true">loc://UUT_FUN_AI</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>UUT_FUN_STRIPS</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>AI CHART UUT FUN</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>186</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://UUT_FUN_AI</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>360</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>64ba2db0:13732eaf3c8:-7bc0</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>25</height>
+    <name>Label_2</name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>FUNCTION</text>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>144</y>
+    <wrap_words>true</wrap_words>
+    <tooltip />
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>64ba2db0:13732eaf3c8:-7bb6</wuid>
+    <scripts />
+    <height>29</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>UUT_COMBO_1</name>
+    <pv_name>loc://FUN</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Combo Box</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <pv_value />
+    <items>
+      <s>IMON</s>
+      <s>VMON</s>
+      <s>THS</s>
+      <s>TSYS</s>
+    </items>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <items_from_pv>false</items_from_pv>
+    <actions hook="false" hook_all="false" />
+    <y>186</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
+    <wuid>64ba2db0:13732eaf3c8:-7bac</wuid>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Text Update_1</name>
+    <format_type>0</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>loc://UUT</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>0</precision>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="Rule" prop_id="name" out_exp="true">
+        <pv trig="true">local://UUT</pv>
+      </rule>
+    </rules>
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>84</y>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>64ba2db0:13732eaf3c8:-7a9d</wuid>
+    <scripts>
+      <path pathString="LaunchOpi_UUT_FUN.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://FUN</pv>
+        <pv trig="true">loc://UUT_FUN_XMON</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>UUT_FUN_XMON</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>CH PLOT UUT FUN</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>186</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://UUT_FUN_XMON</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>237</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>64ba2db0:13732eaf3c8:-79cc</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://PSUCONTROL</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>PSUCONTROL</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>PSU CONTROL</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>78</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PSUCONTROL</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>228</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Image" version="1.0">
+    <crop_right>0</crop_right>
+    <crop_left>0</crop_left>
+    <visible>true</visible>
+    <wuid>64ba2db0:13732eaf3c8:-782d</wuid>
+    <auto_size>true</auto_size>
+    <scripts />
+    <height>41</height>
+    <name>Image</name>
+    <stretch_to_fit>false</stretch_to_fit>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <widget_type>Image</widget_type>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>97</width>
+    <no_animation>false</no_animation>
+    <crop_top>0</crop_top>
+    <border_style>0</border_style>
+    <rules />
+    <crop_bottom>0</crop_bottom>
+    <border_width>1</border_width>
+    <image_file />
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <actions hook="false" hook_all="false" />
+    <y>30</y>
+    <tooltip />
+    <x>642</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-60926ed6:13737f84dae:-7e69</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>25</height>
+    <name>Label_3</name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>PSU</text>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>282</y>
+    <wrap_words>true</wrap_words>
+    <tooltip />
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-60926ed6:13737f84dae:-7e5f</wuid>
+    <scripts />
+    <height>29</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>UUT_COMBO_2</name>
+    <pv_name>loc://PSU</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Combo Box</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <pv_value />
+    <items>
+      <s>1</s>
+      <s>2</s>
+      <s>3</s>
+      <s>4</s>
+      <s>5</s>
+      <s>6</s>
+      <s>7</s>
+      <s>8</s>
+    </items>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <items_from_pv>false</items_from_pv>
+    <actions hook="false" hook_all="false" />
+    <y>324</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>false</show_units>
+    <wuid>-60926ed6:13737f84dae:-7e55</wuid>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Text Update_2</name>
+    <format_type>1</format_type>
+    <precision_from_pv>false</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>loc://PSU</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>0</precision>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="Rule" prop_id="name" out_exp="true">
+        <pv trig="true">local://UUT</pv>
+      </rule>
+    </rules>
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>372</y>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-60926ed6:13737f84dae:-7c4d</wuid>
+    <scripts>
+      <path pathString="LaunchOpi_UUT_PSU.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://PSU</pv>
+        <pv trig="true">loc://UUT_PSU</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>UUT_PSU</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>CH PLOT UUT FUN</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>282</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://UUT_PSU</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>237</x>
+  </widget>
+</display>
