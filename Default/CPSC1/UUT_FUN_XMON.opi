@@ -54,7 +54,7 @@
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>true</show_legend>
     <y>24</y>
-    <trace_5_update_mode>4</trace_5_update_mode>
+    <trace_5_update_mode>0</trace_5_update_mode>
     <x>12</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
@@ -96,7 +96,7 @@
     <trace_0_name>$(trace_0_y_pv)</trace_0_name>
     <trace_1_anti_alias>false</trace_1_anti_alias>
     <trace_3_x_pv />
-    <trace_0_update_mode>4</trace_0_update_mode>
+    <trace_0_update_mode>0</trace_0_update_mode>
     <trace_1_buffer_size>2048</trace_1_buffer_size>
     <axis_0_axis_title>Sample</axis_0_axis_title>
     <trace_3_line_width>1</trace_3_line_width>
@@ -105,17 +105,17 @@
     <axis_1_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_1_axis_color>
-    <trace_2_update_mode>4</trace_2_update_mode>
+    <trace_2_update_mode>0</trace_2_update_mode>
     <foreground_color>
       <color red="0" green="0" blue="255" />
     </foreground_color>
-    <trace_1_update_mode>4</trace_1_update_mode>
+    <trace_1_update_mode>0</trace_1_update_mode>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <axis_1_axis_title>micro-volts</axis_1_axis_title>
     <trace_4_anti_alias>false</trace_4_anti_alias>
     <trace_7_x_pv_value />
     <trace_4_plot_mode>0</trace_4_plot_mode>
-    <trace_3_update_mode>4</trace_3_update_mode>
+    <trace_3_update_mode>0</trace_3_update_mode>
     <axis_0_maximum>100.0</axis_0_maximum>
     <trace_7_anti_alias>true</trace_7_anti_alias>
     <axis_0_scale_font>
@@ -126,7 +126,7 @@
     <trace_6_plot_mode>0</trace_6_plot_mode>
     <trace_1_y_pv_value />
     <axis_0_time_format>0</axis_0_time_format>
-    <trace_4_update_mode>4</trace_4_update_mode>
+    <trace_4_update_mode>0</trace_4_update_mode>
     <trace_3_concatenate_data>false</trace_3_concatenate_data>
     <trace_3_trace_color>
       <color red="0" green="0" blue="0" />
@@ -162,7 +162,7 @@
     <trace_0_y_pv>$(UUT):CH_PSU:1:$(FUN).VALA</trace_0_y_pv>
     <trace_5_point_size>4</trace_5_point_size>
     <trace_6_x_pv_value />
-    <trace_6_update_mode>4</trace_6_update_mode>
+    <trace_6_update_mode>0</trace_6_update_mode>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
@@ -174,7 +174,7 @@
     <trace_4_point_size>4</trace_4_point_size>
     <trace_0_concatenate_data>false</trace_0_concatenate_data>
     <trace_5_y_axis_index>1</trace_5_y_axis_index>
-    <trace_7_update_mode>4</trace_7_update_mode>
+    <trace_7_update_mode>0</trace_7_update_mode>
     <trace_3_y_pv>$(UUT):CH_PSU:4:$(FUN).VALA</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
@@ -187,7 +187,7 @@
     <enabled>true</enabled>
     <width>793</width>
     <trace_0_buffer_size>2048</trace_0_buffer_size>
-    <trigger_pv>loc://do_update</trigger_pv>
+    <trigger_pv />
     <trace_6_trace_color>
       <color red="255" green="0" blue="240" />
     </trace_6_trace_color>
@@ -239,13 +239,7 @@ $(trace_0_y_pv_value)</tooltip>
       <color red="243" green="132" blue="132" />
     </trace_7_trace_color>
     <trace_3_update_delay>0</trace_3_update_delay>
-    <scripts>
-      <path pathString="ToggleTrigger.js" checkConnect="true" sfe="true" seoe="false">
-        <pv trig="false">loc://update_en</pv>
-        <pv trig="false">loc://do_update</pv>
-        <pv trig="true">$(UUT):CH_PSU:8:$(FUN).VALA</pv>
-      </path>
-    </scripts>
+    <scripts />
     <trace_0_anti_alias>false</trace_0_anti_alias>
     <trace_4_x_pv_value />
     <trace_6_x_axis_index>0</trace_6_x_axis_index>
@@ -332,24 +326,14 @@ $(trace_0_y_pv_value)</tooltip>
 $(pv_value)</tooltip>
     <x>702</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <visible>true</visible>
-    <wuid>-60926ed6:13737f84dae:-7f7a</wuid>
-    <password />
+    <wuid>-2994a025:1374fd330b0:-7ee6</wuid>
     <scripts />
-    <on_color>
-      <color red="0" green="255" blue="0" />
-    </on_color>
     <height>25</height>
-    <show_led>true</show_led>
-    <data_type>0</data_type>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Boolean Button</name>
-    <show_boolean_label>false</show_boolean_label>
-    <off_color>
-      <color red="0" green="100" blue="0" />
-    </off_color>
+    <name>Action Button</name>
     <pv_name />
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -357,95 +341,35 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <off_label>OFF</off_label>
-    <released_action_index>0</released_action_index>
-    <widget_type>Boolean Button</widget_type>
+    <widget_type>Action Button</widget_type>
     <enabled>true</enabled>
+    <text>PAUSE</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>67</width>
+    <width>79</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <confirm_message>Are your sure you want to do this?</confirm_message>
-    <effect_3d>true</effect_3d>
+    <image />
     <rules />
     <pv_value />
-    <bit>-1</bit>
-    <toggle_button>true</toggle_button>
-    <show_confirm_dialog>0</show_confirm_dialog>
+    <toggle_button>false</toggle_button>
     <border_width>1</border_width>
-    <on_label>ON</on_label>
-    <square_button>true</square_button>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
     <y>42</y>
     <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://update_en</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <description />
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>loc://update_en</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>PauseGraph8.js</path>
+        <scriptText>importPackage(Packages.org.csstudio.opibuilder.scriptUtil);</scriptText>
+        <embedded>false</embedded>
         <description />
       </action>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>528</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>-60926ed6:13737f84dae:-7f6a</wuid>
-    <scripts />
-    <square_led>false</square_led>
-    <on_color>
-      <color red="0" green="255" blue="0" />
-    </on_color>
-    <height>20</height>
-    <data_type>0</data_type>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>LED</name>
-    <show_boolean_label>false</show_boolean_label>
-    <off_color>
-      <color red="0" green="100" blue="0" />
-    </off_color>
-    <pv_name>loc://do_update</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>20</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>45</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>624</x>
+    <x>546</x>
   </widget>
 </display>
