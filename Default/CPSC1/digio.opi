@@ -124,7 +124,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>$(UUT):exttrg2</pv_name>
+    <pv_name>$(UUT):WAVTRIG</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -230,7 +230,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>498</y>
+    <y>510</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -252,7 +252,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>$(UUT):exttrg1</pv_name>
+    <pv_name>$(UUT):MASTRIG</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -358,7 +358,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>456</y>
+    <y>468</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -380,7 +380,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>$(UUT):extclk2</pv_name>
+    <pv_name>$(UUT):SSCLK</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -486,7 +486,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>420</y>
+    <y>432</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -508,7 +508,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>$(UUT):extclk1</pv_name>
+    <pv_name>$(UUT):FSCLK</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -614,7 +614,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>384</y>
+    <y>396</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -742,7 +742,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>348</y>
+    <y>360</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -870,7 +870,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>312</y>
+    <y>324</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -968,5 +968,41 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>575</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>55655cf:13751222eb1:-7f30</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>27</height>
+    <name>Label_8</name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>PWRGOOD</text>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>79</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>106</y>
+    <wrap_words>true</wrap_words>
+    <tooltip />
+    <x>630</x>
   </widget>
 </display>
