@@ -3,6 +3,7 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <UUT>acq196_368</UUT>
   </macros>
   <wuid>650758e1:1385768f62e:-7f7f</wuid>
   <boy_version>3.1.0.20120201</boy_version>
@@ -281,14 +282,14 @@ $(pv_value)</tooltip>
       <scripts>
         <path pathString="setInternalClock.js" checkConnect="true" sfe="false" seoe="false">
           <pv trig="false">loc://int_clk_set_hz</pv>
-          <pv trig="false">acq196_368:internalClock</pv>
-          <pv trig="true">acq196_368:control</pv>
+          <pv trig="false">$(UUT):internalClock</pv>
+          <pv trig="true">$(UUT):control</pv>
         </path>
       </scripts>
       <height>31</height>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Action Button_5</name>
-      <pv_name>acq196_368:control</pv_name>
+      <pv_name>$(UUT):control</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -316,13 +317,13 @@ $(pv_value)</tooltip>
       <y>270</y>
       <actions hook="false" hook_all="true">
         <action type="WRITE_PV">
-          <pv_name>acq196_368:internalClock</pv_name>
+          <pv_name>$(UUT):internalClock</pv_name>
           <value>loc://int_clk_set_hz</value>
           <timeout>10</timeout>
           <description />
         </action>
         <action type="WRITE_PV">
-          <pv_name>acq196_368:control</pv_name>
+          <pv_name>$(UUT):control</pv_name>
           <value>init</value>
           <timeout>10</timeout>
           <description />
@@ -375,7 +376,7 @@ $(pv_value)</tooltip>
       <color_hi>
         <color red="255" green="255" blue="0" />
       </color_hi>
-      <pv_name>acq196_368:T0</pv_name>
+      <pv_name>$(UUT):T0</pv_name>
       <foreground_color>
         <color red="255" green="255" blue="255" />
       </foreground_color>
@@ -449,7 +450,7 @@ $(pv_value)</tooltip>
       <color_hi>
         <color red="255" green="255" blue="0" />
       </color_hi>
-      <pv_name>acq196_368:T1</pv_name>
+      <pv_name>$(UUT):T1</pv_name>
       <foreground_color>
         <color red="255" green="255" blue="255" />
       </foreground_color>
@@ -488,7 +489,7 @@ $(pv_value)</tooltip>
       <height>31</height>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Action Button_4</name>
-      <pv_name>acq196_368:control</pv_name>
+      <pv_name>$(UUT):control</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -516,7 +517,7 @@ $(pv_value)</tooltip>
       <y>270</y>
       <actions hook="false" hook_all="false">
         <action type="WRITE_PV">
-          <pv_name>acq196_368:control</pv_name>
+          <pv_name>$(UUT):control</pv_name>
           <value>trig</value>
           <timeout>10</timeout>
           <description />
@@ -534,7 +535,7 @@ $(pv_value)</tooltip>
       <height>31</height>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Action Button_3</name>
-      <pv_name>acq196_368:control</pv_name>
+      <pv_name>$(UUT):control</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -562,7 +563,7 @@ $(pv_value)</tooltip>
       <y>270</y>
       <actions hook="false" hook_all="false">
         <action type="WRITE_PV">
-          <pv_name>acq196_368:control</pv_name>
+          <pv_name>$(UUT):control</pv_name>
           <value>stop</value>
           <timeout>10</timeout>
           <description />
@@ -618,7 +619,7 @@ $(pv_value)</tooltip>
       <rotation_angle>0.0</rotation_angle>
       <scripts>
         <path pathString="setStateColor.js" checkConnect="true" sfe="false" seoe="false">
-          <pv trig="true">acq196_368:state</pv>
+          <pv trig="true">$(UUT):state</pv>
         </path>
       </scripts>
       <height>31</height>
@@ -627,7 +628,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>acq196_368:state</pv_name>
+      <pv_name>$(UUT):state</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -709,7 +710,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>acq196_368:elapsed</pv_name>
+      <pv_name>$(UUT):elapsed</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -792,7 +793,7 @@ SHOT NUMBER</text>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>acq196_368:shot</pv_name>
+      <pv_name>$(UUT):shot</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -838,7 +839,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>acq196_368:uptime</pv_name>
+      <pv_name>$(UUT):uptime</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1020,7 +1021,7 @@ $(pv_value)</tooltip>
       <color_hi>
         <color red="255" green="255" blue="0" />
       </color_hi>
-      <pv_name>acq196_368:internalClockActual</pv_name>
+      <pv_name>$(UUT):internalClockActual</pv_name>
       <foreground_color>
         <color red="255" green="255" blue="255" />
       </foreground_color>
@@ -1165,6 +1166,42 @@ $(pv_value)</tooltip>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
       <x>24</x>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+      <visible>true</visible>
+      <vertical_alignment>1</vertical_alignment>
+      <wuid>-7b7097bd:1388531b3f6:-736a</wuid>
+      <auto_size>false</auto_size>
+      <scripts />
+      <height>25</height>
+      <name>Label_12</name>
+      <transparent>false</transparent>
+      <show_scrollbar>false</show_scrollbar>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <widget_type>Label</widget_type>
+      <enabled>true</enabled>
+      <text>TEMP C</text>
+      <font>
+        <opifont.name>Default</opifont.name>
+      </font>
+      <width>61</width>
+      <border_style>0</border_style>
+      <rules />
+      <border_width>1</border_width>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions hook="false" hook_all="false" />
+      <y>96</y>
+      <wrap_words>true</wrap_words>
+      <tooltip />
+      <x>576</x>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
@@ -1334,7 +1371,11 @@ $(pv_value)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <visible>true</visible>
       <wuid>-52cd4927:13875865c87:-7f87</wuid>
-      <scripts />
+      <scripts>
+        <path pathString="setShotCompleteButton.js" checkConnect="true" sfe="false" seoe="false">
+          <pv trig="true">$(UUT):shot_complete</pv>
+        </path>
+      </scripts>
       <height>31</height>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Action Button</name>
@@ -1366,7 +1407,7 @@ $(pv_value)</tooltip>
       <y>6</y>
       <actions hook="false" hook_all="false">
         <action type="WRITE_PV">
-          <pv_name>acq196_368:start</pv_name>
+          <pv_name>$(UUT):start</pv_name>
           <value>1</value>
           <timeout>10</timeout>
           <description />
@@ -1420,14 +1461,18 @@ $(pv_value)</tooltip>
       <wuid>-52cd4927:13875865c87:-7a20</wuid>
       <auto_size>false</auto_size>
       <rotation_angle>0.0</rotation_angle>
-      <scripts />
+      <scripts>
+        <path pathString="setShotCompleteColor.js" checkConnect="true" sfe="false" seoe="false">
+          <pv trig="true">$(UUT):shot_complete</pv>
+        </path>
+      </scripts>
       <height>20</height>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Text Update_1</name>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>false</transparent>
-      <pv_name>acq196_368:shot_complete</pv_name>
+      <pv_name>$(UUT):shot_complete</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
