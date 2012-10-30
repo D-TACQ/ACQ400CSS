@@ -45,7 +45,7 @@
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>PSU DATA for $(UUT) $(PSU)</text>
+    <text>PSU DATA for $(UUT) PSU $(PSU)</text>
     <font>
       <fontdata fontName="Sans" height="14" style="1" />
     </font>
@@ -146,25 +146,15 @@ $(pv_value)</tooltip>
     <x>552</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0">
-    <trace_1_trace_type>0</trace_1_trace_type>
-    <trace_4_point_style>0</trace_4_point_style>
     <trace_0_trace_color>
       <color red="21" green="21" blue="196" />
     </trace_0_trace_color>
     <axis_0_auto_scale>true</axis_0_auto_scale>
-    <trace_3_trace_type>0</trace_3_trace_type>
-    <trace_4_update_delay>100</trace_4_update_delay>
     <axis_1_time_format>0</axis_1_time_format>
-    <trace_1_point_size>4</trace_1_point_size>
     <trace_0_plot_mode>0</trace_0_plot_mode>
-    <trace_count>5</trace_count>
-    <trace_4_concatenate_data>true</trace_4_concatenate_data>
+    <trace_count>1</trace_count>
     <axis_0_show_grid>true</axis_0_show_grid>
     <axis_0_log_scale>false</axis_0_log_scale>
-    <trace_3_point_size>4</trace_3_point_size>
-    <trace_3_y_axis_index>1</trace_3_y_axis_index>
-    <trace_1_name>$(trace_1_y_pv)</trace_1_name>
-    <trace_4_line_width>1</trace_4_line_width>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>true</show_legend>
     <y>96</y>
@@ -174,155 +164,93 @@ $(pv_value)</tooltip>
     <axis_1_visible>true</axis_1_visible>
     <height>511</height>
     <axis_1_maximum>10.0</axis_1_maximum>
-    <trace_4_x_pv />
-    <trace_2_x_pv />
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
     <border_width>1</border_width>
-    <trace_2_x_axis_index>0</trace_2_x_axis_index>
-    <trace_3_name>$(trace_3_y_pv)</trace_3_name>
     <axis_0_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_0_axis_color>
     <axis_1_scale_format />
     <name>XY Graph</name>
     <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
-    <trace_4_buffer_size>100</trace_4_buffer_size>
     <trace_0_line_width>1</trace_0_line_width>
     <show_toolbar>true</show_toolbar>
-    <trace_1_update_delay>100</trace_1_update_delay>
-    <trace_4_x_axis_index>0</trace_4_x_axis_index>
     <axis_1_show_grid>true</axis_1_show_grid>
     <axis_0_grid_color>
       <color red="200" green="200" blue="200" />
     </axis_0_grid_color>
-    <trace_2_line_width>1</trace_2_line_width>
-    <trace_1_line_width>1</trace_1_line_width>
-    <trace_2_y_axis_index>1</trace_2_y_axis_index>
     <axis_0_auto_scale_threshold>0.0</axis_0_auto_scale_threshold>
-    <trace_2_trace_type>0</trace_2_trace_type>
     <trace_0_name>$(trace_0_y_pv)</trace_0_name>
-    <trace_1_anti_alias>true</trace_1_anti_alias>
-    <trace_3_x_pv />
     <trace_0_update_mode>0</trace_0_update_mode>
-    <trace_1_buffer_size>100</trace_1_buffer_size>
     <axis_0_axis_title>Primary X Axis (0)</axis_0_axis_title>
-    <trace_3_line_width>1</trace_3_line_width>
     <wuid>-60926ed6:13737f84dae:-7cc9</wuid>
-    <trace_2_buffer_size>100</trace_2_buffer_size>
     <axis_1_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_1_axis_color>
-    <trace_2_update_mode>0</trace_2_update_mode>
     <foreground_color>
       <color red="0" green="0" blue="255" />
     </foreground_color>
-    <trace_1_update_mode>0</trace_1_update_mode>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <axis_1_axis_title>Primary Y Axis (1)</axis_1_axis_title>
-    <trace_4_anti_alias>true</trace_4_anti_alias>
-    <trace_4_plot_mode>0</trace_4_plot_mode>
-    <trace_3_update_mode>0</trace_3_update_mode>
     <axis_0_maximum>100.0</axis_0_maximum>
     <axis_0_scale_font>
       <opifont.name>Default</opifont.name>
     </axis_0_scale_font>
-    <trace_2_point_size>4</trace_2_point_size>
-    <trace_4_y_axis_index>1</trace_4_y_axis_index>
     <axis_0_time_format>0</axis_0_time_format>
-    <trace_4_update_mode>0</trace_4_update_mode>
-    <trace_3_concatenate_data>true</trace_3_concatenate_data>
-    <trace_3_trace_color>
-      <color red="0" green="0" blue="0" />
-    </trace_3_trace_color>
-    <trace_1_plot_mode>0</trace_1_plot_mode>
     <axis_1_log_scale>false</axis_1_log_scale>
-    <trace_1_point_style>0</trace_1_point_style>
-    <trace_2_plot_mode>0</trace_2_plot_mode>
     <title_font>
       <fontdata fontName="Arial" height="12" style="1" />
     </title_font>
-    <trace_3_buffer_size>100</trace_3_buffer_size>
     <axis_1_dash_grid_line>true</axis_1_dash_grid_line>
     <axis_0_visible>true</axis_0_visible>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <axis_0_scale_format />
-    <trace_4_name>$(trace_4_y_pv)</trace_4_name>
-    <trace_4_trace_type>0</trace_4_trace_type>
     <trace_0_x_pv />
-    <trace_0_y_pv>$(UUT):SLOW_SET_AO$(PSU)</trace_0_y_pv>
+    <trace_0_y_pv>$(UUT):AI_PSU:$(PSU):IMON</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
-    <trace_3_point_style>0</trace_3_point_style>
     <axis_1_auto_scale>true</axis_1_auto_scale>
-    <trace_2_update_delay>100</trace_2_update_delay>
-    <trace_4_point_size>4</trace_4_point_size>
     <trace_0_concatenate_data>true</trace_0_concatenate_data>
-    <trace_3_y_pv>$(UUT):AI_PSU:$(PSU):TSYS</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
-    <trace_1_x_pv />
     <show_plot_area_border>false</show_plot_area_border>
-    <trace_4_trace_color>
-      <color red="128" green="0" blue="255" />
-    </trace_4_trace_color>
     <widget_type>XY Graph</widget_type>
     <enabled>true</enabled>
     <width>625</width>
     <trace_0_buffer_size>100</trace_0_buffer_size>
     <trigger_pv />
     <axis_count>2</axis_count>
-    <trace_2_name>$(trace_2_y_pv)</trace_2_name>
     <transparent>false</transparent>
-    <trace_2_anti_alias>true</trace_2_anti_alias>
     <axis_0_dash_grid_line>true</axis_0_dash_grid_line>
     <trace_0_x_axis_index>0</trace_0_x_axis_index>
     <trace_0_point_style>0</trace_0_point_style>
     <tooltip>$(trace_0_y_pv)
 $(trace_0_y_pv_value)</tooltip>
     <border_alarm_sensitive>true</border_alarm_sensitive>
-    <trace_4_y_pv>$(UUT):AI_PSU:$(PSU):THS</trace_4_y_pv>
-    <trace_1_x_axis_index>0</trace_1_x_axis_index>
     <trace_0_y_axis_index>1</trace_0_y_axis_index>
     <axis_1_scale_font>
       <opifont.name>Default</opifont.name>
     </axis_1_scale_font>
     <border_style>0</border_style>
-    <trace_3_x_axis_index>0</trace_3_x_axis_index>
     <plot_area_background_color>
       <color red="255" green="255" blue="255" />
     </plot_area_background_color>
-    <trace_2_concatenate_data>true</trace_2_concatenate_data>
-    <trace_2_point_style>0</trace_2_point_style>
     <title />
-    <trace_1_y_pv>$(UUT):AI_PSU:$(PSU):VMON</trace_1_y_pv>
     <pv_name />
     <axis_1_minimum>-10.0</axis_1_minimum>
-    <trace_3_plot_mode>0</trace_3_plot_mode>
     <axis_0_minimum>0.0</axis_0_minimum>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <trace_3_update_delay>100</trace_3_update_delay>
     <scripts />
     <trace_0_anti_alias>true</trace_0_anti_alias>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <trace_1_trace_color>
-      <color red="242" green="26" blue="26" />
-    </trace_1_trace_color>
-    <trace_2_trace_color>
-      <color red="33" green="179" blue="33" />
-    </trace_2_trace_color>
     <pv_value />
-    <trace_1_y_axis_index>1</trace_1_y_axis_index>
-    <trace_3_anti_alias>true</trace_3_anti_alias>
-    <trace_1_concatenate_data>true</trace_1_concatenate_data>
     <rules />
-    <trace_2_y_pv>$(UUT):AI_PSU:$(PSU):IMON</trace_2_y_pv>
     <trace_0_y_pv_value />
     <trace_0_trace_type>0</trace_0_trace_type>
     <axis_1_grid_color>
