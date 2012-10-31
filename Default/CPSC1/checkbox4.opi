@@ -289,7 +289,6 @@ $(pv_value)</tooltip>
     <wuid>-463b3227:13aa8926dd6:-6713</wuid>
     <scripts>
       <path pathString="ToggleAndSetAll.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://${UUT}:${psu}:SUMALL</pv>
         <pv trig="false">${UUT}:DACEN:${psu}:SFP1</pv>
         <pv trig="false">${UUT}:DACEN:${psu}:SFP2</pv>
         <pv trig="false">${UUT}:DACEN:${psu}:SLOW</pv>
@@ -300,7 +299,7 @@ $(pv_value)</tooltip>
     <height>30</height>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Action Button</name>
-    <pv_name>loc://${UUT}:${psu}:SUMALL</pv_name>
+    <pv_name />
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
