@@ -49,7 +49,7 @@
     <font>
       <fontdata fontName="Sans" height="14" style="0" />
     </font>
-    <width>283</width>
+    <width>174</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
@@ -61,7 +61,7 @@
     <y>30</y>
     <wrap_words>true</wrap_words>
     <tooltip />
-    <x>234</x>
+    <x>78</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -150,51 +150,7 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>503</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>234</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>-2994a025:1374fd330b0:-7cdd</wuid>
-    <scripts />
-    <height>25</height>
-    <anti_alias>true</anti_alias>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Ellipse</name>
-    <transparent>false</transparent>
-    <pv_name />
-    <background_color>
-      <color red="0" green="0" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Ellipse</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>25</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>510</y>
+    <y>500</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>90</x>
@@ -230,7 +186,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>510</y>
+    <y>507</y>
     <wrap_words>true</wrap_words>
     <tooltip />
     <x>138</x>
@@ -279,50 +235,6 @@ $(pv_value)</tooltip>
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>461</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>234</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>-2994a025:1374fd330b0:-7c5c</wuid>
-    <scripts />
-    <height>25</height>
-    <anti_alias>true</anti_alias>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Ellipse_1</name>
-    <transparent>false</transparent>
-    <pv_name />
-    <background_color>
-      <color red="0" green="0" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Ellipse</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>25</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>468</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>90</x>
@@ -409,50 +321,6 @@ $(pv_value)</tooltip>
     <y>425</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>234</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>-2994a025:1374fd330b0:-7c4d</wuid>
-    <scripts />
-    <height>25</height>
-    <anti_alias>true</anti_alias>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Ellipse_2</name>
-    <transparent>false</transparent>
-    <pv_name />
-    <background_color>
-      <color red="0" green="0" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Ellipse</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>25</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>432</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     <x>90</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -535,50 +403,6 @@ $(pv_value)</tooltip>
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>389</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>234</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>-2994a025:1374fd330b0:-7c3e</wuid>
-    <scripts />
-    <height>25</height>
-    <anti_alias>true</anti_alias>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Ellipse_3</name>
-    <transparent>false</transparent>
-    <pv_name />
-    <background_color>
-      <color red="0" green="0" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Ellipse</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>25</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>396</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>90</x>
@@ -665,50 +489,6 @@ $(pv_value)</tooltip>
     <y>353</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>234</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>-2994a025:1374fd330b0:-7c2f</wuid>
-    <scripts />
-    <height>25</height>
-    <anti_alias>true</anti_alias>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Ellipse_4</name>
-    <transparent>false</transparent>
-    <pv_name />
-    <background_color>
-      <color red="0" green="0" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Ellipse</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>25</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>360</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     <x>90</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -793,50 +573,6 @@ $(pv_value)</tooltip>
     <y>317</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>234</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>-2994a025:1374fd330b0:-7c20</wuid>
-    <scripts />
-    <height>25</height>
-    <anti_alias>true</anti_alias>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Ellipse_5</name>
-    <transparent>false</transparent>
-    <pv_name />
-    <background_color>
-      <color red="0" green="0" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Ellipse</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>25</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>324</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     <x>90</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -915,7 +651,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>0</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>30</y>
+    <y>78</y>
     <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -964,10 +700,10 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>106</y>
+    <y>126</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>575</x>
+    <x>90</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
@@ -1000,9 +736,9 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>106</y>
+    <y>132</y>
     <wrap_words>true</wrap_words>
     <tooltip />
-    <x>630</x>
+    <x>135</x>
   </widget>
 </display>
