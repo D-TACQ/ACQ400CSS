@@ -77,7 +77,7 @@
     <axis_1_scale_format />
     <name>XY Graph</name>
     <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
-    <trace_4_buffer_size>2048</trace_4_buffer_size>
+    <trace_4_buffer_size>16384</trace_4_buffer_size>
     <trace_0_line_width>1</trace_0_line_width>
     <trace_2_x_pv_value />
     <show_toolbar>true</show_toolbar>
@@ -97,11 +97,11 @@
     <trace_1_anti_alias>false</trace_1_anti_alias>
     <trace_3_x_pv />
     <trace_0_update_mode>0</trace_0_update_mode>
-    <trace_1_buffer_size>2048</trace_1_buffer_size>
+    <trace_1_buffer_size>16384</trace_1_buffer_size>
     <axis_0_axis_title>Sample</axis_0_axis_title>
     <trace_3_line_width>1</trace_3_line_width>
     <wuid>72b9bb3d:1368df233b7:-7f8f</wuid>
-    <trace_2_buffer_size>2048</trace_2_buffer_size>
+    <trace_2_buffer_size>16384</trace_2_buffer_size>
     <axis_1_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_1_axis_color>
@@ -117,7 +117,7 @@
     <trace_4_plot_mode>0</trace_4_plot_mode>
     <trace_3_update_mode>0</trace_3_update_mode>
     <axis_0_maximum>100.0</axis_0_maximum>
-    <trace_7_anti_alias>true</trace_7_anti_alias>
+    <trace_7_anti_alias>false</trace_7_anti_alias>
     <axis_0_scale_font>
       <opifont.name>Default</opifont.name>
     </axis_0_scale_font>
@@ -145,7 +145,7 @@
       <fontdata fontName="Arial" height="12" style="1" />
     </title_font>
     <trace_6_y_pv>$(UUT):CH_PSU:7:$(FUN).VALA</trace_6_y_pv>
-    <trace_3_buffer_size>2048</trace_3_buffer_size>
+    <trace_3_buffer_size>16384</trace_3_buffer_size>
     <axis_1_dash_grid_line>true</axis_1_dash_grid_line>
     <axis_0_visible>true</axis_0_visible>
     <trace_6_point_size>4</trace_6_point_size>
@@ -155,7 +155,7 @@
     <trace_6_concatenate_data>false</trace_6_concatenate_data>
     <axis_0_scale_format />
     <trace_4_name>$(trace_4_y_pv)</trace_4_name>
-    <trace_7_buffer_size>2048</trace_7_buffer_size>
+    <trace_7_buffer_size>16384</trace_7_buffer_size>
     <trace_4_trace_type>0</trace_4_trace_type>
     <trace_0_x_pv />
     <trace_7_line_width>1</trace_7_line_width>
@@ -246,7 +246,7 @@ $(trace_0_y_pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <trace_6_buffer_size>2048</trace_6_buffer_size>
+    <trace_6_buffer_size>16384</trace_6_buffer_size>
     <trace_1_trace_color>
       <color red="242" green="26" blue="26" />
     </trace_1_trace_color>
