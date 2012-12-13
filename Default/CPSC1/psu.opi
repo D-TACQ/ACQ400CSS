@@ -5,11 +5,11 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>-2994a025:1374fd330b0:-7de5</wuid>
-  <boy_version>3.1.0.20120201</boy_version>
+  <boy_version>3.1.2.20120828</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
-  <name />
+  <name></name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
   <background_color>
@@ -24,6 +24,11 @@
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
@@ -35,6 +40,11 @@
     <scripts />
     <height>43</height>
     <name>Label</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -60,7 +70,7 @@
     <actions hook="false" hook_all="false" />
     <y>0</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>0</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0">
@@ -72,6 +82,11 @@
     <scripts />
     <height>559</height>
     <name>Grouping Container_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -83,7 +98,7 @@
     <widget_type>Grouping Container</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>139</width>
     <border_style>0</border_style>
@@ -102,7 +117,7 @@
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>42</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>0</x>
     <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
       <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -112,13 +127,22 @@
         <color red="128" green="0" blue="255" />
       </line_color>
       <wuid>-2994a025:1374fd330b0:-7d70</wuid>
+      <bg_gradient_color>
+        <color red="255" green="255" blue="255" />
+      </bg_gradient_color>
       <scripts />
       <height>559</height>
       <anti_alias>false</anti_alias>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Rectangle</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <alpha>255</alpha>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
-      <pv_name />
+      <pv_name></pv_name>
       <background_color>
         <color red="155" green="155" blue="165" />
       </background_color>
@@ -127,9 +151,12 @@
       </foreground_color>
       <widget_type>Rectangle</widget_type>
       <enabled>true</enabled>
+      <fg_gradient_color>
+        <color red="255" green="255" blue="255" />
+      </fg_gradient_color>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>139</width>
       <line_style>0</line_style>
@@ -147,6 +174,7 @@
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
       <x>0</x>
+      <gradient>false</gradient>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
       <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -155,15 +183,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color red="0" green="255" blue="0" />
+        <color name="Green" red="0" green="255" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_6</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Green0" red="0" green="55" blue="0" />
       </off_color>
       <pv_name>$(UUT):pwrgood</pv_name>
       <background_color>
@@ -177,7 +210,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -204,6 +237,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_8</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -216,7 +254,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>PWR ON</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -229,7 +267,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>118</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
@@ -239,15 +277,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_7</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>${UUT}:FAULT:${PSU}</pv_name>
       <background_color>
@@ -261,7 +304,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -287,15 +330,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_8</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:T_R2</pv_name>
       <background_color>
@@ -309,7 +357,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -336,6 +384,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_9</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -348,7 +401,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>Fault</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -361,7 +414,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>144</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -372,6 +425,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_10</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -384,7 +442,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>T-R2</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -397,7 +455,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>168</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
@@ -407,15 +465,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_9</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:T_R1</pv_name>
       <background_color>
@@ -429,7 +492,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -455,15 +518,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_10</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:T_SINK</pv_name>
       <background_color>
@@ -477,7 +545,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -504,6 +572,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_11</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -516,7 +589,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>T-R1</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -529,7 +602,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>192</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -540,6 +613,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_12</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -552,7 +630,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>T_HSINK</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -565,7 +643,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>216</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
@@ -575,15 +653,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_11</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:PWM_POWER</pv_name>
       <background_color>
@@ -597,7 +680,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -623,15 +706,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_12</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:HVPOWER</pv_name>
       <background_color>
@@ -645,7 +733,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -672,6 +760,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_13</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -684,7 +777,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>PWM-PWR</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -697,7 +790,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>240</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -708,6 +801,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_14</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -720,7 +818,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>HV-PWR</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -733,7 +831,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>264</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
@@ -743,15 +841,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_13</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:VOVL</pv_name>
       <background_color>
@@ -765,7 +868,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -791,15 +894,20 @@ $(pv_value)</tooltip>
       <scripts />
       <square_led>false</square_led>
       <on_color>
-        <color name="Red" />
+        <color name="Red" red="255" green="0" blue="0" />
       </on_color>
       <height>19</height>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>LED_14</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>false</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="85" green="0" blue="0" />
+        <color name="Red0" red="55" green="0" blue="0" />
       </off_color>
       <pv_name>$(UUT):FAULT:${PSU}:IOVL</pv_name>
       <background_color>
@@ -813,7 +921,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>19</width>
       <border_style>0</border_style>
@@ -840,6 +948,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_15</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -852,7 +965,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>V-OVL</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -865,7 +978,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>288</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -876,6 +989,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>19</height>
       <name>Label_16</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -888,7 +1006,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>I-OVL</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -901,7 +1019,7 @@ $(pv_value)</tooltip>
       <actions hook="false" hook_all="false" />
       <y>312</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>43</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -912,6 +1030,11 @@ $(pv_value)</tooltip>
       <scripts />
       <height>40</height>
       <name>Label_17</name>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
       <background_color>
@@ -925,7 +1048,7 @@ $(pv_value)</tooltip>
       <text>Ultra-Precision
 Power Supply</text>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>105</width>
       <border_style>0</border_style>
@@ -938,26 +1061,31 @@ Power Supply</text>
       <actions hook="false" hook_all="false" />
       <y>48</y>
       <wrap_words>true</wrap_words>
-      <tooltip />
+      <tooltip></tooltip>
       <x>17</x>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0">
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
       <wuid>50cba77:13b1f8e2c35:-5c81</wuid>
-      <password />
+      <password></password>
       <scripts />
       <on_color>
-        <color red="0" green="255" blue="0" />
+        <color name="Green" red="0" green="255" blue="0" />
       </on_color>
       <height>32</height>
       <show_led>true</show_led>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Boolean Button</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>true</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Green0" red="0" green="55" blue="0" />
       </off_color>
       <pv_name>$(UUT):RESET:${PSU}</pv_name>
       <background_color>
@@ -972,7 +1100,7 @@ Power Supply</text>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>122</width>
       <border_style>0</border_style>
@@ -1000,19 +1128,24 @@ $(pv_value)</tooltip>
       <border_alarm_sensitive>true</border_alarm_sensitive>
       <visible>true</visible>
       <wuid>50cba77:13b1f8e2c35:-5b54</wuid>
-      <password />
+      <password></password>
       <scripts />
       <on_color>
-        <color red="0" green="255" blue="0" />
+        <color name="Green" red="0" green="255" blue="0" />
       </on_color>
       <height>32</height>
       <show_led>true</show_led>
       <data_type>0</data_type>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <name>Boolean Button</name>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <show_boolean_label>true</show_boolean_label>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
       <off_color>
-        <color red="0" green="100" blue="0" />
+        <color name="Green0" red="0" green="55" blue="0" />
       </off_color>
       <pv_name>$(UUT):DISABLE:${PSU}</pv_name>
       <background_color>
@@ -1027,7 +1160,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name>Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>122</width>
       <border_style>0</border_style>

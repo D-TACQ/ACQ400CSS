@@ -19,8 +19,13 @@
             <name>Time</name>
             <font>1|Sans|10.0|1|GTK|1|</font>
             <scale_font>1|Sans|10.0|0|GTK|1|</scale_font>
-            <min>1.354708383585E12</min>
-            <max>1.354711983585E12</max>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+            </color>
+            <min>1.355391228353E12</min>
+            <max>1.355394828353E12</max>
             <log_scale>false</log_scale>
             <autoscale>false</autoscale>
             <visible>true</visible>
@@ -51,8 +56,8 @@
                 <green>21</green>
                 <blue>196</blue>
             </color>
-            <min>6.29706228862985</min>
-            <max>6.29718304</max>
+            <min>9.91267681</min>
+            <max>9.913519861630292</max>
             <log_scale>false</log_scale>
             <autoscale>true</autoscale>
             <visible>true</visible>
