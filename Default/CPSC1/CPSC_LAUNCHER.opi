@@ -5,11 +5,11 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>-5dbfdbfe:137315ab263:-7d51</wuid>
-  <boy_version>3.1.0.20120201</boy_version>
+  <boy_version>3.1.2.20120828</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
-  <name />
+  <name></name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
   <background_color>
@@ -24,6 +24,11 @@
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
@@ -33,8 +38,13 @@
     <wuid>-5dbfdbfe:137315ab263:-7d2e</wuid>
     <scripts />
     <height>29</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_COMBO</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <pv_name>loc://UUT</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -46,7 +56,7 @@
     <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -80,6 +90,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -92,7 +107,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>UUT</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -105,7 +120,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>12</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>54</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
@@ -119,9 +134,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>SYSTEM</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -133,12 +153,12 @@ $(pv_value)</tooltip>
     <text>SYSTEM</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -152,7 +172,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://SYSTEM</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -169,8 +189,13 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <height>25</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Text Update</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
@@ -187,7 +212,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -220,9 +245,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>SLOW_AO</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -234,12 +264,12 @@ $(pv_value)</tooltip>
     <text>SLOW AO</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -253,7 +283,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://SLOW_AO</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -271,9 +301,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>cpsc_UUT_AI</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -285,12 +320,12 @@ $(pv_value)</tooltip>
     <text>AI MONITOR</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -304,7 +339,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://UUT_AI</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -319,6 +354,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>20</height>
     <name>Label_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -331,7 +371,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Scopes</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
@@ -344,7 +384,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>144</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>237</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
@@ -359,9 +399,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_FUN_STRIPS</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -373,12 +418,12 @@ $(pv_value)</tooltip>
     <text>AI CHART UUT FUN</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -392,7 +437,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://UUT_FUN_AI</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -407,6 +452,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -419,7 +469,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>FUNCTION</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -432,7 +482,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>144</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>54</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
@@ -441,8 +491,13 @@ $(pv_value)</tooltip>
     <wuid>64ba2db0:13732eaf3c8:-7bb6</wuid>
     <scripts />
     <height>29</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_COMBO_1</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <pv_name>loc://FUN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -454,7 +509,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -487,8 +542,13 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <height>25</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Text Update_1</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
@@ -505,7 +565,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -539,9 +599,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_FUN_XMON</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -553,12 +618,12 @@ $(pv_value)</tooltip>
     <text>CH PLOT UUT FUN</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -572,7 +637,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://UUT_FUN_XMON</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -590,9 +655,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>PSUCONTROL</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -604,12 +674,12 @@ $(pv_value)</tooltip>
     <text>PSU CONTROL</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -623,7 +693,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://PSUCONTROL</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -640,6 +710,11 @@ $(pv_value)</tooltip>
     <height>41</height>
     <name>Image</name>
     <stretch_to_fit>false</stretch_to_fit>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -649,7 +724,7 @@ $(pv_value)</tooltip>
     <widget_type>Image</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>97</width>
     <no_animation>false</no_animation>
@@ -658,13 +733,13 @@ $(pv_value)</tooltip>
     <rules />
     <crop_bottom>0</crop_bottom>
     <border_width>1</border_width>
-    <image_file />
+    <image_file></image_file>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>30</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>642</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -675,6 +750,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label_3</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -687,7 +767,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>PSU</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -700,7 +780,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>282</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>54</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
@@ -709,8 +789,13 @@ $(pv_value)</tooltip>
     <wuid>-60926ed6:13737f84dae:-7e5f</wuid>
     <scripts />
     <height>29</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_COMBO_2</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <pv_name>loc://PSU</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -722,7 +807,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -759,8 +844,13 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <height>25</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Text Update_2</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <format_type>1</format_type>
     <precision_from_pv>false</precision_from_pv>
     <transparent>false</transparent>
@@ -777,7 +867,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>109</width>
     <border_style>0</border_style>
@@ -811,9 +901,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_PSU</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -825,12 +920,12 @@ $(pv_value)</tooltip>
     <text>CH PLOT UUT FUN</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -844,7 +939,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://UUT_PSU</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -864,9 +959,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_FUN_XMON_1</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -879,12 +979,12 @@ $(pv_value)</tooltip>
 SINGLE CHANNEL</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -898,7 +998,7 @@ SINGLE CHANNEL</text>
         <pv_name>loc://UUT_PSU1</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -916,9 +1016,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>SUM_SOURCES32</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -930,12 +1035,12 @@ $(pv_value)</tooltip>
     <text>SUM SOURCES</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -949,7 +1054,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://SUMSOURCES</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -969,9 +1074,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>UUT_FUN_SINGLE_STRIP</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -984,12 +1094,12 @@ $(pv_value)</tooltip>
  SINGLE CHANNEL</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -1003,7 +1113,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://UUT_PSU1S</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -1021,9 +1131,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>digio</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -1035,12 +1150,12 @@ $(pv_value)</tooltip>
     <text>DIG IO MON</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -1054,7 +1169,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://DIGIO</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -1072,9 +1187,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>trigger</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -1086,12 +1206,12 @@ $(pv_value)</tooltip>
     <text>Trigger</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -1105,7 +1225,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://trigger</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -1123,9 +1243,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>crate</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -1137,12 +1262,12 @@ $(pv_value)</tooltip>
     <text>Crate</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -1156,7 +1281,7 @@ $(pv_value)</tooltip>
         <pv_name>loc://CRATE</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)
@@ -1174,9 +1299,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>lemo_counter</name>
-    <pv_name />
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -1188,12 +1318,12 @@ $(pv_value)</tooltip>
     <text>LEMO COUNT</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>103</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
-    <image />
+    <image></image>
     <rules />
     <pv_value />
     <toggle_button>false</toggle_button>
@@ -1207,7 +1337,63 @@ $(pv_value)</tooltip>
         <pv_name>loc://LEMO_COUNT</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <description />
+        <description></description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>702</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-377b1eac:13c0b87c947:-7d6e</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://TEST</pv>
+      </path>
+    </scripts>
+    <height>37</height>
+    <name>test</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>Test</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image></image>
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>70</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://TEST</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description></description>
       </action>
     </actions>
     <tooltip>$(pv_name)

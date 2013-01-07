@@ -8,6 +8,7 @@ if(widgetController.getExternalObject(flagName) == null){
 }else{
 	var trigger;
 	
+	var test_def = PVUtil.getString(pvArray[0]);
 	if (PVUtil.getLong(pvArray[0]) == 1){
 		var old = PVUtil.getLong(pvArray[1]);
 		if (old != 0){

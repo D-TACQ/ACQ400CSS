@@ -5,11 +5,11 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>3a22b6e4:13ac07bcd43:-7f26</wuid>
-  <boy_version>3.1.0.20120201</boy_version>
+  <boy_version>3.1.2.20120828</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
-  <name />
+  <name></name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
   <background_color>
@@ -24,6 +24,11 @@
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
@@ -35,6 +40,11 @@
     <scripts />
     <height>49</height>
     <name>Label</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -47,7 +57,7 @@
     <enabled>true</enabled>
     <text>${UUT} Clocks and Triggers</text>
     <font>
-      <opifont.name>Title</opifont.name>
+      <opifont.name fontName="Sans" height="18" style="1">Title</opifont.name>
     </font>
     <width>385</width>
     <border_style>0</border_style>
@@ -60,7 +70,7 @@
     <actions hook="false" hook_all="false" />
     <y>12</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>204</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
@@ -75,8 +85,13 @@
     <auto_size>true</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>64</height>
+    <height>58</height>
     <name>Linking Container</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <opi_file>signal.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -84,11 +99,11 @@
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <group_name />
+    <group_name></group_name>
     <widget_type>Linking Container</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>604</width>
     <border_style>3</border_style>
@@ -99,7 +114,7 @@
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>108</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>72</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
@@ -114,8 +129,13 @@
     <auto_size>true</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>64</height>
+    <height>58</height>
     <name>Linking Container_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <opi_file>signal.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -123,11 +143,11 @@
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <group_name />
+    <group_name></group_name>
     <widget_type>Linking Container</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>604</width>
     <border_style>3</border_style>
@@ -138,7 +158,7 @@
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>174</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>72</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
@@ -153,8 +173,13 @@
     <auto_size>true</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>64</height>
+    <height>58</height>
     <name>Linking Container_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <opi_file>signal.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -162,11 +187,11 @@
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <group_name />
+    <group_name></group_name>
     <widget_type>Linking Container</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>604</width>
     <border_style>3</border_style>
@@ -177,7 +202,7 @@
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>240</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>72</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
@@ -192,8 +217,13 @@
     <auto_size>true</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>64</height>
+    <height>58</height>
     <name>Linking Container_3</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <opi_file>signal.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -201,11 +231,11 @@
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <group_name />
+    <group_name></group_name>
     <widget_type>Linking Container</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>604</width>
     <border_style>3</border_style>
@@ -216,7 +246,7 @@
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>306</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>72</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
@@ -231,8 +261,13 @@
     <auto_size>true</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>64</height>
+    <height>58</height>
     <name>Linking Container_4</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <opi_file>signal.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -240,11 +275,11 @@
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <group_name />
+    <group_name></group_name>
     <widget_type>Linking Container</widget_type>
     <enabled>true</enabled>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>604</width>
     <border_style>3</border_style>
@@ -255,7 +290,7 @@
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>378</y>
-    <tooltip />
+    <tooltip></tooltip>
     <x>72</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0">
@@ -266,13 +301,18 @@
     <wuid>3a22b6e4:13ac07bcd43:-7b9b</wuid>
     <scripts />
     <height>31</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Spinner</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <page_increment>10.0</page_increment>
     <precision_from_pv>false</precision_from_pv>
     <transparent>false</transparent>
     <pv_name>${UUT}:ACQ:PRELEN</pv_name>
-    <show_scrollbar>false</show_scrollbar>
+    <buttons_on_left>false</buttons_on_left>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -285,7 +325,7 @@
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>163</width>
     <border_style>3</border_style>
@@ -293,7 +333,7 @@
     <rules />
     <pv_value />
     <border_width>1</border_width>
-    <maximum>2048.0</maximum>
+    <maximum>256.0</maximum>
     <limits_from_pv>true</limits_from_pv>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -301,7 +341,6 @@
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
     <y>480</y>
-    <wrap_words>true</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>204</x>
@@ -314,6 +353,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>37</height>
     <name>Label_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -326,7 +370,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>PRELEN</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>97</width>
     <border_style>0</border_style>
@@ -339,7 +383,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>474</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>84</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0">
@@ -350,13 +394,18 @@ $(pv_value)</tooltip>
     <wuid>3a22b6e4:13ac07bcd43:-7b3c</wuid>
     <scripts />
     <height>31</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Spinner_1</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <page_increment>10.0</page_increment>
     <precision_from_pv>false</precision_from_pv>
     <transparent>false</transparent>
     <pv_name>${UUT}:ACQ:POSTLEN</pv_name>
-    <show_scrollbar>false</show_scrollbar>
+    <buttons_on_left>false</buttons_on_left>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -369,7 +418,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>163</width>
     <border_style>3</border_style>
@@ -385,7 +434,6 @@ $(pv_value)</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
     <y>480</y>
-    <wrap_words>true</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>510</x>
@@ -398,6 +446,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>37</height>
     <name>Label_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -410,7 +463,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>POSTLEN</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>97</width>
     <border_style>0</border_style>
@@ -423,7 +476,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>474</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>390</x>
   </widget>
 </display>
