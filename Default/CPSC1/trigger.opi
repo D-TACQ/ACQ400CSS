@@ -651,7 +651,14 @@ $(pv_value)</tooltip>
     <fill_color>
       <color red="0" green="0" blue="255" />
     </fill_color>
-    <rules />
+    <rules>
+      <rule name="Enable When Triggered" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0=="triggered"</value>
+        </exp>
+        <pv trig="true">${UUT}:stream_service</pv>
+      </rule>
+    </rules>
     <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <limits_from_pv>false</limits_from_pv>
@@ -702,7 +709,14 @@ $(pv_value)</tooltip>
     <width>92</width>
     <border_style>3</border_style>
     <format>0</format>
-    <rules />
+    <rules>
+      <rule name="Enable When Triggered" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0=="triggered"</value>
+        </exp>
+        <pv trig="true">${UUT}:stream_service</pv>
+      </rule>
+    </rules>
     <pv_value />
     <border_width>1</border_width>
     <maximum>4096.0</maximum>
