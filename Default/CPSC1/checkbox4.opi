@@ -45,7 +45,7 @@
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>${UUT}:DACEN:${psu}:SFP1</pv_name>
+    <pv_name>${UUT}:AO:DACEN:${psu}:SFP1</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -100,7 +100,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>${UUT}:DACEN:${psu}:SFP2</pv_name>
+    <pv_name>${UUT}:AO:DACEN:${psu}:SFP2</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -155,7 +155,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>${UUT}:DACEN:${psu}:SLOW</pv_name>
+    <pv_name>${UUT}:AO:DACEN:${psu}:SLOW</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -210,7 +210,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>${UUT}:DACEN:${psu}:WAVE</pv_name>
+    <pv_name>${UUT}:AO:DACEN:${psu}:WAVE</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -289,10 +289,10 @@ $(pv_value)</tooltip>
     <wuid>-463b3227:13aa8926dd6:-6713</wuid>
     <scripts>
       <path pathString="ToggleAndSetAll.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">${UUT}:DACEN:${psu}:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:${psu}:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:${psu}:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:${psu}:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:${psu}:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:${psu}:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:${psu}:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:${psu}:WAVE</pv>
         <pv trig="true">loc://${UUT}:${psu}:SUMALL:TR</pv>
       </path>
     </scripts>
@@ -352,7 +352,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>${UUT}:SUM:AO${psu}:V</pv_name>
+    <pv_name>${UUT}:AO:SUM:${psu}:V</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>

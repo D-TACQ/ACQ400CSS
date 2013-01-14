@@ -55,7 +55,7 @@
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>$(UUT)</text>
+    <text>${UUT}</text>
     <font>
       <fontdata fontName="Sans" height="14" style="0" />
     </font>
@@ -152,7 +152,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):WAVTRIG</pv_name>
+    <pv_name>${UUT}:SIG:WAVTRIG</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -246,7 +246,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):MASTRIG</pv_name>
+    <pv_name>${UUT}:SIG:MASTRIG</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -340,7 +340,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):SSCLK</pv_name>
+    <pv_name>${UUT}:SIG:SSCLK</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -434,7 +434,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):FSCLK</pv_name>
+    <pv_name>${UUT}:SIG:FSCLK</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -528,7 +528,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):digout2</pv_name>
+    <pv_name>${UUT}:SYS:digout2</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -622,7 +622,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):digout1</pv_name>
+    <pv_name>${UUT}:SYS:digout1</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -716,7 +716,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):pwrgood</pv_name>
+    <pv_name>${UUT}:SYS:pwrgood</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -810,7 +810,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Red0" red="55" green="0" blue="0" />
     </off_color>
-    <pv_name>$(UUT):LED:2:RED</pv_name>
+    <pv_name>${UUT}:SIG:LED:2:RED</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -863,7 +863,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Blue0" red="0" green="0" blue="55" />
     </off_color>
-    <pv_name>$(UUT):LED:4:BLUE</pv_name>
+    <pv_name>${UUT}:SIG:LED:4:BLUE</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -916,7 +916,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Yellow0" red="55" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):LED:3:AMBER</pv_name>
+    <pv_name>${UUT}:SIG:LED:3:AMBER</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -969,7 +969,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):LED:1:GREEN</pv_name>
+    <pv_name>${UUT}:SIG:LED:1:GREEN</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -1198,7 +1198,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Green0" red="0" green="55" blue="0" />
     </off_color>
-    <pv_name>$(UUT):pwrgood</pv_name>
+    <pv_name>${UUT}:SYS:pwrgood</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -1410,7 +1410,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color name="Red0" red="55" green="0" blue="0" />
     </off_color>
-    <pv_name>$(UUT):FAULT</pv_name>
+    <pv_name>${UUT}:PSU:FAULT</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>

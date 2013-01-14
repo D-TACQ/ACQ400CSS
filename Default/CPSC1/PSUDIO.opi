@@ -44,7 +44,7 @@
     <off_color>
       <color red="132" green="0" blue="0" />
     </off_color>
-    <pv_name>$(UUT):FAULT:$(PSU)</pv_name>
+    <pv_name>${UUT}:PSU:FAULT:${PSU}</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -90,7 +90,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>$(UUT):FAULT:$(PSU)</pv_name>
+    <pv_name>${UUT}:PSU:FAULT:${PSU}</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -139,7 +139,7 @@ $(pv_value)</tooltip>
     <off_color>
       <color red="0" green="100" blue="0" />
     </off_color>
-    <pv_name>$(UUT):RESET:$(PSU)</pv_name>
+    <pv_name>${UUT}:PSU:RESET:${PSU}</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -194,7 +194,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>$(PSU)</text>
+    <text>${PSU}</text>
     <font>
       <opifont.name>Default</opifont.name>
     </font>

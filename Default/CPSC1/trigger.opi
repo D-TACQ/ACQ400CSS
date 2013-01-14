@@ -311,7 +311,7 @@
     <page_increment>10.0</page_increment>
     <precision_from_pv>false</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>${UUT}:ACQ:PRELEN</pv_name>
+    <pv_name>${UUT}:AI:PRELEN</pv_name>
     <buttons_on_left>false</buttons_on_left>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -404,7 +404,7 @@ $(pv_value)</tooltip>
     <page_increment>10.0</page_increment>
     <precision_from_pv>false</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>${UUT}:ACQ:POSTLEN</pv_name>
+    <pv_name>${UUT}:AI:POSTLEN</pv_name>
     <buttons_on_left>false</buttons_on_left>
     <background_color>
       <color red="255" green="255" blue="255" />
@@ -499,7 +499,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>${UUT}:stream_service</pv_name>
+    <pv_name>${UUT}:AI:stream_service</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -586,8 +586,8 @@ $(pv_value)</tooltip>
       <path pathString="prepost.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">loc://${UUT}:MAXLEN</pv>
         <pv trig="true">loc://${UUT}:PREPOST</pv>
-        <pv trig="false">${UUT}:ACQ:PRELEN</pv>
-        <pv trig="false">${UUT}:ACQ:POSTLEN</pv>
+        <pv trig="false">${UUT}:AI:PRELEN</pv>
+        <pv trig="false">${UUT}:AI:POSTLEN</pv>
       </path>
     </scripts>
     <thumb_color>
@@ -656,7 +656,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <value>pvStr0=="triggered"</value>
         </exp>
-        <pv trig="true">${UUT}:stream_service</pv>
+        <pv trig="true">${UUT}:AI:stream_service</pv>
       </rule>
     </rules>
     <value_label_format></value_label_format>
@@ -714,7 +714,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <value>pvStr0=="triggered"</value>
         </exp>
-        <pv trig="true">${UUT}:stream_service</pv>
+        <pv trig="true">${UUT}:AI:stream_service</pv>
       </rule>
     </rules>
     <pv_value />

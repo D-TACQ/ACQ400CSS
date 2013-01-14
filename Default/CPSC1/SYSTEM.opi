@@ -5,11 +5,11 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>-16723a3a:136a28bec2a:-7fd1</wuid>
-  <boy_version>3.1.0.20120201</boy_version>
+  <boy_version>3.1.2.20120828</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
-  <name />
+  <name></name>
   <snap_to_geometry>true</snap_to_geometry>
   <show_grid>true</show_grid>
   <background_color>
@@ -24,6 +24,11 @@
   <rules />
   <show_edit_range>true</show_edit_range>
   <grid_space>6</grid_space>
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
@@ -46,7 +51,7 @@
     <widget_type>Gauge</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <show_lolo>true</show_lolo>
@@ -61,23 +66,28 @@
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7f9d</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Gauge</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):TEMP0</pv_name>
+    <pv_name>${UUT}:SYS:TEMP:BB:0</pv_name>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -85,7 +95,7 @@
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -120,7 +130,7 @@ $(pv_value)</tooltip>
     <widget_type>Gauge</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <show_lolo>true</show_lolo>
@@ -135,23 +145,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7f7f</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Gauge_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):TEMP1</pv_name>
+    <pv_name>${UUT}:SYS:TEMP:BB:1</pv_name>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -159,7 +174,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -194,7 +209,7 @@ $(pv_value)</tooltip>
     <widget_type>Gauge</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <show_lolo>true</show_lolo>
@@ -209,23 +224,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7f78</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Gauge_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):TEMP2</pv_name>
+    <pv_name>${UUT}:SYS:TEMP:BB:2</pv_name>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -233,7 +253,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -257,6 +277,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>37</height>
     <name>Label</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -269,7 +294,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Main Board Temperatures</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>421</width>
     <border_style>0</border_style>
@@ -282,7 +307,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>66</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>189</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -293,6 +318,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>37</height>
     <name>Label_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -305,7 +335,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>DAC Temp</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>91</width>
     <border_style>0</border_style>
@@ -318,7 +348,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>294</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>204</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -329,6 +359,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>37</height>
     <name>Label_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -341,7 +376,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>ADC Temp</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>91</width>
     <border_style>0</border_style>
@@ -354,7 +389,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>294</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>474</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0">
@@ -376,7 +411,7 @@ $(pv_value)</tooltip>
     <widget_type>Gauge</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <show_lolo>true</show_lolo>
@@ -391,23 +426,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7f14</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Gauge_3</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):TEMP_ADC</pv_name>
+    <pv_name>${UUT}:SYS:TEMP:ADC</pv_name>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -415,7 +455,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -450,7 +490,7 @@ $(pv_value)</tooltip>
     <widget_type>Gauge</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <show_lolo>true</show_lolo>
@@ -465,23 +505,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7f0a</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Gauge_4</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):TEMP_DAC</pv_name>
+    <pv_name>${UUT}:SYS:TEMP:DAC</pv_name>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -489,7 +534,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -527,7 +572,7 @@ $(pv_value)</tooltip>
     <widget_type>Thermometer</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>100</width>
     <show_lolo>true</show_lolo>
@@ -543,23 +588,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7e7f</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="128" blue="0" />
     </color_lo>
     <name>Thermometer</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="128" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):TEMP_ADC</pv_name>
+    <pv_name>${UUT}:SYS:TEMP:ADC</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <color_lolo>
@@ -569,7 +619,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </fill_color>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <unit>0</unit>
     <transparent_background>true</transparent_background>
     <limits_from_pv>false</limits_from_pv>
@@ -602,7 +652,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>172</width>
     <show_lolo>true</show_lolo>
@@ -616,23 +666,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7e53</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Meter</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):V1p8</pv_name>
+    <pv_name>${UUT}:SYS:V1p8</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -640,7 +695,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <show_value_label>true</show_value_label>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -675,7 +730,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>172</width>
     <show_lolo>true</show_lolo>
@@ -689,23 +744,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7df3</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Meter_1</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):V5p0</pv_name>
+    <pv_name>${UUT}:SYS:V5p0</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -713,7 +773,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <show_value_label>true</show_value_label>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -748,7 +808,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>172</width>
     <show_lolo>true</show_lolo>
@@ -762,23 +822,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7dec</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Meter_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):VN15</pv_name>
+    <pv_name>${UUT}:SYS:VN15</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -786,7 +851,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <show_value_label>true</show_value_label>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -821,7 +886,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>172</width>
     <show_lolo>true</show_lolo>
@@ -835,23 +900,28 @@ $(pv_value)</tooltip>
     <minimum>0.0</minimum>
     <wuid>-16723a3a:136a28bec2a:-7de5</wuid>
     <show_hihi>true</show_hihi>
-    <scale_format />
+    <scale_format></scale_format>
     <show_scale>true</show_scale>
     <color_lo>
       <color red="255" green="255" blue="0" />
     </color_lo>
     <name>Meter_3</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
-    <pv_name>$(UUT):VP15</pv_name>
+    <pv_name>${UUT}:SYS:VP15</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -859,7 +929,7 @@ $(pv_value)</tooltip>
       <color red="255" green="0" blue="0" />
     </color_lolo>
     <rules />
-    <value_label_format />
+    <value_label_format></value_label_format>
     <show_value_label>true</show_value_label>
     <needle_color>
       <color red="255" green="0" blue="0" />
@@ -885,12 +955,17 @@ $(pv_value)</tooltip>
     <rotation_angle>0.0</rotation_angle>
     <scripts />
     <height>31</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <name>Text Update</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>$(UUT):UPTIME</pv_name>
+    <pv_name>${UUT}:SYS:UPTIME</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -903,7 +978,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>97</width>
     <border_style>0</border_style>
@@ -929,6 +1004,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>34</height>
     <name>Label_3</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -939,7 +1019,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>$(UUT)  SYSTEM</text>
+    <text>${UUT}  SYSTEM</text>
     <font>
       <fontdata fontName="Sans" height="14" style="1" />
     </font>
@@ -954,7 +1034,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>12</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>162</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -965,6 +1045,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label_4</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -977,7 +1062,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>RAIL 1V8</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>121</width>
     <border_style>0</border_style>
@@ -990,7 +1075,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>486</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>24</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -1001,6 +1086,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label_5</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -1013,7 +1103,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>RAIL 5V0</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>121</width>
     <border_style>0</border_style>
@@ -1026,7 +1116,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>486</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>228</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -1037,6 +1127,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label_6</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -1049,7 +1144,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>RAIL +15V</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>121</width>
     <border_style>0</border_style>
@@ -1062,7 +1157,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>486</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>660</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
@@ -1073,6 +1168,11 @@ $(pv_value)</tooltip>
     <scripts />
     <height>25</height>
     <name>Label_7</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
     <background_color>
@@ -1085,7 +1185,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>RAIL -15V</text>
     <font>
-      <opifont.name>Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>121</width>
     <border_style>0</border_style>
@@ -1098,7 +1198,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <y>486</y>
     <wrap_words>true</wrap_words>
-    <tooltip />
+    <tooltip></tooltip>
     <x>438</x>
   </widget>
 </display>

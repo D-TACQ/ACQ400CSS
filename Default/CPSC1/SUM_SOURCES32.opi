@@ -509,14 +509,14 @@
     <wuid>-463b3227:13aa8926dd6:-662b</wuid>
     <scripts>
       <path pathString="ToggleAndSetAll.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">${UUT}:DACEN:1:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:2:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:3:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:4:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:5:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:6:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:7:SFP2</pv>
-        <pv trig="false">${UUT}:DACEN:8:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:1:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:2:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:3:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:4:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:5:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:6:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:7:SFP2</pv>
+        <pv trig="false">${UUT}:AO:DACEN:8:SFP2</pv>
         <pv trig="true">loc://${UUT}:SUMALL:SFP2:TR</pv>
       </path>
     </scripts>
@@ -567,14 +567,14 @@ $(pv_value)</tooltip>
     <wuid>-463b3227:13aa8926dd6:-661d</wuid>
     <scripts>
       <path pathString="ToggleAndSetAll.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">${UUT}:DACEN:1:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:2:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:3:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:4:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:5:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:6:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:7:SFP1</pv>
-        <pv trig="false">${UUT}:DACEN:8:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:1:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:2:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:3:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:4:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:5:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:6:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:7:SFP1</pv>
+        <pv trig="false">${UUT}:AO:DACEN:8:SFP1</pv>
         <pv trig="true">loc://${UUT}:SUMALL:SFP1:TR</pv>
       </path>
     </scripts>
@@ -625,14 +625,14 @@ $(pv_value)</tooltip>
     <wuid>-463b3227:13aa8926dd6:-6616</wuid>
     <scripts>
       <path pathString="ToggleAndSetAll.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">${UUT}:DACEN:1:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:2:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:3:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:4:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:5:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:6:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:7:SLOW</pv>
-        <pv trig="false">${UUT}:DACEN:8:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:1:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:2:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:3:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:4:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:5:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:6:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:7:SLOW</pv>
+        <pv trig="false">${UUT}:AO:DACEN:8:SLOW</pv>
         <pv trig="true">loc://${UUT}:SUMALL:SLOW:TR</pv>
       </path>
     </scripts>
@@ -683,14 +683,14 @@ $(pv_value)</tooltip>
     <wuid>-463b3227:13aa8926dd6:-660c</wuid>
     <scripts>
       <path pathString="ToggleAndSetAll.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">${UUT}:DACEN:1:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:2:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:3:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:4:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:5:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:6:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:7:WAVE</pv>
-        <pv trig="false">${UUT}:DACEN:8:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:1:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:2:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:3:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:4:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:5:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:6:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:7:WAVE</pv>
+        <pv trig="false">${UUT}:AO:DACEN:8:WAVE</pv>
         <pv trig="true">loc://${UUT}:SUMALL:WAVE:TR</pv>
       </path>
     </scripts>

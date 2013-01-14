@@ -89,7 +89,7 @@
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <axis_0_scale_format />
     <trace_0_x_pv />
-    <trace_0_y_pv>$(UUT):CH_PSU:$(PSU):$(FUN).VALA</trace_0_y_pv>
+    <trace_0_y_pv>${UUT}:AI:WF:PSU:${PSU}:${FUN}:uv.VALA</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
@@ -119,7 +119,7 @@ $(trace_0_y_pv_value)</tooltip>
     <plot_area_background_color>
       <color red="255" green="255" blue="255" />
     </plot_area_background_color>
-    <title>CPSC $(UUT) WAVEFORM $(FUN)</title>
+    <title>CPSC ${UUT} WAVEFORM ${FUN}</title>
     <pv_name />
     <axis_1_minimum>0.0</axis_1_minimum>
     <axis_0_minimum>0.0</axis_0_minimum>
@@ -155,7 +155,7 @@ $(trace_0_y_pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>$(UUT):UPTIME</pv_name>
+    <pv_name>${UUT}:SYS:UPTIME</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>

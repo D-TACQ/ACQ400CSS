@@ -89,7 +89,7 @@
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <axis_0_scale_format />
     <trace_0_x_pv />
-    <trace_0_y_pv>$(UUT):AI_PSU:$(PSU):$(FUN)</trace_0_y_pv>
+    <trace_0_y_pv>${UUT}:AI:PSU:${PSU}:${FUN}</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
@@ -119,7 +119,7 @@ $(trace_0_y_pv_value)</tooltip>
     <plot_area_background_color>
       <color red="255" green="255" blue="255" />
     </plot_area_background_color>
-    <title>CPSC $(UUT) AI CHART $(FUN) PSU $(PSU)</title>
+    <title>CPSC ${UUT} AI CHART ${FUN} PSU ${PSU}</title>
     <pv_name />
     <axis_1_minimum>-10.0</axis_1_minimum>
     <axis_0_minimum>0.0</axis_0_minimum>
