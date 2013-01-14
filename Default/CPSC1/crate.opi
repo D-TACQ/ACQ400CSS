@@ -4,7 +4,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <wuid>67dc0ead:1372d55cf01:-7a51</wuid>
+  <wuid>50cba77:13b1f8e2c35:-7b15</wuid>
   <boy_version>3.1.0.20120201</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
@@ -27,19 +27,63 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <fill_level>0.0</fill_level>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <wuid>50cba77:13b1f8e2c35:-63eb</wuid>
+    <scripts />
+    <height>623</height>
+    <anti_alias>true</anti_alias>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Rectangle</name>
+    <transparent>false</transparent>
+    <pv_name />
+    <background_color>
+      <color red="73" green="73" blue="85" />
+    </background_color>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Rectangle</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>1286</width>
+    <line_style>0</line_style>
+    <border_style>0</border_style>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <line_width>0</line_width>
+    <horizontal_fill>true</horizontal_fill>
+    <border_color>
+      <color red="0" green="0" blue="0" />
+    </border_color>
+    <actions hook="false" hook_all="false" />
+    <y>-12</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>-7</x>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <PSU>1</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-76cd</wuid>
+    <wuid>50cba77:13b1f8e2c35:-7808</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
+    <height>600</height>
     <name>Linking Container</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -52,7 +96,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -60,9 +104,45 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>24</x>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <visible>true</visible>
+    <wuid>50cba77:13b1f8e2c35:-77fe</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <zoom_to_fit>true</zoom_to_fit>
+    <height>600</height>
+    <name>Linking Container_1</name>
+    <opi_file>digio.opi</opi_file>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <group_name />
+    <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>145</width>
+    <border_style>3</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <actions hook="false" hook_all="false" />
+    <y>0</y>
+    <tooltip />
+    <x>568</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -70,13 +150,13 @@
       <PSU>2</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-76ba</wuid>
+    <wuid>50cba77:13b1f8e2c35:-7761</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_1</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_2</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -89,7 +169,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -97,9 +177,9 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>144</x>
+    <x>143</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -107,13 +187,13 @@
       <PSU>3</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-76ae</wuid>
+    <wuid>50cba77:13b1f8e2c35:-7739</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_2</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_3</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -126,7 +206,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -134,9 +214,9 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>270</x>
+    <x>282</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -144,13 +224,13 @@
       <PSU>4</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-76a2</wuid>
+    <wuid>50cba77:13b1f8e2c35:-771e</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_3</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_4</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -163,7 +243,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -171,9 +251,9 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>396</x>
+    <x>425</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -181,13 +261,13 @@
       <PSU>5</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-7687</wuid>
+    <wuid>50cba77:13b1f8e2c35:-76ee</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_4</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_5</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -200,7 +280,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -208,9 +288,9 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>516</x>
+    <x>709</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -218,13 +298,13 @@
       <PSU>6</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-7681</wuid>
+    <wuid>50cba77:13b1f8e2c35:-76d3</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_5</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_6</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -237,7 +317,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -245,9 +325,9 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>636</x>
+    <x>848</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -255,13 +335,13 @@
       <PSU>7</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-767b</wuid>
+    <wuid>50cba77:13b1f8e2c35:-76b8</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_6</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_7</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -274,7 +354,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -282,9 +362,9 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>762</x>
+    <x>984</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -292,13 +372,13 @@
       <PSU>8</PSU>
     </macros>
     <visible>true</visible>
-    <wuid>67dc0ead:1372d55cf01:-7675</wuid>
+    <wuid>50cba77:13b1f8e2c35:-769d</wuid>
     <auto_size>false</auto_size>
     <scripts />
     <zoom_to_fit>true</zoom_to_fit>
-    <height>253</height>
-    <name>Linking Container_7</name>
-    <opi_file>PSUDIO.opi</opi_file>
+    <height>600</height>
+    <name>Linking Container_8</name>
+    <opi_file>psu.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -311,7 +391,7 @@
     <font>
       <opifont.name>Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>144</width>
     <border_style>3</border_style>
     <rules />
     <border_width>1</border_width>
@@ -319,90 +399,8 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>66</y>
+    <y>0</y>
     <tooltip />
-    <x>888</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <show_units>true</show_units>
-    <wuid>64ba2db0:13732eaf3c8:-78ff</wuid>
-    <auto_size>false</auto_size>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <height>37</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Text Update</name>
-    <format_type>0</format_type>
-    <precision_from_pv>true</precision_from_pv>
-    <transparent>false</transparent>
-    <pv_name>${UUT}:SYS:UPTIME</pv_name>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Text Update</widget_type>
-    <enabled>true</enabled>
-    <text>######</text>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <precision>0</precision>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>115</width>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <horizontal_alignment>0</horizontal_alignment>
-    <actions hook="false" hook_all="false" />
-    <y>330</y>
-    <wrap_words>false</wrap_words>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>24</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <wuid>64ba2db0:13732eaf3c8:-78a8</wuid>
-    <auto_size>false</auto_size>
-    <scripts />
-    <height>35</height>
-    <name>Label</name>
-    <transparent>false</transparent>
-    <show_scrollbar>false</show_scrollbar>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Label</widget_type>
-    <enabled>true</enabled>
-    <text>${UUT} PSU CONTROL</text>
-    <font>
-      <fontdata fontName="Sans" height="14" style="1" />
-    </font>
-    <width>325</width>
-    <border_style>0</border_style>
-    <rules />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions hook="false" hook_all="false" />
-    <y>17</y>
-    <wrap_words>true</wrap_words>
-    <tooltip />
-    <x>360</x>
+    <x>1127</x>
   </widget>
 </display>

@@ -4,7 +4,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <wuid>72b9bb3d:1368df233b7:-8000</wuid>
+  <wuid>54ec50cc:136a08929b4:-7ffa</wuid>
   <boy_version>3.1.0.20120201</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
@@ -39,13 +39,13 @@
     <axis_0_log_scale>false</axis_0_log_scale>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>true</show_legend>
-    <y>24</y>
+    <y>72</y>
     <x>12</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
     <axis_1_visible>true</axis_1_visible>
-    <height>577</height>
-    <axis_1_maximum>100.0</axis_1_maximum>
+    <height>469</height>
+    <axis_1_maximum>10.0</axis_1_maximum>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -65,8 +65,8 @@
     <axis_0_auto_scale_threshold>0.0</axis_0_auto_scale_threshold>
     <trace_0_name>$(trace_0_y_pv)</trace_0_name>
     <trace_0_update_mode>0</trace_0_update_mode>
-    <axis_0_axis_title>Sample</axis_0_axis_title>
-    <wuid>72b9bb3d:1368df233b7:-7f8f</wuid>
+    <axis_0_axis_title>Time</axis_0_axis_title>
+    <wuid>54ec50cc:136a08929b4:-7f53</wuid>
     <axis_1_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_1_axis_color>
@@ -74,12 +74,12 @@
       <color red="0" green="0" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <axis_1_axis_title>micro-volts</axis_1_axis_title>
-    <axis_0_maximum>100.0</axis_0_maximum>
+    <axis_1_axis_title>Volts</axis_1_axis_title>
+    <axis_0_maximum>1000.0</axis_0_maximum>
     <axis_0_scale_font>
       <opifont.name>Default</opifont.name>
     </axis_0_scale_font>
-    <axis_0_time_format>0</axis_0_time_format>
+    <axis_0_time_format>4</axis_0_time_format>
     <axis_1_log_scale>false</axis_1_log_scale>
     <title_font>
       <fontdata fontName="Arial" height="12" style="1" />
@@ -89,19 +89,19 @@
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <axis_0_scale_format />
     <trace_0_x_pv />
-    <trace_0_y_pv>${UUT}:AI:WF:PSU:${PSU}:${FUN}:uv.VALA</trace_0_y_pv>
+    <trace_0_y_pv>${UUT}:AI:PSU:${PSU}:${FUN}</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
     <axis_1_auto_scale>true</axis_1_auto_scale>
-    <trace_0_concatenate_data>false</trace_0_concatenate_data>
+    <trace_0_concatenate_data>true</trace_0_concatenate_data>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
-    <show_plot_area_border>true</show_plot_area_border>
+    <show_plot_area_border>false</show_plot_area_border>
     <widget_type>XY Graph</widget_type>
     <enabled>true</enabled>
-    <width>793</width>
-    <trace_0_buffer_size>2048</trace_0_buffer_size>
+    <width>763</width>
+    <trace_0_buffer_size>1000</trace_0_buffer_size>
     <trigger_pv />
     <axis_count>2</axis_count>
     <transparent>false</transparent>
@@ -115,19 +115,19 @@ $(trace_0_y_pv_value)</tooltip>
     <axis_1_scale_font>
       <opifont.name>Default</opifont.name>
     </axis_1_scale_font>
-    <border_style>1</border_style>
+    <border_style>0</border_style>
     <plot_area_background_color>
       <color red="255" green="255" blue="255" />
     </plot_area_background_color>
-    <title>CPSC ${UUT} WAVEFORM ${FUN}</title>
+    <title>CPSC ${UUT} AI CHART ${FUN} PSU ${PSU}</title>
     <pv_name />
-    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_minimum>-10.0</axis_1_minimum>
     <axis_0_minimum>0.0</axis_0_minimum>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
     <scripts />
-    <trace_0_anti_alias>false</trace_0_anti_alias>
+    <trace_0_anti_alias>true</trace_0_anti_alias>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -139,97 +139,5 @@ $(trace_0_y_pv_value)</tooltip>
       <color red="200" green="200" blue="200" />
     </axis_1_grid_color>
     <trace_0_update_delay>0</trace_0_update_delay>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <show_units>true</show_units>
-    <wuid>-5d063e18:13697c9353d:-7fd2</wuid>
-    <auto_size>false</auto_size>
-    <rotation_angle>0.0</rotation_angle>
-    <scripts />
-    <height>25</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Text Update</name>
-    <format_type>0</format_type>
-    <precision_from_pv>true</precision_from_pv>
-    <transparent>false</transparent>
-    <pv_name>${UUT}:SYS:UPTIME</pv_name>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Text Update</widget_type>
-    <enabled>true</enabled>
-    <text>######</text>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <precision>0</precision>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>73</width>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <horizontal_alignment>0</horizontal_alignment>
-    <actions hook="false" hook_all="false" />
-    <y>42</y>
-    <wrap_words>false</wrap_words>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>702</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>-2994a025:1374fd330b0:-7f50</wuid>
-    <scripts />
-    <height>26</height>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Action Button</name>
-    <pv_name />
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Action Button</widget_type>
-    <enabled>true</enabled>
-    <text>PAUSE</text>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name>Default</opifont.name>
-    </font>
-    <width>115</width>
-    <border_style>0</border_style>
-    <push_action_index>0</push_action_index>
-    <image />
-    <rules />
-    <pv_value />
-    <toggle_button>false</toggle_button>
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>42</y>
-    <actions hook="false" hook_all="false">
-      <action type="EXECUTE_JAVASCRIPT">
-        <path>PauseGraph1.js</path>
-        <scriptText>importPackage(Packages.org.csstudio.opibuilder.scriptUtil);</scriptText>
-        <embedded>false</embedded>
-        <description />
-      </action>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>534</x>
   </widget>
 </display>

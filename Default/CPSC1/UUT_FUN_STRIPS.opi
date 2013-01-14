@@ -28,7 +28,7 @@
   <y>-1</y>
   <x>-1</x>
   <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0">
-    <trace_6_update_delay>100</trace_6_update_delay>
+    <trace_6_update_delay>0</trace_6_update_delay>
     <trace_1_trace_type>0</trace_1_trace_type>
     <trace_4_point_style>0</trace_4_point_style>
     <trace_0_trace_color>
@@ -36,7 +36,7 @@
     </trace_0_trace_color>
     <axis_0_auto_scale>true</axis_0_auto_scale>
     <trace_3_trace_type>0</trace_3_trace_type>
-    <trace_4_update_delay>100</trace_4_update_delay>
+    <trace_4_update_delay>0</trace_4_update_delay>
     <axis_1_time_format>0</axis_1_time_format>
     <trace_1_point_size>4</trace_1_point_size>
     <trace_0_plot_mode>0</trace_0_plot_mode>
@@ -64,7 +64,7 @@
     <trace_3_x_pv_value />
     <trace_4_x_pv />
     <trace_2_x_pv />
-    <trace_7_update_delay>100</trace_7_update_delay>
+    <trace_7_update_delay>0</trace_7_update_delay>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -77,11 +77,11 @@
     <axis_1_scale_format />
     <name>XY Graph</name>
     <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
-    <trace_4_buffer_size>100</trace_4_buffer_size>
+    <trace_4_buffer_size>1000</trace_4_buffer_size>
     <trace_0_line_width>1</trace_0_line_width>
     <trace_2_x_pv_value />
     <show_toolbar>true</show_toolbar>
-    <trace_1_update_delay>100</trace_1_update_delay>
+    <trace_1_update_delay>0</trace_1_update_delay>
     <trace_4_x_axis_index>0</trace_4_x_axis_index>
     <axis_1_show_grid>true</axis_1_show_grid>
     <axis_0_grid_color>
@@ -97,11 +97,11 @@
     <trace_1_anti_alias>true</trace_1_anti_alias>
     <trace_3_x_pv />
     <trace_0_update_mode>0</trace_0_update_mode>
-    <trace_1_buffer_size>100</trace_1_buffer_size>
-    <axis_0_axis_title>Primary X Axis (0)</axis_0_axis_title>
+    <trace_1_buffer_size>1000</trace_1_buffer_size>
+    <axis_0_axis_title>Time</axis_0_axis_title>
     <trace_3_line_width>1</trace_3_line_width>
     <wuid>54ec50cc:136a08929b4:-7f53</wuid>
-    <trace_2_buffer_size>100</trace_2_buffer_size>
+    <trace_2_buffer_size>1000</trace_2_buffer_size>
     <axis_1_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_1_axis_color>
@@ -111,7 +111,7 @@
     </foreground_color>
     <trace_1_update_mode>0</trace_1_update_mode>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <axis_1_axis_title>Primary Y Axis (1)</axis_1_axis_title>
+    <axis_1_axis_title>Volts</axis_1_axis_title>
     <trace_4_anti_alias>true</trace_4_anti_alias>
     <trace_7_x_pv_value />
     <trace_4_plot_mode>0</trace_4_plot_mode>
@@ -138,14 +138,14 @@
     <axis_1_log_scale>false</axis_1_log_scale>
     <trace_1_point_style>0</trace_1_point_style>
     <trace_5_x_pv />
-    <trace_7_y_pv>$(UUT):AI_PSU:8:$(FUN)</trace_7_y_pv>
+    <trace_7_y_pv>${UUT}:AI:PSU:8:${FUN}</trace_7_y_pv>
     <trace_5_point_style>0</trace_5_point_style>
     <trace_2_plot_mode>0</trace_2_plot_mode>
     <title_font>
       <fontdata fontName="Arial" height="12" style="1" />
     </title_font>
-    <trace_6_y_pv>$(UUT):AI_PSU:7:$(FUN)</trace_6_y_pv>
-    <trace_3_buffer_size>100</trace_3_buffer_size>
+    <trace_6_y_pv>${UUT}:AI:PSU:7:${FUN}</trace_6_y_pv>
+    <trace_3_buffer_size>1000</trace_3_buffer_size>
     <axis_1_dash_grid_line>true</axis_1_dash_grid_line>
     <axis_0_visible>false</axis_0_visible>
     <trace_6_point_size>4</trace_6_point_size>
@@ -155,27 +155,27 @@
     <trace_6_concatenate_data>true</trace_6_concatenate_data>
     <axis_0_scale_format />
     <trace_4_name>$(trace_4_y_pv)</trace_4_name>
-    <trace_7_buffer_size>100</trace_7_buffer_size>
+    <trace_7_buffer_size>1000</trace_7_buffer_size>
     <trace_4_trace_type>0</trace_4_trace_type>
     <trace_0_x_pv />
     <trace_7_line_width>1</trace_7_line_width>
-    <trace_0_y_pv>$(UUT):AI_PSU:1:$(FUN)</trace_0_y_pv>
+    <trace_0_y_pv>${UUT}:AI:PSU:1:${FUN}</trace_0_y_pv>
     <trace_5_point_size>4</trace_5_point_size>
     <trace_6_x_pv_value />
     <trace_6_update_mode>0</trace_6_update_mode>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
-    <trace_5_buffer_size>100</trace_5_buffer_size>
+    <trace_5_buffer_size>1000</trace_5_buffer_size>
     <trace_3_point_style>0</trace_3_point_style>
     <axis_1_auto_scale>true</axis_1_auto_scale>
     <trace_7_x_axis_index>0</trace_7_x_axis_index>
-    <trace_2_update_delay>100</trace_2_update_delay>
+    <trace_2_update_delay>0</trace_2_update_delay>
     <trace_4_point_size>4</trace_4_point_size>
     <trace_0_concatenate_data>true</trace_0_concatenate_data>
     <trace_5_y_axis_index>1</trace_5_y_axis_index>
     <trace_7_update_mode>0</trace_7_update_mode>
-    <trace_3_y_pv>$(UUT):AI_PSU:4:$(FUN)</trace_3_y_pv>
+    <trace_3_y_pv>${UUT}:AI:PSU:4:${FUN}</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
     <trace_1_x_pv />
@@ -186,7 +186,7 @@
     <widget_type>XY Graph</widget_type>
     <enabled>true</enabled>
     <width>763</width>
-    <trace_0_buffer_size>100</trace_0_buffer_size>
+    <trace_0_buffer_size>1000</trace_0_buffer_size>
     <trigger_pv />
     <trace_6_trace_color>
       <color red="255" green="0" blue="240" />
@@ -199,7 +199,7 @@
     <trace_2_anti_alias>true</trace_2_anti_alias>
     <trace_7_trace_type>0</trace_7_trace_type>
     <axis_0_dash_grid_line>true</axis_0_dash_grid_line>
-    <trace_5_update_delay>100</trace_5_update_delay>
+    <trace_5_update_delay>1000</trace_5_update_delay>
     <trace_0_x_axis_index>0</trace_0_x_axis_index>
     <trace_6_y_axis_index>1</trace_6_y_axis_index>
     <trace_6_y_pv_value />
@@ -207,7 +207,7 @@
     <tooltip>$(trace_0_y_pv)
 $(trace_0_y_pv_value)</tooltip>
     <border_alarm_sensitive>true</border_alarm_sensitive>
-    <trace_4_y_pv>$(UUT):AI_PSU:5:$(FUN)</trace_4_y_pv>
+    <trace_4_y_pv>${UUT}:AI:PSU:5:${FUN}</trace_4_y_pv>
     <trace_1_x_axis_index>0</trace_1_x_axis_index>
     <trace_6_name>$(trace_6_y_pv)</trace_6_name>
     <trace_0_y_axis_index>1</trace_0_y_axis_index>
@@ -221,8 +221,8 @@ $(trace_0_y_pv_value)</tooltip>
     </plot_area_background_color>
     <trace_2_concatenate_data>true</trace_2_concatenate_data>
     <trace_2_point_style>0</trace_2_point_style>
-    <title>CPSC $(UUT) AI CHART $(FUN)</title>
-    <trace_1_y_pv>$(UUT):AI_PSU:2:$(FUN)</trace_1_y_pv>
+    <title>CPSC ${UUT} AI CHART ${FUN}</title>
+    <trace_1_y_pv>${UUT}:AI:PSU:2:${FUN}</trace_1_y_pv>
     <pv_name />
     <axis_1_minimum>-10.0</axis_1_minimum>
     <trace_3_plot_mode>0</trace_3_plot_mode>
@@ -238,7 +238,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_7_trace_color>
       <color red="243" green="132" blue="132" />
     </trace_7_trace_color>
-    <trace_3_update_delay>100</trace_3_update_delay>
+    <trace_3_update_delay>0</trace_3_update_delay>
     <scripts />
     <trace_0_anti_alias>true</trace_0_anti_alias>
     <trace_4_x_pv_value />
@@ -246,7 +246,7 @@ $(trace_0_y_pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <trace_6_buffer_size>100</trace_6_buffer_size>
+    <trace_6_buffer_size>1000</trace_6_buffer_size>
     <trace_1_trace_color>
       <color red="242" green="26" blue="26" />
     </trace_1_trace_color>
@@ -260,7 +260,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_5_x_pv_value />
     <trace_5_line_width>1</trace_5_line_width>
     <trace_4_y_pv_value />
-    <trace_5_y_pv>$(UUT):AI_PSU:6:$(FUN)</trace_5_y_pv>
+    <trace_5_y_pv>${UUT}:AI:PSU:6:${FUN}</trace_5_y_pv>
     <trace_7_y_pv_value />
     <trace_5_x_axis_index>0</trace_5_x_axis_index>
     <trace_1_y_axis_index>1</trace_1_y_axis_index>
@@ -269,7 +269,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_1_concatenate_data>true</trace_1_concatenate_data>
     <trace_6_x_pv />
     <rules />
-    <trace_2_y_pv>$(UUT):AI_PSU:3:$(FUN)</trace_2_y_pv>
+    <trace_2_y_pv>${UUT}:AI:PSU:3:${FUN}</trace_2_y_pv>
     <trace_0_y_pv_value />
     <trace_0_trace_type>0</trace_0_trace_type>
     <axis_1_grid_color>
@@ -277,7 +277,7 @@ $(trace_0_y_pv_value)</tooltip>
     </axis_1_grid_color>
     <trace_3_y_pv_value />
     <trace_7_concatenate_data>true</trace_7_concatenate_data>
-    <trace_0_update_delay>100</trace_0_update_delay>
+    <trace_0_update_delay>0</trace_0_update_delay>
     <trace_7_name>$(trace_7_y_pv)</trace_7_name>
   </widget>
 </display>

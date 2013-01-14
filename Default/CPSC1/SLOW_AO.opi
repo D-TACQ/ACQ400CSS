@@ -45,7 +45,7 @@
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>$(UUT) SLOW AO</text>
+    <text>${UUT} SLOW AO</text>
     <font>
       <fontdata fontName="Sans" height="14" style="1" />
     </font>
@@ -66,7 +66,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO1</AOCH>
+      <AOCH>1</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d68</wuid>
@@ -103,7 +103,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO2</AOCH>
+      <AOCH>2</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d4f</wuid>
@@ -140,7 +140,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO3</AOCH>
+      <AOCH>3</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d44</wuid>
@@ -177,7 +177,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO4</AOCH>
+      <AOCH>4</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d39</wuid>
@@ -214,7 +214,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO5</AOCH>
+      <AOCH>5</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d1f</wuid>
@@ -251,7 +251,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO6</AOCH>
+      <AOCH>6</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d1a</wuid>
@@ -288,7 +288,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO7</AOCH>
+      <AOCH>7</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d15</wuid>
@@ -325,7 +325,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <AOCH>AO8</AOCH>
+      <AOCH>8</AOCH>
     </macros>
     <visible>true</visible>
     <wuid>28c63e78:137280d95d5:-7d10</wuid>
@@ -366,7 +366,95 @@
     <scripts />
     <height>31</height>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <name>Action Button</name>
+    <name>id_button</name>
+    <pv_name />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>Channel Id</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name>Default</opifont.name>
+    </font>
+    <width>151</width>
+    <border_style>0</border_style>
+    <push_action_index>8</push_action_index>
+    <image />
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>528</y>
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:1</pv_name>
+        <value>0.1</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:2</pv_name>
+        <value>0.2</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:3</pv_name>
+        <value>0.3</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:4</pv_name>
+        <value>0.4</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:5</pv_name>
+        <value>0.5</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:6</pv_name>
+        <value>0.6</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:7</pv_name>
+        <value>0.7</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:AO:SLOW_SET:CH:8</pv_name>
+        <value>0.8</value>
+        <timeout>10</timeout>
+        <description />
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>244</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>5ba0fa11:13a91b53636:-7ec9</wuid>
+    <scripts />
+    <height>31</height>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>zero_all_button</name>
     <pv_name />
     <background_color>
       <color red="240" green="240" blue="240" />
@@ -392,52 +480,52 @@
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>540</y>
+    <y>528</y>
     <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO1</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:1</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO2</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:2</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO3</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:3</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO4</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:4</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO5</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:5</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO6</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:6</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO7</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:7</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
       </action>
       <action type="WRITE_PV">
-        <pv_name>$(UUT):SLOW_SET_AO8</pv_name>
+        <pv_name>${UUT}:AO:SLOW_SET:CH:8</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <description />
