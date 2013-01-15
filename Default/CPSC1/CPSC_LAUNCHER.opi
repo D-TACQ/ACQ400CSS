@@ -899,10 +899,23 @@ $(pv_value)</tooltip>
     </font>
     <width>97</width>
     <no_animation>false</no_animation>
+    <flip_horizontal>false</flip_horizontal>
+    <permutation_matrix>
+      <row>
+        <col>1.0</col>
+        <col>0.0</col>
+      </row>
+      <row>
+        <col>0.0</col>
+        <col>1.0</col>
+      </row>
+    </permutation_matrix>
     <crop_top>0</crop_top>
     <border_style>0</border_style>
     <rules />
+    <flip_vertical>false</flip_vertical>
     <crop_bottom>0</crop_bottom>
+    <degree>0</degree>
     <border_width>1</border_width>
     <image_file></image_file>
     <border_color>
@@ -1460,11 +1473,11 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
-        <pv trig="true">loc://SLOW_AO</pv>
+        <pv trig="true">loc://fungen</pv>
       </path>
     </scripts>
     <height>37</height>
-    <name>AWG</name>
+    <name>fungen</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -1499,7 +1512,7 @@ $(pv_value)</tooltip>
     <y>70</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://SLOW_AO</pv_name>
+        <pv_name>loc://fungen</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <description></description>
