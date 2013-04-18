@@ -5,7 +5,7 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>-16723a3a:136a28bec2a:-7fd1</wuid>
-  <boy_version>3.1.2.20120828</boy_version>
+  <boy_version>3.1.4.20121219</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -32,164 +32,6 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
-  <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0">
-    <level_lo>20.0</level_lo>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <show_lo>true</show_lo>
-    <scripts />
-    <height>151</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="0" green="64" blue="128" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Gauge</widget_type>
-    <show_minor_ticks>true</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
-    </font>
-    <width>151</width>
-    <show_lolo>true</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>true</show_markers>
-    <show_hi>true</show_hi>
-    <maximum>100.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>0.0</minimum>
-    <wuid>-16723a3a:136a28bec2a:-7f9d</wuid>
-    <show_hihi>true</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>true</show_scale>
-    <color_lo>
-      <color red="255" green="255" blue="0" />
-    </color_lo>
-    <name>Gauge</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <color_hi>
-      <color red="255" green="255" blue="0" />
-    </color_hi>
-    <pv_name>${UUT}:SYS:TEMP:BB:0</pv_name>
-    <foreground_color>
-      <color red="255" green="255" blue="255" />
-    </foreground_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <ramp_gradient>true</ramp_gradient>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <rules />
-    <value_label_format></value_label_format>
-    <transparent_background>true</transparent_background>
-    <needle_color>
-      <color red="255" green="0" blue="0" />
-    </needle_color>
-    <limits_from_pv>false</limits_from_pv>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>102</y>
-    <actions hook="false" hook_all="false" />
-    <x>132</x>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0">
-    <level_lo>20.0</level_lo>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <show_lo>true</show_lo>
-    <scripts />
-    <height>151</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="0" green="64" blue="128" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Gauge</widget_type>
-    <show_minor_ticks>true</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
-    </font>
-    <width>151</width>
-    <show_lolo>true</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>true</show_markers>
-    <show_hi>true</show_hi>
-    <maximum>100.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>0.0</minimum>
-    <wuid>-16723a3a:136a28bec2a:-7f7f</wuid>
-    <show_hihi>true</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>true</show_scale>
-    <color_lo>
-      <color red="255" green="255" blue="0" />
-    </color_lo>
-    <name>Gauge_1</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <color_hi>
-      <color red="255" green="255" blue="0" />
-    </color_hi>
-    <pv_name>${UUT}:SYS:TEMP:BB:1</pv_name>
-    <foreground_color>
-      <color red="255" green="255" blue="255" />
-    </foreground_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <ramp_gradient>true</ramp_gradient>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <rules />
-    <value_label_format></value_label_format>
-    <transparent_background>true</transparent_background>
-    <needle_color>
-      <color red="255" green="0" blue="0" />
-    </needle_color>
-    <limits_from_pv>false</limits_from_pv>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>108</y>
-    <actions hook="false" hook_all="false" />
-    <x>324</x>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.gauge" version="1.0">
     <level_lo>20.0</level_lo>
     <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -265,7 +107,7 @@ $(pv_value)</tooltip>
     <level_lolo>10.0</level_lolo>
     <y>108</y>
     <actions hook="false" hook_all="false" />
-    <x>528</x>
+    <x>318</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
   </widget>
