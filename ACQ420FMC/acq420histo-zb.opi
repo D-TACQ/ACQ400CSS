@@ -3,10 +3,10 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <trace_0_y_pv>ZC702_001:AI:WF:01</trace_0_y_pv>
-    <trace_1_y_pv>ZC702_001:AI:WF:02</trace_1_y_pv>
-    <trace_2_y_pv>ZC702_001:AI:WF:03</trace_2_y_pv>
-    <trace_3_y_pv>ZC702_001:AI:WF:04</trace_3_y_pv>
+    <trace_0_y_pv>ZEDBOARD_001:AI:HG:1</trace_0_y_pv>
+    <trace_1_y_pv>ZEDBOARD_001:AI:HG:2</trace_1_y_pv>
+    <trace_2_y_pv>ZEDBOARD_001:AI:HG:3</trace_2_y_pv>
+    <trace_3_y_pv>ZEDBOARD_001:AI:HG:4</trace_3_y_pv>
   </macros>
   <wuid>71575ba8:13e1770f4c8:-8000</wuid>
   <boy_version>3.1.4.20121219</boy_version>
@@ -103,7 +103,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <opi_file>UUT_FUN_XMON.opi</opi_file>
+    <opi_file>HISTO.opi</opi_file>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -124,8 +124,8 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>-6</y>
+    <y>6</y>
     <tooltip></tooltip>
-    <x>6</x>
+    <x>12</x>
   </widget>
 </display>
