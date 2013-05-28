@@ -49,17 +49,17 @@
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>lamp_test.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>247</width>
     <border_style>3</border_style>
@@ -68,10 +68,10 @@
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>24</y>
     <actions hook="false" hook_all="false" />
-    <x>24</x>
+    <y>24</y>
     <tooltip></tooltip>
+    <x>24</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -90,17 +90,17 @@
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>awg_test.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>361</width>
     <border_style>3</border_style>
@@ -109,10 +109,10 @@
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>162</y>
     <actions hook="false" hook_all="false" />
-    <x>306</x>
+    <y>162</y>
     <tooltip></tooltip>
+    <x>306</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
@@ -139,7 +139,7 @@
     <enabled>true</enabled>
     <text>${UUT} OWNER: </text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>139</width>
     <border_style>0</border_style>
@@ -172,7 +172,7 @@
     <enabled>true</enabled>
     <text></text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <border_style>3</border_style>
@@ -236,7 +236,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>${UUT} IP: </text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>139</width>
     <border_style>0</border_style>
@@ -269,7 +269,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text></text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>115</width>
     <border_style>3</border_style>
@@ -333,7 +333,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Software Version</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>139</width>
     <border_style>0</border_style>
@@ -374,7 +374,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>FPGA Version</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>139</width>
     <border_style>0</border_style>
@@ -423,7 +423,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>223</width>
     <border_style>0</border_style>
@@ -474,7 +474,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>151</width>
     <border_style>0</border_style>
@@ -524,7 +524,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>97</width>
     <border_style>3</border_style>
@@ -569,7 +569,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>SFP ADDR</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>73</width>
     <border_style>0</border_style>
@@ -610,7 +610,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Internal Fclk</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>97</width>
     <border_style>0</border_style>
@@ -658,7 +658,7 @@ $(pv_value)</tooltip>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>121</width>
     <border_style>3</border_style>
@@ -714,7 +714,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>55</width>
     <border_style>0</border_style>
@@ -763,7 +763,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Disable</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>61</width>
     <border_style>0</border_style>

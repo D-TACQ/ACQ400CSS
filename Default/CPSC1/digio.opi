@@ -5,7 +5,7 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>-2994a025:1374fd330b0:-7de5</wuid>
-  <boy_version>3.1.2.20120828</boy_version>
+  <boy_version>3.1.4.20121219</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -150,7 +150,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:WAVTRIG</pv_name>
     <background_color>
@@ -244,7 +244,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:MASTRIG</pv_name>
     <background_color>
@@ -338,7 +338,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:SSCLK</pv_name>
     <background_color>
@@ -432,7 +432,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:FSCLK</pv_name>
     <background_color>
@@ -526,7 +526,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SYS:digout2</pv_name>
     <background_color>
@@ -620,7 +620,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SYS:digout1</pv_name>
     <background_color>
@@ -714,7 +714,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SYS:pwrgood</pv_name>
     <background_color>
@@ -808,62 +808,9 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Red0" red="55" green="0" blue="0" />
+      <color name="Red0" red="80" green="0" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:LED:2:RED</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <off_label>OFF</off_label>
-    <widget_type>LED</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
-    </font>
-    <width>19</width>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <rules />
-    <pv_value />
-    <bit>-1</bit>
-    <border_width>1</border_width>
-    <on_label>ON</on_label>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>276</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>0</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>50cba77:13b1f8e2c35:-7ddf</wuid>
-    <scripts />
-    <square_led>false</square_led>
-    <on_color>
-      <color name="Blue" red="0" green="0" blue="255" />
-    </on_color>
-    <height>19</height>
-    <data_type>0</data_type>
-    <name>LED_8</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <show_boolean_label>false</show_boolean_label>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <off_color>
-      <color name="Blue0" red="0" green="0" blue="55" />
-    </off_color>
-    <pv_name>${UUT}:SIG:LED:4:BLUE</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -897,6 +844,59 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
+    <wuid>50cba77:13b1f8e2c35:-7ddf</wuid>
+    <scripts />
+    <square_led>false</square_led>
+    <on_color>
+      <color name="Blue" red="0" green="0" blue="255" />
+    </on_color>
+    <height>19</height>
+    <data_type>0</data_type>
+    <name>LED_8</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <show_boolean_label>false</show_boolean_label>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <off_color>
+      <color name="Blue0" red="0" green="0" blue="80" />
+    </off_color>
+    <pv_name>${UUT}:SIG:LED:4:BLUE</pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <off_label>OFF</off_label>
+    <widget_type>LED</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>19</width>
+    <border_style>0</border_style>
+    <effect_3d>true</effect_3d>
+    <rules />
+    <pv_value />
+    <bit>-1</bit>
+    <border_width>1</border_width>
+    <on_label>ON</on_label>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <actions hook="false" hook_all="false" />
+    <y>276</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>0</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
     <wuid>50cba77:13b1f8e2c35:-7dd8</wuid>
     <scripts />
     <square_led>false</square_led>
@@ -914,7 +914,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Yellow0" red="55" green="55" blue="0" />
+      <color name="Yellow0" red="80" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:LED:3:AMBER</pv_name>
     <background_color>
@@ -942,7 +942,7 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>240</y>
+    <y>258</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>0</x>
@@ -967,7 +967,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SIG:LED:1:GREEN</pv_name>
     <background_color>
@@ -995,7 +995,7 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>258</y>
+    <y>240</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>0</x>
@@ -1020,7 +1020,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SFP:1:RXUP</pv_name>
     <background_color>
@@ -1196,7 +1196,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SYS:pwrgood</pv_name>
     <background_color>
@@ -1249,7 +1249,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Blue0" red="0" green="0" blue="55" />
+      <color name="Blue0" red="0" green="0" blue="80" />
     </off_color>
     <pv_name>${UUT}:SFP:1:TXUP</pv_name>
     <background_color>
@@ -1302,7 +1302,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Green0" red="0" green="55" blue="0" />
+      <color name="Green0" red="0" green="80" blue="0" />
     </off_color>
     <pv_name>${UUT}:SFP:2:RXUP</pv_name>
     <background_color>
@@ -1355,7 +1355,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Blue0" red="0" green="0" blue="55" />
+      <color name="Blue0" red="0" green="0" blue="80" />
     </off_color>
     <pv_name>${UUT}:SFP:2:TXUP</pv_name>
     <background_color>
@@ -1408,7 +1408,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <off_color>
-      <color name="Red0" red="55" green="0" blue="0" />
+      <color name="Red0" red="80" green="0" blue="0" />
     </off_color>
     <pv_name>${UUT}:PSU:FAULT</pv_name>
     <background_color>
