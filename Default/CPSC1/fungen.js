@@ -48,29 +48,30 @@ var N  = PVUtil.getLong(pvArray[ii++]);
 var delay = PVUtil.getLong(pvArray[ii++]);
 // no way to get a js array from an array PV ?
 
-var yPV = pvArray[ch-1];
-
-var yArray = DataUtil.createDoubleArray(N);
-
-var fx;
-if (fxs == "sine") {
-	fx = sine_fun;
-}else if (fxs == "exp"){
-	fx = exp_fun;
-}else if (fxs == "impulse") {
-	fx = impulse_fun;
-}else{
-	fx = ramp_fun;
-}
-
-for (ii = 0; ii < N; ++ii){
-	if (ii < delay){
-		yArray[ii] = 0;
+if (ch > 0){
+	var yPV = pvArray[ch-1];
+	var yArray = DataUtil.createDoubleArray(N);
+	var fx;
+	
+	if (fxs == "sine") {
+		fx = sine_fun;
+	}else if (fxs == "exp"){
+		fx = exp_fun;
+	}else if (fxs == "impulse") {
+		fx = impulse_fun;
 	}else{
-		yArray[ii] = (K + A * fx(ii-delay, N))/10 * (1<<19);
+		fx = ramp_fun;
 	}
+	
+	for (ii = 0; ii < N; ++ii){
+		if (ii < delay){
+			yArray[ii] = 0;
+		}else{
+			yArray[ii] = (K + A * fx(ii-delay, N))/10 * (1<<19);
+		}
+	}
+	
+	yPV.setValue(yArray);
+	load_awgPV.setValue(1);
+	sample_countPV.setValue(String(N));
 }
-
-yPV.setValue(yArray);
-load_awgPV.setValue(1);
-sample_countPV.setValue(String(N));
