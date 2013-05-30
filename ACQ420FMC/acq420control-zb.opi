@@ -330,4 +330,56 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <x>72</x>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <minimum>-Infinity</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-39b9afe3:13ef62dc033:-7f24</wuid>
+    <scripts />
+    <height>49</height>
+    <name>Spinner</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <page_increment>10.0</page_increment>
+    <precision_from_pv>false</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:${SITE}:INTCLK_HZ</pv_name>
+    <buttons_on_left>false</buttons_on_left>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Spinner</widget_type>
+    <enabled>true</enabled>
+    <step_increment>1.0</step_increment>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>3</precision>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>3</border_style>
+    <format>0</format>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <maximum>Infinity</maximum>
+    <limits_from_pv>true</limits_from_pv>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>156</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>366</x>
+  </widget>
 </display>
