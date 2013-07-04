@@ -78,7 +78,7 @@
     <visible>true</visible>
     <wuid>29c7ec0d:13fa685d3e2:-7cba</wuid>
     <scripts />
-    <height>31</height>
+    <height>29</height>
     <name>Combo</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
@@ -118,10 +118,10 @@
     </border_color>
     <items_from_pv>false</items_from_pv>
     <actions hook="false" hook_all="false" />
-    <y>72</y>
+    <y>73</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>30</x>
+    <x>24</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
@@ -268,6 +268,63 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://LAUNCH</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <description></description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>366</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>1da43eb4:13fa989d52f:-7f5d</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://HISTO</pv>
+      </path>
+    </scripts>
+    <height>31</height>
+    <name>acq420histo</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>acq420 histo</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image></image>
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>123</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://HISTO</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <description></description>
