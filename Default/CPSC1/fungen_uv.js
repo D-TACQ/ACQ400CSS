@@ -67,11 +67,8 @@ if (ch > 0){
 		if (ii < delay){
 			yArray[ii] = 0;
 		}else{
-			var yy = (K + A * fx(ii-delay, N))/10 * (1<<19);
-			if (yy >= 1<<19) yy = (1<<19) -1;
-			if (yy < -1<<19) yy = -1 << 19;
-			yArray[ii] = yy;
-			
+			var yy = (K + A * fx(ii-delay, N)) * 1000000;
+			yArray[ii] = yy;			
 		}
 	}
 	
