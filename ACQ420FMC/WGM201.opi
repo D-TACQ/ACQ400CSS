@@ -4,7 +4,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <wuid>29c7ec0d:13fa685d3e2:-7de0</wuid>
+  <wuid>-6bd374c6:14098791bb4:-7f0a</wuid>
   <boy_version>3.1.4.20130717</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
@@ -32,13 +32,149 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>true</actions_from_pv>
+    <wuid>-6bd374c6:14098791bb4:-7e6c</wuid>
+    <scripts />
+    <height>37</height>
+    <name>Menu Button</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:WGM:TYPE</pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>127</width>
+    <border_style>6</border_style>
+    <label></label>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>54</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>72</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>true</actions_from_pv>
+    <wuid>-6bd374c6:14098791bb4:-7d78</wuid>
+    <scripts />
+    <height>37</height>
+    <name>Menu Button_1</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:WGM:EN</pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>127</width>
+    <border_style>6</border_style>
+    <label>ENABLE</label>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>54</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>222</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <minimum>-Infinity</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-6bd374c6:14098791bb4:-7ca8</wuid>
+    <scripts />
+    <height>37</height>
+    <name>Spinner</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <page_increment>10.0</page_increment>
+    <precision_from_pv>false</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:WGM:FREQ:Hz</pv_name>
+    <buttons_on_left>false</buttons_on_left>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Spinner</widget_type>
+    <enabled>true</enabled>
+    <step_increment>1.0</step_increment>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>3</precision>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>115</width>
+    <border_style>3</border_style>
+    <format>0</format>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <maximum>Infinity</maximum>
+    <limits_from_pv>false</limits_from_pv>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>156</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>72</x>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
-    <wuid>29c7ec0d:13fa685d3e2:-7d75</wuid>
+    <wuid>-6bd374c6:14098791bb4:-7c08</wuid>
     <auto_size>false</auto_size>
     <scripts />
-    <height>37</height>
+    <height>31</height>
     <name>Label</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -55,11 +191,11 @@
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>UUT</text>
+    <text>Mode</text>
     <font>
       <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>109</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
@@ -71,65 +207,15 @@
     <y>12</y>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
-    <x>30</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0">
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>29c7ec0d:13fa685d3e2:-7cba</wuid>
-    <scripts />
-    <height>33</height>
-    <name>Combo</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>false</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <pv_name>loc://UUT</pv_name>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Combo</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <width>115</width>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <items>
-      <s>ZEDBOARD_001</s>
-      <s>zb_010</s>
-      <s>zb_011</s>
-      <s>zb_012</s>
-      <s>zb_013</s>
-      <s>zb_014</s>
-      <s>acq2006_001</s>
-    </items>
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <items_from_pv>false</items_from_pv>
-    <actions hook="false" hook_all="false" />
-    <y>73</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>24</x>
+    <x>78</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
-    <wuid>29c7ec0d:13fa685d3e2:-7c31</wuid>
+    <wuid>-6bd374c6:14098791bb4:-7bfe</wuid>
     <auto_size>false</auto_size>
     <scripts />
-    <height>37</height>
+    <height>31</height>
     <name>Label_1</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -146,11 +232,11 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>SITE</text>
+    <text>Frequency</text>
     <font>
       <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
-    <width>115</width>
+    <width>109</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
@@ -159,293 +245,195 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>12</y>
+    <y>114</y>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
-    <x>186</x>
+    <x>75</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
+  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
+    <minimum>-1.7976931348623157E308</minimum>
     <vertical_alignment>1</vertical_alignment>
-    <multiline_input>false</multiline_input>
-    <auto_size>false</auto_size>
+    <wuid>-6bd374c6:14098791bb4:-7be9</wuid>
     <scripts />
     <height>37</height>
+    <name>Spinner_1</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <precision_from_pv>true</precision_from_pv>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <page_increment>10.0</page_increment>
+    <precision_from_pv>false</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:WGM:OFFSET</pv_name>
+    <buttons_on_left>false</buttons_on_left>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <widget_type>Text Input</widget_type>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Spinner</widget_type>
     <enabled>true</enabled>
-    <text></text>
+    <step_increment>1.0</step_increment>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>3</precision>
     <font>
       <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>115</width>
     <border_style>3</border_style>
+    <format>0</format>
+    <rules />
     <pv_value />
     <border_width>1</border_width>
     <maximum>1.7976931348623157E308</maximum>
-    <minimum>-1.7976931348623157E308</minimum>
-    <show_units>true</show_units>
-    <wuid>29c7ec0d:13fa685d3e2:-7a55</wuid>
-    <rotation_angle>0.0</rotation_angle>
-    <name>Text Input</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <format_type>0</format_type>
-    <transparent>false</transparent>
-    <selector_type>0</selector_type>
-    <pv_name>loc://UUT</pv_name>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <precision>0</precision>
-    <confirm_message></confirm_message>
-    <rules />
     <limits_from_pv>false</limits_from_pv>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>120</y>
+    <y>156</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>30</x>
+    <x>222</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
-    <wuid>29c7ec0d:13fa685d3e2:-7986</wuid>
-    <scripts>
-      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://LAUNCH</pv>
-      </path>
-    </scripts>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-6bd374c6:14098791bb4:-7be8</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
     <height>31</height>
-    <name>acq420</name>
+    <name>Label_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Offset</text>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+    <width>109</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>114</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>225</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <minimum>-1.7976931348623157E308</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-6bd374c6:14098791bb4:-7bde</wuid>
+    <scripts />
+    <height>37</height>
+    <name>Spinner_2</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name></pv_name>
+    <page_increment>10.0</page_increment>
+    <precision_from_pv>false</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:WGM:AMP</pv_name>
+    <buttons_on_left>false</buttons_on_left>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color red="255" green="255" blue="255" />
     </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <widget_type>Action Button</widget_type>
+    <widget_type>Spinner</widget_type>
     <enabled>true</enabled>
-    <text>acq420</text>
+    <step_increment>1.0</step_increment>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>3</precision>
     <font>
       <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
-    <width>103</width>
-    <border_style>0</border_style>
-    <push_action_index>0</push_action_index>
-    <image></image>
+    <width>115</width>
+    <border_style>3</border_style>
+    <format>0</format>
     <rules />
     <pv_value />
-    <toggle_button>false</toggle_button>
     <border_width>1</border_width>
+    <maximum>1.7976931348623157E308</maximum>
+    <limits_from_pv>false</limits_from_pv>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>73</y>
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://LAUNCH</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <description></description>
-      </action>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>186</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>1da43eb4:13fa989d52f:-7f5d</wuid>
-    <scripts>
-      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://HISTO</pv>
-      </path>
-    </scripts>
-    <height>31</height>
-    <name>acq420histo</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <pv_name></pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Action Button</widget_type>
-    <enabled>true</enabled>
-    <text>acq420 histo</text>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <width>103</width>
-    <border_style>0</border_style>
-    <push_action_index>0</push_action_index>
-    <image></image>
-    <rules />
-    <pv_value />
-    <toggle_button>false</toggle_button>
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>123</y>
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://HISTO</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <description></description>
-      </action>
-    </actions>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>156</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>366</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
-    <wuid>6d01c0ac:1403926aae8:-7f39</wuid>
-    <scripts>
-      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://PLOT</pv>
-      </path>
-    </scripts>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-6bd374c6:14098791bb4:-7bdd</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
     <height>31</height>
-    <name>acq420_plot</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <name>Label_3</name>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name></pv_name>
+    <transparent>false</transparent>
+    <show_scrollbar>false</show_scrollbar>
     <background_color>
-      <color red="240" green="240" blue="240" />
+      <color red="255" green="255" blue="255" />
     </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <widget_type>Action Button</widget_type>
+    <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>acq420 plot</text>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <text>Amplitude</text>
     <font>
       <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
-    <width>103</width>
+    <width>109</width>
     <border_style>0</border_style>
-    <push_action_index>0</push_action_index>
-    <image></image>
     <rules />
-    <pv_value />
-    <toggle_button>false</toggle_button>
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>73</y>
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://PLOT</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <description></description>
-      </action>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>366</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <wuid>-6bd374c6:14098791bb4:-7f15</wuid>
-    <scripts>
-      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://WGM201</pv>
-      </path>
-    </scripts>
-    <height>31</height>
-    <name>WGM201</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <pv_name></pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Action Button</widget_type>
-    <enabled>true</enabled>
-    <text>WGM201</text>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <width>103</width>
-    <border_style>0</border_style>
-    <push_action_index>0</push_action_index>
-    <image></image>
-    <rules />
-    <pv_value />
-    <toggle_button>false</toggle_button>
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>123</y>
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://WGM201</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <description></description>
-      </action>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>186</x>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>114</y>
+    <wrap_words>true</wrap_words>
+    <tooltip></tooltip>
+    <x>369</x>
   </widget>
 </display>
