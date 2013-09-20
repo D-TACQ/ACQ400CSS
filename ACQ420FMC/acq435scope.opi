@@ -3,9 +3,12 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <macros>
+     
+  </macros>
   </macros>
   <wuid>72b9bb3d:1368df233b7:-8000</wuid>
-  <boy_version>3.1.4.20121219</boy_version>
+  <boy_version>3.1.4.20130717</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -34,25 +37,33 @@
   <x>-1</x>
   <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0">
     <trace_1_visible>true</trace_1_visible>
+    <trace_6_update_delay>100</trace_6_update_delay>
     <trace_1_trace_type>0</trace_1_trace_type>
+    <trace_4_point_style>0</trace_4_point_style>
     <trace_0_trace_color>
       <color red="21" green="21" blue="196" />
     </trace_0_trace_color>
     <axis_0_auto_scale>true</axis_0_auto_scale>
     <trace_3_trace_type>0</trace_3_trace_type>
+    <trace_4_update_delay>100</trace_4_update_delay>
     <axis_1_time_format>0</axis_1_time_format>
     <trace_1_point_size>4</trace_1_point_size>
     <trace_0_plot_mode>0</trace_0_plot_mode>
-    <trace_count>4</trace_count>
+    <trace_count>8</trace_count>
+    <trace_4_concatenate_data>false</trace_4_concatenate_data>
     <trace_2_y_pv_value />
     <axis_0_show_grid>true</axis_0_show_grid>
     <axis_0_log_scale>false</axis_0_log_scale>
     <trace_3_point_size>4</trace_3_point_size>
+    <trace_6_trace_type>0</trace_6_trace_type>
     <trace_3_y_axis_index>1</trace_3_y_axis_index>
+    <trace_7_point_style>0</trace_7_point_style>
     <trace_1_name>$(trace_1_y_pv)</trace_1_name>
+    <trace_4_line_width>1</trace_4_line_width>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>true</show_legend>
     <y>24</y>
+    <trace_5_update_mode>0</trace_5_update_mode>
     <x>12</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
@@ -60,7 +71,9 @@
     <height>619</height>
     <axis_1_maximum>100.0</axis_1_maximum>
     <trace_3_x_pv_value />
+    <trace_4_x_pv></trace_4_x_pv>
     <trace_2_x_pv></trace_2_x_pv>
+    <trace_7_update_delay>100</trace_7_update_delay>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -73,14 +86,17 @@
     <axis_1_scale_format></axis_1_scale_format>
     <name>XY Graph</name>
     <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
+    <trace_4_buffer_size>16384</trace_4_buffer_size>
     <trace_0_line_width>1</trace_0_line_width>
     <trace_2_x_pv_value />
     <show_toolbar>true</show_toolbar>
     <trace_1_update_delay>0</trace_1_update_delay>
+    <trace_4_x_axis_index>0</trace_4_x_axis_index>
     <axis_1_show_grid>true</axis_1_show_grid>
     <axis_0_grid_color>
       <color red="200" green="200" blue="200" />
     </axis_0_grid_color>
+    <trace_5_plot_mode>0</trace_5_plot_mode>
     <trace_2_line_width>1</trace_2_line_width>
     <trace_1_line_width>1</trace_1_line_width>
     <trace_2_y_axis_index>1</trace_2_y_axis_index>
@@ -105,62 +121,108 @@
     <trace_1_update_mode>0</trace_1_update_mode>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <axis_1_axis_title>micro-volts</axis_1_axis_title>
+    <trace_4_anti_alias>true</trace_4_anti_alias>
+    <trace_7_x_pv_value />
+    <trace_4_plot_mode>0</trace_4_plot_mode>
     <trace_3_update_mode>0</trace_3_update_mode>
     <axis_0_maximum>100.0</axis_0_maximum>
+    <trace_7_anti_alias>true</trace_7_anti_alias>
     <axis_0_scale_font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </axis_0_scale_font>
     <trace_2_point_size>4</trace_2_point_size>
+    <trace_4_y_axis_index>1</trace_4_y_axis_index>
+    <trace_6_plot_mode>0</trace_6_plot_mode>
     <trace_1_y_pv_value />
     <axis_0_time_format>0</axis_0_time_format>
+    <trace_4_update_mode>0</trace_4_update_mode>
     <trace_3_concatenate_data>false</trace_3_concatenate_data>
     <trace_3_trace_color>
       <color red="0" green="0" blue="0" />
     </trace_3_trace_color>
     <trace_1_plot_mode>0</trace_1_plot_mode>
+    <trace_7_visible>true</trace_7_visible>
+    <trace_5_name>$(trace_5_y_pv)</trace_5_name>
+    <trace_7_y_axis_index>1</trace_7_y_axis_index>
+    <trace_6_point_style>0</trace_6_point_style>
     <axis_1_log_scale>false</axis_1_log_scale>
     <trace_1_point_style>0</trace_1_point_style>
+    <trace_5_x_pv></trace_5_x_pv>
+    <trace_7_y_pv>$(trace_7_y_pv)</trace_7_y_pv>
+    <trace_5_point_style>0</trace_5_point_style>
     <trace_2_plot_mode>0</trace_2_plot_mode>
     <title_font>
       <fontdata fontName="Arial" height="12" style="1" />
     </title_font>
+    <trace_6_y_pv>$(trace_6_y_pv)</trace_6_y_pv>
     <trace_3_buffer_size>16384</trace_3_buffer_size>
     <axis_1_dash_grid_line>true</axis_1_dash_grid_line>
     <axis_0_visible>true</axis_0_visible>
+    <trace_6_point_size>4</trace_6_point_size>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <trace_7_plot_mode>0</trace_7_plot_mode>
     <trace_1_x_pv_value />
+    <trace_6_concatenate_data>false</trace_6_concatenate_data>
     <axis_0_scale_format></axis_0_scale_format>
+    <trace_4_name>$(trace_4_y_pv)</trace_4_name>
+    <trace_6_visible>true</trace_6_visible>
+    <trace_7_buffer_size>16384</trace_7_buffer_size>
+    <trace_4_trace_type>0</trace_4_trace_type>
     <trace_0_x_pv></trace_0_x_pv>
+    <trace_7_line_width>1</trace_7_line_width>
     <trace_0_y_pv>$(trace_0_y_pv)</trace_0_y_pv>
+    <trace_5_point_size>4</trace_5_point_size>
+    <trace_6_x_pv_value />
+    <trace_6_update_mode>0</trace_6_update_mode>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
+    <trace_5_buffer_size>16384</trace_5_buffer_size>
     <trace_3_point_style>0</trace_3_point_style>
     <axis_1_auto_scale>true</axis_1_auto_scale>
+    <trace_7_x_axis_index>0</trace_7_x_axis_index>
     <trace_2_update_delay>0</trace_2_update_delay>
+    <trace_4_point_size>4</trace_4_point_size>
     <trace_0_concatenate_data>false</trace_0_concatenate_data>
+    <trace_5_y_axis_index>1</trace_5_y_axis_index>
+    <trace_7_update_mode>0</trace_7_update_mode>
     <trace_3_y_pv>$(trace_3_y_pv)</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
     <trace_1_x_pv></trace_1_x_pv>
     <show_plot_area_border>true</show_plot_area_border>
+    <trace_4_trace_color>
+      <color red="128" green="0" blue="255" />
+    </trace_4_trace_color>
     <widget_type>XY Graph</widget_type>
     <enabled>true</enabled>
     <width>793</width>
     <trace_0_buffer_size>16384</trace_0_buffer_size>
     <trigger_pv></trigger_pv>
+    <trace_6_trace_color>
+      <color red="255" green="0" blue="240" />
+    </trace_6_trace_color>
+    <trace_5_trace_type>0</trace_5_trace_type>
     <axis_count>2</axis_count>
     <trace_2_name>$(trace_2_y_pv)</trace_2_name>
+    <trace_4_visible>true</trace_4_visible>
+    <trace_5_concatenate_data>false</trace_5_concatenate_data>
     <transparent>false</transparent>
     <trace_2_anti_alias>true</trace_2_anti_alias>
+    <trace_7_trace_type>0</trace_7_trace_type>
     <axis_0_dash_grid_line>true</axis_0_dash_grid_line>
     <trace_2_visible>true</trace_2_visible>
+    <trace_5_update_delay>100</trace_5_update_delay>
     <trace_0_x_axis_index>0</trace_0_x_axis_index>
+    <trace_6_y_axis_index>1</trace_6_y_axis_index>
+    <trace_6_y_pv_value />
     <trace_0_point_style>0</trace_0_point_style>
     <tooltip>$(trace_0_y_pv)
 $(trace_0_y_pv_value)</tooltip>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <trace_4_y_pv>$(trace_4_y_pv)</trace_4_y_pv>
     <trace_1_x_axis_index>0</trace_1_x_axis_index>
+    <trace_6_name>$(trace_6_y_pv)</trace_6_name>
     <trace_0_y_axis_index>1</trace_0_y_axis_index>
     <trace_3_visible>true</trace_3_visible>
     <axis_1_scale_font>
@@ -173,37 +235,60 @@ $(trace_0_y_pv_value)</tooltip>
     </plot_area_background_color>
     <trace_2_concatenate_data>false</trace_2_concatenate_data>
     <trace_2_point_style>0</trace_2_point_style>
-    <title>ACQ420FMC</title>
+    <title>ACQ435ELF</title>
     <trace_1_y_pv>$(trace_1_y_pv)</trace_1_y_pv>
     <pv_name></pv_name>
     <axis_1_minimum>0.0</axis_1_minimum>
     <trace_3_plot_mode>0</trace_3_plot_mode>
     <trace_0_visible>true</trace_0_visible>
+    <trace_6_line_width>1</trace_6_line_width>
+    <trace_7_x_pv></trace_7_x_pv>
     <axis_0_minimum>0.0</axis_0_minimum>
+    <trace_5_trace_color>
+      <color red="255" green="170" blue="0" />
+    </trace_5_trace_color>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
+    <trace_7_trace_color>
+      <color red="243" green="132" blue="132" />
+    </trace_7_trace_color>
     <trace_3_update_delay>0</trace_3_update_delay>
     <scripts />
+    <trace_5_visible>true</trace_5_visible>
     <trace_0_anti_alias>false</trace_0_anti_alias>
+    <trace_4_x_pv_value />
+    <trace_6_x_axis_index>0</trace_6_x_axis_index>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <trace_6_buffer_size>16384</trace_6_buffer_size>
     <trace_1_trace_color>
       <color red="242" green="26" blue="26" />
     </trace_1_trace_color>
     <trace_2_trace_color>
       <color red="33" green="179" blue="33" />
     </trace_2_trace_color>
+    <trace_7_point_size>4</trace_7_point_size>
+    <trace_6_anti_alias>true</trace_6_anti_alias>
+    <trace_5_y_pv_value />
     <pv_value />
+    <trace_5_x_pv_value />
+    <trace_5_line_width>1</trace_5_line_width>
+    <trace_4_y_pv_value />
+    <trace_5_y_pv>$(trace_5_y_pv)</trace_5_y_pv>
+    <trace_7_y_pv_value />
+    <trace_5_x_axis_index>0</trace_5_x_axis_index>
     <trace_1_y_axis_index>1</trace_1_y_axis_index>
     <trace_3_anti_alias>true</trace_3_anti_alias>
+    <trace_5_anti_alias>true</trace_5_anti_alias>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <trace_1_concatenate_data>false</trace_1_concatenate_data>
+    <trace_6_x_pv></trace_6_x_pv>
     <rules>
       <rule name="T0-viz-rule" prop_id="trace_0_visible" out_exp="true">
         <exp bool_exp="true">
@@ -261,7 +346,9 @@ $(trace_0_y_pv_value)</tooltip>
       <color red="200" green="200" blue="200" />
     </axis_1_grid_color>
     <trace_3_y_pv_value />
+    <trace_7_concatenate_data>false</trace_7_concatenate_data>
     <trace_0_update_delay>0</trace_0_update_delay>
+    <trace_7_name>$(trace_7_y_pv)</trace_7_name>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -333,15 +420,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -352,10 +439,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>504</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>504</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -376,15 +463,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -395,10 +482,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>540</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>540</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -419,15 +506,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -438,10 +525,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>576</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>576</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -462,15 +549,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -481,10 +568,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>612</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>612</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -505,15 +592,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -524,10 +611,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>654</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>654</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -548,15 +635,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -567,10 +654,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>690</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>690</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -591,15 +678,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -610,10 +697,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>726</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>726</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
     <macros>
@@ -634,15 +721,15 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>trace_checkbox.opi</opi_file>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <group_name></group_name>
-    <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
+    <enabled>true</enabled>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
@@ -653,10 +740,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>30</y>
     <actions hook="false" hook_all="false" />
-    <x>762</x>
+    <y>30</y>
     <tooltip></tooltip>
+    <x>762</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
     <visible>true</visible>
