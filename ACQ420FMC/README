@@ -1,0 +1,18 @@
+CSS GUI control for ACQ2006.
+
+CSS opens by default in edit mode. 
+You can set it to open in run mode every time:
+
+Edit|Preferences..
+CSS Applications|Display|BOY
+set Top OPIs "/acq420_launcher.opi"
+
+On recent versions of CSS : 3.2.11, the button press behaviour changed.
+If all the buttons appear with a thin pink box, press the button once and 
+the pink warning disappears, press again and the opi launches.
+
+Or make it go away altogether:
+Edit|Preferences|Display|BOY|OPI Runtime
+Set PV Connection Layer to utility_pv
+Check all four "Show" options.
+
