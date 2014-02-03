@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>72b9bb3d:1368df233b7:-8000</wuid>
-  <boy_version>3.1.4.20121219</boy_version>
+  <boy_version>3.2.10.20131106</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -32,7 +32,7 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
-  <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0.0">
     <trace_0_trace_color>
       <color red="21" green="21" blue="196" />
     </trace_0_trace_color>
@@ -70,7 +70,7 @@
     <axis_0_auto_scale_threshold>0.0</axis_0_auto_scale_threshold>
     <trace_0_name>$(trace_0_y_pv)</trace_0_name>
     <trace_0_update_mode>0</trace_0_update_mode>
-    <axis_0_axis_title>Sample</axis_0_axis_title>
+    <axis_0_axis_title>bin</axis_0_axis_title>
     <wuid>72b9bb3d:1368df233b7:-7f8f</wuid>
     <axis_1_axis_color>
       <color red="0" green="0" blue="0" />
@@ -79,10 +79,10 @@
       <color red="0" green="0" blue="255" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <axis_1_axis_title>micro-volts</axis_1_axis_title>
+    <axis_1_axis_title>count</axis_1_axis_title>
     <axis_0_maximum>100.0</axis_0_maximum>
     <axis_0_scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </axis_0_scale_font>
     <axis_0_time_format>0</axis_0_time_format>
     <axis_1_log_scale>true</axis_1_log_scale>
@@ -118,7 +118,7 @@ $(trace_0_y_pv_value)</tooltip>
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <trace_0_y_axis_index>1</trace_0_y_axis_index>
     <axis_1_scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </axis_1_scale_font>
     <border_style>1</border_style>
     <plot_area_background_color>
@@ -200,12 +200,13 @@ $(trace_0_y_pv_value)</tooltip>
     </axis_1_grid_color>
     <trace_0_update_delay>0</trace_0_update_delay>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <visible>true</visible>
     <wuid>-2994a025:1374fd330b0:-7ee6</wuid>
     <scripts />
     <height>25</height>
+    <style>0</style>
     <name>Action Button</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
@@ -225,7 +226,7 @@ $(trace_0_y_pv_value)</tooltip>
     <text>PAUSE</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>0</border_style>
@@ -251,7 +252,7 @@ $(trace_0_y_pv_value)</tooltip>
 $(pv_value)</tooltip>
     <x>720</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -280,7 +281,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -294,7 +295,7 @@ $(pv_value)</tooltip>
     <x>504</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -323,7 +324,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -337,7 +338,7 @@ $(pv_value)</tooltip>
     <x>540</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -366,7 +367,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -380,7 +381,7 @@ $(pv_value)</tooltip>
     <x>576</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -409,7 +410,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -423,7 +424,7 @@ $(pv_value)</tooltip>
     <x>612</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -452,7 +453,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -466,7 +467,7 @@ $(pv_value)</tooltip>
     <x>654</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -495,7 +496,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -509,7 +510,7 @@ $(pv_value)</tooltip>
     <x>690</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -538,7 +539,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -552,7 +553,7 @@ $(pv_value)</tooltip>
     <x>726</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <DISP>XMON</DISP>
@@ -581,7 +582,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -595,7 +596,7 @@ $(pv_value)</tooltip>
     <x>762</x>
     <tooltip></tooltip>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
     <wuid>1392bb19:13c108a8046:-78af</wuid>
@@ -620,7 +621,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Mask:</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>67</width>
     <border_style>0</border_style>
@@ -636,7 +637,7 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <x>420</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
     <wuid>-df838ee:13c14bd67fc:-7c04</wuid>
@@ -661,7 +662,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Trace Length</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <width>67</width>
     <border_style>0</border_style>
