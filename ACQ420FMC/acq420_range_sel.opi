@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>4537baf1:13e17774794:-7c8b</wuid>
-  <boy_version>3.1.4.20121219</boy_version>
+  <boy_version>3.2.16.20140409</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -32,7 +32,7 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
-  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <visible>true</visible>
     <actions_from_pv>true</actions_from_pv>
@@ -47,7 +47,7 @@
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <transparent>false</transparent>
-    <pv_name>${UUT}:${SITE}:gain:${CH}</pv_name>
+    <pv_name>${UUT}:${SITE}:GAIN:${CH}</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -74,7 +74,7 @@
 $(pv_value)</tooltip>
     <x>12</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
     <wuid>4537baf1:13e17774794:-7c7c</wuid>
