@@ -88,7 +88,7 @@
     <y>6</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>0</x>
+    <x>-6</x>
     <gradient>false</gradient>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
@@ -701,13 +701,6 @@ $(pv_value)</tooltip>
         <confirm_message></confirm_message>
         <description></description>
       </action>
-      <action type="EXECUTE_JAVASCRIPT">
-        <path>LaunchOpi8.js</path>
-        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
-]]></scriptText>
-        <embedded>false</embedded>
-        <description></description>
-      </action>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -824,13 +817,6 @@ $(pv_value)</tooltip>
         <value>17</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="EXECUTE_JAVASCRIPT">
-        <path>LaunchOpi8.js</path>
-        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
-]]></scriptText>
-        <embedded>false</embedded>
         <description></description>
       </action>
     </actions>
@@ -2044,6 +2030,6 @@ $(pv_value)</tooltip>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>330</x>
+    <x>324</x>
   </widget>
 </display>
