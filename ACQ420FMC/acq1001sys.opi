@@ -3,7 +3,6 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <UUT>acq1001_025</UUT>
   </macros>
   <wuid>-4e2f45a8:14163b1f018:-7f2b</wuid>
   <boy_version>3.2.16.20140409</boy_version>
@@ -58,7 +57,7 @@
     <enabled>true</enabled>
     <text>ACQ1002 SYSTEM ${UUT}</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>319</width>
     <border_style>0</border_style>
@@ -93,7 +92,7 @@
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>146</width>
     <show_lolo>true</show_lolo>
@@ -118,17 +117,17 @@
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:VAN</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:VAN</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -177,7 +176,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>VA Negative</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>94</width>
     <border_style>0</border_style>
@@ -212,7 +211,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>146</width>
     <show_lolo>true</show_lolo>
@@ -237,17 +236,17 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:5VP</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:5VP</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -296,7 +295,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>5VP</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>0</border_style>
@@ -331,7 +330,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>115</width>
     <show_lolo>true</show_lolo>
@@ -356,17 +355,17 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:VADJ</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:VADJ</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -415,7 +414,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>VADJ</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>48</width>
     <border_style>0</border_style>
@@ -450,7 +449,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>115</width>
     <show_lolo>true</show_lolo>
@@ -475,17 +474,17 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:vccint</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:vccint</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -534,7 +533,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>vccint</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>48</width>
     <border_style>0</border_style>
@@ -569,7 +568,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>115</width>
     <show_lolo>true</show_lolo>
@@ -594,17 +593,17 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:vccaux</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:vccaux</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -653,7 +652,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>vccaux</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>48</width>
     <border_style>0</border_style>
@@ -688,7 +687,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>115</width>
     <show_lolo>true</show_lolo>
@@ -713,17 +712,17 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:vccbram</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:vccbram</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -772,7 +771,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>vccbram</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>61</width>
     <border_style>0</border_style>
@@ -807,7 +806,7 @@ $(pv_value)</tooltip>
     <widget_type>Meter</widget_type>
     <show_minor_ticks>true</show_minor_ticks>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>146</width>
     <show_lolo>true</show_lolo>
@@ -832,17 +831,17 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
-    <pv_name>${UUT}:SYS:VAP</pv_name>
     <color_hi>
       <color red="255" green="255" blue="0" />
     </color_hi>
+    <pv_name>${UUT}:SYS:VAP</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <level_hi>80.0</level_hi>
     <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </scale_font>
     <level_hihi>90.0</level_hihi>
     <ramp_gradient>true</ramp_gradient>
@@ -891,7 +890,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>VA Positive</text>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>0</border_style>
@@ -923,16 +922,16 @@ $(pv_value)</tooltip>
     </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <widget_type>Grouping Container</widget_type>
+    <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>1</border_style>
@@ -951,10 +950,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>96</y>
     <actions hook="false" hook_all="false" />
-    <x>226</x>
+    <y>96</y>
     <tooltip></tooltip>
+    <x>226</x>
     <widget typeId="org.csstudio.opibuilder.widgets.thermometer" version="1.0.0">
       <level_lo>20.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -978,7 +977,7 @@ $(pv_value)</tooltip>
       <widget_type>Thermometer</widget_type>
       <show_minor_ticks>true</show_minor_ticks>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <show_lolo>true</show_lolo>
@@ -1005,17 +1004,17 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>${UUT}:SYS:1:TEMP</pv_name>
       <color_hi>
         <color red="255" green="128" blue="0" />
       </color_hi>
+      <pv_name>${UUT}:SYS:1:TEMP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <level_hi>80.0</level_hi>
       <scale_font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </scale_font>
       <level_hihi>90.0</level_hihi>
       <color_lolo>
@@ -1071,7 +1070,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>SITE1</text>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -1103,16 +1102,16 @@ $(pv_value)</tooltip>
       </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <enabled>true</enabled>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
       <widget_type>Grouping Container</widget_type>
+      <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>49</width>
       <border_style>0</border_style>
@@ -1123,10 +1122,10 @@ $(pv_value)</tooltip>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-      <y>120</y>
       <actions hook="false" hook_all="false" />
-      <x>15</x>
+      <y>120</y>
       <tooltip></tooltip>
+      <x>15</x>
       <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
         <border_alarm_sensitive>true</border_alarm_sensitive>
         <visible>true</visible>
@@ -1161,7 +1160,7 @@ $(pv_value)</tooltip>
         <enabled>true</enabled>
         <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
         <font>
-          <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+          <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
         </font>
         <width>25</width>
         <border_style>0</border_style>
@@ -1214,7 +1213,7 @@ $(pv_value)</tooltip>
         <enabled>true</enabled>
         <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
         <font>
-          <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+          <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
         </font>
         <width>25</width>
         <border_style>0</border_style>
@@ -1251,16 +1250,16 @@ $(pv_value)</tooltip>
     </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <widget_type>Grouping Container</widget_type>
+    <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>1</border_style>
@@ -1279,10 +1278,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>96</y>
     <actions hook="false" hook_all="false" />
-    <x>324</x>
+    <y>96</y>
     <tooltip></tooltip>
+    <x>324</x>
     <widget typeId="org.csstudio.opibuilder.widgets.thermometer" version="1.0.0">
       <level_lo>20.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1306,7 +1305,7 @@ $(pv_value)</tooltip>
       <widget_type>Thermometer</widget_type>
       <show_minor_ticks>true</show_minor_ticks>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <show_lolo>true</show_lolo>
@@ -1333,17 +1332,17 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>${UUT}:SYS:2:TEMP</pv_name>
       <color_hi>
         <color red="255" green="128" blue="0" />
       </color_hi>
+      <pv_name>${UUT}:SYS:2:TEMP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <level_hi>80.0</level_hi>
       <scale_font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </scale_font>
       <level_hihi>90.0</level_hihi>
       <color_lolo>
@@ -1399,7 +1398,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>SITE2</text>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -1431,16 +1430,16 @@ $(pv_value)</tooltip>
       </scale_options>
       <transparent>false</transparent>
       <show_scrollbar>false</show_scrollbar>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
-      <enabled>true</enabled>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
       <widget_type>Grouping Container</widget_type>
+      <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>49</width>
       <border_style>0</border_style>
@@ -1451,10 +1450,10 @@ $(pv_value)</tooltip>
       <border_color>
         <color red="0" green="128" blue="255" />
       </border_color>
-      <y>120</y>
       <actions hook="false" hook_all="false" />
-      <x>15</x>
+      <y>120</y>
       <tooltip></tooltip>
+      <x>15</x>
       <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
         <border_alarm_sensitive>true</border_alarm_sensitive>
         <visible>true</visible>
@@ -1489,7 +1488,7 @@ $(pv_value)</tooltip>
         <enabled>true</enabled>
         <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
         <font>
-          <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+          <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
         </font>
         <width>25</width>
         <border_style>0</border_style>
@@ -1542,7 +1541,7 @@ $(pv_value)</tooltip>
         <enabled>true</enabled>
         <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
         <font>
-          <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+          <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
         </font>
         <width>25</width>
         <border_style>0</border_style>
@@ -1579,16 +1578,16 @@ $(pv_value)</tooltip>
     </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <widget_type>Grouping Container</widget_type>
+    <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>0</border_style>
@@ -1599,10 +1598,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>96</y>
     <actions hook="false" hook_all="false" />
-    <x>127</x>
+    <y>96</y>
     <tooltip></tooltip>
+    <x>127</x>
     <widget typeId="org.csstudio.opibuilder.widgets.thermometer" version="1.0.0">
       <level_lo>20.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1626,7 +1625,7 @@ $(pv_value)</tooltip>
       <widget_type>Thermometer</widget_type>
       <show_minor_ticks>true</show_minor_ticks>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <show_lolo>true</show_lolo>
@@ -1653,17 +1652,17 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>${UUT}:SYS:0:TEMP</pv_name>
       <color_hi>
         <color red="255" green="128" blue="0" />
       </color_hi>
+      <pv_name>${UUT}:SYS:0:TEMP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <level_hi>80.0</level_hi>
       <scale_font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </scale_font>
       <level_hihi>90.0</level_hihi>
       <color_lolo>
@@ -1712,7 +1711,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>ACQ2006</text>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
@@ -1745,16 +1744,16 @@ $(pv_value)</tooltip>
     </scale_options>
     <transparent>false</transparent>
     <show_scrollbar>false</show_scrollbar>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <enabled>true</enabled>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
     <widget_type>Grouping Container</widget_type>
+    <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>0</border_style>
@@ -1765,10 +1764,10 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>96</y>
     <actions hook="false" hook_all="false" />
-    <x>24</x>
+    <y>96</y>
     <tooltip></tooltip>
+    <x>24</x>
     <widget typeId="org.csstudio.opibuilder.widgets.thermometer" version="1.0.0">
       <level_lo>20.0</level_lo>
       <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1792,7 +1791,7 @@ $(pv_value)</tooltip>
       <widget_type>Thermometer</widget_type>
       <show_minor_ticks>true</show_minor_ticks>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <show_lolo>true</show_lolo>
@@ -1819,17 +1818,17 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>${UUT}:SYS:Z:TEMP</pv_name>
       <color_hi>
         <color red="255" green="128" blue="0" />
       </color_hi>
+      <pv_name>${UUT}:SYS:Z:TEMP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <level_hi>80.0</level_hi>
       <scale_font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </scale_font>
       <level_hihi>90.0</level_hihi>
       <color_lolo>
@@ -1878,7 +1877,7 @@ $(pv_value)</tooltip>
       <enabled>true</enabled>
       <text>ZYNQ</text>
       <font>
-        <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
       </font>
       <width>79</width>
       <border_style>0</border_style>
