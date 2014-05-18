@@ -1595,7 +1595,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <wuid>77971d7f:143f8935fb4:-7cb1</wuid>
     <scripts />
-    <height>31</height>
+    <height>29</height>
     <name>ComboModel</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
@@ -1924,7 +1924,7 @@ $(pv_value)</tooltip>
       <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://LAUNCH</pv>
+        <pv trig="true">loc://acq425</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -1964,7 +1964,7 @@ $(pv_value)</tooltip>
     <y>324</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://LAUNCH</pv_name>
+        <pv_name>loc://acq425</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -1983,7 +1983,7 @@ $(pv_value)</tooltip>
       <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://LAUNCH</pv>
+        <pv trig="true">loc://acq425gains</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2023,7 +2023,7 @@ $(pv_value)</tooltip>
     <y>324</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://LAUNCH</pv_name>
+        <pv_name>loc://acq425gains</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2033,5 +2033,64 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>489</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-b41889:146112ac8af:-7b05</wuid>
+    <scripts>
+      <path pathString="LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://acq425stats</pv>
+      </path>
+    </scripts>
+    <height>31</height>
+    <style>0</style>
+    <name>stats16</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>acq425 stats</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+    <width>103</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image></image>
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>324</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://acq425stats</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>612</x>
   </widget>
 </display>
