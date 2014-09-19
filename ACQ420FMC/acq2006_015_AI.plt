@@ -21,8 +21,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>1.410991599533E12</lower>
-            <upper>1.410991659533E12</upper>
+            <lower>1.41099241853E12</lower>
+            <upper>1.41099247853E12</upper>
         </range>
         <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -49,8 +49,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>-358412.21149574395</lower>
-            <upper>437628.296882306</upper>
+            <lower>321.8130369804</lower>
+            <upper>302843.1868930944</upper>
         </range>
         <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
         <showMajorGrid>false</showMajorGrid>
