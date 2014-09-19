@@ -21,8 +21,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>1.410992349583E12</lower>
-            <upper>1.410992409583E12</upper>
+            <lower>1.411123842755E12</lower>
+            <upper>1.411123902755E12</upper>
         </range>
         <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -40,7 +40,7 @@
             <green>21</green>
             <red>21</red>
         </foregroundColor>
-        <formatPattern>############.##</formatPattern>
+        <formatPattern>0.####E0</formatPattern>
         <logScale>false</logScale>
         <majorGridColor>
             <blue>200</blue>
@@ -49,8 +49,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>54.230900395519996</lower>
-            <upper>72.6671154048</upper>
+            <lower>-276990.74693893536</lower>
+            <upper>239602.85478286078</upper>
         </range>
         <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -102,7 +102,7 @@
     <transparent>false</transparent>
 </xyGraphSettings>
     <scroll>true</scroll>
-    <update_period>3.0</update_period>
+    <update_period>0.2</update_period>
     <start>-1 minutes 0.0 seconds</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
