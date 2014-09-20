@@ -32,126 +32,56 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
+    <wuid>6aa519e5:1488d5856b6:-7df9</wuid>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
     <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
+    <height>25</height>
+    <name>Tank</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:${SITE}:AI:CH:${CH01}</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
-    <wuid>6aa519e5:1488d5856b6:-7df9</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
-    <name>Tank</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <pv_name>${UUT}:${SITE}:AI:CH:${CH01}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
-    <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
-    <actions hook="false" hook_all="false" />
-    <x>6</x>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <wuid>6aa519e5:1488d5856b6:-7d1d</wuid>
-    <auto_size>false</auto_size>
-    <scripts />
-    <height>25</height>
-    <name>Label</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>true</transparent>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Label</widget_type>
-    <enabled>true</enabled>
-    <text></text>
+    <precision>3</precision>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
-    <width>91</width>
-    <border_style>0</border_style>
+    <width>95</width>
+    <border_style>2</border_style>
     <rules />
+    <pv_value />
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
     <y>24</y>
     <wrap_words>false</wrap_words>
-    <tooltip></tooltip>
-    <x>48</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>6</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -193,86 +123,56 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <x>0</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
-    <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
     <wuid>6aa519e5:1488d5856b6:-7a0b</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
     <name>Tank_1</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
     <pv_name>${UUT}:${SITE}:AI:CH:${CH02}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
+    <precision>0</precision>
+    <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
+    </font>
+    <width>91</width>
+    <border_style>2</border_style>
     <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
+    <pv_value />
+    <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <x>69</x>
+    <y>24</y>
+    <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    <x>106</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -312,88 +212,58 @@ $(pv_value)</tooltip>
     <y>-6</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>66</x>
+    <x>98</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
-    <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
     <wuid>6aa519e5:1488d5856b6:-79be</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
     <name>Tank_2</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
     <pv_name>${UUT}:${SITE}:AI:CH:${CH03}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
+    <precision>0</precision>
+    <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
+    </font>
+    <width>86</width>
+    <border_style>2</border_style>
     <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
+    <pv_value />
+    <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <x>132</x>
+    <y>24</y>
+    <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    <x>203</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -433,88 +303,58 @@ $(pv_value)</tooltip>
     <y>-6</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>126</x>
+    <x>196</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
-    <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
     <wuid>6aa519e5:1488d5856b6:-79bc</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
     <name>Tank_3</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
     <pv_name>${UUT}:${SITE}:AI:CH:${CH04}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
+    <precision>0</precision>
+    <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
+    </font>
+    <width>95</width>
+    <border_style>2</border_style>
     <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
+    <pv_value />
+    <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <x>195</x>
+    <y>24</y>
+    <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    <x>298</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -554,128 +394,58 @@ $(pv_value)</tooltip>
     <y>-6</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>192</x>
+    <x>294</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
+    <wuid>6aa519e5:1488d5856b6:-7991</wuid>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
     <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
+    <height>25</height>
+    <name>Tank_4</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:${SITE}:AI:CH:${CH05}</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
-    <wuid>6aa519e5:1488d5856b6:-7991</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
-    <name>Tank_4</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <pv_name>${UUT}:${SITE}:AI:CH:${CH05}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
-    <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
-    <actions hook="false" hook_all="false" />
-    <x>255</x>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <wuid>6aa519e5:1488d5856b6:-7990</wuid>
-    <auto_size>false</auto_size>
-    <scripts />
-    <height>25</height>
-    <name>Label_5</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>true</transparent>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Label</widget_type>
-    <enabled>true</enabled>
-    <text></text>
+    <precision>0</precision>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
-    <width>91</width>
-    <border_style>0</border_style>
+    <width>99</width>
+    <border_style>2</border_style>
     <rules />
+    <pv_value />
     <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
     <y>24</y>
     <wrap_words>false</wrap_words>
-    <tooltip></tooltip>
-    <x>297</x>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>396</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -715,88 +485,58 @@ $(pv_value)</tooltip>
     <y>-6</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>249</x>
+    <x>392</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
-    <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
     <wuid>6aa519e5:1488d5856b6:-798e</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
     <name>Tank_5</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
     <pv_name>${UUT}:${SITE}:AI:CH:${CH06}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
+    <precision>0</precision>
+    <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
+    </font>
+    <width>86</width>
+    <border_style>2</border_style>
     <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
+    <pv_value />
+    <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <x>318</x>
+    <y>24</y>
+    <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    <x>497</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -836,88 +576,58 @@ $(pv_value)</tooltip>
     <y>-6</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>315</x>
+    <x>490</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
-    <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
     <wuid>6aa519e5:1488d5856b6:-798c</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
     <name>Tank_6</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
     <pv_name>${UUT}:${SITE}:AI:CH:${CH07}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
+    <precision>0</precision>
+    <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
+    </font>
+    <width>87</width>
+    <border_style>2</border_style>
     <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
+    <pv_value />
+    <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <x>381</x>
+    <y>24</y>
+    <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    <x>592</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -957,88 +667,58 @@ $(pv_value)</tooltip>
     <y>-6</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>375</x>
+    <x>588</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
-    <level_lo>20.0</level_lo>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
-    <color_fillbackground>
-      <color red="192" green="192" blue="192" />
-    </color_fillbackground>
-    <color_hihi>
-      <color red="255" green="0" blue="0" />
-    </color_hihi>
-    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
-    <show_lo>false</show_lo>
-    <scripts />
-    <height>127</height>
-    <major_tick_step_hint>50</major_tick_step_hint>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <enabled>true</enabled>
-    <widget_type>Tank</widget_type>
-    <show_minor_ticks>false</show_minor_ticks>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>49</width>
-    <show_lolo>false</show_lolo>
-    <border_style>0</border_style>
-    <effect_3d>true</effect_3d>
-    <pv_value />
-    <show_markers>false</show_markers>
-    <show_hi>false</show_hi>
-    <maximum>32768.0</maximum>
-    <border_width>1</border_width>
-    <log_scale>false</log_scale>
-    <minimum>-32767.0</minimum>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
     <wuid>6aa519e5:1488d5856b6:-798a</wuid>
-    <show_hihi>false</show_hihi>
-    <scale_format></scale_format>
-    <show_scale>false</show_scale>
-    <color_lo>
-      <color red="255" green="128" blue="0" />
-    </color_lo>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>25</height>
     <name>Tank_7</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
+    <format_type>1</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
     <pv_name>${UUT}:${SITE}:AI:CH:${CH08}</pv_name>
-    <color_hi>
-      <color red="255" green="128" blue="0" />
-    </color_hi>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <level_hi>80.0</level_hi>
-    <scale_font>
+    <precision>0</precision>
+    <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </scale_font>
-    <level_hihi>90.0</level_hihi>
-    <color_lolo>
-      <color red="255" green="0" blue="0" />
-    </color_lolo>
-    <fill_color>
-      <color red="0" green="0" blue="255" />
-    </fill_color>
+    </font>
+    <width>105</width>
+    <border_style>2</border_style>
     <rules />
-    <transparent_background>true</transparent_background>
-    <limits_from_pv>true</limits_from_pv>
+    <pv_value />
+    <border_width>1</border_width>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <level_lolo>10.0</level_lolo>
-    <y>24</y>
+    <horizontal_alignment>2</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <x>444</x>
+    <y>24</y>
+    <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    <x>688</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -1075,9 +755,9 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>-6</y>
+    <y>0</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>441</x>
+    <x>686</x>
   </widget>
 </display>
