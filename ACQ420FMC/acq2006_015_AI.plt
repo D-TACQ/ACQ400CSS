@@ -21,8 +21,8 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>1.41099241853E12</lower>
-            <upper>1.41099247853E12</upper>
+            <lower>1.413129259942E12</lower>
+            <upper>1.413129319942E12</upper>
         </range>
         <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
         <showMajorGrid>false</showMajorGrid>
@@ -31,7 +31,7 @@
     </axisSettingsList>
     <axisSettingsList>
         <autoFormat>true</autoFormat>
-        <autoScale>true</autoScale>
+        <autoScale>false</autoScale>
         <autoScaleThreshold>0.1</autoScaleThreshold>
         <dashGridLine>true</dashGridLine>
         <dateEnabled>false</dateEnabled>
@@ -40,7 +40,7 @@
             <green>21</green>
             <red>21</red>
         </foregroundColor>
-        <formatPattern>0.####E0</formatPattern>
+        <formatPattern>############.##</formatPattern>
         <logScale>false</logScale>
         <majorGridColor>
             <blue>200</blue>
@@ -49,40 +49,12 @@
         </majorGridColor>
         <onPrimarySide>true</onPrimarySide>
         <range>
-            <lower>321.8130369804</lower>
-            <upper>302843.1868930944</upper>
+            <lower>-10.0</lower>
+            <upper>10.0</upper>
         </range>
         <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
         <showMajorGrid>false</showMajorGrid>
         <title>acq2006_015:4:AI:CH:16</title>
-        <titleFont>1|Cantarell|12.0|1|GTK|1|</titleFont>
-    </axisSettingsList>
-    <axisSettingsList>
-        <autoFormat>true</autoFormat>
-        <autoScale>true</autoScale>
-        <autoScaleThreshold>0.01</autoScaleThreshold>
-        <dashGridLine>true</dashGridLine>
-        <dateEnabled>false</dateEnabled>
-        <foregroundColor>
-            <blue>240</blue>
-            <green>0</green>
-            <red>255</red>
-        </foregroundColor>
-        <formatPattern>##.#####</formatPattern>
-        <logScale>false</logScale>
-        <majorGridColor>
-            <blue>200</blue>
-            <green>200</green>
-            <red>200</red>
-        </majorGridColor>
-        <onPrimarySide>true</onPrimarySide>
-        <range>
-            <lower>-0.0238687694448</lower>
-            <upper>-0.0151227572</upper>
-        </range>
-        <scaleFont>1|Cantarell|12.0|0|GTK|1|</scaleFont>
-        <showMajorGrid>false</showMajorGrid>
-        <title>acq2006_015:1:AI:CH:05</title>
         <titleFont>1|Cantarell|12.0|1|GTK|1|</titleFont>
     </axisSettingsList>
     <plotAreaBackColor>
@@ -100,6 +72,195 @@
         <red>44</red>
     </titleColor>
     <titleFont>1|Cantarell|12.0|1|GTK|1|</titleFont>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>196</blue>
+            <green>21</green>
+            <red>21</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:1:AI:CH:01</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>196</blue>
+            <green>21</green>
+            <red>21</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>26</blue>
+            <green>26</green>
+            <red>242</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:1:AI:CH:02</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>26</blue>
+            <green>26</green>
+            <red>242</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>33</blue>
+            <green>179</green>
+            <red>33</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:1:AI:CH:16</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>33</blue>
+            <green>179</green>
+            <red>33</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>0</blue>
+            <green>0</green>
+            <red>0</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:4:AI:CH:16</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>0</blue>
+            <green>0</green>
+            <red>0</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>255</blue>
+            <green>0</green>
+            <red>128</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:1:AI:CH:03</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>255</blue>
+            <green>0</green>
+            <red>128</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>0</blue>
+            <green>170</green>
+            <red>255</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:1:AI:CH:04</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>0</blue>
+            <green>170</green>
+            <red>255</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
+    <traceSettingsList>
+        <antiAliasing>true</antiAliasing>
+        <areaAlpha>100</areaAlpha>
+        <baseLine>ZERO</baseLine>
+        <drawYErrorInArea>true</drawYErrorInArea>
+        <errorBarCapWidth>4</errorBarCapWidth>
+        <errorBarColor>
+            <blue>240</blue>
+            <green>0</green>
+            <red>255</red>
+        </errorBarColor>
+        <errorBarEnabled>true</errorBarEnabled>
+        <lineWidth>2</lineWidth>
+        <name>acq2006_015:1:AI:CH:05</name>
+        <pointSize>4</pointSize>
+        <pointStyle>NONE</pointStyle>
+        <traceColor>
+            <blue>240</blue>
+            <green>0</green>
+            <red>255</red>
+        </traceColor>
+        <traceType>STEP_HORIZONTALLY</traceType>
+        <xAxis>0</xAxis>
+        <xErrorBarType>BOTH</xErrorBarType>
+        <yAxis>0</yAxis>
+        <yErrorBarType>BOTH</yErrorBarType>
+    </traceSettingsList>
     <traceSettingsList>
         <antiAliasing>true</antiAliasing>
         <areaAlpha>100</areaAlpha>
@@ -134,46 +295,19 @@
         <drawYErrorInArea>true</drawYErrorInArea>
         <errorBarCapWidth>4</errorBarCapWidth>
         <errorBarColor>
-            <blue>196</blue>
-            <green>21</green>
-            <red>21</red>
+            <blue>11</blue>
+            <green>255</green>
+            <red>0</red>
         </errorBarColor>
         <errorBarEnabled>true</errorBarEnabled>
         <lineWidth>2</lineWidth>
-        <name>acq2006_015:1:AI:CH:01</name>
+        <name>acq2006_015:4:AI:CH:16</name>
         <pointSize>4</pointSize>
         <pointStyle>NONE</pointStyle>
         <traceColor>
-            <blue>196</blue>
-            <green>21</green>
-            <red>21</red>
-        </traceColor>
-        <traceType>STEP_HORIZONTALLY</traceType>
-        <xAxis>0</xAxis>
-        <xErrorBarType>BOTH</xErrorBarType>
-        <yAxis>0</yAxis>
-        <yErrorBarType>BOTH</yErrorBarType>
-    </traceSettingsList>
-    <traceSettingsList>
-        <antiAliasing>true</antiAliasing>
-        <areaAlpha>100</areaAlpha>
-        <baseLine>ZERO</baseLine>
-        <drawYErrorInArea>true</drawYErrorInArea>
-        <errorBarCapWidth>4</errorBarCapWidth>
-        <errorBarColor>
-            <blue>196</blue>
-            <green>21</green>
-            <red>21</red>
-        </errorBarColor>
-        <errorBarEnabled>true</errorBarEnabled>
-        <lineWidth>2</lineWidth>
-        <name>acq2006_015:1:AI:CH:01</name>
-        <pointSize>4</pointSize>
-        <pointStyle>NONE</pointStyle>
-        <traceColor>
-            <blue>196</blue>
-            <green>21</green>
-            <red>21</red>
+            <blue>11</blue>
+            <green>255</green>
+            <red>0</red>
         </traceColor>
         <traceType>STEP_HORIZONTALLY</traceType>
         <xAxis>0</xAxis>
@@ -200,7 +334,7 @@
         </pv>
         <pv>
             <name>acq2006_015:1:AI:CH:02</name>
-            <visible>false</visible>
+            <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
             <period>0.1</period>
@@ -209,7 +343,7 @@
         </pv>
         <pv>
             <name>acq2006_015:1:AI:CH:16</name>
-            <visible>false</visible>
+            <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
             <period>0.1</period>
@@ -218,7 +352,7 @@
         </pv>
         <pv>
             <name>acq2006_015:4:AI:CH:16</name>
-            <visible>false</visible>
+            <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
             <period>0.1</period>
@@ -227,7 +361,7 @@
         </pv>
         <pv>
             <name>acq2006_015:1:AI:CH:03</name>
-            <visible>false</visible>
+            <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
             <period>0.1</period>
@@ -236,7 +370,7 @@
         </pv>
         <pv>
             <name>acq2006_015:1:AI:CH:04</name>
-            <visible>false</visible>
+            <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
             <period>0.1</period>
@@ -245,8 +379,8 @@
         </pv>
         <pv>
             <name>acq2006_015:1:AI:CH:05</name>
-            <visible>false</visible>
-            <axis>1</axis>
+            <visible>true</visible>
+            <axis>0</axis>
             <waveform_index>0</waveform_index>
             <period>0.1</period>
             <ring_size>5000</ring_size>
