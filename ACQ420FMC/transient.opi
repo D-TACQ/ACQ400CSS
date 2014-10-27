@@ -617,7 +617,14 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
     <image></image>
-    <rules />
+    <rules>
+      <rule name="EnableOnIDLE" prop_id="enabled" out_exp="true">
+        <exp bool_exp="pvStr0!=&quot;IDLE&quot;">
+          <value>false</value>
+        </exp>
+        <pv trig="true">${UUT}:MODE:TRANS_ACT:STATE</pv>
+      </rule>
+    </rules>
     <pv_value />
     <toggle_button>false</toggle_button>
     <border_width>1</border_width>
