@@ -162,7 +162,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
-    <height>205</height>
+    <height>448</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
     <name>Rounded Rectangle_3</name>
@@ -204,65 +204,6 @@ $(pv_value)</tooltip>
     </border_color>
     <actions hook="false" hook_all="false" />
     <y>69</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>594</x>
-    <gradient>false</gradient>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <fill_level>0.0</fill_level>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <wuid>3f3ccaf0:1497eab83d5:-7b8e</wuid>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <scripts />
-    <height>205</height>
-    <anti_alias>true</anti_alias>
-    <corner_height>16</corner_height>
-    <name>Rounded Rectangle_2</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alpha>255</alpha>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>false</transparent>
-    <pv_name></pv_name>
-    <corner_width>16</corner_width>
-    <background_color>
-      <color red="151" green="244" blue="122" />
-    </background_color>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Rounded Rectangle</widget_type>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>199</width>
-    <line_style>0</line_style>
-    <border_style>0</border_style>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <actions hook="false" hook_all="false" />
-    <y>288</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>594</x>
@@ -948,7 +889,7 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>324</y>
+    <y>352</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>751</x>
@@ -975,7 +916,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Label</widget_type>
     <enabled>true</enabled>
-    <text>EXT SYNC BUS IN</text>
+    <text>EXT SYNC BUS DIO</text>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
@@ -1041,10 +982,10 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>117</y>
+    <y>150</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>728</x>
+    <x>738</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -1081,10 +1022,10 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>117</y>
+    <y>150</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>624</x>
+    <x>634</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1134,10 +1075,10 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>159</y>
+    <y>192</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>728</x>
+    <x>738</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -1174,10 +1115,10 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>159</y>
+    <y>192</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>624</x>
+    <x>634</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1227,10 +1168,10 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>198</y>
+    <y>231</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>728</x>
+    <x>738</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -1267,10 +1208,10 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>198</y>
+    <y>231</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>624</x>
+    <x>634</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1320,10 +1261,10 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>237</y>
+    <y>270</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>728</x>
+    <x>738</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -1360,10 +1301,10 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>237</y>
+    <y>270</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
-    <x>624</x>
+    <x>634</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
@@ -1398,7 +1339,7 @@ $(pv_value)</tooltip>
     <off_label>OFF</off_label>
     <released_action_index>0</released_action_index>
     <widget_type>Boolean Button</widget_type>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
@@ -1408,7 +1349,14 @@ $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
     <confirm_message>Are your sure you want to do this?</confirm_message>
     <effect_3d>true</effect_3d>
-    <rules />
+    <rules>
+      <rule name="EnableWhenDOisSRC" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0==0||pv0==1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:CLK</pv>
+      </rule>
+    </rules>
     <pv_value />
     <bit>-1</bit>
     <toggle_button>true</toggle_button>
@@ -1419,7 +1367,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>357</y>
+    <y>385</y>
     <actions hook="false" hook_all="false" />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -1498,7 +1446,14 @@ $(pv_value)</tooltip>
     <width>55</width>
     <border_style>6</border_style>
     <label></label>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSRC_NOT_DO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=0&amp;&amp;pv0!=1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:CLK</pv>
+      </rule>
+    </rules>
     <pv_value />
     <border_width>1</border_width>
     <border_color>
@@ -1508,46 +1463,6 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>445</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <wuid>3f3ccaf0:1497eab83d5:-7b5e</wuid>
-    <auto_size>false</auto_size>
-    <scripts />
-    <height>20</height>
-    <name>Label_13</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>true</transparent>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Label</widget_type>
-    <enabled>true</enabled>
-    <text>EXT SYNC BUS OUT</text>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>175</width>
-    <border_style>0</border_style>
-    <rules />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions hook="false" hook_all="false" />
-    <y>294</y>
-    <wrap_words>false</wrap_words>
-    <tooltip></tooltip>
-    <x>606</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <visible>true</visible>
@@ -1584,7 +1499,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>357</y>
+    <y>385</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>620</x>
@@ -1624,7 +1539,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>327</y>
+    <y>355</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>605</x>
@@ -1662,7 +1577,7 @@ $(pv_value)</tooltip>
     <off_label>OFF</off_label>
     <released_action_index>0</released_action_index>
     <widget_type>Boolean Button</widget_type>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
@@ -1672,7 +1587,14 @@ $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
     <confirm_message>Are your sure you want to do this?</confirm_message>
     <effect_3d>true</effect_3d>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSrcDO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0==0||pv0==1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:TRG</pv>
+      </rule>
+    </rules>
     <pv_value />
     <bit>-1</bit>
     <toggle_button>true</toggle_button>
@@ -1683,7 +1605,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>390</y>
+    <y>418</y>
     <actions hook="false" hook_all="false" />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -1724,7 +1646,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>390</y>
+    <y>418</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>620</x>
@@ -1762,7 +1684,7 @@ $(pv_value)</tooltip>
     <off_label>OFF</off_label>
     <released_action_index>0</released_action_index>
     <widget_type>Boolean Button</widget_type>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
@@ -1772,7 +1694,14 @@ $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
     <confirm_message>Are your sure you want to do this?</confirm_message>
     <effect_3d>true</effect_3d>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSrcDO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0==0||pv0==1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:SYNC</pv>
+      </rule>
+    </rules>
     <pv_value />
     <bit>-1</bit>
     <toggle_button>true</toggle_button>
@@ -1783,7 +1712,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>420</y>
+    <y>448</y>
     <actions hook="false" hook_all="false" />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -1824,7 +1753,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>420</y>
+    <y>448</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>620</x>
@@ -1862,7 +1791,7 @@ $(pv_value)</tooltip>
     <off_label>OFF</off_label>
     <released_action_index>0</released_action_index>
     <widget_type>Boolean Button</widget_type>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
@@ -1872,7 +1801,14 @@ $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
     <confirm_message>Are your sure you want to do this?</confirm_message>
     <effect_3d>true</effect_3d>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSrcDO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0==0||pv0==1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:GPIO</pv>
+      </rule>
+    </rules>
     <pv_value />
     <bit>-1</bit>
     <toggle_button>true</toggle_button>
@@ -1883,7 +1819,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>450</y>
+    <y>478</y>
     <actions hook="false" hook_all="false" />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -1924,7 +1860,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>450</y>
+    <y>478</y>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>620</x>
@@ -2082,7 +2018,14 @@ $(pv_value)</tooltip>
     <width>55</width>
     <border_style>6</border_style>
     <label></label>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSRC_NOT_DO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=0&amp;&amp;pv0!=1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:TRG</pv>
+      </rule>
+    </rules>
     <pv_value />
     <border_width>1</border_width>
     <border_color>
@@ -2206,7 +2149,14 @@ $(pv_value)</tooltip>
     <width>55</width>
     <border_style>6</border_style>
     <label></label>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSrcNotDO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=0&amp;&amp;pv0!=1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:SYNC</pv>
+      </rule>
+    </rules>
     <pv_value />
     <border_width>1</border_width>
     <border_color>
@@ -2330,7 +2280,14 @@ $(pv_value)</tooltip>
     <width>55</width>
     <border_style>6</border_style>
     <label></label>
-    <rules />
+    <rules>
+      <rule name="EnableWhenSrcNotDO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=0&amp;&amp;pv0!=1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:GPIO</pv>
+      </rule>
+    </rules>
     <pv_value />
     <border_width>1</border_width>
     <border_color>
@@ -3076,5 +3033,85 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>77</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>4636771f:149863c9d3b:-7e70</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>20</height>
+    <name>Label_33</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>IN</text>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>159</width>
+    <border_style>1</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>114</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>605</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>4636771f:149863c9d3b:-7db1</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>20</height>
+    <name>Label_34</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>OUT</text>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>159</width>
+    <border_style>1</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>315</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>605</x>
   </widget>
 </display>
