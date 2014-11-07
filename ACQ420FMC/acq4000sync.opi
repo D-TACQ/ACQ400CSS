@@ -44,7 +44,7 @@
       <color red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
-    <height>131</height>
+    <height>122</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
     <name>Rounded Rectangle_6</name>
@@ -85,7 +85,7 @@
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>255</y>
+    <y>264</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>144</x>
@@ -1706,97 +1706,6 @@ $(pv_value)</tooltip>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <visible>true</visible>
     <actions_from_pv>true</actions_from_pv>
-    <wuid>3f3ccaf0:1497eab83d5:-79a6</wuid>
-    <scripts />
-    <height>31</height>
-    <name>Menu Button_12</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>false</transparent>
-    <pv_name>${UUT}:0:SIG:SYNC_OUT:GPIO</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Menu Button</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>85</width>
-    <border_style>6</border_style>
-    <label></label>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>255</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>562</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <actions_from_pv>true</actions_from_pv>
-    <wuid>3f3ccaf0:1497eab83d5:-79a5</wuid>
-    <scripts />
-    <height>31</height>
-    <name>Menu Button_13</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>false</transparent>
-    <pv_name>${UUT}:0:SIG:SYNC_OUT:GPIO:DX</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Menu Button</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>55</width>
-    <border_style>6</border_style>
-    <label></label>
-    <rules>
-      <rule name="EnableWhenSrcNotDO" prop_id="enabled" out_exp="true">
-        <exp bool_exp="true">
-          <value>pv0!=0&amp;&amp;pv0!=1</value>
-        </exp>
-        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:GPIO</pv>
-      </rule>
-    </rules>
-    <pv_value />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>255</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>646</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <actions_from_pv>true</actions_from_pv>
     <wuid>3f3ccaf0:1497eab83d5:-75a2</wuid>
     <scripts />
     <height>29</height>
@@ -3013,6 +2922,53 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <x>258</x>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>0</vertical_alignment>
+    <wuid>3f3ccaf0:1497eab83d5:-79a4</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>43</height>
+    <name>Label_23</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="225" green="92" blue="254" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text></text>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>239</width>
+    <border_style>0</border_style>
+    <rules>
+      <rule name="EventColorMatch" prop_id="transparent" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=2</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:GPIO</pv>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>264</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>477</x>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <visible>true</visible>
@@ -3095,53 +3051,6 @@ IN</text>
     <wrap_words>false</wrap_words>
     <tooltip></tooltip>
     <x>19</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <visible>true</visible>
-    <vertical_alignment>0</vertical_alignment>
-    <wuid>3f3ccaf0:1497eab83d5:-79a4</wuid>
-    <auto_size>false</auto_size>
-    <scripts />
-    <height>49</height>
-    <name>Label_23</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>true</transparent>
-    <background_color>
-      <color red="225" green="92" blue="254" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Label</widget_type>
-    <enabled>true</enabled>
-    <text>GPIO</text>
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <width>79</width>
-    <border_style>0</border_style>
-    <rules>
-      <rule name="EventColorMatch" prop_id="transparent" out_exp="true">
-        <exp bool_exp="true">
-          <value>pv0!=2</value>
-        </exp>
-        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:GPIO</pv>
-      </rule>
-    </rules>
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions hook="false" hook_all="false" />
-    <y>258</y>
-    <wrap_words>false</wrap_words>
-    <tooltip></tooltip>
-    <x>477</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -3232,5 +3141,136 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>406</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>true</actions_from_pv>
+    <wuid>3f3ccaf0:1497eab83d5:-79a6</wuid>
+    <scripts />
+    <height>31</height>
+    <name>Menu Button_12</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:0:SIG:SYNC_OUT:GPIO</pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>85</width>
+    <border_style>6</border_style>
+    <label></label>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>255</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>562</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <actions_from_pv>true</actions_from_pv>
+    <wuid>3f3ccaf0:1497eab83d5:-79a5</wuid>
+    <scripts />
+    <height>31</height>
+    <name>Menu Button_13</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:0:SIG:SYNC_OUT:GPIO:DX</pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Menu Button</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>55</width>
+    <border_style>6</border_style>
+    <label></label>
+    <rules>
+      <rule name="EnableWhenSrcNotDO" prop_id="enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=0&amp;&amp;pv0!=1</value>
+        </exp>
+        <pv trig="true">${UUT}:0:SIG:SYNC_OUT:GPIO</pv>
+      </rule>
+    </rules>
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>255</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>646</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>-4003cb0f:149897e1072:-7e45</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>25</height>
+    <name>Label_36</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>GPIO</text>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>79</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>258</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>477</x>
   </widget>
 </display>
