@@ -6,7 +6,15 @@
   </macros>
   <wuid>-7cab4585:149c235e16b:-7e96</wuid>
   <boy_version>3.2.16.20140409</boy_version>
-  <scripts />
+  <scripts>
+    <path pathString="ReLaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <pv trig="true">${UUT}:${SITE}:AO:GAIN:CH:1</pv>
+      <pv trig="true">${UUT}:${SITE}:AO:GAIN:CH:2</pv>
+      <pv trig="true">${UUT}:${SITE}:AO:GAIN:CH:3</pv>
+      <pv trig="true">${UUT}:${SITE}:AO:GAIN:CH:4</pv>
+      <pv trig="true">${UUT}:${SITE}:AO:REF</pv>
+    </path>
+  </scripts>
   <show_ruler>true</show_ruler>
   <height>600</height>
   <name></name>
