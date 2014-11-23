@@ -5,7 +5,7 @@
     <include_parent_macros>true</include_parent_macros>
   </macros>
   <wuid>72b9bb3d:1368df233b7:-8000</wuid>
-  <boy_version>3.2.10.20131106</boy_version>
+  <boy_version>3.2.16.20140409</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -82,7 +82,7 @@
     <axis_1_axis_title>count</axis_1_axis_title>
     <axis_0_maximum>100.0</axis_0_maximum>
     <axis_0_scale_font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </axis_0_scale_font>
     <axis_0_time_format>0</axis_0_time_format>
     <axis_1_log_scale>true</axis_1_log_scale>
@@ -118,13 +118,13 @@ $(trace_0_y_pv_value)</tooltip>
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <trace_0_y_axis_index>1</trace_0_y_axis_index>
     <axis_1_scale_font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </axis_1_scale_font>
     <border_style>1</border_style>
     <plot_area_background_color>
       <color red="255" green="255" blue="255" />
     </plot_area_background_color>
-    <title>ACQ420FMC FIFO HISTOGRAM</title>
+    <title>SITE ${SITE} FIFO HISTOGRAM</title>
     <pv_name></pv_name>
     <axis_1_minimum>0.0</axis_1_minimum>
     <trace_0_visible>true</trace_0_visible>
@@ -226,7 +226,7 @@ $(trace_0_y_pv_value)</tooltip>
     <text>PAUSE</text>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>79</width>
     <border_style>0</border_style>
@@ -281,7 +281,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -324,7 +324,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -367,7 +367,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -410,7 +410,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -453,7 +453,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -496,7 +496,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -539,7 +539,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -582,7 +582,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>31</width>
     <border_style>3</border_style>
@@ -621,7 +621,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Mask:</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>67</width>
     <border_style>0</border_style>
@@ -662,7 +662,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Trace Length</text>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>67</width>
     <border_style>0</border_style>

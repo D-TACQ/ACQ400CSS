@@ -113,7 +113,14 @@
     <fill_color>
       <color red="0" green="0" blue="255" />
     </fill_color>
-    <rules />
+    <rules>
+      <rule name="SetLimitsFromPV" prop_id="limits_from_pv" out_exp="true">
+        <exp bool_exp="true">
+          <value>true</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:AO:GAIN:CH:1</pv>
+      </rule>
+    </rules>
     <value_label_format></value_label_format>
     <transparent_background>true</transparent_background>
     <limits_from_pv>true</limits_from_pv>
@@ -456,7 +463,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Spinner</widget_type>
     <enabled>true</enabled>
-    <step_increment>0.001</step_increment>
+    <step_increment>1.0E-4</step_increment>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
@@ -509,7 +516,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Spinner</widget_type>
     <enabled>true</enabled>
-    <step_increment>0.001</step_increment>
+    <step_increment>1.0E-4</step_increment>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
@@ -562,7 +569,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Spinner</widget_type>
     <enabled>true</enabled>
-    <step_increment>0.001</step_increment>
+    <step_increment>1.0E-4</step_increment>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
@@ -615,7 +622,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <widget_type>Spinner</widget_type>
     <enabled>true</enabled>
-    <step_increment>0.001</step_increment>
+    <step_increment>1.0E-4</step_increment>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>3</precision>
     <font>
