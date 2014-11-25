@@ -114,7 +114,14 @@
     </border_color>
     <level_lolo>10.0</level_lolo>
     <y>42</y>
-    <actions hook="false" hook_all="false" />
+    <actions hook="false" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command></command>
+        <command_directory>$(user.home)</command_directory>
+        <wait_time>10</wait_time>
+        <description></description>
+      </action>
+    </actions>
     <x>6</x>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
