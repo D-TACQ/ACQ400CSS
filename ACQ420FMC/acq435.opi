@@ -346,7 +346,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>390</y>
+    <y>438</y>
     <actions hook="false" hook_all="false" />
     <x>39</x>
     <tooltip></tooltip>
@@ -388,7 +388,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>450</y>
+    <y>498</y>
     <actions hook="false" hook_all="false" />
     <x>39</x>
     <tooltip></tooltip>
@@ -430,7 +430,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>510</y>
+    <y>558</y>
     <actions hook="false" hook_all="false" />
     <x>40</x>
     <tooltip></tooltip>
@@ -472,7 +472,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>570</y>
+    <y>618</y>
     <actions hook="false" hook_all="false" />
     <x>40</x>
     <tooltip></tooltip>
@@ -525,7 +525,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>459</y>
+    <y>507</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>659</x>
@@ -566,7 +566,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>414</y>
+    <y>462</y>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
     <x>653</x>
@@ -720,7 +720,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>630</y>
+    <y>678</y>
     <actions hook="false" hook_all="false" />
     <x>40</x>
     <tooltip></tooltip>
@@ -773,7 +773,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>699</y>
+    <y>747</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>480</x>
@@ -815,7 +815,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>702</y>
+    <y>750</y>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
     <x>54</x>
@@ -868,7 +868,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>699</y>
+    <y>747</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>216</x>
@@ -909,7 +909,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>702</y>
+    <y>750</y>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
     <x>372</x>
@@ -959,7 +959,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>0</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>705</y>
+    <y>753</y>
     <wrap_words>false</wrap_words>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -1001,7 +1001,7 @@ $(pv_value)</tooltip>
     </border_color>
     <horizontal_alignment>1</horizontal_alignment>
     <actions hook="false" hook_all="false" />
-    <y>702</y>
+    <y>750</y>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
     <x>582</x>
@@ -1721,6 +1721,57 @@ $(pv_value)</tooltip>
     <wrap_words>true</wrap_words>
     <tooltip></tooltip>
     <x>39</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <show_units>true</show_units>
+    <wuid>43f8b619:14a0f6d498d:-7d13</wuid>
+    <auto_size>false</auto_size>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <height>31</height>
+    <name>Text Update_8</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <format_type>0</format_type>
+    <precision_from_pv>true</precision_from_pv>
+    <transparent>false</transparent>
+    <pv_name>${UUT}:${SITE}:ACQ43X_SAMPLE_RATE:INFO</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Text Update</widget_type>
+    <enabled>true</enabled>
+    <text>######</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <precision>0</precision>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>713</width>
+    <border_style>0</border_style>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>0</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>390</y>
+    <wrap_words>false</wrap_words>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>54</x>
   </widget>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <fill_arrow>true</fill_arrow>
