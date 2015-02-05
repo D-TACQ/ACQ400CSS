@@ -1013,7 +1013,21 @@ $(trace_0_y_pv_value)</tooltip>
     </font>
     <width>67</width>
     <border_style>0</border_style>
-    <rules />
+    <rules>
+      <rule name="GreenOK" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==3">
+          <value>
+            <color red="11" green="252" blue="4" />
+          </value>
+        </exp>
+        <exp bool_exp="pv0!=3">
+          <value>
+            <color name="Major" red="255" green="0" blue="0" />
+          </value>
+        </exp>
+        <pv trig="true">${UUT}:${CH}:AURORA:UP</pv>
+      </rule>
+    </rules>
     <pv_value />
     <border_width>1</border_width>
     <border_color>
