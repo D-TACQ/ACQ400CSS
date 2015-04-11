@@ -41,8 +41,9 @@ if [ "x$3" = "x-h" -o "x$3" = "x--help" ]; then
 fi
 
 C11=${3:-1}
+C12=$4
 
-let C12=$C11+7
+[ "x$C12" = "x" ] && let C12=$C11+7
 
 l0() {
 	printf "%02d" $1
