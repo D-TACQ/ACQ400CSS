@@ -9,6 +9,6 @@ if(widgetController.getExternalObject(flagName) == null){
 	macroInput.put("UUT", PVUtil.getString(pvArray[0]));		
 	macroInput.put("SITE", PVUtil.getLong(pvArray[1]));
 		
-	var opi = widget.getPropertyValue("name") + ".opi";
+	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
 }

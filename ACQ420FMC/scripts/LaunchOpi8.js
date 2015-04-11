@@ -24,6 +24,6 @@ if(widgetController.getExternalObject(flagName) == null){
 		macroInput.put("CH"+pad(nc, 2), pad(ch, 2));		 		
 	}
 	       
-	var opi = widget.getPropertyValue("name") + ".opi";	       
+	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";	       
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
 }

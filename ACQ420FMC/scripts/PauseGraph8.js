@@ -19,6 +19,6 @@ if(pause == null || pause==false){
 		xygraph.setPropertyValue(key, display.getVar(key));
 		xygraph.getPV(key).start();
 	}
-    widget.setPropertyValue("text", "Pause");
+	widget.setPropertyValue("text", "Pause");
 }
 
