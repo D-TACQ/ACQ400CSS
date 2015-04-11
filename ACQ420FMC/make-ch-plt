@@ -6,15 +6,15 @@ usage() {
 	site=${2:-1}
 
 cat - <<EOF
-# usage ./make-ch-plot HOST SITE CH01
+# usage ./scripts/make-ch-plot HOST SITE CH01
 # examples
-./make-ch-plt $hn $site 1
-./make-ch-plt $hn $site 9
-./make-ch-plt $hn $site 17
-./make-ch-plt $hn $site 25
+./scripts/make-ch-plt $hn $site 1
+./scripts/make-ch-plt $hn $site 9
+./scripts/make-ch-plt $hn $site 17
+./scripts/make-ch-plt $hn $site 25
 
 # hint: to get rapid plot commands, try something like this
-# ./make-ch-plt acq1001_042 2 -h
+# ./scripts/make-ch-plt acq1001_042 2 -h
 # then paste the examples into the shell
 EOF
 	exit 1
