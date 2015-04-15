@@ -20,7 +20,7 @@ EOF
 	exit 1
 }
 
-TP=./opi/acq1001_041:1:AI:CH_template.plt
+TP=./opi/acq1001_041_1_AI_CH_template.plt
 
 HN0=acq1001_041
 S0=1
@@ -53,13 +53,13 @@ mkdir -p PLOTS
 OP=PLOTS/${HN1}_${S1}_$(l0 $C11)_$(l0 $C12).plt
 echo creating $OP
 
-sed -e s/$HN0/$HN1/g -e s/:${S0}:AI/:${S1}:AI/g <$TP >$OP.tmp
+sed -e s/$HN0/$HN1/g -e s/_${S0}_AI/_${S1}_AI/g <$TP >$OP.tmp
 
 let ic=0
 while [ $ic -lt 8 ]; do
 	let c0x=$C01+$ic
 	let c1x=$C11+$ic
-	sed -e s/CH:$(l0 $c0x)/CH:$(l0 $c1x)/g <$OP.tmp > $OP.tmp2
+	sed -e s/CH_$(l0 $c0x)/CH:$(l0 $c1x)/g <$OP.tmp > $OP.tmp2
 	mv $OP.tmp2 $OP.tmp
 	let ic=$ic+1
 done
