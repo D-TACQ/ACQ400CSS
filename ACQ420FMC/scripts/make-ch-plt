@@ -53,7 +53,7 @@ mkdir -p PLOTS
 OP=PLOTS/${HN1}_${S1}_$(l0 $C11)_$(l0 $C12).plt
 echo creating $OP
 
-sed -e s/$HN0/$HN1/g -e s/_${S0}_AI/_${S1}_AI/g <$TP >$OP.tmp
+sed -e s/$HN0/$HN1/g -e s/:${S0}:AI/:${S1}:AI/g <$TP >$OP.tmp
 
 let ic=0
 while [ $ic -lt 8 ]; do
