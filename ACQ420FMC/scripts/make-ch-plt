@@ -59,7 +59,7 @@ let ic=0
 while [ $ic -lt 8 ]; do
 	let c0x=$C01+$ic
 	let c1x=$C11+$ic
-	sed -e s/CH_$(l0 $c0x)/CH:$(l0 $c1x)/g <$OP.tmp > $OP.tmp2
+	sed -e s/CH:$(l0 $c0x)/CH:$(l0 $c1x)/g <$OP.tmp > $OP.tmp2
 	mv $OP.tmp2 $OP.tmp
 	let ic=$ic+1
 done
