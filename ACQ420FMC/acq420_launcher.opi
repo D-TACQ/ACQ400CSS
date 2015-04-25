@@ -59,7 +59,7 @@
       <color red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
-    <height>463</height>
+    <height>493</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
     <name>Rounded Rectangle_1</name>
@@ -531,7 +531,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>120</y>
+    <y>340</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://HISTO</pv_name>
@@ -543,7 +543,7 @@ $(pv_value)</tooltip>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>324</x>
+    <x>204</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>
@@ -590,7 +590,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>70</y>
+    <y>130</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT</pv_name>
@@ -648,7 +648,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>420</y>
+    <y>450</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://WGM201</pv_name>
@@ -1908,7 +1908,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
-    <width>103</width>
+    <width>85</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
     <image></image>
@@ -3215,10 +3215,68 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>420</y>
+    <y>450</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://mgt</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>6</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-2833d4fb:14cf147ddac:-76cb</wuid>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://fw</pv>
+      </path>
+    </scripts>
+    <height>31</height>
+    <style>0</style>
+    <name>firmware</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name></pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Action Button</widget_type>
+    <enabled>true</enabled>
+    <text>Firmware</text>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>151</width>
+    <border_style>0</border_style>
+    <push_action_index>0</push_action_index>
+    <image></image>
+    <rules />
+    <pv_value />
+    <toggle_button>false</toggle_button>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <y>411</y>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://fw</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
