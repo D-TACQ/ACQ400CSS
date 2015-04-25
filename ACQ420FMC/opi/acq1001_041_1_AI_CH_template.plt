@@ -3,7 +3,7 @@
 <xyGraphSettings>
     <axisSettingsList>
         <autoFormat>true</autoFormat>
-        <autoScale>false</autoScale>
+        <autoScale>true</autoScale>
         <autoScaleThreshold>0.01</autoScaleThreshold>
         <dashGridLine>true</dashGridLine>
         <dateEnabled>true</dateEnabled>
@@ -264,16 +264,16 @@
 </xyGraphSettings>
     <scroll>true</scroll>
     <update_period>0.1</update_period>
-    <start>2015/04/08 14:56:53.703</start>
-    <end>2015/04/08 14:57:23.703</end>
-    <archive_rescale>NONE</archive_rescale>
+    <start>-30 seconds</start>
+    <end>now</end>
+    <archive_rescale>STAGGER</archive_rescale>
     <pvlist>
         <pv>
             <name>acq1001_041:1:AI:CH:01</name>
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -282,7 +282,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -291,7 +291,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -300,7 +300,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -309,7 +309,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -318,7 +318,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -327,7 +327,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
@@ -336,7 +336,7 @@
             <visible>true</visible>
             <axis>0</axis>
             <waveform_index>0</waveform_index>
-            <period>0.0</period>
+            <period>0.1</period>
             <ring_size>5000</ring_size>
             <request>OPTIMIZED</request>
         </pv>
