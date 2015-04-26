@@ -177,7 +177,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
-    <height>451</height>
+    <height>481</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
     <name>Rounded Rectangle_2</name>
@@ -2122,7 +2122,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
-    <height>208</height>
+    <height>233</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
     <name>Rounded Rectangle_9</name>
@@ -2178,6 +2178,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8t</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2237,6 +2238,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81t</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2296,6 +2298,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82t</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2355,6 +2358,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT83t</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2414,6 +2418,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8rt</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2473,6 +2478,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81rt</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2532,6 +2538,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82rt</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2591,6 +2598,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT83rt</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -3286,5 +3294,51 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <x>6</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>-18bfcd60:14cf6261711:-7ce7</wuid>
+    <auto_size>false</auto_size>
+    <scripts />
+    <height>20</height>
+    <name>Check Box</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name>loc://plot_time</pv_name>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Check Box</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <width>100</width>
+    <border_style>0</border_style>
+    <selected_color>
+      <color red="77" green="77" blue="77" />
+    </selected_color>
+    <label>Plot Time</label>
+    <rules />
+    <pv_value />
+    <bit>0</bit>
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <actions hook="false" hook_all="false" />
+    <y>445</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>543</x>
   </widget>
 </display>

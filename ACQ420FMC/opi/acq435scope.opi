@@ -3,9 +3,6 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <macros>
-     
-  </macros>
   </macros>
   <wuid>72b9bb3d:1368df233b7:-8000</wuid>
   <boy_version>3.2.16.20140409</boy_version>
@@ -71,8 +68,8 @@
     <height>619</height>
     <axis_1_maximum>100.0</axis_1_maximum>
     <trace_3_x_pv_value />
-    <trace_4_x_pv></trace_4_x_pv>
-    <trace_2_x_pv></trace_2_x_pv>
+    <trace_4_x_pv>$(tbx)</trace_4_x_pv>
+    <trace_2_x_pv>$(tbx)</trace_2_x_pv>
     <trace_7_update_delay>100</trace_7_update_delay>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
@@ -104,10 +101,10 @@
     <trace_2_trace_type>0</trace_2_trace_type>
     <trace_0_name>$(trace_0_y_pv)</trace_0_name>
     <trace_1_anti_alias>true</trace_1_anti_alias>
-    <trace_3_x_pv></trace_3_x_pv>
+    <trace_3_x_pv>$(tbx)</trace_3_x_pv>
     <trace_0_update_mode>0</trace_0_update_mode>
     <trace_1_buffer_size>100000</trace_1_buffer_size>
-    <axis_0_axis_title>Sample</axis_0_axis_title>
+    <axis_0_axis_title>$(xtitle)</axis_0_axis_title>
     <trace_3_line_width>1</trace_3_line_width>
     <wuid>72b9bb3d:1368df233b7:-7f8f</wuid>
     <trace_2_buffer_size>100000</trace_2_buffer_size>
@@ -147,7 +144,7 @@
     <trace_6_point_style>0</trace_6_point_style>
     <axis_1_log_scale>false</axis_1_log_scale>
     <trace_1_point_style>0</trace_1_point_style>
-    <trace_5_x_pv></trace_5_x_pv>
+    <trace_5_x_pv>$(tbx)</trace_5_x_pv>
     <trace_7_y_pv>$(trace_7_y_pv)</trace_7_y_pv>
     <trace_5_point_style>0</trace_5_point_style>
     <trace_2_plot_mode>0</trace_2_plot_mode>
@@ -168,7 +165,7 @@
     <trace_6_visible>true</trace_6_visible>
     <trace_7_buffer_size>100000</trace_7_buffer_size>
     <trace_4_trace_type>0</trace_4_trace_type>
-    <trace_0_x_pv></trace_0_x_pv>
+    <trace_0_x_pv>$(tbx)</trace_0_x_pv>
     <trace_7_line_width>1</trace_7_line_width>
     <trace_0_y_pv>$(trace_0_y_pv)</trace_0_y_pv>
     <trace_5_point_size>4</trace_5_point_size>
@@ -189,7 +186,7 @@
     <trace_3_y_pv>$(trace_3_y_pv)</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
-    <trace_1_x_pv></trace_1_x_pv>
+    <trace_1_x_pv>$(tbx)</trace_1_x_pv>
     <show_plot_area_border>true</show_plot_area_border>
     <trace_4_trace_color>
       <color red="128" green="0" blue="255" />
@@ -213,7 +210,7 @@
     <axis_0_dash_grid_line>true</axis_0_dash_grid_line>
     <trace_2_visible>true</trace_2_visible>
     <trace_5_update_delay>100</trace_5_update_delay>
-    <trace_0_x_axis_index>0</trace_0_x_axis_index>
+    <trace_0_x_axis_index>3</trace_0_x_axis_index>
     <trace_6_y_axis_index>1</trace_6_y_axis_index>
     <trace_6_y_pv_value />
     <trace_0_point_style>0</trace_0_point_style>
@@ -242,7 +239,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_3_plot_mode>0</trace_3_plot_mode>
     <trace_0_visible>true</trace_0_visible>
     <trace_6_line_width>1</trace_6_line_width>
-    <trace_7_x_pv></trace_7_x_pv>
+    <trace_7_x_pv>$(tbx)</trace_7_x_pv>
     <axis_0_minimum>0.0</axis_0_minimum>
     <trace_5_trace_color>
       <color red="255" green="170" blue="0" />
@@ -288,7 +285,7 @@ $(trace_0_y_pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <trace_1_concatenate_data>false</trace_1_concatenate_data>
-    <trace_6_x_pv></trace_6_x_pv>
+    <trace_6_x_pv>$(tbx)</trace_6_x_pv>
     <rules>
       <rule name="T0-viz-rule" prop_id="trace_0_visible" out_exp="true">
         <exp bool_exp="true">
