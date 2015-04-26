@@ -12,6 +12,8 @@
     <trace_6_y_pv>${UUT}:${SITE}:AI:TW:${CH07}</trace_6_y_pv>
     <trace_7_y_pv>${UUT}:${SITE}:AI:TW:${CH08}</trace_7_y_pv>
     <y_axis_title>bits</y_axis_title>
+    <TB>${UUT}:1:AI:TW:TB.VALA</TB>
+    <TYPE>${UUT}:${SITE}:AI:TW:${CH01}.FTVL</TYPE>
   </macros>
   <wuid>-2573665e:13fa4f7eb24:-7ed8</wuid>
   <boy_version>3.2.16.20140409</boy_version>
@@ -79,7 +81,7 @@
     </border_color>
     <y>-6</y>
     <actions hook="false" hook_all="false" />
-    <x>-12</x>
+    <x>-6</x>
     <tooltip></tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">

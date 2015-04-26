@@ -25,15 +25,12 @@ if(widgetController.getExternalObject(flagName) == null){
 	}
 	
 	var plot_time = 0;
-	var tbx = "";
 	if (pvArray[3] != null){
 		plot_time = PVUtil.getLong(pvArray[3]);
-		if (plot_time != 0){
-		    tbx = PVUtil.getString(pvArray[0]) + ":1:AI:TW:TB.VALA";			
-		}
 	}
-	macroInput.put("tbx", tbx);
-	macroInput.put("xtitle", plot_time==0? "Sample": "Seconds"); 
+	/* plot_time != 0, use embedded tbx */
+	macroInput.put("tbx", plot_time != 0? "$(TB)": "");
+	macroInput.put("xtitle", plot_time==0? "Samples": "Seconds"); 
 	       
 	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";	       
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);

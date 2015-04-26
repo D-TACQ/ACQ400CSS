@@ -671,6 +671,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -730,6 +731,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -789,6 +791,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -848,6 +851,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT83</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -1258,6 +1262,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8r</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -1317,6 +1322,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81r</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -1376,6 +1382,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82r</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -1435,6 +1442,7 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT83r</pv>
+        <pv trig="false">loc://plot_time</pv>
       </path>
     </scripts>
     <height>31</height>
@@ -2122,7 +2130,7 @@ $(pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </bg_gradient_color>
     <scripts />
-    <height>233</height>
+    <height>210</height>
     <anti_alias>true</anti_alias>
     <corner_height>16</corner_height>
     <name>Rounded Rectangle_9</name>
@@ -3336,10 +3344,10 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255" />
     </border_color>
     <actions hook="false" hook_all="false" />
-    <y>445</y>
+    <y>456</y>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>543</x>
+    <x>560</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <border_alarm_sensitive>false</border_alarm_sensitive>

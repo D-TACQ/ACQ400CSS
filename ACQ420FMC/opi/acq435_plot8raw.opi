@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
-    <include_parent_macros>true</include_parent_macros>
+    <include_parent_macros>false</include_parent_macros>
     <trace_0_y_pv>${UUT}:${SITE}:AI:WF:${CH01}</trace_0_y_pv>
     <trace_1_y_pv>${UUT}:${SITE}:AI:WF:${CH02}</trace_1_y_pv>
     <trace_2_y_pv>${UUT}:${SITE}:AI:WF:${CH03}</trace_2_y_pv>
@@ -12,9 +12,11 @@
     <trace_6_y_pv>${UUT}:${SITE}:AI:WF:${CH07}</trace_6_y_pv>
     <trace_7_y_pv>${UUT}:${SITE}:AI:WF:${CH08}</trace_7_y_pv>
     <y_axis_title>bits</y_axis_title>
+    <TB>${UUT}:1:AI:WF:TB.VALA</TB>
+    <TYPE>${UUT}:${SITE}:AI:WF:${CH01}.FTVL</TYPE>
   </macros>
   <wuid>-2573665e:13fa4f7eb24:-7ed8</wuid>
-  <boy_version>3.1.4.20130717</boy_version>
+  <boy_version>3.2.16.20140409</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>600</height>
@@ -41,7 +43,7 @@
   <actions hook="false" hook_all="false" />
   <y>-1</y>
   <x>-1</x>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -58,17 +60,17 @@
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <opi_file>acq435scope.opi</opi_file>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
     <group_name></group_name>
-    <widget_type>Linking Container</widget_type>
     <enabled>true</enabled>
+    <widget_type>Linking Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>907</width>
     <border_style>3</border_style>
@@ -77,12 +79,12 @@
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
+    <y>0</y>
     <actions hook="false" hook_all="false" />
-    <y>-6</y>
+    <x>6</x>
     <tooltip></tooltip>
-    <x>-12</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <visible>true</visible>
     <vertical_alignment>1</vertical_alignment>
@@ -115,7 +117,7 @@
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <precision>0</precision>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
     <width>73</width>
     <border_style>0</border_style>
