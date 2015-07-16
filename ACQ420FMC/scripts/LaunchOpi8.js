@@ -30,7 +30,7 @@ if(widgetController.getExternalObject(flagName) == null){
 	}
 	/* plot_time != 0, use embedded tbx */
 	macroInput.put("tbx", plot_time != 0? "$(TB)": "");
-	macroInput.put("xtitle", plot_time==0? "Samples": "Seconds"); 
+	macroInput.put("xtitle", plot_time==0? "Samples": plot_time == 2? "Hz": "Seconds"); 
 	       
 	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";	       
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
