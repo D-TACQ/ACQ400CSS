@@ -34,7 +34,7 @@
   </background_color>
   <width>800</width>
   <x>-1</x>
-  <name></name>
+  <name>${UUT}:SPEC</name>
   <grid_space>6</grid_space>
   <show_ruler>true</show_ruler>
   <y>-1</y>
@@ -81,7 +81,7 @@
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -126,13 +126,13 @@ $(pv_value)</tooltip>
     <width>73</width>
     <x>12</x>
     <name>Text Update</name>
-    <y>648</y>
+    <y>696</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -172,7 +172,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="20" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
     </font>
   </widget>
 </display>
