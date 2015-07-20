@@ -20,8 +20,16 @@ if(widgetController.getExternalObject(flagName) == null){
 	macroInput.put("SITE", PVUtil.getLong(pvArray[1]));	
        
 	var ch = PVUtil.getLong(pvArray[2]);
+	var chx = "CH";
 	for (var nc = 1; nc <= 8; ++nc, ++ch){
-		macroInput.put("CH"+pad(nc, 2), pad(ch, 2));		 		
+		var ch0x = pad(ch, 2);
+		macroInput.put("CH"+pad(nc, 2), ch0x);
+		if (nc == 1){
+			chx += ch0x;
+		}
+		if (nc == 8){
+			chx += ":" + ch0x;
+		}		 		
 	}
 	
 	var plot_time = 0;
@@ -31,6 +39,7 @@ if(widgetController.getExternalObject(flagName) == null){
 	/* plot_time != 0, use embedded tbx */
 	macroInput.put("tbx", plot_time != 0? "$(TB)": "");
 	macroInput.put("xtitle", plot_time==0? "Samples": plot_time == 2? "Hz": "Seconds"); 
+	macroInput.put("CHX", chx);
 	       
 	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";	       
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
