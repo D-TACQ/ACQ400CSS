@@ -109,6 +109,65 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <line_width>0</line_width>
+    <horizontal_fill>true</horizontal_fill>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>20b0811b:150331c23c8:-7ed3</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <alpha>255</alpha>
+    <corner_height>16</corner_height>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>208</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name></pv_name>
+    <gradient>false</gradient>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <anti_alias>true</anti_alias>
+    <corner_width>16</corner_width>
+    <line_style>0</line_style>
+    <widget_type>Rounded Rectangle</widget_type>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="191" blue="0" />
+    </background_color>
+    <width>337</width>
+    <x>324</x>
+    <name>Rounded Rectangle_12</name>
+    <y>179</y>
+    <fill_level>0.0</fill_level>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>1</line_width>
     <horizontal_fill>false</horizontal_fill>
     <tooltip>$(pv_name)
@@ -184,7 +243,7 @@ $(pv_value)</tooltip>
     </bg_gradient_color>
     <scripts />
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>98</height>
+    <height>154</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -206,12 +265,12 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color red="0" green="191" blue="0" />
+      <color red="255" green="165" blue="0" />
     </background_color>
-    <width>190</width>
-    <x>474</x>
+    <width>340</width>
+    <x>323</x>
     <name>Rounded Rectangle</name>
-    <y>18</y>
+    <y>12</y>
     <fill_level>0.0</fill_level>
     <foreground_color>
       <color red="255" green="0" blue="0" />
@@ -2084,7 +2143,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>loc://SITE</pv_name>
+    <pv_name>loc://REF</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2165,7 +2224,7 @@ $(pv_value)</tooltip>
     </background_color>
     <width>37</width>
     <x>346</x>
-    <name>ThumbSite_1</name>
+    <name>ThumbRef</name>
     <y>218</y>
     <maximum>5.0</maximum>
     <decimalDigits>0</decimalDigits>
@@ -2218,65 +2277,6 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <line_width>0</line_width>
-    <horizontal_fill>true</horizontal_fill>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>20b0811b:150331c23c8:-7ed3</wuid>
-    <transparent>false</transparent>
-    <pv_value />
-    <alpha>255</alpha>
-    <corner_height>16</corner_height>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <scripts />
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>208</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <visible>true</visible>
-    <pv_name></pv_name>
-    <gradient>false</gradient>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <anti_alias>true</anti_alias>
-    <corner_width>16</corner_width>
-    <line_style>0</line_style>
-    <widget_type>Rounded Rectangle</widget_type>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="0" green="191" blue="0" />
-    </background_color>
-    <width>184</width>
-    <x>477</x>
-    <name>Rounded Rectangle_12</name>
-    <y>179</y>
-    <fill_level>0.0</fill_level>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false" />
-    <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
-    </font>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
@@ -2792,7 +2792,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>loc://SITE</pv_name>
+    <pv_name>loc://CHAN</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2873,7 +2873,7 @@ $(pv_value)</tooltip>
     </background_color>
     <width>37</width>
     <x>346</x>
-    <name>ThumbSite_2</name>
+    <name>ThumbChan</name>
     <y>55</y>
     <maximum>32.0</maximum>
     <decimalDigits>0</decimalDigits>
