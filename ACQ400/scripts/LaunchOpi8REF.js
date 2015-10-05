@@ -24,13 +24,14 @@ if(widgetController.getExternalObject(flagName) == null){
 		plot_time = PVUtil.getLong(pvArray[3]);
 	}
 	       
-	var ch0 = PVUtil.getLong(pvArray[4]);
-	var ch1 = PVUtil.getLong(pvArray[5]);
-	var ref0 = PVUtil.getLong(pvArray[6]);
-	var ref1 = PVUtil.getLong(pvArray[7]);
+	// parseInt() is WRONG, but seems getLong was returning a string..
+	var ch0 = parseInt(PVUtil.getLong(pvArray[4]));
+	var ch1 = parseInt(PVUtil.getLong(pvArray[5]));
+	var ref0 = parseInt(PVUtil.getLong(pvArray[6]));
+	var ref1 = parseInt(PVUtil.getLong(pvArray[7]));
 	
 	if (ref1 == ref0 && ch0 == ch1){
-		ch1=ch0+8;
+		ch1 += 7;
 	}
 	var chx = "CH";
 	var nc = 1;
@@ -41,11 +42,16 @@ if(widgetController.getExternalObject(flagName) == null){
 		}		 		
 	}
 	
-	if (ref1 - ref0 > 0){
-		chx= "REF"+ ref0;
-	}else{
-		chx= "CH"+pad(ch0, 2) + ":CH" + pad(ch1, 2)
+	chx = "CH"+pad(ch0, 2);
+	if (ch1 - ch0 > 0){
+		chx = chx + "..CH"+pad(ch1, 2)
 	}
+	
+	chx = chx + " REF"+ref0;
+	if (ref1 - ref0 > 0){
+		chx = chx + "..REF"+ref1;
+	}
+	
 	
 
 	/* plot_time != 0, use embedded tbx */
