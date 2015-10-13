@@ -103,7 +103,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container</name>
     <y>102</y>
@@ -145,7 +145,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_1</name>
     <y>156</y>
@@ -187,7 +187,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_2</name>
     <y>210</y>
@@ -229,7 +229,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_3</name>
     <y>264</y>
@@ -271,7 +271,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_4</name>
     <y>318</y>
@@ -313,7 +313,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_5</name>
     <y>372</y>
@@ -355,7 +355,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_6</name>
     <y>426</y>
@@ -397,7 +397,7 @@
       <color red="240" green="240" blue="240" />
     </background_color>
     <zoom_to_fit>true</zoom_to_fit>
-    <width>697</width>
+    <width>427</width>
     <x>18</x>
     <name>Linking Container_7</name>
     <y>480</y>
@@ -647,6 +647,48 @@
     <actions hook="false" hook_all="false" />
     <font>
       <opifont.name fontName="Cantarell" height="12" style="1">Default Bold</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <border_style>6</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <actions_from_pv>true</actions_from_pv>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-692af324:15060960467:-7f02</wuid>
+    <transparent>false</transparent>
+    <pv_value />
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>34</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:FIR:01</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <label></label>
+    <widget_type>Menu Button</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>157</width>
+    <x>456</x>
+    <name>Menu Button</name>
+    <y>110</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
   </widget>
 </display>
