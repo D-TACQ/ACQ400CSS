@@ -106,7 +106,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container</name>
-    <y>102</y>
+    <y>156</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -148,7 +148,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_1</name>
-    <y>156</y>
+    <y>210</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -190,7 +190,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_2</name>
-    <y>210</y>
+    <y>264</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -232,7 +232,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_3</name>
-    <y>264</y>
+    <y>318</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -274,7 +274,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_4</name>
-    <y>318</y>
+    <y>372</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -316,7 +316,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_5</name>
-    <y>372</y>
+    <y>426</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -358,7 +358,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_6</name>
-    <y>426</y>
+    <y>480</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -400,7 +400,7 @@
     <width>427</width>
     <x>18</x>
     <name>Linking Container_7</name>
-    <y>480</y>
+    <y>534</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
@@ -598,7 +598,7 @@
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>85</width>
-    <x>360</x>
+    <x>354</x>
     <name>Label_5</name>
     <y>66</y>
     <foreground_color>
@@ -638,9 +638,9 @@
       <color red="255" green="255" blue="255" />
     </background_color>
     <width>85</width>
-    <x>486</x>
+    <x>541</x>
     <name>Label_6</name>
-    <y>66</y>
+    <y>68</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -681,12 +681,688 @@ $(pv_value)</tooltip>
       <color red="240" green="240" blue="240" />
     </background_color>
     <width>157</width>
-    <x>456</x>
+    <x>517</x>
     <name>Menu Button</name>
-    <y>110</y>
+    <y>104</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip>Decimating Filter</tooltip>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7ce9</wuid>
+    <transparent>true</transparent>
+    <auto_size>false</auto_size>
+    <text>50R</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>67</width>
+    <x>451</x>
+    <name>Label_7</name>
+    <y>66</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="1">Default Bold</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c92</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button</name>
+    <data_type>0</data_type>
+    <y>106</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c82</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:01</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_1</name>
+    <data_type>0</data_type>
+    <y>166</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c74</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:02</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_2</name>
+    <data_type>0</data_type>
+    <y>220</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c6d</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:03</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_3</name>
+    <data_type>0</data_type>
+    <y>274</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c66</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:04</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_4</name>
+    <data_type>0</data_type>
+    <y>328</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c5f</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:05</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_5</name>
+    <data_type>0</data_type>
+    <y>382</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c58</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:06</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_6</name>
+    <data_type>0</data_type>
+    <y>436</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c51</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:07</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_7</name>
+    <data_type>0</data_type>
+    <y>490</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <toggle_button>true</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <effect_3d>true</effect_3d>
+    <bit>-1</bit>
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7c4a</wuid>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <password></password>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <square_button>true</square_button>
+    <show_led>true</show_led>
+    <scripts />
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <height>30</height>
+    <on_label>ON</on_label>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:ACQ480:T50R:08</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Boolean Button</widget_type>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <confirm_message>Are your sure you want to do this?</confirm_message>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>40</width>
+    <x>465</x>
+    <name>Boolean Button_8</name>
+    <data_type>0</data_type>
+    <y>544</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <show_boolean_label>false</show_boolean_label>
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+    </font>
+    <off_label>OFF</off_label>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <border_style>0</border_style>
+    <tooltip>Channel</tooltip>
+    <horizontal_alignment>1</horizontal_alignment>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7951</wuid>
+    <transparent>true</transparent>
+    <auto_size>false</auto_size>
+    <text>ALL</text>
+    <scripts />
+    <height>25</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Label</widget_type>
+    <wrap_words>false</wrap_words>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <width>85</width>
+    <x>24</x>
+    <name>Label_8</name>
+    <y>108</y>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Cantarell" height="12" style="1">Default Bold</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <line_width>1</line_width>
+    <horizontal_fill>true</horizontal_fill>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <arrows>0</arrows>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-2340e77f:1514e52b608:-7701</wuid>
+    <transparent>false</transparent>
+    <points>
+      <point x="108" y="120" />
+      <point x="444" y="120" />
+      <point x="444" y="120" />
+    </points>
+    <fill_arrow>true</fill_arrow>
+    <pv_value />
+    <alpha>255</alpha>
+    <rotation_angle>0.0</rotation_angle>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>1</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <visible>true</visible>
+    <pv_name></pv_name>
+    <border_color>
+      <color red="0" green="0" blue="0" />
+    </border_color>
+    <anti_alias>true</anti_alias>
+    <line_style>0</line_style>
+    <arrow_length>20</arrow_length>
+    <widget_type>Polyline</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="0" blue="0" />
+    </background_color>
+    <width>337</width>
+    <x>108</x>
+    <name>Polyline</name>
+    <y>120</y>
+    <fill_level>0.0</fill_level>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
     <font>
       <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
     </font>
