@@ -41,6 +41,9 @@ if(widgetController.getExternalObject(flagName) == null){
 	macroInput.put("xtitle", plot_time==0? "Samples": plot_time == 2? "Hz": "Seconds"); 
 	macroInput.put("CHX", chx);
 	       
-	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";	       
-	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
+	var opibase = "" + widget.getPropertyValue("name");
+	var name_ext = opibase.indexOf("__");
+	if (name_ext > 0) opibase = opibase.substr(0, name_ext);
+	var opi = "./opi/" + opibase + ".opi";	       
+	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);	
 }
