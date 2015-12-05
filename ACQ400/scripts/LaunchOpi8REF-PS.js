@@ -51,8 +51,8 @@ if(widgetController.getExternalObject(flagName) == null){
 	if (ref1 - ref0 > 0){
 		chx = chx + "..REF"+ref1;
 	}
-	
-	
+	//acq1001_084:DSP:LIA:REF:FREQ:1
+	macroInput.put("REF", ref0);
 
 	/* plot_time != 0, use embedded tbx */
 	macroInput.put("tbx", plot_time != 0? "$(TB)": "");
