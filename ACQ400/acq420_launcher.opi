@@ -10,7 +10,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
-  <boy_version>3.2.16.20140409</boy_version>
+  <boy_version>4.0.103.201506301920</boy_version>
   <show_edit_range>true</show_edit_range>
   <widget_type>Display</widget_type>
   <auto_scale_widgets>
@@ -52,6 +52,7 @@
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>0</line_width>
     <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -100,7 +101,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -111,6 +112,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>1</line_width>
     <horizontal_fill>false</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -159,7 +161,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -170,6 +172,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>0</line_width>
     <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -218,7 +221,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -229,6 +232,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>0</line_width>
     <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -277,7 +281,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -321,7 +325,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <show_scrollbar>false</show_scrollbar>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -362,10 +366,11 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <show_scrollbar>false</show_scrollbar>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+    <alarm_pulsing>false</alarm_pulsing>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -424,13 +429,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <minimum>-1.7976931348623157E308</minimum>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -483,13 +489,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -542,13 +549,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -601,13 +609,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -659,13 +668,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -700,10 +710,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>139</width>
-    <x>336</x>
+    <width>122</width>
+    <x>449</x>
     <name>ao420awg</name>
-    <y>420</y>
+    <y>340</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -718,13 +728,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -759,10 +770,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>145</width>
-    <x>336</x>
+    <width>122</width>
+    <x>449</x>
     <name>ao421</name>
-    <y>456</y>
+    <y>381</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -777,13 +788,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -835,13 +847,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -893,13 +906,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -951,13 +965,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1010,13 +1025,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1070,13 +1086,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1130,13 +1147,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1190,13 +1208,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1250,7 +1269,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -1290,7 +1309,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -1330,12 +1349,13 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -1344,7 +1364,7 @@ $(pv_value)</tooltip>
     <pv_value />
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
-    <height>34</height>
+    <height>32</height>
     <border_width>1</border_width>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -1379,12 +1399,13 @@ $(pv_value)</tooltip>
       <s>kmcu</s>
     </items>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ThumbWheel" version="1.0.0">
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -1432,7 +1453,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <minimum>0.0</minimum>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
@@ -1440,6 +1461,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>1</line_width>
     <horizontal_fill>false</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -1488,13 +1510,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
     </line_color>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
+    <alarm_pulsing>false</alarm_pulsing>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
@@ -1547,13 +1570,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <minimum>-1.7976931348623157E308</minimum>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1589,9 +1613,9 @@ $(pv_value)</tooltip>
       <color red="240" green="240" blue="240" />
     </background_color>
     <width>85</width>
-    <x>486</x>
+    <x>336</x>
     <name>bolo8</name>
-    <y>504</y>
+    <y>381</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -1606,13 +1630,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1665,13 +1690,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1724,13 +1750,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1783,7 +1810,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
@@ -1791,6 +1818,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>0</line_width>
     <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -1839,7 +1867,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -1849,6 +1877,7 @@ $(pv_value)</tooltip>
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1902,13 +1931,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -1962,13 +1992,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2022,13 +2053,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2082,13 +2114,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2142,13 +2175,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2202,13 +2236,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2262,13 +2297,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2322,7 +2358,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -2362,7 +2398,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -2402,7 +2438,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -2442,13 +2478,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2500,13 +2537,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2559,13 +2597,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2618,13 +2657,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2676,13 +2716,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2734,13 +2775,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2775,10 +2817,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>139</width>
-    <x>336</x>
+    <width>115</width>
+    <x>449</x>
     <name>ao420dc</name>
-    <y>337</y>
+    <y>249</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2793,13 +2835,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2834,10 +2877,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>139</width>
-    <x>336</x>
+    <width>115</width>
+    <x>449</x>
     <name>ao424dc</name>
-    <y>381</y>
+    <y>294</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2852,13 +2895,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -2910,7 +2954,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
@@ -2918,6 +2962,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>0</line_width>
     <horizontal_fill>true</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -2966,7 +3011,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -2976,6 +3021,7 @@ $(pv_value)</tooltip>
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3027,12 +3073,13 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.checkbox" version="1.0.0">
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -3073,13 +3120,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3132,13 +3180,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3190,13 +3239,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3257,7 +3307,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -3297,13 +3347,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3357,13 +3408,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3417,7 +3469,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -3457,13 +3509,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3524,13 +3577,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3584,13 +3638,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3644,13 +3699,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3711,13 +3767,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3778,13 +3835,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3822,7 +3880,7 @@ $(pv_value)</tooltip>
     <width>103</width>
     <x>336</x>
     <name>acq480</name>
-    <y>504</y>
+    <y>340</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -3837,13 +3895,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -3896,7 +3955,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
@@ -3904,6 +3963,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <line_width>1</line_width>
     <horizontal_fill>false</horizontal_fill>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -3952,7 +4012,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
     <line_color>
       <color red="128" green="0" blue="255" />
@@ -3962,6 +4022,7 @@ $(pv_value)</tooltip>
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -4013,7 +4074,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -4053,13 +4114,14 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="false" />
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -4113,12 +4175,13 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ThumbWheel" version="1.0.0">
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -4166,12 +4229,13 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <minimum>0.0</minimum>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ThumbWheel" version="1.0.0">
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
@@ -4219,13 +4283,14 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false" />
     <minimum>1.0</minimum>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -4278,13 +4343,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -4337,13 +4403,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <toggle_button>false</toggle_button>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <push_action_index>0</push_action_index>
@@ -4395,7 +4462,67 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <font>
-      <opifont.name fontName="Cantarell" height="12" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <toggle_button>false</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>38623c50:15263707969:-7e2b</wuid>
+    <pv_value />
+    <text>deltrg</text>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://deltrg</pv>
+      </path>
+    </scripts>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>31</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <image></image>
+    <visible>true</visible>
+    <pv_name>loc://deltrg(0)</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Action Button</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>103</width>
+    <x>336</x>
+    <name>deltrg</name>
+    <y>504</y>
+    <style>0</style>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://deltrg</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
     </font>
   </widget>
 </display>
