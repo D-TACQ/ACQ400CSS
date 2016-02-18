@@ -11,7 +11,8 @@ if(widgetController.getExternalObject(flagName) == null){
 		
 	
 	var typ = PVUtil.getString(pvArray[0]).split("_")[0];
-    	var opi = "./opi/" + typ + widget.getPropertyValue("name") + ".opi";		
+	macroInput.put("TYPE", typ);
+    var opi = "./opi/" + typ + widget.getPropertyValue("name") + ".opi";		
     
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
 }
