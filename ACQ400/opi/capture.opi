@@ -1258,8 +1258,8 @@ $(pv_value)</tooltip>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
-        <width>79</width>
-        <x>462</x>
+        <width>87</width>
+        <x>420</x>
         <name>Text Update_3</name>
         <y>165</y>
         <foreground_color>
@@ -1298,8 +1298,8 @@ $(pv_value)</tooltip>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
-        <width>80</width>
-        <x>378</x>
+        <width>49</width>
+        <x>357</x>
         <name>Label_5</name>
         <y>167</y>
         <foreground_color>
@@ -1569,10 +1569,10 @@ $(pv_value)</tooltip>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
-        <width>79</width>
-        <x>648</x>
+        <width>58</width>
+        <x>585</x>
         <name>Text Update_5</name>
-        <y>165</y>
+        <y>164</y>
         <foreground_color>
           <color red="0" green="0" blue="0" />
         </foreground_color>
@@ -1672,7 +1672,8 @@ $(pv_value)</tooltip>
         <wuid>-572111ab:14d1dd2d7f0:-7af8</wuid>
         <transparent>true</transparent>
         <auto_size>false</auto_size>
-        <text>DEMUX</text>
+        <text>Post
+Process</text>
         <scripts />
         <height>20</height>
         <border_width>1</border_width>
@@ -1692,9 +1693,72 @@ $(pv_value)</tooltip>
           <color red="255" green="255" blue="255" />
         </background_color>
         <width>80</width>
-        <x>558</x>
+        <x>506</x>
         <name>Label_9</name>
         <y>167</y>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <actions hook="false" hook_all="false" />
+        <font>
+          <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+        </font>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+        <border_style>0</border_style>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <alarm_pulsing>false</alarm_pulsing>
+        <precision>0</precision>
+        <tooltip>$(pv_name) 
+Post Processing -
+MDSPUTCH CHANNEL
+if appropriate</tooltip>
+        <horizontal_alignment>0</horizontal_alignment>
+        <rules>
+          <rule name="BusyRule" prop_id="background_color" out_exp="false">
+            <exp bool_exp="pv0 != 0">
+              <value>
+                <color name="Minor" red="255" green="128" blue="0" />
+              </value>
+            </exp>
+            <pv trig="true">${UUT}:TRANSIENT:ACT:DEMUX</pv>
+          </rule>
+        </rules>
+        <enabled>true</enabled>
+        <wuid>1ac8b902:15880d49ed5:-7e1c</wuid>
+        <transparent>false</transparent>
+        <pv_value />
+        <auto_size>false</auto_size>
+        <text>######</text>
+        <rotation_angle>0.0</rotation_angle>
+        <scripts />
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <show_units>true</show_units>
+        <height>25</height>
+        <border_width>1</border_width>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <visible>true</visible>
+        <pv_name>${UUT}:MODE:TRANS_ACT:POST:MDSPUTCH</pv_name>
+        <vertical_alignment>1</vertical_alignment>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <precision_from_pv>true</precision_from_pv>
+        <widget_type>Text Update</widget_type>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <wrap_words>false</wrap_words>
+        <format_type>0</format_type>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <width>51</width>
+        <x>672</x>
+        <name>Text Update_5</name>
+        <y>164</y>
         <foreground_color>
           <color red="0" green="0" blue="0" />
         </foreground_color>

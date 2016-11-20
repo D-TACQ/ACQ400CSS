@@ -10,8 +10,11 @@ if(widgetController.getExternalObject(flagName) == null){
 	macroInput.put("SITE", PVUtil.getLong(pvArray[1]));
 		
 	var opi = "./opi/" + widget.getPropertyValue("name") + ".opi";
-	
-	if (widgetController.getExternalObject(opi) == null){
+
+// change for ACQ1014 breaks other launchers on UUT change
+// revert to original, TODO must re-test ACQ1014 for breakage	
+	if (true) { 
+//	if (widgetController.getExternalObject(opi) == null){
 		ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);
 		widgetController.setExternalObject(opi, false);
 	}
