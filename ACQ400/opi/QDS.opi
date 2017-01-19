@@ -279,7 +279,7 @@
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-444f07b7:159b0a99f6b:-7bba</wuid>
@@ -312,8 +312,8 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>79</width>
-    <x>105</x>
+    <width>88</width>
+    <x>96</x>
     <name>Text Update</name>
     <y>114</y>
     <foreground_color>
@@ -331,7 +331,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-444f07b7:159b0a99f6b:-7bb2</wuid>
@@ -364,8 +364,8 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>79</width>
-    <x>207</x>
+    <width>88</width>
+    <x>198</x>
     <name>Text Update_1</name>
     <y>114</y>
     <foreground_color>
@@ -383,7 +383,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-444f07b7:159b0a99f6b:-7ba7</wuid>
@@ -416,7 +416,7 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>79</width>
+    <width>85</width>
     <x>312</x>
     <name>Text Update_2</name>
     <y>114</y>
@@ -435,7 +435,7 @@ $(pv_value)</tooltip>
     <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
     <wuid>-444f07b7:159b0a99f6b:-7ba6</wuid>
@@ -468,8 +468,8 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
-    <width>79</width>
-    <x>414</x>
+    <width>85</width>
+    <x>408</x>
     <name>Text Update_3</name>
     <y>114</y>
     <foreground_color>
@@ -482,8 +482,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Threshold Exceeded</tooltip>
     <rules />
     <effect_3d>true</effect_3d>
     <bit>-1</bit>
@@ -579,8 +578,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
     <precision>3</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Threshold Volts</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
@@ -633,8 +631,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
     <precision>3</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Map Channel N to V13</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
@@ -687,8 +684,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
     <precision>3</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Map Channel N to V15</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
@@ -741,8 +737,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
     <precision>3</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Map Channel N to V14</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
@@ -795,8 +790,7 @@ $(pv_value)</tooltip>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
     <precision>3</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Map Channel N to V15</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <rules />
     <enabled>true</enabled>
@@ -853,8 +847,7 @@ $(pv_value)</tooltip>
     <wuid>-444f07b7:159b0a99f6b:-7aaa</wuid>
     <transparent>true</transparent>
     <auto_size>false</auto_size>
-    <text>Filter
-N</text>
+    <text>Filter</text>
     <scripts />
     <height>25</height>
     <border_width>1</border_width>
@@ -888,10 +881,9 @@ N</text>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <border_style>6</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <actions_from_pv>false</actions_from_pv>
+    <actions_from_pv>true</actions_from_pv>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Average over N</tooltip>
     <rules />
     <enabled>true</enabled>
     <wuid>-444f07b7:159b0a99f6b:-7a4f</wuid>
@@ -924,7 +916,6 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <actions hook="false" hook_all="false" />
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
