@@ -474,8 +474,8 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>67</width>
-    <x>588</x>
+    <width>55</width>
+    <x>648</x>
     <name>Action Button</name>
     <y>348</y>
     <style>0</style>
@@ -538,7 +538,7 @@ $(pv_value)</tooltip>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
-      </action>     
+      </action>
     </actions>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
@@ -577,10 +577,10 @@ $(pv_value)</tooltip>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>67</width>
-    <x>588</x>
+    <width>55</width>
+    <x>576</x>
     <name>Action Button_1</name>
-    <y>390</y>
+    <y>348</y>
     <style>0</style>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -638,6 +638,116 @@ $(pv_value)</tooltip>
       <action type="WRITE_PV">
         <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:08</pv_name>
         <value>.8</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <toggle_button>false</toggle_button>
+    <border_style>0</border_style>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <alarm_pulsing>false</alarm_pulsing>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <push_action_index>0</push_action_index>
+    <rules />
+    <enabled>true</enabled>
+    <wuid>-b8f0ef8:15a03b18c25:-7935</wuid>
+    <pv_value />
+    <text>Autozero..</text>
+    <scripts />
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <height>31</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <image></image>
+    <visible>true</visible>
+    <pv_name>${UUT}:${SITE}:SET_AUTOZERO</pv_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Action Button</widget_type>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>121</width>
+    <x>576</x>
+    <name>Action Button_2</name>
+    <y>399</y>
+    <style>0</style>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:01</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:02</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:03</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:04</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:05</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:06</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:07</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:08</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
