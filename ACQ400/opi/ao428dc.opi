@@ -484,56 +484,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:01</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:02</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:03</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:04</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:05</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:06</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:07</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:08</pv_name>
+        <pv_name>${UUT}:${SITE}:AO:SLOW_SET:CH:ALL</pv_name>
         <value>0</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
