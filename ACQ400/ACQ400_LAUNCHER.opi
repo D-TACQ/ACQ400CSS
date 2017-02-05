@@ -618,8 +618,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>External Function Generator (if connected)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -797,8 +796,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>System Health Monitoring - temperature and voltage</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -856,8 +854,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Clock and Trigger Counters</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -915,8 +912,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Shows UUT Clock Routing</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -1580,8 +1576,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>BOLO8 : 8 channel Bolometer module
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -1640,8 +1636,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ425 ONLY: basic capture configuration</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -1700,8 +1695,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ425 ONLY: per channel gain control</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -2428,8 +2422,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Control Capture: Transient or Continuous</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -2487,8 +2480,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>AI Channel Activity Monitor</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -2547,8 +2539,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>AI Values</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -2607,67 +2598,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <push_action_index>0</push_action_index>
-    <rules />
-    <enabled>true</enabled>
-    <wuid>-21181fc2:1495b62deef:-7c08</wuid>
-    <pv_value />
-    <text>ACQ425 Transient</text>
-    <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://UUT</pv>
-        <pv trig="true">loc://trg_transient</pv>
-      </path>
-    </scripts>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <height>31</height>
-    <border_width>1</border_width>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <image></image>
-    <visible>true</visible>
-    <pv_name>loc://trg_transient(0)</pv_name>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <widget_type>Action Button</widget_type>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <width>151</width>
-    <x>6</x>
-    <name>trg_transient</name>
-    <y>370</y>
-    <style>0</style>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://trg_transient</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <toggle_button>false</toggle_button>
-    <border_style>0</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Controls signals to inter-box synchronization (HDMI cable)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -2845,8 +2776,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ2106 ONLY: Multi Gigabit Transceiver Status</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -2964,8 +2894,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Show UUT configuration</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -3070,8 +2999,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Capture Signal Statistics</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -3130,8 +3058,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Gate Pulse Generator - programmed pulse output</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -3785,8 +3712,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ480 parameter control
+(ACQ480 only)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -3845,8 +3772,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Analog Threshold Trigger
+(if fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4233,8 +4160,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Voltage to Frequency
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4293,8 +4220,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Lock-In Amplifier control
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4353,8 +4280,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Analog Threshold DELTA Trigger
+(if fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4413,8 +4340,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>DDS (frequency) control
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4473,8 +4400,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>RAD-CELF : HF Radar Accessory
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4593,8 +4520,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>AI offset control</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4653,8 +4579,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Quadrature Encoder (shaft encoder) 
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
@@ -4833,8 +4759,8 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Quench Detector System
+(where fitted)</tooltip>
     <push_action_index>0</push_action_index>
     <rules />
     <enabled>true</enabled>
