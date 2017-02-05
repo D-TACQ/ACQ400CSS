@@ -6,9 +6,9 @@
     <show_toolbar>true</show_toolbar>
     <grid>false</grid>
     <scroll>true</scroll>
-    <update_period>3.0</update_period>
+    <update_period>0.5</update_period>
     <scroll_step>5</scroll_step>
-    <start>-40.00 sec</start>
+    <start>-45.00 sec</start>
     <end>now</end>
     <archive_rescale>NONE</archive_rescale>
     <background>
@@ -32,8 +32,8 @@
                 <green>0</green>
                 <blue>0</blue>
             </color>
-            <min>-7.5E-5</min>
-            <max>7.099999999999999E-5</max>
+            <min>-0.01</min>
+            <max>6.0</max>
             <grid>false</grid>
             <autoscale>true</autoscale>
             <log_scale>false</log_scale>
