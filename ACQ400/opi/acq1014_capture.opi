@@ -76,7 +76,14 @@
     <opi_file>acq1014_clk_trg.opi</opi_file>
     <border_style>3</border_style>
     <tooltip></tooltip>
-    <rules />
+    <rules>
+      <rule name="VisibleOld" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0 != "acq1014"</value>
+        </exp>
+        <pv trig="true">${UUT}:0:MODEL</pv>
+      </rule>
+    </rules>
     <enabled>true</enabled>
     <wuid>-5681d587:1598ca01a50:-78e6</wuid>
     <scripts />
@@ -91,7 +98,7 @@
       <include_parent_macros>true</include_parent_macros>
     </macros>
     <resize_behaviour>0</resize_behaviour>
-    <visible>true</visible>
+    <visible>false</visible>
     <group_name></group_name>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -100,10 +107,57 @@
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
-    <width>803</width>
-    <x>-4</x>
+    <width>799</width>
+    <x>0</x>
     <name>Linking Container_1</name>
-    <y>494</y>
+    <y>492</y>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <actions hook="false" hook_all="false" />
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+    </font>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <opi_file>acq1014b_clk_trg.opi</opi_file>
+    <border_style>3</border_style>
+    <tooltip></tooltip>
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0 == "acq1014"</value>
+        </exp>
+        <pv trig="true">${UUT}:0:MODEL</pv>
+      </rule>
+    </rules>
+    <enabled>true</enabled>
+    <wuid>2fbf821d:15aeca18c4f:-72e2</wuid>
+    <scripts />
+    <height>235</height>
+    <border_width>1</border_width>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <resize_behaviour>0</resize_behaviour>
+    <visible>false</visible>
+    <group_name></group_name>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <widget_type>Linking Container</widget_type>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <width>799</width>
+    <x>0</x>
+    <name>Linking Container_2</name>
+    <y>492</y>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>

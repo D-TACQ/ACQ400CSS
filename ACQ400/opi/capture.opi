@@ -1634,14 +1634,14 @@ $(pv_value)</tooltip>
           </action>
           <action type="WRITE_PV">
             <pv_name>${UUT}:MODE:TRANSIENT:PRE</pv_name>
-            <value>8192</value>
+            <value>50000</value>
             <timeout>10</timeout>
             <confirm_message></confirm_message>
             <description></description>
           </action>
           <action type="WRITE_PV">
             <pv_name>${UUT}:MODE:TRANSIENT:POST</pv_name>
-            <value>8192</value>
+            <value>50000</value>
             <timeout>10</timeout>
             <confirm_message></confirm_message>
             <description></description>
