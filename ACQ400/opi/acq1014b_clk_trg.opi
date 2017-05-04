@@ -246,7 +246,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>${UUT}:ACQ1014:FS</pv_name>
+    <pv_name>${UUT}:0:SIG:CLK_MB:SET</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <format>0</format>
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
@@ -306,7 +306,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>${UUT}:ACQ1014:FIN</pv_name>
+    <pv_name>${UUT}:0:SIG:CLK_MB:FIN</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <format>0</format>
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
@@ -514,7 +514,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>${UUT}:ACQ1014:FS:r</pv_name>
+    <pv_name>${UUT}:0:SIG:CLK_MB:FREQ</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -573,7 +573,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>${UUT}:ACQ1014:FIN:r</pv_name>
+    <pv_name>${UUT}:0:SIG:CLK_EXT:FREQ</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
