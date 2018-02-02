@@ -27,7 +27,7 @@
     <trace_6_y_pv>${UUT}:${SITE}:AI:WF:PS:${CH07}.VALA</trace_6_y_pv>
     <trace_7_y_pv>${UUT}:${SITE}:AI:WF:PS:${CH08}.VALA</trace_7_y_pv>
     <y_axis_title>dB</y_axis_title>
-    <TB>${UUT}:1:AI:WF:PS:01.VALB</TB>
+    <TB>${UUT}:${SITE}:AI:WF:PS:01.VALB</TB>
     <TYPE>${UUT}:${SITE}:AI:WF:PS:${CH01}.FTVA</TYPE>
   </macros>
   <name>${UUT}:SPEC</name>
