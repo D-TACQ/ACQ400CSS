@@ -66,8 +66,11 @@
     <height>691</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
-      <UUT>${UUT1}</UUT>
+      <UUT>${UUT1}..${UUT8}</UUT>
       <SITE>1</SITE>
+      <CHX>"Selected Channels"</CHX>
+      <TYPE>${UUT1}:1:AI:TW:01.FTVL</TYPE>
+      <TB>${UUT1}:1:AI:TW:TB.VALA</TB>
     </macros>
     <name>Linking Container</name>
     <opi_file>acq435scope.opi</opi_file>
@@ -115,7 +118,7 @@
     <name>Text Update</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>${UUT}:SYS:UPTIME</pv_name>
+    <pv_name>${UUT1}:SYS:UPTIME</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
