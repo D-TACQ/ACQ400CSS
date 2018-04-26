@@ -8,7 +8,7 @@ var site=dx-1;
 var sites = sitelist.split(",");
 var isVisible = false;
 if (site < sites.length){
-	isVisible = sites[site].search("480") >-1? true: false;
+	isVisible = sites[site].search("48[02]") >-1? true: false;
 }
 
 widget.setPropertyValue("visible", isVisible);
