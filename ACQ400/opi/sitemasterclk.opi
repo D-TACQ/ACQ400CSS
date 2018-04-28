@@ -62,7 +62,13 @@
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <scripts />
+    <scripts>
+      <path pathString="../scripts/show480.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="true">${UUT}:SITELIST</pv>
+        <pv trig="false">loc://colour_${SITE}(2)</pv>
+        <pv trig="false">loc://hide_480(0)</pv>
+      </path>
+    </scripts>
     <show_scrollbar>true</show_scrollbar>
     <tooltip></tooltip>
     <transparent>false</transparent>
