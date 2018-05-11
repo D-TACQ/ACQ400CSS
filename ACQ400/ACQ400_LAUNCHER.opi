@@ -1354,7 +1354,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>27</height>
+    <height>31</height>
     <items>
       <s>acq1001</s>
       <s>acq2006</s>
@@ -4855,5 +4855,64 @@ $(pv_value)</tooltip>
     <wuid>-67768976:15dd1868f9d:-7d31</wuid>
     <x>94</x>
     <y>450</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://acq423gains</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq423_gains</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://acq423gains(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://acq423gains</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>acq423 gains</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>ACQ423 ONLY: per channel gain control</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>103</width>
+    <wuid>-71782b8b:1634e2379f2:-7a4a</wuid>
+    <x>336</x>
+    <y>171</y>
   </widget>
 </display>
