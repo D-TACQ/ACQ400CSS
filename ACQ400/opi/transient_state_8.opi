@@ -366,7 +366,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
       <action type="EXECUTE_CMD">
-        <command>python -u acq400_abort.py  ${UUTS}</command>
+        <command>python -u user_apps/acq400/acq400_abort.py  ${UUTS}</command>
         <command_directory>${HAPIDIR}</command_directory>
         <wait_time>10</wait_time>
         <description></description>
@@ -479,7 +479,7 @@ $(pv_value)</tooltip>
           <description></description>
         </action>
         <action type="EXECUTE_CMD">
-          <command>python -u acq1014_caploop.py --shots=1 --trg=ext ${UUTS}</command>
+          <command>python -u user_apps/acq1014/acq1014_caploop.py --shots=1 --trg=ext ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
@@ -532,7 +532,7 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="EXECUTE_CMD">
-          <command>python -u acq400_upload.py --trace_upload=1 --save_data=${DATADIR}  --channels=${ACTIVECHAN}  ${UUTS}</command>
+          <command>python -u user_apps/acq400/acq400_upload.py --trace_upload=1 --save_data=${DATADIR}  --channels=${ACTIVECHAN}  ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
@@ -585,7 +585,7 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="EXECUTE_CMD">
-          <command>python -u acq1014_configure_transient.py --post=${LEN1} --trg=ext ${UUTS}</command>
+          <command>python -u user_apps/acq1014/acq1014_configure_transient.py --post=${LEN1} --trg=ext ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
@@ -638,7 +638,7 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="EXECUTE_CMD">
-          <command>python -u acq1014_configure_transient.py --post=${LEN2} --trg=ext ${UUTS}</command>
+          <command>python -u user_apps/acq1014/acq1014_configure_transient.py --post=${LEN2} --trg=ext ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
@@ -691,7 +691,7 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="EXECUTE_CMD">
-          <command>python -u acq400_upload.py --trace_upload=1 --save_data=${DATADIR}  --channels=${_ALLCHAN}  ${UUTS}</command>
+          <command>python -u user_apps/acq400/acq400_upload.py --trace_upload=1 --save_data=${DATADIR}  --channels=${_ALLCHAN}  ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
