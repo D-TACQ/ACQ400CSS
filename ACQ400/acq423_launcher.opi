@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
-  <actions hook="false" hook_all="false">
-    <action type="WRITE_PV">
-      <pv_name>loc://MODEL</pv_name>
-      <value>acq1001</value>
-      <timeout>10</timeout>
-      <confirm_message></confirm_message>
-      <description></description>
-    </action>
-    <action type="WRITE_PV">
-      <pv_name>loc://SN</pv_name>
-      <value>041</value>
-      <timeout>10</timeout>
-      <confirm_message></confirm_message>
-      <description></description>
-    </action>
-  </actions>
+  <actions hook="false" hook_all="false" />
   <auto_scale_widgets>
     <auto_scale_widgets>false</auto_scale_widgets>
     <min_width>-1</min_width>
@@ -33,7 +18,6 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <UUT>acq1001_122</UUT>
   </macros>
   <name></name>
   <rules />
@@ -283,9 +267,9 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Rounded Rectangle</widget_type>
-    <width>259</width>
+    <width>265</width>
     <wuid>33c8c855:1423795cb0a:-7eb3</wuid>
-    <x>504</x>
+    <x>498</x>
     <y>21</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -413,7 +397,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/SetUUT.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="scripts/SetUUT.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="true">loc://MODEL</pv>
         <pv trig="true">loc://SN</pv>
         <pv trig="false">loc://UUT</pv>
@@ -422,7 +406,7 @@ $(pv_value)</tooltip>
     <selector_type>0</selector_type>
     <show_units>true</show_units>
     <style>0</style>
-    <text>acq1001_122</text>
+    <text>acq1001_076</text>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
@@ -432,6 +416,64 @@ $(pv_value)</tooltip>
     <wuid>29c7ec0d:13fa685d3e2:-7a55</wuid>
     <x>12</x>
     <y>123</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://WGM201</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>WGM201</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://WGM201(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://WGM201</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>WGM201</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>External Function Generator (if connected)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>82</width>
+    <wuid>-6bd374c6:14098791bb4:-7f15</wuid>
+    <x>96</x>
+    <y>486</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -483,8 +525,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>System</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>System Health Monitoring - temperature and voltage</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>151</width>
@@ -542,8 +583,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>Counters</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Clock and Trigger Counters</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>85</width>
@@ -601,8 +641,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>Clocktree</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Shows UUT Clock Routing</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>85</width>
@@ -731,6 +770,128 @@ $(pv_value)</tooltip>
     <wuid>c1ee8e1:14233218458:-7d4c</wuid>
     <x>678</x>
     <y>106</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT82r</pv_name>
+        <value>17</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8raw</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT82r(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT82r</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>17..24</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>c1ee8e1:14233218458:-7d4b</wuid>
+    <x>678</x>
+    <y>146</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT83r</pv_name>
+        <value>25</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8raw</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT83r(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT83r</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>25..32</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>c1ee8e1:14233218458:-7d4a</wuid>
+    <x>678</x>
+    <y>185</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -898,7 +1059,7 @@ $(pv_value)</tooltip>
     <maximum>999.0</maximum>
     <minimum>0.0</minimum>
     <name>ThumbSN</name>
-    <pv_name>loc://SN(122)</pv_name>
+    <pv_name>loc://SN(1)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -1078,81 +1239,20 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
+        <pv trig="false">loc://ONE(1)</pv>
         <pv trig="true">loc://acq425</pv>
       </path>
     </scripts>
     <style>0</style>
-    <text>acq425</text>
+    <text>acq42x</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ425 ONLY: basic capture configuration</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>103</width>
     <wuid>637f9622:1460521c937:-7f09</wuid>
     <x>213</x>
     <y>171</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>loc://acq425gains</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>31</height>
-    <image></image>
-    <name>acq425_gains</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>loc://acq425gains(0)</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://acq425gains</pv>
-      </path>
-    </scripts>
-    <style>0</style>
-    <text>acq425 gains</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>103</width>
-    <wuid>637f9622:1460521c937:-7d72</wuid>
-    <x>213</x>
-    <y>209</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1339,6 +1439,128 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
+        <pv_name>loc://PLOT82t</pv_name>
+        <value>17</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8volts_transient</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT82t(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT82t</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>17..24</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>5765bf2a:14878b4be47:-7d44</wuid>
+    <x>600</x>
+    <y>367</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT83t</pv_name>
+        <value>25</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8volts_transient</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT83t(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT83t</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>25..32</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>5765bf2a:14878b4be47:-7d43</wuid>
+    <x>600</x>
+    <y>406</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
         <pv_name>loc://PLOT8rt</pv_name>
         <value>1</value>
         <timeout>10</timeout>
@@ -1457,6 +1679,128 @@ $(pv_value)</tooltip>
     <wuid>5765bf2a:14878b4be47:-7d41</wuid>
     <x>678</x>
     <y>327</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT82rt</pv_name>
+        <value>17</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8raw_transient</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT82rt(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT82rt</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>17..24</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>5765bf2a:14878b4be47:-7d40</wuid>
+    <x>678</x>
+    <y>367</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT83rt</pv_name>
+        <value>25</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8raw_transient</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT83rt(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT83rt</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>25..32</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>5765bf2a:14878b4be47:-7d3f</wuid>
+    <x>678</x>
+    <y>406</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1628,8 +1972,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>Capture</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Control Capture: Transient or Continuous</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>151</width>
@@ -1688,8 +2031,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>MONITOR</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>AI Channel Activity Monitor</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>103</width>
@@ -1748,14 +2090,129 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>AI VALUES</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>AI Values</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>103</width>
     <wuid>-3f699f5d:1489331b9d7:-7c3e</wuid>
     <x>216</x>
     <y>381</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://sync</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq400sync</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://sync(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://sync</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>Sync</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>Controls signals to inter-box synchronization (HDMI cable)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>61</width>
+    <wuid>-778e8db3:1497cbe5772:-7c8a</wuid>
+    <x>96</x>
+    <y>179</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://mgt</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>mgt</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://mgt(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://mgt</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>MGT SFP</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>ACQ2106 ONLY: Multi Gigabit Transceiver Status</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>85</width>
+    <wuid>538d8682:14b56582fab:-7eee</wuid>
+    <x>6</x>
+    <y>450</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -1807,8 +2264,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>Firmware</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Show UUT configuration</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>151</width>
@@ -1914,14 +2370,71 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>STATS</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>Capture Signal Statistics</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>103</width>
     <wuid>7d6acd1b:14cf65558ce:-7c56</wuid>
     <x>216</x>
     <y>294</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://gpg</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq400gpg</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://gpg(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://gpg</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>GPG</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>Gate Pulse Generator - programmed pulse output</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>61</width>
+    <wuid>-45ecc376:14d96410238:-7c39</wuid>
+    <x>96</x>
+    <y>228</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
@@ -2261,6 +2774,264 @@ $(pv_value)</tooltip>
     <x>522</x>
     <y>106</y>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT82</pv_name>
+        <value>17</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT82(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT82</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>17..24</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>6f124721:140ac96e9ee:-7dfc</wuid>
+    <x>600</x>
+    <y>146</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT83</pv_name>
+        <value>25</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT83(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT83</pv>
+        <pv trig="false">loc://plot_time</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>25..32</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>67</width>
+    <wuid>6f124721:140ac96e9ee:-7df5</wuid>
+    <x>600</x>
+    <y>185</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT8s</pv_name>
+        <value>17</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>loc://xaxishz</pv_name>
+        <value>2</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8spec</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT8s</pv>
+        <pv trig="false">loc://xaxishz</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>17..24</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>61</width>
+    <wuid>-3eb54f71:14ea5fc432c:-7939</wuid>
+    <x>522</x>
+    <y>146</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT8s</pv_name>
+        <value>25</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>loc://xaxishz</pv_name>
+        <value>2</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq435_plot8spec</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT8s</pv>
+        <pv trig="false">loc://xaxishz</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>25..32</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>61</width>
+    <wuid>-3eb54f71:14ea5fc432c:-7932</wuid>
+    <x>522</x>
+    <y>185</y>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>false</alarm_pulsing>
@@ -2321,6 +3092,65 @@ $(pv_value)</tooltip>
     <x>218</x>
     <y>15</y>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://active96</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>active96</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://active96(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="true">loc://active96</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>ACTIVE96</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>85</width>
+    <wuid>24b48146:14fabf44d5b:-4fbe</wuid>
+    <x>6</x>
+    <y>486</y>
+  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <auto_size>false</auto_size>
@@ -2349,7 +3179,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>Chan</text>
+    <text>CHAN</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -2641,8 +3471,7 @@ $(pv_value)</tooltip>
     <style>0</style>
     <text>offsets</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>AI offset control</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>103</width>
@@ -2653,7 +3482,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://qen</pv_name>
+        <pv_name>loc://mgtdram</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2681,9 +3510,9 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>QEN</name>
+    <name>mgtA</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://qen(0)</pv_name>
+    <pv_name>loc://mgtdram(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -2694,26 +3523,24 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://qen</pv>
+        <pv trig="true">loc://mgtdram</pv>
       </path>
     </scripts>
     <style>0</style>
-    <text>QEN</text>
+    <text>MGT DRAM</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ2106 ONLY: Multi Gigabit Transceiver Status</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>60</width>
-    <wuid>-412706f2:15881a51d4a:-7c8c</wuid>
-    <x>449</x>
-    <y>420</y>
+    <width>85</width>
+    <wuid>-67768976:15dd1868f9d:-7d31</wuid>
+    <x>94</x>
+    <y>450</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
+        <pv_name>loc://acq423gains</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2739,11 +3566,11 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>25</height>
+    <height>31</height>
     <image></image>
-    <name>plot1raw_tw</name>
+    <name>acq423_gains</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://plot1c(0)</pv_name>
+    <pv_name>loc://acq423gains(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -2752,23 +3579,21 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi1.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
-        <pv trig="false">loc://enc_site(2)</pv>
-        <pv trig="false">loc://plot1ch</pv>
-        <pv trig="true">loc://plot1c</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://acq423gains</pv>
       </path>
     </scripts>
     <style>0</style>
-    <text>ENC</text>
+    <text>acq423 gains</text>
     <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+    <tooltip>ACQ423 ONLY: per channel gain control</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>59</width>
-    <wuid>-412706f2:15881a51d4a:-77a4</wuid>
-    <x>604</x>
-    <y>370</y>
+    <width>103</width>
+    <wuid>-71782b8b:1634e2379f2:-7a4a</wuid>
+    <x>336</x>
+    <y>171</y>
   </widget>
 </display>

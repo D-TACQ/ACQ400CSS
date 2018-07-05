@@ -251,7 +251,7 @@ $(pv_value)</tooltip>
       <color red="128" green="0" blue="255" />
     </line_color>
     <line_style>0</line_style>
-    <line_width>0</line_width>
+    <line_width>1</line_width>
     <name>Rounded Rectangle</name>
     <pv_name></pv_name>
     <pv_value />
@@ -264,12 +264,12 @@ $(pv_value)</tooltip>
     <scripts />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <transparent>false</transparent>
+    <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Rounded Rectangle</widget_type>
-    <width>211</width>
+    <width>258</width>
     <wuid>33c8c855:1423795cb0a:-7eb3</wuid>
-    <x>552</x>
+    <x>505</x>
     <y>21</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -1290,8 +1290,8 @@ $(pv_value)</tooltip>
     <width>100</width>
     <wrap_words>false</wrap_words>
     <wuid>33c8c855:1423795cb0a:-7de6</wuid>
-    <x>618</x>
-    <y>27</y>
+    <x>578</x>
+    <y>24</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1354,7 +1354,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>27</height>
+    <height>31</height>
     <items>
       <s>acq1001</s>
       <s>acq2006</s>
@@ -1445,7 +1445,7 @@ $(pv_value)</tooltip>
     <anti_alias>true</anti_alias>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color red="30" green="144" blue="255" />
+      <color red="0" green="191" blue="0" />
     </background_color>
     <bg_gradient_color>
       <color red="255" green="255" blue="255" />
@@ -1490,7 +1490,7 @@ $(pv_value)</tooltip>
     <scripts />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <transparent>true</transparent>
+    <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Rounded Rectangle</widget_type>
     <width>100</width>
@@ -1772,7 +1772,7 @@ $(pv_value)</tooltip>
       <color red="128" green="0" blue="255" />
     </line_color>
     <line_style>0</line_style>
-    <line_width>0</line_width>
+    <line_width>1</line_width>
     <name>Rounded Rectangle_9</name>
     <pv_name></pv_name>
     <pv_value />
@@ -1785,7 +1785,7 @@ $(pv_value)</tooltip>
     <scripts />
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <transparent>false</transparent>
+    <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Rounded Rectangle</widget_type>
     <width>181</width>
@@ -2812,66 +2812,6 @@ $(pv_value)</tooltip>
     <wuid>538d8682:14b56582fab:-7eee</wuid>
     <x>6</x>
     <y>450</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="0" green="191" blue="0" />
-    </background_color>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <corner_height>16</corner_height>
-    <corner_width>16</corner_width>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <gradient>false</gradient>
-    <height>208</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <line_style>0</line_style>
-    <line_width>0</line_width>
-    <name>Rounded Rectangle_10</name>
-    <pv_name>loc://xaxishz(0)</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Rounded Rectangle</widget_type>
-    <width>115</width>
-    <wuid>4d86a332:14e929f6675:-73c8</wuid>
-    <x>504</x>
-    <y>21</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -4855,5 +4795,64 @@ $(pv_value)</tooltip>
     <wuid>-67768976:15dd1868f9d:-7d31</wuid>
     <x>94</x>
     <y>450</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://acq423gains</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>acq423_gains</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://acq423gains(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://acq423gains</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>acq423 gains</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>ACQ423 ONLY: per channel gain control</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>103</width>
+    <wuid>-71782b8b:1634e2379f2:-7a4a</wuid>
+    <x>336</x>
+    <y>171</y>
   </widget>
 </display>
