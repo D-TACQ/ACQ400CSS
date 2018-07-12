@@ -9,5 +9,5 @@ http://controlsystemstudio.org/
 https://ics-web.sns.ornl.gov/css/
 
 ## Quickstart user guide:
-https://github.com/D-TACQ/ACQ400CSS/acq1001_acq430_quickstart.pdf
+https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
 
