@@ -174,7 +174,7 @@
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:0:SIG:CLK_S${SITE}:ACTIVE</pv_name>
+    <pv_name>${UUT}:${SITE}:SIG:clk_count:ACTIVE</pv_name>
     <pv_value />
     <rules />
     <scale_options>
