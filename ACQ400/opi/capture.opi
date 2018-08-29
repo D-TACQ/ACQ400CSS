@@ -183,7 +183,7 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>755</width>
       <wuid>-71c058a4:14d41ea3624:-7147</wuid>
@@ -2329,7 +2329,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>755</width>
       <wuid>-692af324:15060960467:-794d</wuid>
@@ -4082,5 +4082,82 @@ $(pv_value)</tooltip>
     <wuid>21c9cc33:15843817bfe:-7ac0</wuid>
     <x>474</x>
     <y>384</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <bit>-1</bit>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <confirm_message></confirm_message>
+    <data_type>0</data_type>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <labels_from_pv>false</labels_from_pv>
+    <name>Boolean Button_1</name>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <off_label>PULSE SOFT TRG</off_label>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <on_label></on_label>
+    <password></password>
+    <push_action_index>0</push_action_index>
+    <pv_name>${UUT}:SIG:SOFT_TRIGGER</pv_name>
+    <pv_value />
+    <released_action_index>1</released_action_index>
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0==0</value>
+        </exp>
+        <pv trig="true">loc://is_acq1014($(IS_ACQ1014))</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_boolean_label>true</show_boolean_label>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <show_led>false</show_led>
+    <square_button>true</square_button>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Boolean Button</widget_type>
+    <width>133</width>
+    <wuid>-6b37f61a:165848b14c0:-73e8</wuid>
+    <x>618</x>
+    <y>330</y>
   </widget>
 </display>
