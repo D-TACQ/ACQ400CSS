@@ -6,7 +6,8 @@ if(widgetController.getExternalObject(flagName) == null){
 	widgetController.setExternalObject(flagName, false);	
 }else{
 	var macroInput = DataUtil.createMacrosInput(true);
-	macroInput.put("SECS", PVUtil.getLong(pvArray[0]));		
+	macroInput.put("SECS", PVUtil.getLong(pvArray[0]));
+	macroInput.put("ETRG", PVUtil.getLong(pvArray[1]));	
 	var opi = "" + widget.getPropertyValue("name") + ".opi";
     
 	ScriptUtil.openOPI(widgetController,  opi, 0, macroInput);

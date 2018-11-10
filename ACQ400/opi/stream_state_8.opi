@@ -442,12 +442,6 @@
         <confirm_message></confirm_message>
         <description></description>
       </action>
-      <action type="EXECUTE_CMD">
-        <command>echo sudo python -u ./user_apps/acq2106/run-hts-all.py  --secs=${SECS} ${UUTS}</command>
-        <command_directory>${HAPIDIR}</command_directory>
-        <wait_time>10</wait_time>
-        <description></description>
-      </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
@@ -483,6 +477,7 @@
     <scripts>
       <path pathString="../scripts/LaunchOpiSecs.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://SECS</pv>
+        <pv trig="false">loc://TRG_EXT</pv>
         <pv trig="true">loc://run_stream</pv>
       </path>
     </scripts>
@@ -501,7 +496,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
       <action type="EXECUTE_CMD">
-        <command>python -u ./user_apps/acq400/acq400_abort.py  ${UUTS}</command>
+        <command>${SUDO} python -u ./user_apps/acq400/acq400_abort.py  ${UUTS}</command>
         <command_directory>${HAPIDIR}</command_directory>
         <wait_time>10</wait_time>
         <description></description>
@@ -607,7 +602,7 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>49</width>
     <wuid>-519a9143:166f2f294de:-1aa9</wuid>
-    <x>276</x>
+    <x>378</x>
     <y>30</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
@@ -764,7 +759,7 @@ $(pv_value)</tooltip>
     <widget_type>Text Input</widget_type>
     <width>193</width>
     <wuid>-519a9143:166f2f294de:37c</wuid>
-    <x>342</x>
+    <x>444</x>
     <y>12</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -801,10 +796,112 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>97</width>
+    <width>67</width>
     <wrap_words>false</wrap_words>
     <wuid>-519a9143:166f2f294de:b0e</wuid>
-    <x>246</x>
+    <x>369</x>
+    <y>12</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <bit>-1</bit>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <confirm_message>Are you sure you want to do this?</confirm_message>
+    <data_type>0</data_type>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <labels_from_pv>false</labels_from_pv>
+    <name>Boolean Button</name>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <off_label>SOFT</off_label>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <on_label>EXT</on_label>
+    <password></password>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://TRG_EXT(${ETRG})</pv_name>
+    <pv_value />
+    <released_action_index>0</released_action_index>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_boolean_label>true</show_boolean_label>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <show_led>true</show_led>
+    <square_button>true</square_button>
+    <toggle_button>true</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Boolean Button</widget_type>
+    <width>91</width>
+    <wuid>-519a9143:166f2f294de:1abe</wuid>
+    <x>252</x>
+    <y>36</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>19</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_2</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>TRG</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>97</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-519a9143:166f2f294de:1ac6</wuid>
+    <x>258</x>
     <y>12</y>
   </widget>
 </display>

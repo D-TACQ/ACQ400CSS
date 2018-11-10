@@ -434,7 +434,7 @@ $(pv_value)</tooltip>
       <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT_${UUT}("${UUT)")</pv>
         <pv trig="false">loc://SITE(1)</pv>
-        <pv trig="true">loc://PLOT8t_${UUT}(0)</pv>
+        <pv trig="true">loc://PLOT8_${UUT}(0)</pv>
         <pv trig="false">loc://plot_time(0)</pv>
       </path>
     </scripts>
