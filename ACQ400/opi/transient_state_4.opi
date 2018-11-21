@@ -18,7 +18,7 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <UUTS>${UUT1} ${UUT2} ${UUT3} ${UUT4} ${UUT5} ${UUT6} ${UUT7} ${UUT8}</UUTS>
+    <UUTS>${UUT1} ${UUT2} ${UUT3} ${UUT4}</UUTS>
   </macros>
   <name></name>
   <rules />
@@ -88,8 +88,8 @@ $(pv_value)</tooltip>
     <widget_type>Rectangle</widget_type>
     <width>145</width>
     <wuid>4a021bb:166155b6519:-7954</wuid>
-    <x>648</x>
-    <y>3</y>
+    <x>654</x>
+    <y>444</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -114,17 +114,10 @@ $(pv_value)</tooltip>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT1}</UUT>
     </macros>
-    <name>Linking Container_1</name>
+    <name>Linking Container</name>
     <opi_file>transient_state.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT1("${UUT1}")</pv>
-      </rule>
-    </rules>
+    <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -136,8 +129,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>793</width>
     <wuid>61109e11:162ceba64ca:-7cf3</wuid>
-    <x>18</x>
-    <y>156</y>
+    <x>0</x>
+    <y>0</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -162,17 +155,10 @@ $(pv_value)</tooltip>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT2}</UUT>
     </macros>
-    <name>Linking Container_2</name>
+    <name>Linking Container_1</name>
     <opi_file>transient_state.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT2("${UUT2}")</pv>
-      </rule>
-    </rules>
+    <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -184,8 +170,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>793</width>
     <wuid>61109e11:162ceba64ca:-7cdb</wuid>
-    <x>18</x>
-    <y>210</y>
+    <x>0</x>
+    <y>54</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -210,17 +196,10 @@ $(pv_value)</tooltip>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT3}</UUT>
     </macros>
-    <name>Linking Container_3</name>
+    <name>Linking Container_2</name>
     <opi_file>transient_state.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT3("${UUT3}")</pv>
-      </rule>
-    </rules>
+    <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -232,8 +211,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>793</width>
     <wuid>61109e11:162ceba64ca:-7cc0</wuid>
-    <x>18</x>
-    <y>264</y>
+    <x>0</x>
+    <y>108</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -258,17 +237,10 @@ $(pv_value)</tooltip>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT4}</UUT>
     </macros>
-    <name>Linking Container_4</name>
+    <name>Linking Container_3</name>
     <opi_file>transient_state.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT4("${UUT4}")</pv>
-      </rule>
-    </rules>
+    <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -280,200 +252,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>793</width>
     <wuid>61109e11:162ceba64ca:-7cb1</wuid>
-    <x>18</x>
-    <y>318</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>3</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <group_name></group_name>
-    <height>55</height>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <UUT>${UUT5}</UUT>
-    </macros>
-    <name>Linking Container_5</name>
-    <opi_file>transient_state.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT5("${UUT5}")</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip></tooltip>
-    <visible>true</visible>
-    <widget_type>Linking Container</widget_type>
-    <width>793</width>
-    <wuid>61109e11:162ceba64ca:-7c92</wuid>
-    <x>18</x>
-    <y>372</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>3</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <group_name></group_name>
-    <height>55</height>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <UUT>${UUT6}</UUT>
-    </macros>
-    <name>Linking Container_6</name>
-    <opi_file>transient_state.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT6("${UUT6}")</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip></tooltip>
-    <visible>true</visible>
-    <widget_type>Linking Container</widget_type>
-    <width>793</width>
-    <wuid>61109e11:162ceba64ca:-7c83</wuid>
-    <x>18</x>
-    <y>426</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>3</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <group_name></group_name>
-    <height>55</height>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <UUT>${UUT7}</UUT>
-    </macros>
-    <name>Linking Container_7</name>
-    <opi_file>transient_state.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT7("${UUT7}")</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip></tooltip>
-    <visible>true</visible>
-    <widget_type>Linking Container</widget_type>
-    <width>793</width>
-    <wuid>61109e11:162ceba64ca:-7c74</wuid>
-    <x>18</x>
-    <y>480</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>3</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <group_name></group_name>
-    <height>55</height>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <UUT>${UUT8}</UUT>
-    </macros>
-    <name>Linking Container_8</name>
-    <opi_file>transient_state.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
-    <rules>
-      <rule name="VisibleRule" prop_id="visible" out_exp="true">
-        <exp bool_exp="1">
-          <value>pvStr0 != ""</value>
-        </exp>
-        <pv trig="true">loc://UUT8("${UUT8}")</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip></tooltip>
-    <visible>true</visible>
-    <widget_type>Linking Container</widget_type>
-    <width>793</width>
-    <wuid>61109e11:162ceba64ca:-7c65</wuid>
-    <x>18</x>
-    <y>534</y>
+    <x>0</x>
+    <y>162</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
@@ -525,8 +305,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>115</width>
     <wuid>4edd056:162f2f46c47:-76cf</wuid>
-    <x>663</x>
-    <y>62</y>
+    <x>669</x>
+    <y>503</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -579,8 +359,8 @@ $(pv_value)</tooltip>
     <widget_type>Grouping Container</widget_type>
     <width>637</width>
     <wuid>4edd056:162f2f46c47:-6cf9</wuid>
-    <x>6</x>
-    <y>3</y>
+    <x>12</x>
+    <y>444</y>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="EXECUTE_CMD">
@@ -695,7 +475,7 @@ $(pv_value)</tooltip>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
         <action type="EXECUTE_CMD">
-          <command>python -u user_apps/acq1014/acq1014_configure_transient.py --post=${LEN1} --trg=ext ${UUTS}</command>
+          <command>python -u user_apps/acq400/acq400_configure_transient.py --post=${LEN1} --trg=ext,rising ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
@@ -743,7 +523,7 @@ $(pv_value)</tooltip>
       <width>169</width>
       <wuid>4edd056:162f2f46c47:-6a93</wuid>
       <x>24</x>
-      <y>39</y>
+      <y>54</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
       <actions hook="false" hook_all="false">
@@ -1052,7 +832,7 @@ $(pv_value)</tooltip>
           <description></description>
         </action>
         <action type="EXECUTE_CMD">
-          <command>python -u user_apps/acq1014/acq1014_caploop.py --shots=1 --trg=ext ${UUTS}</command>
+          <command>python -u user_apps/acq400/acq400_capture.py  ${UUTS}</command>
           <command_directory>${HAPIDIR}</command_directory>
           <wait_time>10</wait_time>
           <description></description>
@@ -1101,6 +881,59 @@ $(pv_value)</tooltip>
       <wuid>62a8df51:162d3fd64cf:-7ddd</wuid>
       <x>243</x>
       <y>54</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="EXECUTE_CMD">
+          <command>python -u user_apps/acq2106/ustc_set_sync.role.py --fs=${CLK} ${UUTS}</command>
+          <command_directory>${HAPIDIR}</command_directory>
+          <wait_time>10</wait_time>
+          <description></description>
+        </action>
+      </actions>
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>25</height>
+      <image></image>
+      <name>ConfigureTransientButton</name>
+      <push_action_index>0</push_action_index>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>0</style>
+      <text>CLOCK ${CLK}</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>169</width>
+      <wuid>-53dc6eb4:166aa41dd20:-7f1d</wuid>
+      <x>24</x>
+      <y>30</y>
     </widget>
   </widget>
 </display>
