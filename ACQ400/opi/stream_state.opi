@@ -69,8 +69,8 @@
     <width>157</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e5a</wuid>
-    <x>-12</x>
-    <y>34</y>
+    <x>6</x>
+    <y>37</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1009,14 +1009,14 @@ $(pv_value)</tooltip>
       </path>
     </scripts>
     <style>0</style>
-    <text>Counters</text>
+    <text>Count</text>
     <toggle_button>false</toggle_button>
     <tooltip>Clock and Trigger Counters</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>85</width>
+    <width>61</width>
     <wuid>-519a9143:166f2f294de:-3a93</wuid>
-    <x>138</x>
+    <x>162</x>
     <y>43</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -1075,6 +1075,64 @@ $(pv_value)</tooltip>
     <width>85</width>
     <wuid>-519a9143:166f2f294de:-3a79</wuid>
     <x>222</x>
+    <y>43</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://L${IDX}</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image>../icons/system-run.png</image>
+    <name>_acq48x_launcher</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://L${IDX}(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="../scripts/LaunchOpiTyp_dotdotslash.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT${IDX}("${UUT}")</pv>
+        <pv trig="true">loc://L${IDX}</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>L</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>Clock and Trigger Counters</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>49</width>
+    <wuid>6d00cef0:16745b43ed4:-7c89</wuid>
+    <x>1140</x>
     <y>43</y>
   </widget>
 </display>
