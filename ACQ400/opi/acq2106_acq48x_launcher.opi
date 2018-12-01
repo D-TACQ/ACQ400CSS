@@ -397,7 +397,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/SetUUT.js" checkConnect="true" sfe="true" seoe="false">
+      <path pathString="../scripts/SetUUT.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="true">loc://MODEL</pv>
         <pv trig="true">loc://SN</pv>
         <pv trig="false">loc://UUT</pv>
@@ -427,7 +427,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -465,7 +465,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://sys</pv>
       </path>
@@ -491,7 +491,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -529,7 +529,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://ctr</pv>
       </path>
@@ -555,7 +555,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -593,7 +593,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://clktree</pv>
       </path>
@@ -619,7 +619,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -657,7 +657,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8r</pv>
@@ -1048,7 +1048,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1086,7 +1086,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8t</pv>
@@ -1115,7 +1115,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1153,7 +1153,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8rt</pv>
@@ -1302,7 +1302,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1340,7 +1340,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://capture</pv>
       </path>
@@ -1366,7 +1366,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1404,7 +1404,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://aimon</pv>
@@ -1431,7 +1431,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1469,7 +1469,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://aimon_text</pv>
@@ -1496,7 +1496,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1534,7 +1534,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://sync</pv>
       </path>
@@ -1560,7 +1560,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1598,7 +1598,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://mgt</pv>
       </path>
@@ -1624,7 +1624,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1662,7 +1662,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://fw</pv>
       </path>
@@ -1735,7 +1735,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1773,7 +1773,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://stats32</pv>
@@ -1800,7 +1800,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1838,7 +1838,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://gpg</pv>
       </path>
@@ -1871,7 +1871,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -1909,7 +1909,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8s</pv>
@@ -1978,7 +1978,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2016,7 +2016,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8</pv>
@@ -2085,7 +2085,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2123,7 +2123,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://acq480</pv>
@@ -2211,7 +2211,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2249,7 +2249,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://active96</pv>
       </path>
@@ -2316,7 +2316,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2354,7 +2354,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi1.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi1.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="false">loc://plot1ch</pv>
@@ -2491,7 +2491,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2529,7 +2529,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://offsets</pv>
@@ -2557,7 +2557,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2595,7 +2595,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://offsets</pv>
@@ -2622,7 +2622,7 @@ $(pv_value)</tooltip>
         <description></description>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
@@ -2660,7 +2660,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://mgtdram</pv>
       </path>
@@ -2719,7 +2719,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
       <action type="EXECUTE_JAVASCRIPT">
-        <path>scripts/closeOpi.js</path>
+        <path>../scripts/closeOpi.js</path>
         <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
 ]]></scriptText>
         <embedded>false</embedded>
@@ -2746,7 +2746,7 @@ $(pv_value)</tooltip>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <height>43</height>
-    <image>icons/gtk-no.png</image>
+    <image>../icons/gtk-no.png</image>
     <name>Action Button_1</name>
     <push_action_index>0</push_action_index>
     <pv_name></pv_name>
