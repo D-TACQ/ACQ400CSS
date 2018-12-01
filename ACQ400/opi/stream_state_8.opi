@@ -602,8 +602,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>49</width>
     <wuid>-519a9143:166f2f294de:-1aa9</wuid>
-    <x>378</x>
-    <y>30</y>
+    <x>444</x>
+    <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -632,8 +632,8 @@ $(pv_value)</tooltip>
     <horizontal_alignment>1</horizontal_alignment>
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
     <limits_from_pv>true</limits_from_pv>
-    <maximum>Infinity</maximum>
-    <minimum>-Infinity</minimum>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
     <name>Spinner</name>
     <page_increment>10.0</page_increment>
     <precision>3</precision>
@@ -655,7 +655,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Spinner</widget_type>
-    <width>97</width>
+    <width>73</width>
     <wuid>-519a9143:166f2f294de:-17de</wuid>
     <x>138</x>
     <y>36</y>
@@ -694,7 +694,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>97</width>
+    <width>73</width>
     <wrap_words>false</wrap_words>
     <wuid>-519a9143:166f2f294de:-4af</wuid>
     <x>138</x>
@@ -727,8 +727,8 @@ $(pv_value)</tooltip>
     <height>55</height>
     <horizontal_alignment>2</horizontal_alignment>
     <limits_from_pv>false</limits_from_pv>
-    <maximum>Infinity</maximum>
-    <minimum>-Infinity</minimum>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
     <multiline_input>false</multiline_input>
     <name>shot</name>
     <precision>0</precision>
@@ -757,9 +757,9 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Text Input</widget_type>
-    <width>193</width>
+    <width>139</width>
     <wuid>-519a9143:166f2f294de:37c</wuid>
-    <x>444</x>
+    <x>498</x>
     <y>12</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -796,10 +796,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>67</width>
+    <width>49</width>
     <wrap_words>false</wrap_words>
     <wuid>-519a9143:166f2f294de:b0e</wuid>
-    <x>369</x>
+    <x>444</x>
     <y>12</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
@@ -861,7 +861,7 @@ $(pv_value)</tooltip>
     <widget_type>Boolean Button</widget_type>
     <width>91</width>
     <wuid>-519a9143:166f2f294de:1abe</wuid>
-    <x>252</x>
+    <x>222</x>
     <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -898,10 +898,87 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>97</width>
+    <width>91</width>
     <wrap_words>false</wrap_words>
     <wuid>-519a9143:166f2f294de:1ac6</wuid>
-    <x>258</x>
+    <x>222</x>
     <y>12</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <bit>-1</bit>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <confirm_message></confirm_message>
+    <data_type>0</data_type>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <labels_from_pv>false</labels_from_pv>
+    <name>Boolean Button_1</name>
+    <off_color>
+      <color red="0" green="100" blue="0" />
+    </off_color>
+    <off_label>SOFT TRG</off_label>
+    <on_color>
+      <color red="0" green="255" blue="0" />
+    </on_color>
+    <on_label></on_label>
+    <password></password>
+    <push_action_index>0</push_action_index>
+    <pv_name>${UUT}:SIG:SOFT_TRIGGER</pv_name>
+    <pv_value />
+    <released_action_index>1</released_action_index>
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0==0</value>
+        </exp>
+        <pv trig="true">loc://TRG_EXT(${ETRG})</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_boolean_label>true</show_boolean_label>
+    <show_confirm_dialog>0</show_confirm_dialog>
+    <show_led>false</show_led>
+    <square_button>true</square_button>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Boolean Button</widget_type>
+    <width>103</width>
+    <wuid>5b5cdd1f:1676a46a686:-7df9</wuid>
+    <x>324</x>
+    <y>36</y>
   </widget>
 </display>
