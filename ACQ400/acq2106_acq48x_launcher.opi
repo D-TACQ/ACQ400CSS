@@ -418,13 +418,19 @@ $(pv_value)</tooltip>
     <y>123</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://sys</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -486,8 +492,7 @@ $(pv_value)</tooltip>
       </action>
       <action type="EXECUTE_JAVASCRIPT">
         <path>scripts/closeOpi.js</path>
-        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
-]]></scriptText>
+        <scriptText></scriptText>
         <embedded>false</embedded>
         <description>modal launcher dialog</description>
       </action>
@@ -541,13 +546,19 @@ $(pv_value)</tooltip>
     <y>179</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://clktree</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -599,13 +610,19 @@ $(pv_value)</tooltip>
     <y>228</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8r</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1022,13 +1039,19 @@ $(pv_value)</tooltip>
     <y>242</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8t</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1083,13 +1106,19 @@ $(pv_value)</tooltip>
     <y>287</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8rt</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1264,13 +1293,19 @@ $(pv_value)</tooltip>
     <y>257</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://capture</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1322,13 +1357,19 @@ $(pv_value)</tooltip>
     <y>324</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://aimon</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1381,13 +1422,19 @@ $(pv_value)</tooltip>
     <y>340</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://aimon_text</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1440,13 +1487,19 @@ $(pv_value)</tooltip>
     <y>381</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://sync</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1498,13 +1551,19 @@ $(pv_value)</tooltip>
     <y>179</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://mgt</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1556,13 +1615,19 @@ $(pv_value)</tooltip>
     <y>450</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://fw</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1661,13 +1726,19 @@ $(pv_value)</tooltip>
     <y>456</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://stats32</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1720,13 +1791,19 @@ $(pv_value)</tooltip>
     <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://gpg</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1792,6 +1869,12 @@ $(pv_value)</tooltip>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1886,13 +1969,19 @@ $(pv_value)</tooltip>
     <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1987,13 +2076,19 @@ $(pv_value)</tooltip>
     <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://acq480</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2107,13 +2202,19 @@ $(pv_value)</tooltip>
     <y>15</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://active96</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2206,13 +2307,19 @@ $(pv_value)</tooltip>
     <y>18</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>$(pv_name)</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2375,13 +2482,19 @@ $(pv_value)</tooltip>
     <y>59</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://offsets</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2435,13 +2548,19 @@ $(pv_value)</tooltip>
     <y>249</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://offsets</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2494,13 +2613,19 @@ $(pv_value)</tooltip>
     <y>249</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://mgtdram</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
