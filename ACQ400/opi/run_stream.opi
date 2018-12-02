@@ -35,7 +35,7 @@
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
       <action type="EXECUTE_CMD">
-        <command>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py  --etrg=${ETRG} --secs=${SECS} ${UUTS}</command>
+        <command>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py  --etrg=${ETRG} --secs=${SECS} --fclk=${FCLK} --store=${STORE} ${UUTS}</command>
         <command_directory>${HAPIDIR}</command_directory>
         <wait_time>10</wait_time>
         <description></description>
@@ -299,7 +299,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>37</height>
+    <height>79</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_2</name>
     <rules />
@@ -309,9 +309,11 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py  --etrg=${ETRG} --secs=${SECS} ${UUTS}</text>
+    <text>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py \
+     --etrg=${ETRG} --secs=${SECS}  --fclk=${FCLK}  --store=${STORE} \
+     ${UUTS}</text>
     <tooltip></tooltip>
-    <transparent>true</transparent>
+    <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
