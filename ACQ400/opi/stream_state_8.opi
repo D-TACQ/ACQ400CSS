@@ -1189,12 +1189,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>view_archive.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-        </macros>
-        <mode>0</mode>
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
         <description></description>
       </action>
     </actions>
@@ -1219,9 +1218,9 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>52</height>
     <image>../icons/insert-image.png</image>
-    <name>Action Button</name>
+    <name>view_archive</name>
     <push_action_index>0</push_action_index>
-    <pv_name></pv_name>
+    <pv_name>loc://VIEW_ARCHIVE(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -1229,7 +1228,12 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <scripts />
+    <scripts>
+      <path pathString="../scripts/LaunchOpiView.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://SHOT</pv>
+        <pv trig="true">loc://VIEW_ARCHIVE(0)</pv>
+      </path>
+    </scripts>
     <style>0</style>
     <text>View ..</text>
     <toggle_button>false</toggle_button>
