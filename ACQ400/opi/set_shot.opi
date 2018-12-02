@@ -40,6 +40,12 @@
         <wait_time>10</wait_time>
         <description></description>
       </action>
+      <action type="EXECUTE_CMD">
+        <command>${SUDO} python -u ./user_apps/acq400/acq400_reset_counters.py  --sites=s1,cA ${UUTS}</command>
+        <command_directory>${HAPIDIR}</command_directory>
+        <wait_time>10</wait_time>
+        <description></description>
+      </action>
       <action type="EXECUTE_JAVASCRIPT">
         <path>../scripts/closeOpi.js</path>
         <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
