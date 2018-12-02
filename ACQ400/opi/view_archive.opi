@@ -221,12 +221,21 @@ $(pv_value)</tooltip>
     <x>606</x>
     <y>102</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>${SUDO} show-shot-size  ${SHOT}</command>
+        <command_directory>$(user.home)</command_directory>
+        <wait_time>10</wait_time>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color red="255" green="255" blue="255" />
+      <color red="240" green="240" blue="240" />
     </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -236,12 +245,16 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
     </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>79</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_2</name>
+    <height>43</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -249,18 +262,16 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py \
-     --etrg=${ETRG} --secs=${SECS}  --fclk=${FCLK}  --store=${STORE} \
-     ${UUTS}</text>
-    <tooltip></tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
+    <style>0</style>
+    <text>Check SHOT</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>763</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-6dcde6cc:16755eab5bb:-7db8</wuid>
-    <x>18</x>
-    <y>174</y>
+    <widget_type>Action Button</widget_type>
+    <width>169</width>
+    <wuid>74ad1153:1676f620512:-7d57</wuid>
+    <x>108</x>
+    <y>102</y>
   </widget>
 </display>
