@@ -6,8 +6,10 @@ CSS opi project for ACQ400 series digitizers
 http://controlsystemstudio.org/
 
 ### Ready to run images from here: 
-https://ics-web.sns.ornl.gov/css/
+http://download.controlsystemstudio.org/release/4.5/
+http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.7-linux.gtk.x86_64.tar.gz
+http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.7-macosx.cocoa.x86_64.zip
+http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.7-win32.win32.x86_64.zip
 
-## Quickstart user guide:
 https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
 
