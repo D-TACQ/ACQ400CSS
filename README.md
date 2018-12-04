@@ -11,6 +11,11 @@ http://controlsystemstudio.org/
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.7-macosx.cocoa.x86_64.zip
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.7-win32.win32.x86_64.zip
 
+<pre>
+Change Preferences Please:
+EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
+    set Max Array Size to 500000
+</pre>
 ### Quickstart Guide
 #### https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
 
