@@ -397,7 +397,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/SetUUT.js" checkConnect="true" sfe="true" seoe="false">
+      <path pathString="../scripts/SetUUT.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="true">loc://MODEL</pv>
         <pv trig="true">loc://SN</pv>
         <pv trig="false">loc://UUT</pv>
@@ -418,13 +418,19 @@ $(pv_value)</tooltip>
     <y>123</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://sys</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -459,7 +465,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://sys</pv>
       </path>
@@ -476,13 +482,19 @@ $(pv_value)</tooltip>
     <y>277</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://ctr</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -517,7 +529,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://ctr</pv>
       </path>
@@ -534,13 +546,19 @@ $(pv_value)</tooltip>
     <y>179</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://clktree</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -575,7 +593,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://clktree</pv>
       </path>
@@ -592,13 +610,19 @@ $(pv_value)</tooltip>
     <y>228</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8r</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -633,7 +657,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8r</pv>
@@ -1015,13 +1039,19 @@ $(pv_value)</tooltip>
     <y>242</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8t</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1056,7 +1086,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8t</pv>
@@ -1076,13 +1106,19 @@ $(pv_value)</tooltip>
     <y>287</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8rt</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1117,7 +1153,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8rt</pv>
@@ -1257,13 +1293,19 @@ $(pv_value)</tooltip>
     <y>257</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://capture</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1298,7 +1340,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://capture</pv>
       </path>
@@ -1315,13 +1357,19 @@ $(pv_value)</tooltip>
     <y>324</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://aimon</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1356,7 +1404,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://aimon</pv>
@@ -1374,13 +1422,19 @@ $(pv_value)</tooltip>
     <y>340</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://aimon_text</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1415,7 +1469,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://aimon_text</pv>
@@ -1433,13 +1487,19 @@ $(pv_value)</tooltip>
     <y>381</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://sync</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1474,7 +1534,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://sync</pv>
       </path>
@@ -1491,13 +1551,19 @@ $(pv_value)</tooltip>
     <y>179</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://mgt</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1532,7 +1598,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpiTyp.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://mgt</pv>
       </path>
@@ -1549,13 +1615,19 @@ $(pv_value)</tooltip>
     <y>450</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://fw</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1590,7 +1662,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://fw</pv>
       </path>
@@ -1654,13 +1726,19 @@ $(pv_value)</tooltip>
     <y>456</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://stats32</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1695,7 +1773,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://stats32</pv>
@@ -1713,13 +1791,19 @@ $(pv_value)</tooltip>
     <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://gpg</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1754,7 +1838,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://gpg</pv>
       </path>
@@ -1785,6 +1869,12 @@ $(pv_value)</tooltip>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1819,7 +1909,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8s</pv>
@@ -1879,13 +1969,19 @@ $(pv_value)</tooltip>
     <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT8</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -1920,7 +2016,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8</pv>
@@ -1980,13 +2076,19 @@ $(pv_value)</tooltip>
     <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://acq480</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2021,7 +2123,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://acq480</pv>
@@ -2100,13 +2202,19 @@ $(pv_value)</tooltip>
     <y>15</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://active96</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2141,7 +2249,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://active96</pv>
       </path>
@@ -2199,13 +2307,19 @@ $(pv_value)</tooltip>
     <y>18</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>$(pv_name)</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2240,7 +2354,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi1.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi1.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="false">loc://plot1ch</pv>
@@ -2368,13 +2482,19 @@ $(pv_value)</tooltip>
     <y>59</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://offsets</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2409,7 +2529,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://offsets</pv>
@@ -2428,13 +2548,19 @@ $(pv_value)</tooltip>
     <y>249</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://offsets</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2469,7 +2595,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://offsets</pv>
@@ -2487,13 +2613,19 @@ $(pv_value)</tooltip>
     <y>249</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
+    <actions hook="false" hook_all="true">
       <action type="WRITE_PV">
         <pv_name>loc://mgtdram</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText></scriptText>
+        <embedded>false</embedded>
+        <description>modal launcher dialog</description>
       </action>
     </actions>
     <alarm_pulsing>false</alarm_pulsing>
@@ -2528,7 +2660,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi_dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="true">loc://mgtdram</pv>
       </path>
@@ -2543,5 +2675,99 @@ $(pv_value)</tooltip>
     <wuid>-67768976:15dd1868f9d:-7d31</wuid>
     <x>94</x>
     <y>450</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>37</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_11</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Modal launcher dialog: dismissed on first button press.</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>431</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-28466afc:1676a5fef32:-7d5a</wuid>
+    <x>218</x>
+    <y>504</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>../scripts/closeOpi.js</path>
+        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
+]]></scriptText>
+        <embedded>false</embedded>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>43</height>
+    <image>../icons/gtk-no.png</image>
+    <name>Action Button_1</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>CANCEL</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>121</width>
+    <wuid>5ec8ef3:1676a69ea5b:-7b4d</wuid>
+    <x>666</x>
+    <y>501</y>
   </widget>
 </display>

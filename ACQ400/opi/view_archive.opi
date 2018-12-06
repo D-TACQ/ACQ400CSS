@@ -32,66 +32,6 @@
   <wuid>-519a9143:166f2f294de:-17dd</wuid>
   <x>-1</x>
   <y>-1</y>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="true">
-      <action type="EXECUTE_CMD">
-        <command>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py  --etrg=${ETRG} --secs=${SECS} --fclk=${FCLK} --store=${STORE} ${UUTS}</command>
-        <command_directory>${HAPIDIR}</command_directory>
-        <wait_time>10</wait_time>
-        <description></description>
-      </action>
-      <action type="EXECUTE_JAVASCRIPT">
-        <path>../scripts/closeOpi.js</path>
-        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
-]]></scriptText>
-        <embedded>false</embedded>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>43</height>
-    <image>../icons/media-playback-start.png</image>
-    <name>Action Button</name>
-    <push_action_index>0</push_action_index>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>RUN</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>121</width>
-    <wuid>-519a9143:166f2f294de:-162c</wuid>
-    <x>168</x>
-    <y>102</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <auto_size>false</auto_size>
@@ -120,9 +60,9 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>Press [RUN] to RUN a shot  for ${SECS} Seconds on ${UUTS}
+    <text>Press VIEW to view archive for  ${UUTS}
 
-Shot number will increment automatically</text>
+</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -162,7 +102,7 @@ Shot number will increment automatically</text>
     <name>Text Update</name>
     <precision>0</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>loc://SHOT(0)+1</pv_name>
+    <pv_name>loc://SHOT(0)</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -281,12 +221,21 @@ $(pv_value)</tooltip>
     <x>606</x>
     <y>102</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>${SUDO} show-shot-size  ${SHOT}</command>
+        <command_directory>$(user.home)</command_directory>
+        <wait_time>10</wait_time>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
-      <color red="255" green="255" blue="255" />
+      <color red="240" green="240" blue="240" />
     </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -296,12 +245,16 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
     </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>79</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_2</name>
+    <height>43</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -309,18 +262,69 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>${SUDO} python -u ./user_apps/acq2106/run-hts-all.py \
-     --etrg=${ETRG} --secs=${SECS}  --fclk=${FCLK}  --store=${STORE} \
-     ${UUTS}</text>
-    <tooltip></tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
+    <style>0</style>
+    <text>Check SHOT</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>763</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-6dcde6cc:16755eab5bb:-7db8</wuid>
-    <x>18</x>
-    <y>174</y>
+    <widget_type>Action Button</widget_type>
+    <width>109</width>
+    <wuid>74ad1153:1676f620512:-7d57</wuid>
+    <x>216</x>
+    <y>102</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="EXECUTE_CMD">
+        <command>${SUDO} show-shot-size</command>
+        <command_directory>$(user.home)</command_directory>
+        <wait_time>10</wait_time>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>43</height>
+    <image></image>
+    <name>Action Button_2</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Check Archive</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>109</width>
+    <wuid>74ad1153:1676f620512:-7d49</wuid>
+    <x>54</x>
+    <y>102</y>
   </widget>
 </display>
