@@ -10,7 +10,7 @@
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <boy_version>5.1.0.201707071649</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color red="192" green="192" blue="192" />
   </foreground_color>
@@ -109,10 +109,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>85</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT1}</UUT>
+      <SHOW_STATE_TITLE>1</SHOW_STATE_TITLE>
+      <IDX>1</IDX>
     </macros>
     <name>Linking Container_1</name>
     <opi_file>transient_state.opi</opi_file>
@@ -134,7 +136,7 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7cf3</wuid>
     <x>18</x>
     <y>156</y>
@@ -157,10 +159,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>91</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT2}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>2</IDX>
     </macros>
     <name>Linking Container_2</name>
     <opi_file>transient_state.opi</opi_file>
@@ -182,10 +186,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7cdb</wuid>
     <x>18</x>
-    <y>210</y>
+    <y>240</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -205,10 +209,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>85</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT3}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>3</IDX>
     </macros>
     <name>Linking Container_3</name>
     <opi_file>transient_state.opi</opi_file>
@@ -230,10 +236,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7cc0</wuid>
     <x>18</x>
-    <y>264</y>
+    <y>330</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -253,10 +259,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>85</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT4}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>4</IDX>
     </macros>
     <name>Linking Container_4</name>
     <opi_file>transient_state.opi</opi_file>
@@ -278,10 +286,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7cb1</wuid>
     <x>18</x>
-    <y>318</y>
+    <y>414</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -301,10 +309,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>91</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT5}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>5</IDX>
     </macros>
     <name>Linking Container_5</name>
     <opi_file>transient_state.opi</opi_file>
@@ -326,10 +336,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7c92</wuid>
     <x>18</x>
-    <y>372</y>
+    <y>498</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -349,10 +359,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>91</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT6}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>6</IDX>
     </macros>
     <name>Linking Container_6</name>
     <opi_file>transient_state.opi</opi_file>
@@ -374,10 +386,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7c83</wuid>
     <x>18</x>
-    <y>426</y>
+    <y>588</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -397,10 +409,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>91</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT7}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>7</IDX>
     </macros>
     <name>Linking Container_7</name>
     <opi_file>transient_state.opi</opi_file>
@@ -422,10 +436,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7c74</wuid>
     <x>18</x>
-    <y>480</y>
+    <y>678</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -445,10 +459,12 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>55</height>
+    <height>85</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT8}</UUT>
+      <SHOW_STATE_TITLE>0</SHOW_STATE_TITLE>
+      <IDX>8</IDX>
     </macros>
     <name>Linking Container_8</name>
     <opi_file>transient_state.opi</opi_file>
@@ -470,10 +486,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>793</width>
+    <width>859</width>
     <wuid>61109e11:162ceba64ca:-7c65</wuid>
     <x>18</x>
-    <y>534</y>
+    <y>768</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
