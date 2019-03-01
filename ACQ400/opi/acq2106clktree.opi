@@ -2313,7 +2313,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}(${DX})</pv>
+        <pv trig="false">loc://colour_s${SITE}(${DX})</pv>
         <pv trig="true">loc://clktree_site_${SITE}x("[0-9]")</pv>
       </path>
     </scripts>
@@ -2361,7 +2361,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}(${DX})</pv>
+        <pv trig="false">loc://colour_s${SITE}(${DX})</pv>
         <pv trig="true">loc://clktree_site_${SITE}x("[0-9]")</pv>
       </path>
     </scripts>
@@ -2409,7 +2409,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}(${DX})</pv>
+        <pv trig="false">loc://colour_s${SITE}(${DX})</pv>
         <pv trig="true">loc://clktree_site_${SITE}x("[0-9]")</pv>
       </path>
     </scripts>
@@ -2457,7 +2457,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}(${DX})</pv>
+        <pv trig="false">loc://colour_s${SITE}(${DX})</pv>
         <pv trig="true">loc://clktree_site_${SITE}x("[0-9]")</pv>
       </path>
     </scripts>
@@ -2505,7 +2505,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}(${DX})</pv>
+        <pv trig="false">loc://colour_s${SITE}(${DX})</pv>
         <pv trig="true">loc://clktree_site_${SITE}x("[0-9]")</pv>
       </path>
     </scripts>
@@ -2553,7 +2553,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}(${DX})</pv>
+        <pv trig="false">loc://colour_s${SITE}(${DX})</pv>
         <pv trig="true">loc://clktree_site_${SITE}x("[0-9]")</pv>
       </path>
     </scripts>
