@@ -142,7 +142,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>61</width>
+    <width>73</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e4c</wuid>
     <x>384</x>
@@ -218,10 +218,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>103</width>
+    <width>97</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e40</wuid>
-    <x>444</x>
+    <x>462</x>
     <y>51</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -270,10 +270,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>79</width>
+    <width>73</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e34</wuid>
-    <x>546</x>
+    <x>570</x>
     <y>51</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -325,7 +325,7 @@ $(pv_value)</tooltip>
     <width>79</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e28</wuid>
-    <x>636</x>
+    <x>648</x>
     <y>51</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -453,7 +453,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://ACQ1014_CAPTURE_${UUT}</pv_name>
+        <pv_name>loc://${CAPOPI}_${UUT}</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -481,9 +481,9 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq1014_capture</name>
+    <name>${CAPOPI}</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://ACQ1014_CAPTURE_${UUT}(0)</pv_name>
+    <pv_name>loc://${CAPOPI}_${UUT}(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -495,7 +495,7 @@ $(pv_value)</tooltip>
       <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT_${UUT}("${UUT)")</pv>
         <pv trig="false">loc://SITE(1)</pv>
-        <pv trig="true">loc://ACQ1014_CAPTURE_${UUT}(0)</pv>
+        <pv trig="true">loc://${CAPOPI}_${UUT}(0)</pv>
         <pv trig="false">loc://plot_time(0)</pv>
       </path>
     </scripts>
@@ -542,7 +542,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image>../icons/system-run.png</image>
-    <name>_acq48x_launcher</name>
+    <name>${LAUNCHOPI}</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://L${IDX}(0)</pv_name>
     <pv_value />
@@ -553,7 +553,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="true" sfe="false" seoe="false">
         <pv trig="false">loc://UUT${IDX}("${UUT}")</pv>
         <pv trig="true">loc://L${IDX}</pv>
       </path>
