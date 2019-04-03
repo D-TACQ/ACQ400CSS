@@ -90,7 +90,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>301</height>
+    <height>349</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>A</CH>
@@ -131,7 +131,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>301</height>
+    <height>349</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>B</CH>
@@ -165,6 +165,20 @@
       </action>
       <action type="WRITE_PV">
         <pv_name>${UUT}:${SITE}:MATHSTA:B:CLR</pv_name>
+        <value></value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:PROCSTA:A:CLR</pv_name>
+        <value></value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>${UUT}:${SITE}:PROCSTA:B:CLR</pv_name>
         <value></value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -212,7 +226,7 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>229</width>
     <wuid>228d5488:169e2dea67f:-7db5</wuid>
-    <x>222</x>
-    <y>414</y>
+    <x>240</x>
+    <y>468</y>
   </widget>
 </display>
