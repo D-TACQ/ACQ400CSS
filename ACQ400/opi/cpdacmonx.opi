@@ -118,7 +118,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>${CH} DAC OVER</text>
+    <text>BANK ${CH} DAC OVER</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -390,7 +390,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>${CH} DAC UNDER</text>
+    <text>DAC UNDER</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -632,7 +632,7 @@ $(pv_value)</tooltip>
     <width>43</width>
     <wuid>228d5488:169e2dea67f:-7d32</wuid>
     <x>18</x>
-    <y>264</y>
+    <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -689,8 +689,8 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>43</width>
     <wuid>228d5488:169e2dea67f:-7d31</wuid>
-    <x>146</x>
-    <y>264</y>
+    <x>82</x>
+    <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -747,8 +747,8 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>43</width>
     <wuid>228d5488:169e2dea67f:-7d21</wuid>
-    <x>18</x>
-    <y>354</y>
+    <x>146</x>
+    <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -805,8 +805,8 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>43</width>
     <wuid>228d5488:169e2dea67f:-7d20</wuid>
-    <x>82</x>
-    <y>354</y>
+    <x>210</x>
+    <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -863,8 +863,8 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>43</width>
     <wuid>228d5488:169e2dea67f:-7d1f</wuid>
-    <x>146</x>
-    <y>354</y>
+    <x>274</x>
+    <y>294</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -904,7 +904,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>228d5488:169e2dea67f:-7d17</wuid>
     <x>7</x>
-    <y>222</y>
+    <y>252</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -943,8 +943,8 @@ $(pv_value)</tooltip>
     <width>65</width>
     <wrap_words>false</wrap_words>
     <wuid>228d5488:169e2dea67f:-7d0d</wuid>
-    <x>131</x>
-    <y>222</y>
+    <x>71</x>
+    <y>252</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -983,8 +983,8 @@ $(pv_value)</tooltip>
     <width>65</width>
     <wrap_words>false</wrap_words>
     <wuid>228d5488:169e2dea67f:-7d06</wuid>
-    <x>7</x>
-    <y>312</y>
+    <x>135</x>
+    <y>252</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1023,8 +1023,8 @@ $(pv_value)</tooltip>
     <width>57</width>
     <wrap_words>false</wrap_words>
     <wuid>228d5488:169e2dea67f:-7d01</wuid>
-    <x>75</x>
-    <y>312</y>
+    <x>203</x>
+    <y>252</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1063,7 +1063,47 @@ $(pv_value)</tooltip>
     <width>65</width>
     <wrap_words>false</wrap_words>
     <wuid>228d5488:169e2dea67f:-7cfc</wuid>
-    <x>135</x>
-    <y>312</y>
+    <x>263</x>
+    <y>252</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>43</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_7</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>PACKET is too ..</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>169</width>
+    <wrap_words>false</wrap_words>
+    <wuid>228d5488:169e2dea67f:-7cc2</wuid>
+    <x>60</x>
+    <y>222</y>
   </widget>
 </display>
