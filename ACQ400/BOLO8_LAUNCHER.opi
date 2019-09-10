@@ -10,7 +10,7 @@
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <boy_version>5.1.0.201701231552</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color red="192" green="192" blue="192" />
   </foreground_color>
@@ -995,7 +995,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>36</height>
+    <height>32</height>
     <items>
       <s>acq1001</s>
       <s>acq2006</s>
@@ -1312,7 +1312,7 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Rounded Rectangle</widget_type>
-    <width>306</width>
+    <width>270</width>
     <wuid>5765bf2a:14878b4be47:-7d47</wuid>
     <x>457</x>
     <y>242</y>
@@ -1348,7 +1348,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq435_plot8volts_transient</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT8t(0)</pv_name>
     <pv_value />
@@ -1364,6 +1364,9 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8t</pv>
         <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://tw("TW")</pv>
+        <pv trig="true">loc://FNM("MAG.VALA")</pv>
+        <pv trig="true">loc://MAGV("Magnitude V")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -1375,14 +1378,14 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>67</width>
     <wuid>5765bf2a:14878b4be47:-7d46</wuid>
-    <x>600</x>
-    <y>287</y>
+    <x>552</x>
+    <y>291</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT81t</pv_name>
-        <value>9</value>
+        <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
@@ -1409,7 +1412,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq435_plot8volts_transient</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT81t(0)</pv_name>
     <pv_value />
@@ -1425,6 +1428,9 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81t</pv>
         <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://tw("TW")</pv>
+        <pv trig="true">loc://FNP("PHI.VALA")</pv>
+        <pv trig="true">loc://PHIR("Phase RAD")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -1436,14 +1442,14 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>67</width>
     <wuid>5765bf2a:14878b4be47:-7d45</wuid>
-    <x>600</x>
-    <y>327</y>
+    <x>552</x>
+    <y>331</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT82t</pv_name>
-        <value>17</value>
+        <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
@@ -1470,7 +1476,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq435_plot8volts_transient</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT82t(0)</pv_name>
     <pv_value />
@@ -1486,6 +1492,9 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82t</pv>
         <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://tw("TW")</pv>
+        <pv trig="true">loc://FNW("PWR.VALA")</pv>
+        <pv trig="true">loc://PWRW("Power W")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -1497,8 +1506,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>67</width>
     <wuid>5765bf2a:14878b4be47:-7d44</wuid>
-    <x>600</x>
-    <y>367</y>
+    <x>552</x>
+    <y>371</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -1558,8 +1567,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>67</width>
     <wuid>5765bf2a:14878b4be47:-7d42</wuid>
-    <x>678</x>
-    <y>287</y>
+    <x>630</x>
+    <y>291</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -1619,8 +1628,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>67</width>
     <wuid>5765bf2a:14878b4be47:-7d41</wuid>
-    <x>678</x>
-    <y>327</y>
+    <x>630</x>
+    <y>331</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -1680,8 +1689,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>67</width>
     <wuid>5765bf2a:14878b4be47:-7d40</wuid>
-    <x>678</x>
-    <y>367</y>
+    <x>630</x>
+    <y>371</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1720,8 +1729,8 @@ $(pv_value)</tooltip>
     <width>100</width>
     <wrap_words>false</wrap_words>
     <wuid>5765bf2a:14878b4be47:-7d3e</wuid>
-    <x>618</x>
-    <y>248</y>
+    <x>570</x>
+    <y>252</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1760,8 +1769,8 @@ $(pv_value)</tooltip>
     <width>67</width>
     <wrap_words>false</wrap_words>
     <wuid>5765bf2a:14878b4be47:-7d3d</wuid>
-    <x>693</x>
-    <y>257</y>
+    <x>645</x>
+    <y>261</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1791,7 +1800,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>Volts</text>
+    <text>Cooked</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -1800,8 +1809,8 @@ $(pv_value)</tooltip>
     <width>67</width>
     <wrap_words>false</wrap_words>
     <wuid>5765bf2a:14878b4be47:-7d3c</wuid>
-    <x>606</x>
-    <y>257</y>
+    <x>558</x>
+    <y>261</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -2345,7 +2354,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>Volts</text>
+    <text>Cooked</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -2388,7 +2397,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq435_plot8</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT8(0)</pv_name>
     <pv_value />
@@ -2399,11 +2408,14 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8</pv>
         <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://wf("WF")</pv>
+        <pv trig="true">loc://FNM("MAG.VALA")</pv>
+        <pv trig="true">loc://MAGV("Magnitude V")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -2422,7 +2434,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT81</pv_name>
-        <value>9</value>
+        <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
@@ -2449,10 +2461,11 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq435_plot8</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT81(0)</pv_name>
     <pv_value />
+    <release_action_index>0</release_action_index>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -2460,16 +2473,19 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81</pv>
         <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://wf("WF")</pv>
+        <pv trig="true">loc://FNP("PHI.VALA")</pv>
+        <pv trig="true">loc://PHIR("Phase RAD")</pv>
       </path>
     </scripts>
     <style>0</style>
     <text>09..16</text>
-    <toggle_button>false</toggle_button>
+    <toggle_button>true</toggle_button>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <visible>true</visible>
@@ -2483,7 +2499,7 @@ $(pv_value)</tooltip>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>loc://PLOT82</pv_name>
-        <value>17</value>
+        <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
         <description></description>
@@ -2510,7 +2526,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>acq435_plot8</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT82(0)</pv_name>
     <pv_value />
@@ -2526,6 +2542,9 @@ $(pv_value)</tooltip>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82</pv>
         <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://wf("WF")</pv>
+        <pv trig="true">loc://FNW("PWR.VALA")</pv>
+        <pv trig="true">loc://PWRW("Power W")</pv>
       </path>
     </scripts>
     <style>0</style>

@@ -36,6 +36,11 @@ if(widgetController.getExternalObject(flagName) == null){
 	if (pvArray[3] != null){
 		plot_time = PVUtil.getLong(pvArray[3]);
 	}
+	if (pvArray.length > 4){
+		macroInput.put("WF", PVUtil.getString(pvArray[4]));
+		macroInput.put("FN", PVUtil.getString(pvArray[5]));
+		macroInput.put("FNY_TITLE", PVUtil.getString(pvArray[6]));
+	}
 	/* plot_time != 0, use embedded tbx */
 	macroInput.put("tbx", plot_time != 0? "$(TB)": "");
 	macroInput.put("xtitle", plot_time==0? "Samples": plot_time == 2? "Hz": "Seconds"); 
