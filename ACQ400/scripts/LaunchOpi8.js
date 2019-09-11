@@ -40,7 +40,11 @@ if(widgetController.getExternalObject(flagName) == null){
 		macroInput.put("WF", PVUtil.getString(pvArray[4]));
 		macroInput.put("FN", PVUtil.getString(pvArray[5]));
 		macroInput.put("FNY_TITLE", PVUtil.getString(pvArray[6]));
-		macroInput.put("CHX", PVUtil.getString(pvArray[5]).substring(0,3) + " " + chx);
+		if (pvArray.length >= 8 ){
+			macroInput.put("CHX", PVUtil.getString(pvArray[7]) + " " + chx);
+		}else{
+			macroInput.put("CHX", PVUtil.getString(pvArray[5]).substring(0,3) + " " + chx);
+		}
 	}else{
 		macroInput.put("CHX", chx);
 	}

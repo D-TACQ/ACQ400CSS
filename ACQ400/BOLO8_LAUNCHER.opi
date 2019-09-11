@@ -931,8 +931,8 @@ $(pv_value)</tooltip>
     <width>100</width>
     <wrap_words>false</wrap_words>
     <wuid>33c8c855:1423795cb0a:-7de6</wuid>
-    <x>530</x>
-    <y>17</y>
+    <x>467</x>
+    <y>21</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1359,7 +1359,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT8t</pv>
@@ -1423,7 +1423,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT81t</pv>
@@ -1487,7 +1487,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
         <pv trig="true">loc://PLOT82t</pv>
@@ -1729,7 +1729,7 @@ $(pv_value)</tooltip>
     <width>100</width>
     <wrap_words>false</wrap_words>
     <wuid>5765bf2a:14878b4be47:-7d3e</wuid>
-    <x>570</x>
+    <x>467</x>
     <y>252</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -2369,7 +2369,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://PLOT8</pv_name>
+        <pv_name>loc://PLOT8M</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2399,7 +2399,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>plot8</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://PLOT8(0)</pv_name>
+    <pv_name>loc://PLOT8M(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -2411,7 +2411,7 @@ $(pv_value)</tooltip>
       <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://PLOT8</pv>
+        <pv trig="true">loc://PLOT8M</pv>
         <pv trig="false">loc://plot_time</pv>
         <pv trig="true">loc://wf("WF")</pv>
         <pv trig="true">loc://FNM("MAG.VALA")</pv>
@@ -2433,7 +2433,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://PLOT81</pv_name>
+        <pv_name>loc://PLOT8P</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2463,7 +2463,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>plot8</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://PLOT81(0)</pv_name>
+    <pv_name>loc://PLOT8P(0)</pv_name>
     <pv_value />
     <release_action_index>0</release_action_index>
     <rules />
@@ -2476,7 +2476,7 @@ $(pv_value)</tooltip>
       <path pathString="scripts/LaunchOpi8.js" checkConnect="false" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://PLOT81</pv>
+        <pv trig="true">loc://PLOT8P</pv>
         <pv trig="false">loc://plot_time</pv>
         <pv trig="true">loc://wf("WF")</pv>
         <pv trig="true">loc://FNP("PHI.VALA")</pv>
@@ -2498,7 +2498,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://PLOT82</pv_name>
+        <pv_name>loc://PLOT8W</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2528,7 +2528,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>plot8</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://PLOT82(0)</pv_name>
+    <pv_name>loc://PLOT8W(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -2537,10 +2537,10 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts>
-      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="false" seoe="false">
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://PLOT82</pv>
+        <pv trig="true">loc://PLOT8W</pv>
         <pv trig="false">loc://plot_time</pv>
         <pv trig="true">loc://wf("WF")</pv>
         <pv trig="true">loc://FNW("PWR.VALA")</pv>
@@ -3409,5 +3409,345 @@ $(pv_value)</tooltip>
     <wuid>6518a1ba:16d1b765c95:-7f79</wuid>
     <x>480</x>
     <y>370</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>37</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_18</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>CAL</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>73</width>
+    <wrap_words>false</wrap_words>
+    <wuid>280588de:16d1f2e67ec:-78da</wuid>
+    <x>480</x>
+    <y>176</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT8V</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>plot8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT8V(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT8V</pv>
+        <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://wf("WF")</pv>
+        <pv trig="true">loc://FNCALV("PWR.VALI")</pv>
+        <pv trig="true">loc://CALV("Voltage")</pv>
+        <pv trig="true">loc://CALVT("CAL V")</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>V</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>31</width>
+    <wuid>280588de:16d1f2e67ec:-78d0</wuid>
+    <x>552</x>
+    <y>179</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT8I</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>plot8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT8I(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT8I</pv>
+        <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://wf("WF")</pv>
+        <pv trig="true">loc://FNCALI("PWR.VALJ")</pv>
+        <pv trig="true">loc://CALI("Current")</pv>
+        <pv trig="true">loc://CALIT("CAL I")</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>I</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>31</width>
+    <wuid>280588de:16d1f2e67ec:-76ae</wuid>
+    <x>588</x>
+    <y>179</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT8VT</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>plot8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT8VT(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT8VT</pv>
+        <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://tw("TW")</pv>
+        <pv trig="true">loc://FNCALV("PWR.VALI")</pv>
+        <pv trig="true">loc://CALV("Voltage")</pv>
+        <pv trig="true">loc://CALVT("CAL V")</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>V</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>31</width>
+    <wuid>-7eb0c788:16d2021536c:-7c1c</wuid>
+    <x>552</x>
+    <y>411</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://PLOT8IT</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>plot8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://PLOT8IT(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
+        <pv trig="false">loc://UUT</pv>
+        <pv trig="false">loc://SITE</pv>
+        <pv trig="true">loc://PLOT8IT</pv>
+        <pv trig="false">loc://plot_time</pv>
+        <pv trig="true">loc://tw("TW")</pv>
+        <pv trig="true">loc://FNCALI("PWR.VALJ")</pv>
+        <pv trig="true">loc://CALI("Current")</pv>
+        <pv trig="true">loc://CALIT("CAL I")</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>I</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>31</width>
+    <wuid>-7eb0c788:16d2021536c:-7c1b</wuid>
+    <x>588</x>
+    <y>411</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Sans" height="10" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>37</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_19</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>CAL</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>61</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-7eb0c788:16d2021536c:-7c13</wuid>
+    <x>486</x>
+    <y>408</y>
   </widget>
 </display>
