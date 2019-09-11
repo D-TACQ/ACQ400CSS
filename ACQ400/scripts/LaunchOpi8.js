@@ -40,11 +40,14 @@ if(widgetController.getExternalObject(flagName) == null){
 		macroInput.put("WF", PVUtil.getString(pvArray[4]));
 		macroInput.put("FN", PVUtil.getString(pvArray[5]));
 		macroInput.put("FNY_TITLE", PVUtil.getString(pvArray[6]));
+		macroInput.put("CHX", PVUtil.getString(pvArray[5]).substring(0,3) + " " + chx);
+	}else{
+		macroInput.put("CHX", chx);
 	}
 	/* plot_time != 0, use embedded tbx */
 	macroInput.put("tbx", plot_time != 0? "$(TB)": "");
 	macroInput.put("xtitle", plot_time==0? "Samples": plot_time == 2? "Hz": "Seconds"); 
-	macroInput.put("CHX", chx);
+	
 	       
 	var opibase = "" + widget.getPropertyValue("name");
 	var name_ext = opibase.indexOf("__");
