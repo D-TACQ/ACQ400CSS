@@ -3410,50 +3410,10 @@ $(pv_value)</tooltip>
     <x>480</x>
     <y>370</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>37</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_18</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <text>CAL</text>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>73</width>
-    <wrap_words>false</wrap_words>
-    <wuid>280588de:16d1f2e67ec:-78da</wuid>
-    <x>480</x>
-    <y>176</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://PLOT8VTV</pv_name>
+        <pv_name>loc://PLOT8VTC</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -3483,7 +3443,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>plot8</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://PLOT8VT(0)</pv_name>
+    <pv_name>loc://PLOT8VTC(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -3495,12 +3455,12 @@ $(pv_value)</tooltip>
       <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://PLOT8VTV</pv>
+        <pv trig="true">loc://PLOT8VTC</pv>
         <pv trig="false">loc://plot_time</pv>
         <pv trig="true">loc://tw("TW")</pv>
-        <pv trig="true">loc://FNCALV("PWR.VALP")</pv>
-        <pv trig="true">loc://CALV("Voltage [V]")</pv>
-        <pv trig="true">loc://CALVT("CAL V")</pv>
+        <pv trig="true">loc://FNCALVC("PWR.VALP")</pv>
+        <pv trig="true">loc://CALVC("Voltage [V]")</pv>
+        <pv trig="true">loc://CALVTC("CAL V")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -3518,7 +3478,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>loc://PLOT8ITI</pv_name>
+        <pv_name>loc://PLOT8ITC</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -3548,7 +3508,7 @@ $(pv_value)</tooltip>
     <image></image>
     <name>plot8</name>
     <push_action_index>0</push_action_index>
-    <pv_name>loc://PLOT8IT(0)</pv_name>
+    <pv_name>loc://PLOT8ITC(0)</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -3560,12 +3520,12 @@ $(pv_value)</tooltip>
       <path pathString="scripts/LaunchOpi8.js" checkConnect="true" sfe="true" seoe="false">
         <pv trig="false">loc://UUT</pv>
         <pv trig="false">loc://SITE</pv>
-        <pv trig="true">loc://PLOT8ITI</pv>
+        <pv trig="true">loc://PLOT8ITC</pv>
         <pv trig="false">loc://plot_time</pv>
         <pv trig="true">loc://tw("TW")</pv>
-        <pv trig="true">loc://FNCALI("PWR.VALQ")</pv>
-        <pv trig="true">loc://CALI("Current [A]")</pv>
-        <pv trig="true">loc://CALIT("CAL I")</pv>
+        <pv trig="true">loc://FNCALIC("PWR.VALQ")</pv>
+        <pv trig="true">loc://CALIC("Current [A]")</pv>
+        <pv trig="true">loc://CALITC("CAL I")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -3651,7 +3611,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>plot8_8</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT8VT(0)</pv_name>
     <pv_value />
@@ -3716,7 +3676,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>31</height>
     <image></image>
-    <name>plot8_9</name>
+    <name>plot8</name>
     <push_action_index>0</push_action_index>
     <pv_name>loc://PLOT8IT(0)</pv_name>
     <pv_value />
@@ -3735,7 +3695,7 @@ $(pv_value)</tooltip>
         <pv trig="true">loc://tw("TW")</pv>
         <pv trig="true">loc://FNCALI("PWR.VALJ")</pv>
         <pv trig="true">loc://CALI("Current [codes]")</pv>
-        <pv trig="true">loc://CALIT("CAL I")</pv>
+        <pv trig="true">loc://CALITR("CAL I")</pv>
       </path>
     </scripts>
     <style>0</style>
@@ -3747,7 +3707,7 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>31</width>
     <wuid>199ccf6c:16fa99c0a35:-7b4f</wuid>
-    <x>663</x>
+    <x>670</x>
     <y>411</y>
   </widget>
 </display>
