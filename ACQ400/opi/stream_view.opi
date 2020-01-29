@@ -19,6 +19,7 @@
   <macros>
     <include_parent_macros>true</include_parent_macros>
     <SITE>1</SITE>
+    <IDX>${UUT}</IDX>
   </macros>
   <name></name>
   <rules />
@@ -799,5 +800,63 @@ $(pv_value)</tooltip>
     <wuid>2d316084:16fd378fa6e:-78e7</wuid>
     <x>33</x>
     <y>93</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>loc://L${IDX}</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image>../icons/system-run.png</image>
+    <name>_acq48x_launcher</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://L${IDX}(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="../scripts/LaunchOpiTyp_dotdot.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT${IDX}("${UUT}")</pv>
+        <pv trig="true">loc://L${IDX}</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>L</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>Clock and Trigger Counters</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>49</width>
+    <wuid>-5ccf9765:16ff0a993f0:-6eca</wuid>
+    <x>666</x>
+    <y>12</y>
   </widget>
 </display>
