@@ -19,3 +19,6 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
 ### Quickstart Guide
 #### https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
 
+### OpenJDK install for Windows users:
+#### https://adoptopenjdk.net/
+OpenJDK 8 is the required version for CS Studio.
