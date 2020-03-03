@@ -18,14 +18,14 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <UUT1>acq2106_132</UUT1>
-    <UUT2>acq2106_132</UUT2>
-    <UUT3>acq2106_132</UUT3>
-    <UUT4>acq2106_132</UUT4>
-    <UUT5>acq2106_133</UUT5>
-    <UUT6>acq2106_133</UUT6>
-    <UUT7>acq2106_133</UUT7>
-    <UUT8>acq2106_133</UUT8>
+    <UUT1>${UUTL}</UUT1>
+    <UUT2>${UUTL}</UUT2>
+    <UUT3>${UUTL}</UUT3>
+    <UUT4>${UUTL}</UUT4>
+    <UUT5>${UUTR}</UUT5>
+    <UUT6>${UUTR}</UUT6>
+    <UUT7>${UUTR}</UUT7>
+    <UUT8>${UUTR}</UUT8>
     <CH01>01</CH01>
     <CH02>02</CH02>
     <CH03>03</CH03>
@@ -35,12 +35,12 @@
     <CH07>03</CH07>
     <CH08>04</CH08>
     <SITE>1</SITE>
-    <TB>acq2106_132:1:AI:WF:TB.VALA</TB>
+    <TB>${UUTL}:1:AI:WF:TB.VALA</TB>
     <tbx></tbx>
-    <TYPE>acq2106_132:1:AI:WF:${CH01}.FTVL</TYPE>
+    <TYPE>${UUTL}:1:AI:WF:${CH01}.FTVL</TYPE>
     <xtitle>s</xtitle>
-    <UUT>acq2106_132</UUT>
-    <FNYTITLE>vs acq2106_133</FNYTITLE>
+    <UUT>${UUTL}</UUT>
+    <FNYTITLE>vs ${UUTR}</FNYTITLE>
     <CHX>${FNYTITLE}</CHX>
   </macros>
   <name></name>
@@ -123,8 +123,8 @@
     <horizontal_alignment>1</horizontal_alignment>
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
     <limits_from_pv>true</limits_from_pv>
-    <maximum>Infinity</maximum>
-    <minimum>-Infinity</minimum>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
     <name>Spinner</name>
     <page_increment>10.0</page_increment>
     <precision>3</precision>
