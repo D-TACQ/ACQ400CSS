@@ -45,7 +45,7 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -55,6 +55,7 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>$(UUT1)</UUT>
+      <IDX>1</IDX>
     </macros>
     <name>Linking Container</name>
     <opi_file>opi/stream_view.opi</opi_file>
@@ -86,7 +87,7 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -96,6 +97,7 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT2}</UUT>
+      <IDX>2</IDX>
     </macros>
     <name>Linking Container_1</name>
     <opi_file>opi/stream_view.opi</opi_file>
@@ -127,7 +129,7 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -137,11 +139,19 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT3}</UUT>
+      <IDX>3</IDX>
     </macros>
     <name>Linking Container_2</name>
     <opi_file>opi/stream_view.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VisibleRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0 != ""</value>
+        </exp>
+        <pv trig="true">loc://uut3("${UUT3}")</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -168,7 +178,7 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -178,11 +188,19 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <UUT>${UUT4}</UUT>
+      <IDX>4</IDX>
     </macros>
     <name>Linking Container_3</name>
     <opi_file>opi/stream_view.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VisibleRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pvStr0 != ""</value>
+        </exp>
+        <pv trig="true">loc://uut4("${UUT4}")</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
