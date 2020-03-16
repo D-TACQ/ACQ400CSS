@@ -90,7 +90,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>349</height>
+    <height>427</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>A</CH>
@@ -132,7 +132,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>349</height>
+    <height>427</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>B</CH>
@@ -206,7 +206,7 @@
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>61</height>
+    <height>31</height>
     <image></image>
     <name>Action Button</name>
     <push_action_index>0</push_action_index>
@@ -229,7 +229,7 @@ $(pv_value)</tooltip>
     <width>175</width>
     <wuid>228d5488:169e2dea67f:-7db5</wuid>
     <x>594</x>
-    <y>450</y>
+    <y>534</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <actions_from_pv>true</actions_from_pv>
@@ -273,131 +273,7 @@ $(pv_value)</tooltip>
     <width>97</width>
     <wuid>14114056:16b028679e8:-7bb2</wuid>
     <x>36</x>
-    <y>450</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>31</height>
-    <image></image>
-    <name>Action Button_1</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>${UUT}:2:PKT_CLR</pv_name>
-    <pv_value />
-    <release_action_index>1</release_action_index>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>PACKET CLEAR</text>
-    <toggle_button>true</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>199</width>
-    <wuid>14114056:16b028679e8:-7b4b</wuid>
-    <x>384</x>
-    <y>450</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>1</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>0</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>31</height>
-    <image></image>
-    <name>Action Button_2</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>${UUT}:2:WF_CLR</pv_name>
-    <pv_value />
-    <release_action_index>1</release_action_index>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>WAVEFORM CLEAR</text>
-    <toggle_button>true</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>199</width>
-    <wuid>-6c379d32:16dfe51f5f6:-7e6c</wuid>
-    <x>384</x>
-    <y>486</y>
+    <y>534</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -437,7 +313,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-5dde6ec3:1705ca3fa17:-7b5b</wuid>
     <x>168</x>
-    <y>453</y>
+    <y>537</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -495,6 +371,6 @@ $(pv_value)</tooltip>
     <width>25</width>
     <wuid>-6b404830:17067149152:-793b</wuid>
     <x>276</x>
-    <y>456</y>
+    <y>540</y>
   </widget>
 </display>
