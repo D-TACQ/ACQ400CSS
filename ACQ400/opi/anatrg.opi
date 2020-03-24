@@ -114,9 +114,9 @@
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Tabbed Container</widget_type>
-    <width>865</width>
+    <width>949</width>
     <wuid>1bf040ad:16c544dab27:-7d9f</wuid>
-    <x>24</x>
+    <x>12</x>
     <y>60</y>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -152,9 +152,9 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>863</width>
+      <width>947</width>
       <wuid>1bf040ad:16c544dab27:-7d9e</wuid>
       <x>1</x>
       <y>1</y>
@@ -774,6 +774,95 @@
         <x>762</x>
         <y>24</y>
       </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_14</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>61</width>
+        <wrap_words>false</wrap_words>
+        <wuid>273db50c:1710c48082a:-7a77</wuid>
+        <x>840</x>
+        <y>27</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B0</CH0>
+          <CH1>B1</CH1>
+          <CH2>B2</CH2>
+          <CH3>B3</CH3>
+          <CH4>B4</CH4>
+          <CH5>B5</CH5>
+          <CH6>B6</CH6>
+          <CH7>B7</CH7>
+          <FUN>GROUP_MASK</FUN>
+        </macros>
+        <name>Linking Container_19</name>
+        <opi_file>anatrg_grpsel.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>273db50c:1710c48082a:-7a3f</wuid>
+        <x>840</x>
+        <y>61</y>
+      </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -811,7 +900,7 @@
       <transparent>true</transparent>
       <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>863</width>
+      <width>947</width>
       <wuid>1bf040ad:16c544dab27:-7cbb</wuid>
       <x>1</x>
       <y>1</y>
@@ -1431,6 +1520,95 @@
         <x>642</x>
         <y>6</y>
       </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B8</CH0>
+          <CH1>B9</CH1>
+          <CH2>BA</CH2>
+          <CH3>BB</CH3>
+          <CH4>BC</CH4>
+          <CH5>BD</CH5>
+          <CH6>BE</CH6>
+          <CH7>BF</CH7>
+          <FUN>GROUP_MASK</FUN>
+        </macros>
+        <name>Linking Container_10</name>
+        <opi_file>anatrg_grpsel.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>273db50c:1710c48082a:-7a17</wuid>
+        <x>861</x>
+        <y>48</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_14</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>61</width>
+        <wrap_words>false</wrap_words>
+        <wuid>273db50c:1710c48082a:-7a04</wuid>
+        <x>864</x>
+        <y>8</y>
+      </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -1468,7 +1646,7 @@
       <transparent>true</transparent>
       <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>863</width>
+      <width>947</width>
       <wuid>4303e841:170b0ead66e:-7dc7</wuid>
       <x>1</x>
       <y>1</y>
@@ -2089,6 +2267,95 @@
         <x>666</x>
         <y>30</y>
       </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_14</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>61</width>
+        <wrap_words>false</wrap_words>
+        <wuid>273db50c:1710c48082a:-79ed</wuid>
+        <x>870</x>
+        <y>29</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B8</CH0>
+          <CH1>B9</CH1>
+          <CH2>BA</CH2>
+          <CH3>BB</CH3>
+          <CH4>BC</CH4>
+          <CH5>BD</CH5>
+          <CH6>BE</CH6>
+          <CH7>BF</CH7>
+          <FUN>GROUP_MASK2</FUN>
+        </macros>
+        <name>Linking Container_10</name>
+        <opi_file>anatrg_grpsel.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>273db50c:1710c48082a:-79e3</wuid>
+        <x>867</x>
+        <y>78</y>
+      </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -2124,9 +2391,9 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>863</width>
+      <width>947</width>
       <wuid>4303e841:170b0ead66e:-7dc6</wuid>
       <x>1</x>
       <y>1</y>
@@ -2746,6 +3013,95 @@
         <wuid>4303e841:170b0ead66e:-7bb7</wuid>
         <x>660</x>
         <y>42</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_14</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>61</width>
+        <wrap_words>false</wrap_words>
+        <wuid>273db50c:1710c48082a:-79be</wuid>
+        <x>858</x>
+        <y>41</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B8</CH0>
+          <CH1>B9</CH1>
+          <CH2>BA</CH2>
+          <CH3>BB</CH3>
+          <CH4>BC</CH4>
+          <CH5>BD</CH5>
+          <CH6>BE</CH6>
+          <CH7>BF</CH7>
+          <FUN>GROUP_MASK2</FUN>
+        </macros>
+        <name>Linking Container_10</name>
+        <opi_file>anatrg_grpsel.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>273db50c:1710c48082a:-79b4</wuid>
+        <x>864</x>
+        <y>96</y>
       </widget>
     </widget>
   </widget>
