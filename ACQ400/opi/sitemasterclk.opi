@@ -74,7 +74,7 @@
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>631</width>
+    <width>547</width>
     <wuid>-2e2e4276:15807e6cc75:-6908</wuid>
     <x>132</x>
     <y>0</y>
@@ -152,7 +152,7 @@
       <page_increment>10000.0</page_increment>
       <precision>3</precision>
       <precision_from_pv>false</precision_from_pv>
-      <pv_name>${UUT}:1:CLKDIV</pv_name>
+      <pv_name>${UUT}:${SITE}:CLKDIV</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -196,7 +196,6 @@ $(pv_value)</tooltip>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <FUN>CLK</FUN>
-        <SITE>1</SITE>
       </macros>
       <name>Linking Container</name>
       <opi_file>signal1.opi</opi_file>
