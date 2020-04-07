@@ -55,7 +55,26 @@
     </macros>
     <minimum_tab_height>10</minimum_tab_height>
     <name>Tabbed Container</name>
-    <rules />
+    <rules>
+      <rule name="EnableNchanGT8" prop_id="tab_1_enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0 &gt; 8</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:NCHAN</pv>
+      </rule>
+      <rule name="EnableNchanGT16" prop_id="tab_2_enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0&gt; 16</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:NCHAN</pv>
+      </rule>
+      <rule name="EnableNchanGT24" prop_id="tab_3_enabled" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0 &gt; 24</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:NCHAN</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -136,7 +155,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>605</height>
+      <height>600</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -152,7 +171,7 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>947</width>
       <wuid>1bf040ad:16c544dab27:-7d9e</wuid>
@@ -882,7 +901,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>605</height>
+      <height>600</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -1628,7 +1647,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>605</height>
+      <height>600</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -2375,7 +2394,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>605</height>
+      <height>600</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -2391,7 +2410,7 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>947</width>
       <wuid>4303e841:170b0ead66e:-7dc6</wuid>
@@ -3166,7 +3185,7 @@
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>43</height>
+    <height>34</height>
     <label></label>
     <name>Menu Button</name>
     <pv_name>${UUT}:${SITE}:ANATRG:GROUP_MODE</pv_name>
@@ -3186,8 +3205,8 @@ $(pv_value)</tooltip>
     <widget_type>Menu Button</widget_type>
     <width>133</width>
     <wuid>-590430a3:17110e51766:-7b51</wuid>
-    <x>804</x>
-    <y>18</y>
+    <x>546</x>
+    <y>48</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3223,10 +3242,72 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>85</width>
+    <width>145</width>
     <wrap_words>false</wrap_words>
     <wuid>-590430a3:17110e51766:-7b11</wuid>
-    <x>690</x>
-    <y>27</y>
+    <x>360</x>
+    <y>60</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>34</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>${UUT}:${SITE}:ANATRG:RESET</pv_name>
+    <pv_value />
+    <release_action_index>1</release_action_index>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>RESET</text>
+    <toggle_button>true</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>121</width>
+    <wuid>-45b4743c:171543b73f8:-7b17</wuid>
+    <x>720</x>
+    <y>48</y>
   </widget>
 </display>
