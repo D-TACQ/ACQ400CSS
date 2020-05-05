@@ -71,8 +71,8 @@
     <widget_type>Linking Container</widget_type>
     <width>601</width>
     <wuid>-21ef00f3:171a16b41c3:-735a</wuid>
-    <x>33</x>
-    <y>78</y>
+    <x>36</x>
+    <y>150</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -123,8 +123,8 @@ $(pv_value)</tooltip>
     <width>601</width>
     <wrap_words>false</wrap_words>
     <wuid>-21ef00f3:171a16b41c3:-7288</wuid>
-    <x>33</x>
-    <y>156</y>
+    <x>36</x>
+    <y>228</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -164,8 +164,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>601</width>
     <wuid>-21ef00f3:171a16b41c3:-70fd</wuid>
-    <x>33</x>
-    <y>216</y>
+    <x>36</x>
+    <y>288</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -205,8 +205,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>601</width>
     <wuid>-21ef00f3:171a16b41c3:-7042</wuid>
-    <x>33</x>
-    <y>294</y>
+    <x>36</x>
+    <y>366</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -246,8 +246,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>601</width>
     <wuid>-21ef00f3:171a16b41c3:-7033</wuid>
-    <x>33</x>
-    <y>378</y>
+    <x>36</x>
+    <y>450</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -287,7 +287,105 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>601</width>
     <wuid>-21ef00f3:171a16b41c3:-7024</wuid>
-    <x>33</x>
-    <y>438</y>
+    <x>36</x>
+    <y>510</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>37</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>${UUT} White Rabbit</text>
+    <tooltip></tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>247</width>
+    <wrap_words>true</wrap_words>
+    <wuid>-91945c0:171e469e5ef:-7a9c</wuid>
+    <x>168</x>
+    <y>12</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Image" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <align_to_nearest_second>false</align_to_nearest_second>
+    <auto_size>true</auto_size>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <crop_bottom>0</crop_bottom>
+    <crop_left>0</crop_left>
+    <crop_right>0</crop_right>
+    <crop_top>0</crop_top>
+    <degree>0</degree>
+    <enabled>true</enabled>
+    <flip_horizontal>false</flip_horizontal>
+    <flip_vertical>false</flip_vertical>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>80</height>
+    <image_file>../icons/WRlogo-vectorized-small.gif</image_file>
+    <name>Image</name>
+    <no_animation>false</no_animation>
+    <permutation_matrix>
+      <row>
+        <col>1.0</col>
+        <col>0.0</col>
+      </row>
+      <row>
+        <col>0.0</col>
+        <col>1.0</col>
+      </row>
+    </permutation_matrix>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <stretch_to_fit>false</stretch_to_fit>
+    <tooltip></tooltip>
+    <transparency>false</transparency>
+    <visible>true</visible>
+    <widget_type>Image</widget_type>
+    <width>88</width>
+    <wuid>-91945c0:171e469e5ef:-7a2c</wuid>
+    <x>528</x>
+    <y>24</y>
   </widget>
 </display>
