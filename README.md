@@ -17,13 +17,13 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
     set Max Array Size to 500000
 </pre>
 ### Quickstart Guide: Basic principle applies for all Units Under Test UUT
-* Example is for UUT acq1001_190, please substitute the name of your own UUT (printed on the label).
+* Example is for UUT acq1001_190, please substitute the name of your own UUT.
 
  1. In a well configured system (dhcp, working broadcast route), cs-studio will locate the UUT on the network automatically.
  
  2. Failing that, you'll need to know the default IP address of the UUT
  
-  * UUT MAC address and default IP-address are printed on the label on the box.
+  * UUT NAME, MAC address and default IP-address are printed on the delviery sheet and on system label on rear of the box.
 
 #### https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
 
