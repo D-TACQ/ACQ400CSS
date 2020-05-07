@@ -23,7 +23,7 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
  
  2. Failing that, you'll need to know the default IP address of the UUT
  
-  * UUT NAME, MAC address and default IP-address are printed on the delviery sheet and on system label on rear of the box.
+  * UUT NAME, MAC address and default IP-address are printed on the delivery sheet and on faceplate on rear of the box.
 
 #### https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
 
