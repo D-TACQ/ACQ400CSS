@@ -5,7 +5,7 @@ var dx = PVUtil.getLong(pvArray[1]);
 var acq480_true = PVUtil.getLong(pvArray[2]) != 0? true: false;
 var site=dx-1;
 
-var sites = sitelist.split(",");
+var sites = sitelist.split(",").slice(1);
 var isVisible = false;
 
 for (var kv in sites) {
@@ -15,8 +15,10 @@ for (var kv in sites) {
 	    break;
 	}
 }
+
 if (site < sites.length){
 	isVisible = sites[site].search("48[012]") >-1? acq480_true: !acq480_true;
 }
+
 
 widget.setPropertyValue("visible", isVisible);
