@@ -199,7 +199,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>325</width>
+    <width>445</width>
     <wrap_words>false</wrap_words>
     <wuid>-2833d4fb:14cf147ddac:-751f</wuid>
     <x>240</x>
@@ -251,7 +251,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>325</width>
+    <width>445</width>
     <wrap_words>false</wrap_words>
     <wuid>-2833d4fb:14cf147ddac:-7511</wuid>
     <x>240</x>
@@ -285,7 +285,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>Eth0 IP Address</text>
+    <text>Eth1 IP Address</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -295,7 +295,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-2833d4fb:14cf147ddac:-74f9</wuid>
     <x>60</x>
-    <y>216</y>
+    <y>264</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -325,7 +325,7 @@ $(pv_value)</tooltip>
     <name>Text Update_2</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>${UUT}:SYS:IFCONFIG:ETH0</pv_name>
+    <pv_name>${UUT}:SYS:IFCONFIG:ETH1</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -347,7 +347,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-2833d4fb:14cf147ddac:-74e9</wuid>
     <x>240</x>
-    <y>216</y>
+    <y>264</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -392,7 +392,7 @@ $(pv_value)</tooltip>
     <width>109</width>
     <wuid>45609448:14d4cb99fc4:-6f7b</wuid>
     <x>240</x>
-    <y>480</y>
+    <y>528</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -432,7 +432,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>45609448:14d4cb99fc4:-6f71</wuid>
     <x>54</x>
-    <y>477</y>
+    <y>525</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -472,7 +472,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-da46428:159c699a7d1:-7e1e</wuid>
     <x>60</x>
-    <y>270</y>
+    <y>318</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -524,7 +524,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-da46428:159c699a7d1:-7e1d</wuid>
     <x>240</x>
-    <y>270</y>
+    <y>318</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -581,7 +581,7 @@ $(pv_value)</tooltip>
     <width>325</width>
     <wuid>-c8301fa:15a942adfff:-7d4a</wuid>
     <x>240</x>
-    <y>324</y>
+    <y>372</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -621,7 +621,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-c8301fa:15a942adfff:-7d42</wuid>
     <x>60</x>
-    <y>318</y>
+    <y>366</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -678,7 +678,7 @@ $(pv_value)</tooltip>
     <width>325</width>
     <wuid>-c8301fa:15a942adfff:-7d35</wuid>
     <x>240</x>
-    <y>372</y>
+    <y>420</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -718,7 +718,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-c8301fa:15a942adfff:-7d34</wuid>
     <x>60</x>
-    <y>366</y>
+    <y>414</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -772,10 +772,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Text Input</widget_type>
-    <width>325</width>
+    <width>439</width>
     <wuid>365b7130:1713eff700d:-7bb6</wuid>
     <x>240</x>
-    <y>426</y>
+    <y>474</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -815,7 +815,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>365b7130:1713eff700d:-7bb5</wuid>
     <x>60</x>
-    <y>420</y>
+    <y>468</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -867,6 +867,98 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-4aa4f77e:1717208b33e:-7d4a</wuid>
     <x>426</x>
-    <y>270</y>
+    <y>318</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>43</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_9</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Eth0 IP Address</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>163</width>
+    <wrap_words>false</wrap_words>
+    <wuid>13f0f15c:174006cbbc5:-77d0</wuid>
+    <x>60</x>
+    <y>210</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>31</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Text Update_5</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>${UUT}:SYS:IFCONFIG:ETH0</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>true</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>325</width>
+    <wrap_words>false</wrap_words>
+    <wuid>13f0f15c:174006cbbc5:-77cf</wuid>
+    <x>240</x>
+    <y>210</y>
   </widget>
 </display>
