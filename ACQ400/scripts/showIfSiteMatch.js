@@ -13,7 +13,7 @@ var isVisible = false;
 for (var kv in sites) {
 	var kva = sites[kv].split("=");
 	if (site == kva[0]){
-	    if (kva[1].search(re) > -1){
+	    if (kva[1] && kva[1].search(re) > -1){
 	    	isVisible = true;	    	
 	    }
 	    break;
