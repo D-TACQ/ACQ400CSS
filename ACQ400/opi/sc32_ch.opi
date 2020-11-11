@@ -279,7 +279,7 @@ $(pv_value)</tooltip>
     <maximum>1.7976931348623157E308</maximum>
     <minimum>-1.7976931348623157E308</minimum>
     <name>Spinner</name>
-    <page_increment>10.0</page_increment>
+    <page_increment>0.1</page_increment>
     <precision>3</precision>
     <precision_from_pv>false</precision_from_pv>
     <pv_name>${UUT}:${SITE}:SC32:OFFSET:${CH}</pv_name>
@@ -292,7 +292,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_text>true</show_text>
-    <step_increment>1.0</step_increment>
+    <step_increment>0.001</step_increment>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
