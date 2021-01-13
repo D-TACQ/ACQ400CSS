@@ -17,10 +17,10 @@
   <grid_space>6</grid_space>
   <height>600</height>
   <macros>
-    <include_parent_macros>true</include_parent_macros>    
-    <trace_0_y_pv>${UUT}:1:AI:WF:${CH01}</trace_0_y_pv>
-    <trace_1_y_pv>${UUT}:JDG:MU:${CH01}</trace_1_y_pv>
-    <trace_2_y_pv>${UUT}:JDG:ML:${CH01}</trace_2_y_pv>  
+    <include_parent_macros>true</include_parent_macros>
+    <trace_0_y_pv>${UUT}:${SITE}:AI:WF:${CH01}:V.VALA</trace_0_y_pv>
+    <trace_1_y_pv>${UUT}:${SITE}:JDG:MU:${CH01}:V</trace_1_y_pv>
+    <trace_2_y_pv>${UUT}:${SITE}:JDG:ML:${CH01}:V</trace_2_y_pv>
   </macros>
   <name></name>
   <rules />
@@ -135,7 +135,7 @@ $(trace_0_y_pv_value)</tooltip>
       <color red="21" green="21" blue="196" />
     </trace_0_trace_color>
     <trace_0_trace_type>0</trace_0_trace_type>
-    <trace_0_update_delay>100</trace_0_update_delay>
+    <trace_0_update_delay>0</trace_0_update_delay>
     <trace_0_update_mode>0</trace_0_update_mode>
     <trace_0_visible>true</trace_0_visible>
     <trace_0_x_axis_index>0</trace_0_x_axis_index>
@@ -165,7 +165,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_1_y_axis_index>1</trace_1_y_axis_index>
     <trace_1_y_pv>$(trace_1_y_pv)</trace_1_y_pv>
     <trace_1_y_pv_value />
-    <trace_2_anti_alias>true</trace_2_anti_alias>
+    <trace_2_anti_alias>false</trace_2_anti_alias>
     <trace_2_buffer_size>1024</trace_2_buffer_size>
     <trace_2_concatenate_data>false</trace_2_concatenate_data>
     <trace_2_line_width>1</trace_2_line_width>
@@ -182,10 +182,8 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_2_visible>true</trace_2_visible>
     <trace_2_x_axis_index>0</trace_2_x_axis_index>
     <trace_2_x_pv></trace_2_x_pv>
-    <trace_2_x_pv_value />
     <trace_2_y_axis_index>1</trace_2_y_axis_index>
     <trace_2_y_pv>$(trace_2_y_pv)</trace_2_y_pv>
-    <trace_2_y_pv_value />
     <trace_count>3</trace_count>
     <transparent>false</transparent>
     <trigger_pv></trigger_pv>
