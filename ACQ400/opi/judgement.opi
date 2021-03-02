@@ -331,7 +331,7 @@ $(pv_value)</tooltip>
     <on_color>
       <color name="Major" red="255" green="0" blue="0" />
     </on_color>
-    <pv_name>${UUT}:JDG:CHX:FAIL:1</pv_name>
+    <pv_name>${UUT}:JDG:CHX:FAIL:${SITE}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -350,65 +350,6 @@ $(pv_value)</tooltip>
     <wuid>-20a96e8f:176e6caf982:-7a9e</wuid>
     <x>90</x>
     <y>90</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <bitReverse>false</bitReverse>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <effect_3d>true</effect_3d>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <height>43</height>
-    <horizontal>true</horizontal>
-    <label />
-    <led_border>3</led_border>
-    <led_border_color>
-      <color red="150" green="150" blue="150" />
-    </led_border_color>
-    <led_packed>false</led_packed>
-    <name>Byte Monitor_1</name>
-    <numBits>32</numBits>
-    <off_color>
-      <color red="73" green="0" blue="0" />
-    </off_color>
-    <on_color>
-      <color name="Major" red="255" green="0" blue="0" />
-    </on_color>
-    <pv_name>${UUT}:JDG:CHX:FAIL:2</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <square_led>false</square_led>
-    <startBit>0</startBit>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Byte Monitor</widget_type>
-    <width>757</width>
-    <wuid>-20a96e8f:176e6caf982:-7a7a</wuid>
-    <x>90</x>
-    <y>126</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.tab" version="1.0.0">
     <actions hook="false" hook_all="false" />
