@@ -1143,7 +1143,7 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>481</width>
+    <width>547</width>
     <wuid>3fd41d68:16ad934892b:-767b</wuid>
     <x>12</x>
     <y>360</y>
@@ -1185,7 +1185,7 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>481</width>
+    <width>547</width>
     <wuid>3fd41d68:16ad934892b:-75b6</wuid>
     <x>12</x>
     <y>414</y>
@@ -1358,16 +1358,16 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <style>0</style>
-    <text>PACKET CLEAR</text>
+    <text>PACKET CLR</text>
     <toggle_button>true</toggle_button>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>199</width>
+    <width>157</width>
     <wuid>-7f269ca6:170e41b1c86:-7e7a</wuid>
-    <x>18</x>
-    <y>474</y>
+    <x>342</x>
+    <y>258</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -1420,15 +1420,99 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <style>0</style>
-    <text>WAVEFORM CLEAR</text>
+    <text>WAVEFORM CLR</text>
     <toggle_button>true</toggle_button>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>199</width>
+    <width>157</width>
     <wuid>-7f269ca6:170e41b1c86:-7e79</wuid>
-    <x>18</x>
-    <y>516</y>
+    <x>342</x>
+    <y>300</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>3</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <group_name></group_name>
+    <height>43</height>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <SITE>2</SITE>
+      <FUN>AUR:${CHX}:BAD_PKTS</FUN>
+    </macros>
+    <name>Linking Container_2</name>
+    <opi_file>counter1.opi</opi_file>
+    <resize_behaviour>0</resize_behaviour>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip></tooltip>
+    <visible>true</visible>
+    <widget_type>Linking Container</widget_type>
+    <width>547</width>
+    <wuid>29f04044:178a136c0e3:-7c6b</wuid>
+    <x>12</x>
+    <y>468</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>3</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <group_name></group_name>
+    <height>43</height>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <SITE>2</SITE>
+      <FUN>AUR:${CHX}:DUP</FUN>
+    </macros>
+    <name>Linking Container_3</name>
+    <opi_file>counter1.opi</opi_file>
+    <resize_behaviour>0</resize_behaviour>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip></tooltip>
+    <visible>true</visible>
+    <widget_type>Linking Container</widget_type>
+    <width>547</width>
+    <wuid>29f04044:178a136c0e3:-7c5e</wuid>
+    <x>12</x>
+    <y>522</y>
   </widget>
 </display>

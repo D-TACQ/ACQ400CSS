@@ -50,7 +50,7 @@
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>61</height>
+    <height>85</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label</name>
     <rules />
@@ -66,7 +66,7 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>277</width>
+    <width>301</width>
     <wrap_words>false</wrap_words>
     <wuid>228d5488:169e2dea67f:-7eba</wuid>
     <x>240</x>
@@ -90,7 +90,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>427</height>
+    <height>511</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>A</CH>
@@ -109,51 +109,9 @@
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>379</width>
+    <width>511</width>
     <wuid>228d5488:169e2dea67f:-7e2c</wuid>
     <x>6</x>
-    <y>84</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>3</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="192" green="192" blue="192" />
-    </foreground_color>
-    <group_name></group_name>
-    <height>427</height>
-    <macros>
-      <include_parent_macros>true</include_parent_macros>
-      <CH>B</CH>
-      <CHX>2</CHX>
-    </macros>
-    <name>Linking Container_1</name>
-    <opi_file>cpdacmonx.opi</opi_file>
-    <resize_behaviour>0</resize_behaviour>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip></tooltip>
-    <visible>true</visible>
-    <widget_type>Linking Container</widget_type>
-    <width>379</width>
-    <wuid>228d5488:169e2dea67f:-7e20</wuid>
-    <x>390</x>
     <y>84</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -206,7 +164,7 @@
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>31</height>
+    <height>37</height>
     <image></image>
     <name>Action Button</name>
     <push_action_index>0</push_action_index>
@@ -226,10 +184,10 @@
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>175</width>
+    <width>199</width>
     <wuid>228d5488:169e2dea67f:-7db5</wuid>
-    <x>594</x>
-    <y>534</y>
+    <x>618</x>
+    <y>642</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <actions_from_pv>true</actions_from_pv>
@@ -252,7 +210,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>31</height>
+    <height>37</height>
     <label></label>
     <name>Menu Button</name>
     <pv_name>${UUT}:2:SFP_MODE</pv_name>
@@ -270,10 +228,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Menu Button</widget_type>
-    <width>97</width>
+    <width>121</width>
     <wuid>14114056:16b028679e8:-7bb2</wuid>
-    <x>132</x>
-    <y>534</y>
+    <x>156</x>
+    <y>642</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -293,7 +251,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>25</height>
+    <height>49</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_9</name>
     <rules />
@@ -309,11 +267,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>169</width>
+    <width>193</width>
     <wrap_words>false</wrap_words>
     <wuid>-5dde6ec3:1705ca3fa17:-7b5b</wuid>
-    <x>294</x>
-    <y>537</y>
+    <x>318</x>
+    <y>627</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -343,7 +301,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>25</height>
+    <height>49</height>
     <name>LED</name>
     <off_color>
       <color red="0" green="100" blue="0" />
@@ -368,10 +326,10 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>LED</widget_type>
-    <width>25</width>
+    <width>49</width>
     <wuid>-6b404830:17067149152:-793b</wuid>
-    <x>474</x>
-    <y>537</y>
+    <x>498</x>
+    <y>627</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -391,7 +349,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>25</height>
+    <height>49</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_10</name>
     <rules />
@@ -407,10 +365,52 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>109</width>
+    <width>133</width>
     <wrap_words>false</wrap_words>
     <wuid>-4aa4f77e:1717208b33e:-7cbe</wuid>
-    <x>12</x>
-    <y>537</y>
+    <x>36</x>
+    <y>627</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>3</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <group_name></group_name>
+    <height>511</height>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <CH>B</CH>
+      <CHX>2</CHX>
+    </macros>
+    <name>Linking Container_1</name>
+    <opi_file>cpdacmonx.opi</opi_file>
+    <resize_behaviour>0</resize_behaviour>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip></tooltip>
+    <visible>true</visible>
+    <widget_type>Linking Container</widget_type>
+    <width>511</width>
+    <wuid>29f04044:178a136c0e3:-7407</wuid>
+    <x>528</x>
+    <y>84</y>
   </widget>
 </display>
