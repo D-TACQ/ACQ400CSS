@@ -3776,10 +3776,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>187</width>
+    <width>121</width>
     <wrap_words>false</wrap_words>
     <wuid>41794d66:176fadece87:-6ef5</wuid>
-    <x>480</x>
+    <x>354</x>
     <y>156</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -3828,10 +3828,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>211</width>
+    <width>122</width>
     <wrap_words>false</wrap_words>
     <wuid>41794d66:176fadece87:-6eed</wuid>
-    <x>132</x>
+    <x>125</x>
     <y>156</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -3868,10 +3868,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>109</width>
+    <width>79</width>
     <wrap_words>false</wrap_words>
     <wuid>41794d66:176fadece87:-6c15</wuid>
-    <x>372</x>
+    <x>258</x>
     <y>156</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -3908,10 +3908,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>109</width>
+    <width>92</width>
     <wrap_words>false</wrap_words>
     <wuid>41794d66:176fadece87:-6c0d</wuid>
-    <x>24</x>
+    <x>17</x>
     <y>156</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -3960,10 +3960,10 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Text Update</widget_type>
-    <width>170</width>
+    <width>106</width>
     <wrap_words>false</wrap_words>
     <wuid>-6afeeb3c:17701a8e9ad:-7db3</wuid>
-    <x>782</x>
+    <x>555</x>
     <y>156</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -4003,7 +4003,7 @@ $(pv_value)</tooltip>
     <width>109</width>
     <wrap_words>false</wrap_words>
     <wuid>-6afeeb3c:17701a8e9ad:-7da7</wuid>
-    <x>672</x>
+    <x>468</x>
     <y>156</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -4060,5 +4060,49 @@ $(pv_value)</tooltip>
     <wuid>-6afeeb3c:17701a8e9ad:-7bd4</wuid>
     <x>594</x>
     <y>9</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions_from_pv>true</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <label></label>
+    <name>Menu Button</name>
+    <pv_name>${UUT}:JDG:UPDATE</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>216</width>
+    <wuid>-21a9f86d:178cfc1a428:-79ff</wuid>
+    <x>726</x>
+    <y>156</y>
   </widget>
 </display>
