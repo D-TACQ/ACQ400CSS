@@ -11,6 +11,7 @@ http://controlsystemstudio.org/
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
 
+**IMPORTANT**
 <pre>
 Change Preferences Please:
 EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
