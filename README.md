@@ -26,7 +26,6 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
   * UUT NAME, MAC address and default IP-address are printed on the delivery sheet and on faceplate on rear of the box.
 
 #### https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
-<a href="D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf" class="image fit"><img src="D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf" alt=""></a>
 #### https://github.com/D-TACQ/ACQ400CSS/releases/download/R20210414/acq2106-acq424-transient_capture_quickstart.pdf
 
 ### OpenJDK install for Windows users:
