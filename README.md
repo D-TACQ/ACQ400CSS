@@ -11,6 +11,7 @@ http://controlsystemstudio.org/
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
 
+**IMPORTANT**
 <pre>
 Change Preferences Please:
 EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
@@ -25,7 +26,8 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
  
   * UUT NAME, MAC address and default IP-address are printed on the delivery sheet and on faceplate on rear of the box.
 
-#### https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf
+#### [Quickstart](https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf)
+#### [TransientQuickstart](https://github.com/D-TACQ/ACQ400CSS/releases/download/R20210414/acq2106-acq424-transient_capture_quickstart.pdf)
 
 ### OpenJDK install for Windows users:
 #### https://adoptopenjdk.net/
