@@ -18,17 +18,17 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <trace_0_y_pv>${UUT1}:${SITE}:AI:WF:${CH01}:V.VALA</trace_0_y_pv>
-    <trace_1_y_pv>${UUT2}:${SITE}:AI:WF:${CH02}:V.VALA</trace_1_y_pv>
-    <trace_2_y_pv>${UUT3}:${SITE}:AI:WF:${CH03}:V.VALA</trace_2_y_pv>
-    <trace_3_y_pv>${UUT4}:${SITE}:AI:WF:${CH04}:V.VALA</trace_3_y_pv>
-    <trace_4_y_pv>${UUT5}:${SITE}:AI:WF:${CH05}:V.VALA</trace_4_y_pv>
-    <trace_5_y_pv>${UUT6}:${SITE}:AI:WF:${CH06}:V.VALA</trace_5_y_pv>
-    <trace_6_y_pv>${UUT7}:${SITE}:AI:WF:${CH07}:V.VALA</trace_6_y_pv>
-    <trace_7_y_pv>${UUT8}:${SITE}:AI:WF:${CH08}:V.VALA</trace_7_y_pv>
+    <trace_0_y_pv>${UUT1}:${SITE1}:AI:WF:${CH01}:V.VALA</trace_0_y_pv>
+    <trace_1_y_pv>${UUT2}:${SITE2}:AI:WF:${CH02}:V.VALA</trace_1_y_pv>
+    <trace_2_y_pv>${UUT3}:${SITE3}:AI:WF:${CH03}:V.VALA</trace_2_y_pv>
+    <trace_3_y_pv>${UUT4}:${SITE4}:AI:WF:${CH04}:V.VALA</trace_3_y_pv>
+    <trace_4_y_pv>${UUT5}:${SITE5}:AI:WF:${CH05}:V.VALA</trace_4_y_pv>
+    <trace_5_y_pv>${UUT6}:${SITE6}:AI:WF:${CH06}:V.VALA</trace_5_y_pv>
+    <trace_6_y_pv>${UUT7}:${SITE7}:AI:WF:${CH07}:V.VALA</trace_6_y_pv>
+    <trace_7_y_pv>${UUT8}:${SITE8}:AI:WF:${CH08}:V.VALA</trace_7_y_pv>
     <y_axis_title>Volts</y_axis_title>
     <TB>${UUT}:1:AI:WF:TB.VALA</TB>
-    <TYPE>${UUT}:${SITE}:AI:WF:${CH01}.FTVL</TYPE>
+    <TYPE>${UUT}:${SITE1}:AI:WF:${CH01}.FTVL</TYPE>
     <tbx>${TB}</tbx>
   </macros>
   <name>${UUT}:LIVE</name>
