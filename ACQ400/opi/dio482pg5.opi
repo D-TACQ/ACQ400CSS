@@ -1328,7 +1328,35 @@ $(pv_value)</tooltip>
       <height>31</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_19</name>
-      <rules />
+      <rules>
+      <rule name="DxColorRule" prop_id="background_color" out_exp="true">
+        <exp bool_exp="pv0==2">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <exp bool_exp="pv0==3">
+          <value>ColorFontUtil.getColorFromRGB(255,165,0)</value>
+        </exp>
+        <exp bool_exp="pv0==4">
+          <value>ColorFontUtil.getColorFromRGB(255,255,0)</value>
+        </exp>
+        <exp bool_exp="pv0==5">
+          <value>ColorFontUtil.getColorFromRGB(0,128,0)</value>
+        </exp>
+        <exp bool_exp="pv0==6">
+          <value>ColorFontUtil.getColorFromRGB(30,144,255)</value>
+        </exp>
+        <exp bool_exp="pv0==7">
+          <value>ColorFontUtil.getColorFromRGB(0,0,255)</value>
+        </exp>
+        <exp bool_exp="pv0==0">
+          <value>ColorFontUtil.getColorFromRGB(0,0,0)</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>ColorFontUtil.getColorFromRGB(125,125,0)</value>
+        </exp>
+        <pv trig="true">loc://pg${SITE}_dx(${DX})</pv>
+      </rule>      
+      </rules>
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
