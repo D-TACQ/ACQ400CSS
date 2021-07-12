@@ -421,7 +421,55 @@ $(pv_value)</tooltip>
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
-      </rule>      
+      </rule>
+     <rule name="CHO9_FAIL_Rule" prop_id="tab_8_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;8)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH10_FAIL_Rule" prop_id="tab_9_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;9)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH11_FAIL_Rule" prop_id="tab_10_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;10)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH12_FAIL_Rule" prop_id="tab_11_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;11)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH13_FAIL_Rule" prop_id="tab_12_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;12)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH14_FAIL_Rule" prop_id="tab_13_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;13)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH15_FAIL_Rule" prop_id="tab_14_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;14)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>
+     <rule name="CH16_FAIL_Rule" prop_id="tab_15_background_color" out_exp="true">
+        <exp bool_exp="pv0&amp;(1&lt;&lt;15)">
+          <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
+        </exp>
+        <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
+      </rule>          
     </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
