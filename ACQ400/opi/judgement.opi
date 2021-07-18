@@ -180,7 +180,7 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>49</width>
     <wuid>-20a96e8f:176e6caf982:-7b99</wuid>
-    <x>798</x>
+    <x>840</x>
     <y>18</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -236,61 +236,6 @@ $(pv_value)</tooltip>
     <wuid>-20a96e8f:176e6caf982:-7b36</wuid>
     <x>384</x>
     <y>12</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>1000</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>67</height>
-    <image></image>
-    <name>Action Button_1</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>${UUT}:JDG:MASK_FROM_DATA</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>ENABLE
-1000</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>85</width>
-    <wuid>-20a96e8f:176e6caf982:-7b2e</wuid>
-    <x>498</x>
-    <y>9</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -391,7 +336,7 @@ $(pv_value)</tooltip>
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
-      </rule>  
+      </rule>
       <rule name="CHO4_FAIL_Rule" prop_id="tab_3_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;3)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
@@ -422,54 +367,54 @@ $(pv_value)</tooltip>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CHO9_FAIL_Rule" prop_id="tab_8_background_color" out_exp="true">
+      <rule name="CHO9_FAIL_Rule" prop_id="tab_8_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;8)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH10_FAIL_Rule" prop_id="tab_9_background_color" out_exp="true">
+      <rule name="CH10_FAIL_Rule" prop_id="tab_9_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;9)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH11_FAIL_Rule" prop_id="tab_10_background_color" out_exp="true">
+      <rule name="CH11_FAIL_Rule" prop_id="tab_10_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;10)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH12_FAIL_Rule" prop_id="tab_11_background_color" out_exp="true">
+      <rule name="CH12_FAIL_Rule" prop_id="tab_11_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;11)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH13_FAIL_Rule" prop_id="tab_12_background_color" out_exp="true">
+      <rule name="CH13_FAIL_Rule" prop_id="tab_12_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;12)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH14_FAIL_Rule" prop_id="tab_13_background_color" out_exp="true">
+      <rule name="CH14_FAIL_Rule" prop_id="tab_13_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;13)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH15_FAIL_Rule" prop_id="tab_14_background_color" out_exp="true">
+      <rule name="CH15_FAIL_Rule" prop_id="tab_14_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;14)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH16_FAIL_Rule" prop_id="tab_15_background_color" out_exp="true">
+      <rule name="CH16_FAIL_Rule" prop_id="tab_15_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;15)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
-      </rule>          
+      </rule>
     </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -2107,7 +2052,7 @@ $(pv_value)</tooltip>
     <width>78</width>
     <wrap_words>false</wrap_words>
     <wuid>-20a96e8f:176e6caf982:-6b9d</wuid>
-    <x>828</x>
+    <x>870</x>
     <y>16</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -2149,61 +2094,6 @@ $(pv_value)</tooltip>
     <wuid>-20a96e8f:176e6caf982:-6b93</wuid>
     <x>192</x>
     <y>59</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>50</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>67</height>
-    <image></image>
-    <name>Action Button_2</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>${UUT}:JDG:MASK_FROM_DATA</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>ENABLE
-50</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>91</width>
-    <wuid>-23aff707:176f12de0f8:-7e4d</wuid>
-    <x>696</x>
-    <y>9</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -2291,7 +2181,7 @@ $(pv_value)</tooltip>
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
-      </rule>  
+      </rule>
       <rule name="CHO4_FAIL_Rule" prop_id="tab_3_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;19)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
@@ -2322,54 +2212,54 @@ $(pv_value)</tooltip>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CHO9_FAIL_Rule" prop_id="tab_8_background_color" out_exp="true">
+      <rule name="CHO9_FAIL_Rule" prop_id="tab_8_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;24)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH10_FAIL_Rule" prop_id="tab_9_background_color" out_exp="true">
+      <rule name="CH10_FAIL_Rule" prop_id="tab_9_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;25)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH11_FAIL_Rule" prop_id="tab_10_background_color" out_exp="true">
+      <rule name="CH11_FAIL_Rule" prop_id="tab_10_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;26)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH12_FAIL_Rule" prop_id="tab_11_background_color" out_exp="true">
+      <rule name="CH12_FAIL_Rule" prop_id="tab_11_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;27)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH13_FAIL_Rule" prop_id="tab_12_background_color" out_exp="true">
+      <rule name="CH13_FAIL_Rule" prop_id="tab_12_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;28)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH14_FAIL_Rule" prop_id="tab_13_background_color" out_exp="true">
+      <rule name="CH14_FAIL_Rule" prop_id="tab_13_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;29)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH15_FAIL_Rule" prop_id="tab_14_background_color" out_exp="true">
+      <rule name="CH15_FAIL_Rule" prop_id="tab_14_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;30)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
       </rule>
-     <rule name="CH16_FAIL_Rule" prop_id="tab_15_background_color" out_exp="true">
+      <rule name="CH16_FAIL_Rule" prop_id="tab_15_background_color" out_exp="true">
         <exp bool_exp="pv0&amp;(1&lt;&lt;31)">
           <value>ColorFontUtil.getColorFromRGB(255,0,0)</value>
         </exp>
         <pv trig="true">${UUT}:JDG:CHX:FAIL:${SITE}</pv>
-      </rule>      
+      </rule>
     </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -4173,61 +4063,6 @@ $(pv_value)</tooltip>
     <x>468</x>
     <y>156</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="WRITE_PV">
-        <pv_name>$(pv_name)</pv_name>
-        <value>125</value>
-        <timeout>10</timeout>
-        <confirm_message></confirm_message>
-        <description></description>
-      </action>
-    </actions>
-    <alarm_pulsing>false</alarm_pulsing>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>67</height>
-    <image></image>
-    <name>Action Button_3</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>${UUT}:JDG:MASK_FROM_DATA</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>0</style>
-    <text>ENABLE
-150</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>91</width>
-    <wuid>-6afeeb3c:17701a8e9ad:-7bd4</wuid>
-    <x>594</x>
-    <y>9</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <actions_from_pv>true</actions_from_pv>
     <alarm_pulsing>false</alarm_pulsing>
@@ -4325,5 +4160,432 @@ $(pv_value)</tooltip>
     <wuid>16ffb237:17a6d17058f:-7b61</wuid>
     <x>755</x>
     <y>197</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>1</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>false</fc>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>79</height>
+    <lock_children>false</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+    </macros>
+    <name>Grouping Container</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>true</show_scrollbar>
+    <tooltip></tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>338</width>
+    <wuid>644e0a74:17aba446ce1:-798d</wuid>
+    <x>497</x>
+    <y>3</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>false</auto_size>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>31</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <name>Label_10</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <text>ENABLE</text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>121</width>
+      <wrap_words>false</wrap_words>
+      <wuid>644e0a74:17aba446ce1:-7985</wuid>
+      <x>48</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1000</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description></description>
+        </action>
+      </actions>
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>37</height>
+      <image></image>
+      <name>Action Button_1</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>${UUT}:JDG:MASK_FROM_DATA</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>0</style>
+      <text>1000</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>73</width>
+      <wuid>-20a96e8f:176e6caf982:-7b2e</wuid>
+      <x>6</x>
+      <y>36</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>125</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description></description>
+        </action>
+      </actions>
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>37</height>
+      <image></image>
+      <name>Action Button_3</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>${UUT}:JDG:MASK_FROM_DATA</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>0</style>
+      <text>150</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>55</width>
+      <wuid>-6afeeb3c:17701a8e9ad:-7bd4</wuid>
+      <x>90</x>
+      <y>36</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="WRITE_PV">
+          <pv_name>$(pv_name)</pv_name>
+          <value>50</value>
+          <timeout>10</timeout>
+          <confirm_message></confirm_message>
+          <description></description>
+        </action>
+      </actions>
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>37</height>
+      <image></image>
+      <name>Action Button_2</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>${UUT}:JDG:MASK_FROM_DATA</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>0</style>
+      <text>50</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>49</width>
+      <wuid>-23aff707:176f12de0f8:-7e4d</wuid>
+      <x>156</x>
+      <y>36</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <auto_size>false</auto_size>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <format_type>0</format_type>
+      <height>31</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Text Update_4</name>
+      <precision>0</precision>
+      <precision_from_pv>true</precision_from_pv>
+      <pv_name>${UUT}:JDG:MASK_BOXCAR</pv_name>
+      <pv_value />
+      <rotation_angle>0.0</rotation_angle>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_units>true</show_units>
+      <text>##</text>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Text Update</widget_type>
+      <width>43</width>
+      <wrap_words>false</wrap_words>
+      <wuid>644e0a74:17aba446ce1:-73bc</wuid>
+      <x>216</x>
+      <y>39</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <auto_size>false</auto_size>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <format_type>0</format_type>
+      <height>31</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Text Update_4</name>
+      <precision>0</precision>
+      <precision_from_pv>true</precision_from_pv>
+      <pv_name>${UUT}:JDG:MASK_SQUARE</pv_name>
+      <pv_value />
+      <rotation_angle>0.0</rotation_angle>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_units>true</show_units>
+      <text>##</text>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Text Update</widget_type>
+      <width>43</width>
+      <wrap_words>false</wrap_words>
+      <wuid>644e0a74:17aba446ce1:-73b0</wuid>
+      <x>270</x>
+      <y>39</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>false</auto_size>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>31</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <name>Label_11</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <text>SQ</text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>55</width>
+      <wrap_words>false</wrap_words>
+      <wuid>644e0a74:17aba446ce1:-7240</wuid>
+      <x>264</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>false</auto_size>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>31</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <name>Label_10</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <text>BOX</text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>55</width>
+      <wrap_words>false</wrap_words>
+      <wuid>644e0a74:17aba446ce1:-724a</wuid>
+      <x>210</x>
+      <y>0</y>
+    </widget>
   </widget>
 </display>
