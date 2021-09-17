@@ -16,6 +16,7 @@ for (var kv in sites) {
 	}
 }
 
+// next para bogus? .. hmm, just repetition.
 if (site < sites.length){
 	isVisible = sites[site].search("48[012]") >-1? acq480_true: !acq480_true;
 }
