@@ -2252,13 +2252,13 @@
     <horizontal_alignment>1</horizontal_alignment>
     <horizontal_buttons_layout>false</horizontal_buttons_layout>
     <limits_from_pv>true</limits_from_pv>
-    <maximum>Infinity</maximum>
-    <minimum>-Infinity</minimum>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
     <name>Spinner</name>
     <page_increment>10.0</page_increment>
     <precision>3</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>acq1001_444:1:AI:WF:W1</pv_name>
+    <pv_name>${UUT}:1:AI:WF:W1</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -2313,7 +2313,7 @@ $(pv_value)</tooltip>
     <page_increment>10.0</page_increment>
     <precision>3</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>acq1001_444:1:AI:WF:W2</pv_name>
+    <pv_name>${UUT}:1:AI:WF:W2</pv_name>
     <pv_value />
     <rules />
     <scale_options>
