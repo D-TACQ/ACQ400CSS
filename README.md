@@ -11,6 +11,25 @@ http://controlsystemstudio.org/
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
 #### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
 
+##### version 4.5.9 uses Java 1.8 ("Java8"). 
+
+###### OpenJDK install for Windows users: https://adoptopenjdk.net/
+
+###### On Ubuntu: 
+
+```
+sudo apt-get install openjdk-8-jdk 
+
+# If you want to maintain a newer version of Java, cs-studio/eclipse looks for a local java version first
+
+# assuming cs-studio is unpacked at ~/cs-studio..
+ln -s /usr/lib/jvm/java-8-openjdk-amd64/jre ~/cs-studio/
+# use alternatives to select global jre version
+https://askubuntu.com/questions/740757/switch-between-multiple-java-versions
+```
+
+
+
 **IMPORTANT**
 <pre>
 Change Preferences Please:
@@ -29,6 +48,4 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
 #### [Quickstart](https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf)
 #### [TransientQuickstart](https://github.com/D-TACQ/ACQ400CSS/releases/download/R20210414/acq2106-acq424-transient_capture_quickstart.pdf)
 
-### OpenJDK install for Windows users:
-#### https://adoptopenjdk.net/
-OpenJDK 8 is the required version for CS Studio.
+
