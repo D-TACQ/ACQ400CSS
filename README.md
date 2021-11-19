@@ -47,5 +47,6 @@ EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
 
 #### [Quickstart](https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf)
 #### [TransientQuickstart](https://github.com/D-TACQ/ACQ400CSS/releases/download/R20210414/acq2106-acq424-transient_capture_quickstart.pdf)
+#### [View8 View multiple UUTS](https://github.com/D-TACQ/ACQ400CSS/releases/download/R211119/view8-setup.pdf)
 
 
