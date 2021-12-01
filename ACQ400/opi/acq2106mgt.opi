@@ -70,8 +70,8 @@
     <width>259</width>
     <wrap_words>true</wrap_words>
     <wuid>538d8682:14b56582fab:-7d91</wuid>
-    <x>276</x>
-    <y>24</y>
+    <x>282</x>
+    <y>18</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -91,7 +91,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>511</height>
+    <height>385</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>A</CH>
@@ -133,7 +133,7 @@
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>511</height>
+    <height>385</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>B</CH>
@@ -719,7 +719,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>511</height>
+    <height>379</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>C</CH>
@@ -728,7 +728,14 @@ $(pv_value)</tooltip>
     <name>Linking Container_2</name>
     <opi_file>mgtA.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0 &gt;= 3</value>
+        </exp>
+        <pv trig="true">${UUT}:MGTPORTS</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -740,8 +747,8 @@ $(pv_value)</tooltip>
     <widget_type>Linking Container</widget_type>
     <width>415</width>
     <wuid>45b1645a:17c93e89ebd:-7a31</wuid>
-    <x>0</x>
-    <y>582</y>
+    <x>6</x>
+    <y>450</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -761,7 +768,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>511</height>
+    <height>379</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <CH>D</CH>
@@ -770,7 +777,14 @@ $(pv_value)</tooltip>
     <name>Linking Container_3</name>
     <opi_file>mgtA.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0 &gt;= 4</value>
+        </exp>
+        <pv trig="true">${UUT}:MGTPORTS</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -783,6 +797,6 @@ $(pv_value)</tooltip>
     <width>415</width>
     <wuid>45b1645a:17c93e89ebd:-79a6</wuid>
     <x>420</x>
-    <y>582</y>
+    <y>450</y>
   </widget>
 </display>
