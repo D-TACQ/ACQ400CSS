@@ -521,7 +521,7 @@ $(pv_value)</tooltip>
     <resize_behaviour>0</resize_behaviour>
     <rules>
       <rule name="VisibleRule" prop_id="visible" out_exp="false">
-        <exp bool_exp="pvStr0 == &quot;&quot;">
+        <exp bool_exp="pvStr0 != &quot;&quot;">
           <value>false</value>
         </exp>
         <pv trig="true">loc://TOP1("${TOP1}")</pv>
