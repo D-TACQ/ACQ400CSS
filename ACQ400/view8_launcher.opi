@@ -18,6 +18,8 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
+    <CAPOPI>capture</CAPOPI>
+    <LAUNCHOPI>../ACQ400_LAUNCHER</LAUNCHOPI>
   </macros>
   <name></name>
   <rules />
@@ -96,7 +98,7 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>175</width>
     <wuid>-519a9143:166f2f294de:1187</wuid>
-    <x>606</x>
+    <x>810</x>
     <y>90</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -285,10 +287,10 @@ Edit!Preferences!CSS Applications!Display!BOY!OPI Runtime</text>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Table</widget_type>
-    <width>466</width>
+    <width>700</width>
     <wuid>-519a9143:166f2f294de:16b6</wuid>
-    <x>81</x>
-    <y>162</y>
+    <x>66</x>
+    <y>174</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="true">
@@ -354,7 +356,7 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>175</width>
     <wuid>-42d16b31:172adba0577:-7b85</wuid>
-    <x>612</x>
+    <x>816</x>
     <y>186</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -421,7 +423,74 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>175</width>
     <wuid>-c875f72:176326d3e8b:-17b9</wuid>
-    <x>606</x>
+    <x>810</x>
     <y>288</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="EXECUTE_JAVASCRIPT">
+        <path>scripts/closeOpi.js</path>
+        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
+]]></scriptText>
+        <embedded>false</embedded>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>73</height>
+    <image></image>
+    <name>stream_state_8</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://ss8(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT("${UUT}")</pv>
+        <pv trig="false">loc://SITE(1)</pv>
+        <pv trig="true">loc://ss8</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>Launch Stream</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>241</width>
+    <wuid>-6997d2e0:17f208f49a1:-62fc</wuid>
+    <x>810</x>
+    <y>390</y>
   </widget>
 </display>
