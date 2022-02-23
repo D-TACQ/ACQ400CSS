@@ -75,9 +75,9 @@
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>721</width>
+    <width>703</width>
     <wuid>-519a9143:166f2f294de:-6351</wuid>
-    <x>396</x>
+    <x>414</x>
     <y>8</y>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -116,7 +116,7 @@
       <width>67</width>
       <wrap_words>false</wrap_words>
       <wuid>-519a9143:166f2f294de:-64d5</wuid>
-      <x>114</x>
+      <x>138</x>
       <y>6</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -196,7 +196,7 @@
       <width>67</width>
       <wrap_words>false</wrap_words>
       <wuid>-519a9143:166f2f294de:-64df</wuid>
-      <x>18</x>
+      <x>30</x>
       <y>6</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -393,7 +393,7 @@ $(pv_value)</tooltip>
     <width>79</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e4c</wuid>
-    <x>408</x>
+    <x>438</x>
     <y>43</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -469,7 +469,7 @@ $(pv_value)</tooltip>
     <width>109</width>
     <wrap_words>false</wrap_words>
     <wuid>61109e11:162ceba64ca:-7e40</wuid>
-    <x>516</x>
+    <x>534</x>
     <y>43</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -702,7 +702,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>91</width>
+    <width>61</width>
     <wuid>466d29d2:162ed4b8101:-7c15</wuid>
     <x>306</x>
     <y>43</y>
@@ -940,6 +940,67 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>6d00cef0:16745b43ed4:-7c89</wuid>
     <x>1068</x>
+    <y>43</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>31</height>
+    <image></image>
+    <name>capture</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>loc://capture_${UUT}(0)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
+        <pv trig="false">loc://UUT_${UUT}("${UUT)")</pv>
+        <pv trig="false">loc://SITE(1)</pv>
+        <pv trig="true">$(pv_name)</pv>
+        <pv trig="false">loc://plot_time(0)</pv>
+      </path>
+    </scripts>
+    <style>0</style>
+    <text>CAP</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>61</width>
+    <wuid>15a9f8d9:17f259132ef:-6f9f</wuid>
+    <x>366</x>
     <y>43</y>
   </widget>
 </display>
