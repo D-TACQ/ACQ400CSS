@@ -494,7 +494,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT_${UUT}("${UUT)")</pv>
-        <pv trig="false">loc://SITE(1)</pv>
+        <pv trig="false">${UUT}:0:AGGREGATOR:S1</pv>
         <pv trig="true">loc://${CAPOPI}_${UUT}(0)</pv>
         <pv trig="false">loc://plot_time(0)</pv>
       </path>

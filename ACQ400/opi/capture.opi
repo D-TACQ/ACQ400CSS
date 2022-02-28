@@ -208,7 +208,7 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>863</width>
       <wuid>-71c058a4:14d41ea3624:-7147</wuid>
@@ -1409,7 +1409,7 @@ $(pv_value)</tooltip>
         <name>Text Update_4</name>
         <precision>0</precision>
         <precision_from_pv>true</precision_from_pv>
-        <pv_name>${UUT}:1:SHOT</pv_name>
+        <pv_name>${UUT}:${SITE}:SHOT</pv_name>
         <pv_value />
         <rotation_angle>0.0</rotation_angle>
         <rules>
@@ -5145,7 +5145,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>863</width>
       <wuid>1ab6306:17eced61d14:-7afc</wuid>
@@ -7044,7 +7044,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="1">
           <value>pv0 != 0</value>
         </exp>
-        <pv trig="true">${UUT}:1:HAS_RGM</pv>
+        <pv trig="true">${UUT}:${SITE}:HAS_RGM</pv>
       </rule>
     </rules>
     <scale_options>
@@ -7192,7 +7192,7 @@ $(pv_value)</tooltip>
       <page_increment>10.0</page_increment>
       <precision>3</precision>
       <precision_from_pv>false</precision_from_pv>
-      <pv_name>${UUT}:1:RTM_TRANSLEN</pv_name>
+      <pv_name>${UUT}:${SITE}:RTM_TRANSLEN</pv_name>
       <pv_value />
       <rules>
         <rule name="EnableRule" prop_id="enabled" out_exp="true">
