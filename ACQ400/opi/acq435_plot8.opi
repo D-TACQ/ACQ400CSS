@@ -493,4 +493,48 @@ $(pv_value)</tooltip>
       <y>0</y>
     </widget>
   </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions_from_pv>true</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="7" style="0" pixels="false">Fine Print</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>32</height>
+    <label></label>
+    <name>Menu Button</name>
+    <pv_name>${UUT}:${SITE}:ADC_CAL</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>109</width>
+    <wuid>211b53b5:17fbb1a0ae5:-7d3f</wuid>
+    <x>576</x>
+    <y>35</y>
+  </widget>
 </display>
