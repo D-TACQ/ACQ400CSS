@@ -279,6 +279,46 @@
       <x>468</x>
       <y>6</y>
     </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>false</auto_size>
+      <background_color>
+        <color red="255" green="255" blue="255" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Noto Sans" height="7" style="0" pixels="false">Fine Print</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>19</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <name>Label_1</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <text>${SITE}</text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>73</width>
+      <wrap_words>false</wrap_words>
+      <wuid>-177e0f56:1802276c442:-7e59</wuid>
+      <x>575</x>
+      <y>9</y>
+    </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -348,7 +388,7 @@
     <name>Text Update_4</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>${UUT}:1:SHOT</pv_name>
+    <pv_name>${UUT}:${SITE}:SHOT</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
@@ -500,7 +540,7 @@ $(pv_value)</tooltip>
     <name>Text Update_1</name>
     <precision>0</precision>
     <precision_from_pv>true</precision_from_pv>
-    <pv_name>${UUT}:1:SIG:sample_count:nzcount</pv_name>
+    <pv_name>${UUT}:${SITE}:SIG:sample_count:nzcount</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -629,7 +669,7 @@ $(pv_value)</tooltip>
     <scripts>
       <path pathString="../scripts/LaunchOpi8dotdot.js" checkConnect="false" sfe="false" seoe="false">
         <pv trig="false">loc://UUT_${UUT}("${UUT)")</pv>
-        <pv trig="false">loc://SITE(1)</pv>
+        <pv trig="false">loc://SITE(${SITE})</pv>
         <pv trig="true">loc://PLOT8_${UUT}(0)</pv>
         <pv trig="false">loc://plot_time(0)</pv>
       </path>
