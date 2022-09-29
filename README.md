@@ -31,11 +31,36 @@ https://askubuntu.com/questions/740757/switch-between-multiple-java-versions
 
 
 **IMPORTANT**
+
+*** Use Git! ***
+Yes, github will let you download a zip file, but you'll find staying up to date much easier by using git tools to maintain a clone of our repo
+
+*** cs-studio is based on eclipse ****
+# Concept of Workspace: this has all temp data. *** RECOMMEND *** set up one workspace per UUT. The workspace will store your configuration (UUT, graphic layout etc) between sessions.
+# Concept of Project: this is the "code", ACQ400CSS is your project. ONE project is re-used readonly by many workspaces.
+*** DO NOT *** locate the Project in the file tree under the Workspace!
+
+*** Recommended File Layout ***
+# Store cs-studio in ./cs-studio
+# Store the OPI project in ./PROJECTS/ACQ400CSS
 <pre>
-Change Preferences Please:
-EDIT | Preferences | CSS-Core | Data Sources | Channel Access :
+mkdir PROJECTS; cd PROJECTS; git clone https://github.com/D-TACQ/ACQ400CSS.git
+</pre>
+# Create one workspace per UUT: mkdir CSSWS/ACQ1001_123
+# Add the directory PROJECTS/ACQ400CSS/ACQ400 as project "ACQ400" to the workspace. For screen shots please see quickstart below.
+# Set some preferences in your workspace.
+<pre>
+EDIT | Preferences | CSS Applications | Display | BOY | OPI Runtime
+    set name UUT value the name of the uut eg acq1001_123
+    ** NOT the ip address! **
+EDIT | Preferences | CSS Core | Data Sources | Channel Access :
     set Max Array Size to 500000
 </pre>
+
+# Apologia
+There are way too many steps!. Sorry, the good news is we used an excellent open source product. The bad news is we have failed to set the best defaults. But, once it's set up, the workspace keeps your configuration faithfully.
+On starting a new workspace, cs-studio will die unexpectedly, please re-run it when this happens.
+
 ### Quickstart Guide: Basic principle applies for all Units Under Test UUT
 * Example is for UUT acq1001_190, please substitute the name of your own UUT.
 
