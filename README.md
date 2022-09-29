@@ -30,25 +30,30 @@ https://askubuntu.com/questions/740757/switch-between-multiple-java-versions
 
 
 
-**IMPORTANT**
+## IMPORTANT
 
-*** Use Git! ***
+### Use Git!
+
 Yes, github will let you download a zip file, but you'll find staying up to date much easier by using git tools to maintain a clone of our repo
 
-*** cs-studio is based on eclipse ****
-# Concept of Workspace: this has all temp data. *** RECOMMEND *** set up one workspace per UUT. The workspace will store your configuration (UUT, graphic layout etc) between sessions.
-# Concept of Project: this is the "code", ACQ400CSS is your project. ONE project is re-used readonly by many workspaces.
-*** DO NOT *** locate the Project in the file tree under the Workspace!
+### cs-studio is based on eclipse
 
-*** Recommended File Layout ***
-# Store cs-studio in ./cs-studio
-# Store the OPI project in ./PROJECTS/ACQ400CSS
+#### Concept of Workspace: 
+
+Workspace holds all temp data. **RECOMMEND** set up one workspace per UUT. The workspace will store your configuration (UUT, graphic layout etc) between sessions.
+
+#### Concept of Project: this is the "code", ACQ400CSS is your project. ONE project is re-used readonly by many workspaces.
+* *DO NOT* * locate the Project in the file tree under the Workspace!
+
+**Recommended File Layout**
+1. Store cs-studio in ./cs-studio
+2. Store the OPI project in ./PROJECTS/ACQ400CSS
 <pre>
 mkdir PROJECTS; cd PROJECTS; git clone https://github.com/D-TACQ/ACQ400CSS.git
 </pre>
-# Create one workspace per UUT: mkdir CSSWS/ACQ1001_123
-# Add the directory PROJECTS/ACQ400CSS/ACQ400 as project "ACQ400" to the workspace. For screen shots please see quickstart below.
-# Set some preferences in your workspace.
+3. Create one workspace per UUT: mkdir CSSWS/ACQ1001_123
+4. Add the directory PROJECTS/ACQ400CSS/ACQ400 as project "ACQ400" to the workspace. For screen shots please see quickstart below.
+5. Set some preferences in your workspace.
 <pre>
 EDIT | Preferences | CSS Applications | Display | BOY | OPI Runtime
     set name UUT value the name of the uut eg acq1001_123
