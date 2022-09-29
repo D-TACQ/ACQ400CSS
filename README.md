@@ -30,7 +30,7 @@ https://askubuntu.com/questions/740757/switch-between-multiple-java-versions
 
 
 
-## IMPORTANT
+## INSTALL/Configure
 
 ### Use Git!
 
@@ -42,8 +42,11 @@ Yes, github will let you download a zip file, but you'll find staying up to date
 
 Workspace holds all temp data. **RECOMMEND** set up one workspace per UUT. The workspace will store your configuration (UUT, graphic layout etc) between sessions.
 
-#### Concept of Project: this is the "code", ACQ400CSS is your project. ONE project is re-used readonly by many workspaces.
-* *DO NOT* * locate the Project in the file tree under the Workspace!
+#### Concept of Project: 
+The Project is the "code", ACQ400CSS is your project. 
+The Workspace references the project.
+ONE project is re-used readonly by many workspaces.
+**DO NOT** locate the Project in the file tree under the Workspace!
 
 **Recommended File Layout**
 1. Store cs-studio in ./cs-studio
@@ -63,8 +66,8 @@ EDIT | Preferences | CSS Core | Data Sources | Channel Access :
 </pre>
 
 # Apologia
-There are way too many steps!. Sorry, the good news is we used an excellent open source product. The bad news is we have failed to set the best defaults. But, once it's set up, the workspace keeps your configuration faithfully.
-On starting a new workspace, cs-studio will die unexpectedly, please re-run it when this happens.
+ - Sorry, there are way too many steps!. The good news is we used an excellent open source product. The bad news is we have failed to set the best defaults. But, once it's set up, the workspace keeps your configuration faithfully.
+ - On starting a new workspace, cs-studio will die unexpectedly, please re-run it when this happens.
 
 ### Quickstart Guide: Basic principle applies for all Units Under Test UUT
 * Example is for UUT acq1001_190, please substitute the name of your own UUT.
