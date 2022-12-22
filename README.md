@@ -6,7 +6,6 @@ CSS opi project for ACQ400 series digitizers
 http://controlsystemstudio.org/
 
 #### Ready to run images from here: 
-* http://download.controlsystemstudio.org/release/4.5/
 * http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
 * http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
 * http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
