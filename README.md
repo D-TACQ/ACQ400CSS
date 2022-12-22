@@ -5,11 +5,11 @@ CSS opi project for ACQ400 series digitizers
 ### GUI environment for EPICS
 http://controlsystemstudio.org/
 
-### Ready to run images from here: 
-#### http://download.controlsystemstudio.org/release/4.5/
-#### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
-#### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
-#### http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
+#### Ready to run images from here: 
+* http://download.controlsystemstudio.org/release/4.5/
+* http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
+* http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
+* http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
 
 ##### version 4.5.9 uses Java 1.8 ("Java8"). 
 
@@ -35,6 +35,7 @@ https://askubuntu.com/questions/740757/switch-between-multiple-java-versions
 ### Use Git!
 
 Yes, github will let you download a zip file, but you'll find staying up to date much easier by using git tools to maintain a clone of our repo
+On Windows, we strongly recommend https://gitforwindows.org/     And it gives you a bash shell, this is a bonus!
 
 ### cs-studio is based on eclipse
 
@@ -75,7 +76,6 @@ EDIT | Preferences | CSS Core | Data Sources | Channel Access :
  1. In a well configured system (dhcp, working broadcast route), cs-studio will locate the UUT on the network automatically.
  
  2. Failing that, you'll need to know the default IP address of the UUT
- 
   * UUT NAME, MAC address and default IP-address are printed on the delivery sheet and on faceplate on rear of the box.
 
 #### [Quickstart](https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf)
