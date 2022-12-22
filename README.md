@@ -54,7 +54,7 @@ ONE project is re-used readonly by many workspaces.
 <pre>
 mkdir PROJECTS; cd PROJECTS; git clone https://github.com/D-TACQ/ACQ400CSS.git
 </pre>
-3. Create one workspace per UUT: mkdir CSSWS/ACQ1001_123
+3. Create one workspace per UUT, example: ACQ1001_123: mkdir CSSWS/ACQ1001_123
 4. Add the directory PROJECTS/ACQ400CSS/ACQ400 as project "ACQ400" to the workspace. For screen shots please see quickstart below.
 5. Set some preferences in your workspace.
 <pre>
