@@ -1404,7 +1404,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>829</height>
+    <height>781</height>
     <horizontal_tabs>true</horizontal_tabs>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -1446,7 +1446,7 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Tabbed Container</widget_type>
-    <width>847</width>
+    <width>853</width>
     <wuid>1b8683dc:185cf0d5561:-7b06</wuid>
     <x>0</x>
     <y>210</y>
@@ -1468,7 +1468,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>789</height>
+      <height>741</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -1486,7 +1486,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>845</width>
+      <width>851</width>
       <wuid>1b8683dc:185cf0d5561:-7b05</wuid>
       <x>1</x>
       <y>1</y>
@@ -1528,8 +1528,8 @@ $(pv_value)</tooltip>
         <widget_type>Linking Container</widget_type>
         <width>847</width>
         <wuid>bac2dab:18534477825:-7c1a</wuid>
-        <x>0</x>
-        <y>294</y>
+        <x>-6</x>
+        <y>246</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1569,8 +1569,8 @@ $(pv_value)</tooltip>
         <widget_type>Linking Container</widget_type>
         <width>847</width>
         <wuid>bac2dab:18534477825:-7bc9</wuid>
-        <x>0</x>
-        <y>534</y>
+        <x>-6</x>
+        <y>486</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1610,103 +1610,8 @@ $(pv_value)</tooltip>
         <widget_type>Linking Container</widget_type>
         <width>847</width>
         <wuid>bac2dab:18534477825:-7ba5</wuid>
-        <x>0</x>
-        <y>654</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_alarm_sensitive>true</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>3</border_style>
-        <border_width>1</border_width>
-        <buttons_on_left>false</buttons_on_left>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <format>0</format>
-        <height>34</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <horizontal_buttons_layout>false</horizontal_buttons_layout>
-        <limits_from_pv>true</limits_from_pv>
-        <maximum>1.7976931348623157E308</maximum>
-        <minimum>-1.7976931348623157E308</minimum>
-        <name>Spinner</name>
-        <page_increment>10.0</page_increment>
-        <precision>3</precision>
-        <precision_from_pv>false</precision_from_pv>
-        <pv_name>${UUT}:${SITE}:CLKDIV</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_text>true</show_text>
-        <step_increment>1.0</step_increment>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Spinner</widget_type>
-        <width>127</width>
-        <wuid>1b8683dc:185cf0d5561:-7ce9</wuid>
-        <x>444</x>
-        <y>3</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>43</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>CLKDIV</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>180</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1b8683dc:185cf0d5561:-7d0d</wuid>
-        <x>0</x>
-        <y>6</y>
+        <x>-6</x>
+        <y>606</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1746,8 +1651,8 @@ $(pv_value)</tooltip>
         <widget_type>Linking Container</widget_type>
         <width>847</width>
         <wuid>bac2dab:18534477825:-7bf6</wuid>
-        <x>0</x>
-        <y>414</y>
+        <x>-6</x>
+        <y>366</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1787,8 +1692,8 @@ $(pv_value)</tooltip>
         <widget_type>Linking Container</widget_type>
         <width>847</width>
         <wuid>bac2dab:18534477825:-7c91</wuid>
-        <x>0</x>
-        <y>60</y>
+        <x>-6</x>
+        <y>12</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1828,8 +1733,8 @@ $(pv_value)</tooltip>
         <widget_type>Linking Container</widget_type>
         <width>847</width>
         <wuid>bac2dab:18534477825:-7c4a</wuid>
-        <x>0</x>
-        <y>180</y>
+        <x>-6</x>
+        <y>132</y>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -1850,7 +1755,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>789</height>
+      <height>741</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -1868,7 +1773,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>845</width>
+      <width>851</width>
       <wuid>1b8683dc:185cf0d5561:-7b04</wuid>
       <x>1</x>
       <y>1</y>
@@ -2213,7 +2118,102 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>133</width>
     <wuid>1b8683dc:185cf0d5561:-6dfc</wuid>
-    <x>186</x>
-    <y>210</y>
+    <x>702</x>
+    <y>207</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>3</border_style>
+    <border_width>1</border_width>
+    <buttons_on_left>false</buttons_on_left>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <format>0</format>
+    <height>34</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_buttons_layout>false</horizontal_buttons_layout>
+    <limits_from_pv>true</limits_from_pv>
+    <maximum>1.7976931348623157E308</maximum>
+    <minimum>-1.7976931348623157E308</minimum>
+    <name>Spinner</name>
+    <page_increment>10.0</page_increment>
+    <precision>3</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>${UUT}:${SITE}:CLKDIV</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_text>true</show_text>
+    <step_increment>1.0</step_increment>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Spinner</widget_type>
+    <width>127</width>
+    <wuid>1b8683dc:185cf0d5561:-7ce9</wuid>
+    <x>318</x>
+    <y>206</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>37</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>CLKDIV</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>180</width>
+    <wrap_words>false</wrap_words>
+    <wuid>1b8683dc:185cf0d5561:-7d0d</wuid>
+    <x>168</x>
+    <y>204</y>
   </widget>
 </display>
