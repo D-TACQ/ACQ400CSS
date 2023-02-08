@@ -271,7 +271,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>-5c64c508:14b5b7bfc85:-7cb6</wuid>
     <x>18</x>
-    <y>36</y>
+    <y>66</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -387,7 +387,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>-5c64c508:14b5b7bfc85:-7c99</wuid>
     <x>156</x>
-    <y>36</y>
+    <y>66</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -503,7 +503,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>-5c64c508:14b5b7bfc85:-7c8e</wuid>
     <x>603</x>
-    <y>36</y>
+    <y>66</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -619,7 +619,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>-5c64c508:14b5b7bfc85:-7c83</wuid>
     <x>744</x>
-    <y>36</y>
+    <y>66</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -837,7 +837,7 @@ $(pv_value)</tooltip>
       <color name="Minor" red="255" green="128" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:MGT:SFP:1:TX_DISABLE</pv_name>
+    <pv_name>${UUT}:MGT:SFP:1:TX_ENABLED</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -855,7 +855,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>38939f54:18617f2cc5f:-7c5a</wuid>
     <x>18</x>
-    <y>66</y>
+    <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -877,7 +877,7 @@ $(pv_value)</tooltip>
     </bulb_border_color>
     <data_type>0</data_type>
     <effect_3d>true</effect_3d>
-    <enabled>true</enabled>
+    <enabled>false</enabled>
     <font>
       <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
     </font>
@@ -895,7 +895,7 @@ $(pv_value)</tooltip>
       <color name="Minor" red="255" green="128" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:MGT:SFP:2:TX_DISABLE</pv_name>
+    <pv_name>${UUT}:MGT:SFP:2:TX_ENABLED</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -913,7 +913,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>38939f54:18617f2cc5f:-7c50</wuid>
     <x>156</x>
-    <y>66</y>
+    <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -953,7 +953,7 @@ $(pv_value)</tooltip>
       <color name="Minor" red="255" green="128" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:MGT:SFP:3:TX_DISABLE</pv_name>
+    <pv_name>${UUT}:MGT:SFP:3:TX_ENABLED</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -971,7 +971,7 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>38939f54:18617f2cc5f:-7c4b</wuid>
     <x>603</x>
-    <y>66</y>
+    <y>36</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1011,7 +1011,7 @@ $(pv_value)</tooltip>
       <color name="Minor" red="255" green="128" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:MGT:SFP:4:TX_DISABLE</pv_name>
+    <pv_name>${UUT}:MGT:SFP:4:TX_ENABLED</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -1029,6 +1029,6 @@ $(pv_value)</tooltip>
     <width>49</width>
     <wuid>38939f54:18617f2cc5f:-7c46</wuid>
     <x>744</x>
-    <y>66</y>
+    <y>36</y>
   </widget>
 </display>
