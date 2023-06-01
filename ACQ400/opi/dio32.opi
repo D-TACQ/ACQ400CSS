@@ -61,7 +61,7 @@
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>${UUT}:${SITE} DIO32</text>
+    <text>${UUT}:${SITE} DIO32 IMMEDIATE BITS</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -94,7 +94,7 @@
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>49</height>
+    <height>38</height>
     <label></label>
     <name>Menu Button</name>
     <pv_name>${UUT}:${SITE}:DIO:MODE</pv_name>
@@ -114,112 +114,8 @@ $(pv_value)</tooltip>
     <widget_type>Menu Button</widget_type>
     <width>115</width>
     <wuid>-53e83793:18867c79a0a:-75e6</wuid>
-    <x>456</x>
-    <y>96</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <auto_size>false</auto_size>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <format_type>0</format_type>
-    <height>43</height>
-    <horizontal_alignment>0</horizontal_alignment>
-    <name>Text Update</name>
-    <precision>0</precision>
-    <precision_from_pv>true</precision_from_pv>
-    <pv_name>${UUT}:${SITE}:IMM:DO32</pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_units>true</show_units>
-    <text>######</text>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Text Update</widget_type>
-    <width>91</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-53e83793:18867c79a0a:-7598</wuid>
-    <x>246</x>
-    <y>99</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <auto_size>false</auto_size>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <format_type>0</format_type>
-    <height>43</height>
-    <horizontal_alignment>0</horizontal_alignment>
-    <name>Text Update_1</name>
-    <precision>0</precision>
-    <precision_from_pv>true</precision_from_pv>
-    <pv_name>${UUT}:${SITE}:IMM:DI32</pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_units>true</show_units>
-    <text>######</text>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Text Update</widget_type>
-    <width>91</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-53e83793:18867c79a0a:-7590</wuid>
-    <x>90</x>
-    <y>102</y>
+    <x>258</x>
+    <y>101</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -262,7 +158,15 @@ $(pv_value)</tooltip>
     </on_color>
     <pv_name>${UUT}:${SITE}:IMM:DI:B4</pv_name>
     <pv_value />
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B4.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B4.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -278,7 +182,7 @@ $(pv_value)</tooltip>
     <width>277</width>
     <wuid>-53e83793:18867c79a0a:-74af</wuid>
     <x>84</x>
-    <y>321</y>
+    <y>198</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -321,7 +225,15 @@ $(pv_value)</tooltip>
     </on_color>
     <pv_name>${UUT}:${SITE}:IMM:DI:B3</pv_name>
     <pv_value />
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B3.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B3.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -337,7 +249,7 @@ $(pv_value)</tooltip>
     <width>277</width>
     <wuid>-53e83793:18867c79a0a:-74a7</wuid>
     <x>84</x>
-    <y>279</y>
+    <y>237</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -380,7 +292,15 @@ $(pv_value)</tooltip>
     </on_color>
     <pv_name>${UUT}:${SITE}:IMM:DI:B2</pv_name>
     <pv_value />
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B2.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B2.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -396,7 +316,7 @@ $(pv_value)</tooltip>
     <width>277</width>
     <wuid>-53e83793:18867c79a0a:-74a2</wuid>
     <x>84</x>
-    <y>237</y>
+    <y>279</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.bytemonitor" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -439,7 +359,15 @@ $(pv_value)</tooltip>
     </on_color>
     <pv_name>${UUT}:${SITE}:IMM:DI:B1</pv_name>
     <pv_value />
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B1.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DI:B1.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -455,7 +383,7 @@ $(pv_value)</tooltip>
     <width>277</width>
     <wuid>-53e83793:18867c79a0a:-749d</wuid>
     <x>84</x>
-    <y>198</y>
+    <y>324</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -483,7 +411,15 @@ $(pv_value)</tooltip>
     <name>Linking Container</name>
     <opi_file>do8.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B4.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B4.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -524,7 +460,15 @@ $(pv_value)</tooltip>
     <name>Linking Container_1</name>
     <opi_file>do8.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B3.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B3.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -565,7 +509,15 @@ $(pv_value)</tooltip>
     <name>Linking Container_2</name>
     <opi_file>do8.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B2.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B2.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -606,7 +558,15 @@ $(pv_value)</tooltip>
     <name>Linking Container_3</name>
     <opi_file>do8.opi</opi_file>
     <resize_behaviour>0</resize_behaviour>
-    <rules />
+    <rules>
+      <rule name="VizRule" prop_id="visible" out_exp="true">
+        <exp bool_exp="true">
+          <value>pv0!=pv1</value>
+        </exp>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B1.DISA</pv>
+        <pv trig="true">${UUT}:${SITE}:IMM:DO:B1.DISV</pv>
+      </rule>
+    </rules>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -1092,5 +1052,86 @@ $(pv_value)</tooltip>
     <wuid>-53e83793:18867c79a0a:-6d5a</wuid>
     <x>738</x>
     <y>324</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>61</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_7</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>BYTE
+OUT</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>49</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-7032a210:1887649ba2e:-7d31</wuid>
+    <x>732</x>
+    <y>132</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>37</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_8</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>MODE</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>73</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-7032a210:1887649ba2e:-7bf2</wuid>
+    <x>168</x>
+    <y>101</y>
   </widget>
 </display>
