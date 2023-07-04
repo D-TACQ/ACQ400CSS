@@ -1224,838 +1224,6 @@ $(pv_value)</tooltip>
       <x>132</x>
       <y>132</y>
     </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <background_color>
-        <color red="246" green="245" blue="244" />
-      </background_color>
-      <border_color>
-        <color red="0" green="128" blue="255" />
-      </border_color>
-      <border_style>4</border_style>
-      <border_width>1</border_width>
-      <enabled>true</enabled>
-      <fc>true</fc>
-      <font>
-        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-      </font>
-      <foreground_color>
-        <color red="192" green="192" blue="192" />
-      </foreground_color>
-      <height>139</height>
-      <lock_children>true</lock_children>
-      <macros>
-        <include_parent_macros>true</include_parent_macros>
-      </macros>
-      <name>Grouping Container_6</name>
-      <rules>
-        <rule name="VizRule" prop_id="visible" out_exp="true">
-          <exp bool_exp="true">
-            <value>pv0 &gt; 16</value>
-          </exp>
-          <pv trig="true">${UUT}:${SITE}:NUM_PG</pv>
-        </rule>
-      </rules>
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>false</show_scrollbar>
-      <tooltip></tooltip>
-      <transparent>false</transparent>
-      <visible>true</visible>
-      <widget_type>Grouping Container</widget_type>
-      <width>739</width>
-      <wuid>5fe2ce4b:184aa2fb785:-791b</wuid>
-      <x>84</x>
-      <y>186</y>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_6</name>
-        <pv_name>${UUT}:${SITE}:DO:22</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a7a</wuid>
-        <x>288</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_4</name>
-        <pv_name>${UUT}:${SITE}:DO:24</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a7c</wuid>
-        <x>144</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button</name>
-        <pv_name>${UUT}:${SITE}:DO:20</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a80</wuid>
-        <x>432</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_5</name>
-        <pv_name>${UUT}:${SITE}:DO:23</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a7b</wuid>
-        <x>216</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_7</name>
-        <pv_name>${UUT}:${SITE}:DO:21</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a79</wuid>
-        <x>360</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_1</name>
-        <pv_name>${UUT}:${SITE}:DO:19</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a7f</wuid>
-        <x>504</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_10</name>
-        <pv_name>${UUT}:${SITE}:DO:26</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a76</wuid>
-        <x>576</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_11</name>
-        <pv_name>${UUT}:${SITE}:DO:25</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a75</wuid>
-        <x>648</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_15</name>
-        <pv_name>${UUT}:${SITE}:DO:29</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a71</wuid>
-        <x>360</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_3</name>
-        <pv_name>${UUT}:${SITE}:DO:17</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a7d</wuid>
-        <x>648</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_12</name>
-        <pv_name>${UUT}:${SITE}:DO:32</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a74</wuid>
-        <x>144</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_4</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>3</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>55</width>
-        <wrap_words>false</wrap_words>
-        <wuid>e92c7b9:174962e9453:-79f9</wuid>
-        <x>48</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_2</name>
-        <pv_name>${UUT}:${SITE}:DO:18</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a7e</wuid>
-        <x>576</x>
-        <y>21</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_13</name>
-        <pv_name>${UUT}:${SITE}:DO:31</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a73</wuid>
-        <x>216</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_14</name>
-        <pv_name>${UUT}:${SITE}:DO:30</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a72</wuid>
-        <x>288</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_8</name>
-        <pv_name>${UUT}:${SITE}:DO:28</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a78</wuid>
-        <x>432</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-        <actions_from_pv>true</actions_from_pv>
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>6</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <label></label>
-        <name>Menu Button_9</name>
-        <pv_name>${UUT}:${SITE}:DO:27</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <show_down_arrow>false</show_down_arrow>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Menu Button</widget_type>
-        <width>61</width>
-        <wuid>e92c7b9:174962e9453:-7a77</wuid>
-        <x>504</x>
-        <y>72</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="246" green="245" blue="244" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="192" green="192" blue="192" />
-        </foreground_color>
-        <height>37</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_4</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>2</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>55</width>
-        <wrap_words>false</wrap_words>
-        <wuid>e92c7b9:174962e9453:-7a00</wuid>
-        <x>48</x>
-        <y>21</y>
-      </widget>
-    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -2107,6 +1275,838 @@ $(pv_value)</tooltip>
       <wuid>5fe2ce4b:184aa2fb785:-76cd</wuid>
       <x>384</x>
       <y>3</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <background_color>
+        <color red="246" green="245" blue="244" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>4</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fc>true</fc>
+      <font>
+        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>139</height>
+      <lock_children>false</lock_children>
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+      </macros>
+      <name>Grouping Container_7</name>
+      <rules>
+        <rule name="VizRule" prop_id="visible" out_exp="true">
+          <exp bool_exp="true">
+            <value>pv0 &gt; 16</value>
+          </exp>
+          <pv trig="true">${UUT}:${SITE}:NUM_PG</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>false</show_scrollbar>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <visible>true</visible>
+      <widget_type>Grouping Container</widget_type>
+      <width>715</width>
+      <wuid>-52c98829:18921165a0c:-7a7b</wuid>
+      <x>82</x>
+      <y>181</y>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_6</name>
+        <pv_name>${UUT}:${SITE}:DO:22</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a7a</wuid>
+        <x>288</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button</name>
+        <pv_name>${UUT}:${SITE}:DO:20</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a78</wuid>
+        <x>432</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_5</name>
+        <pv_name>${UUT}:${SITE}:DO:23</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a77</wuid>
+        <x>216</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_7</name>
+        <pv_name>${UUT}:${SITE}:DO:21</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a76</wuid>
+        <x>360</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_1</name>
+        <pv_name>${UUT}:${SITE}:DO:19</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a75</wuid>
+        <x>504</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_10</name>
+        <pv_name>${UUT}:${SITE}:DO:26</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a74</wuid>
+        <x>576</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_11</name>
+        <pv_name>${UUT}:${SITE}:DO:25</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a73</wuid>
+        <x>648</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_15</name>
+        <pv_name>${UUT}:${SITE}:DO:29</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a72</wuid>
+        <x>360</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_3</name>
+        <pv_name>${UUT}:${SITE}:DO:17</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a71</wuid>
+        <x>648</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_12</name>
+        <pv_name>${UUT}:${SITE}:DO:32</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a70</wuid>
+        <x>144</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_2</name>
+        <pv_name>${UUT}:${SITE}:DO:18</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a6e</wuid>
+        <x>576</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_13</name>
+        <pv_name>${UUT}:${SITE}:DO:31</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a6d</wuid>
+        <x>216</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_14</name>
+        <pv_name>${UUT}:${SITE}:DO:30</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a6c</wuid>
+        <x>288</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_8</name>
+        <pv_name>${UUT}:${SITE}:DO:28</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a6b</wuid>
+        <x>432</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_9</name>
+        <pv_name>${UUT}:${SITE}:DO:27</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a6a</wuid>
+        <x>504</x>
+        <y>72</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_4</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>2</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-52c98829:18921165a0c:-7a69</wuid>
+        <x>48</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+        <actions_from_pv>true</actions_from_pv>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>6</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <label></label>
+        <name>Menu Button_4</name>
+        <pv_name>${UUT}:${SITE}:DO:24</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_down_arrow>false</show_down_arrow>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Menu Button</widget_type>
+        <width>61</width>
+        <wuid>-52c98829:18921165a0c:-7a79</wuid>
+        <x>144</x>
+        <y>21</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="246" green="245" blue="244" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>37</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_4</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>3</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>55</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-52c98829:18921165a0c:-7a6f</wuid>
+        <x>48</x>
+        <y>66</y>
+      </widget>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
