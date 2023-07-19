@@ -721,46 +721,6 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>49</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_7</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <text>CLKDIV</text>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>109</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-4f72b2f2:1889b2e6c7d:-6e08</wuid>
-    <x>1409</x>
-    <y>353</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
     <height>61</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_8</name>
@@ -1015,7 +975,7 @@ $(pv_value)</tooltip>
       </rule>
       <rule name="T8EnabledRule" prop_id="tab_8_enabled" out_exp="true">
         <exp bool_exp="true">
-          <value></value>
+          <value>pv0 &gt; 16</value>
         </exp>
         <pv trig="true">${UUT}:${SITE}:NCHAN</pv>
       </rule>
@@ -1164,7 +1124,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>563</width>
       <wuid>-5f467a1b:1896cff0bbf:-7e2a</wuid>
@@ -1759,7 +1719,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>563</width>
       <wuid>-5f467a1b:1896cff0bbf:-7e23</wuid>
@@ -1828,31 +1788,6 @@ $(pv_value)</tooltip>
     <points />
     <router>0</router>
     <src_path></src_path>
-    <src_term>RIGHT</src_term>
-    <src_wuid>-4f72b2f2:1889b2e6c7d:-6fd1</src_wuid>
-    <tgt_path></tgt_path>
-    <tgt_term>TOP</tgt_term>
-    <tgt_wuid>-4f72b2f2:1889b2e6c7d:-6eba</tgt_wuid>
-    <widget_type>connection</widget_type>
-    <wuid>-4f72b2f2:1889b2e6c7d:-6e3c</wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <anti_alias>true</anti_alias>
-    <arrow_length>15</arrow_length>
-    <arrows>2</arrows>
-    <fill_arrow>true</fill_arrow>
-    <line_color>
-      <color red="0" green="0" blue="0" />
-    </line_color>
-    <line_jump_add>0</line_jump_add>
-    <line_jump_size>10</line_jump_size>
-    <line_jump_style>0</line_jump_style>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>connection</name>
-    <points />
-    <router>0</router>
-    <src_path></src_path>
     <src_term>BOTTOM</src_term>
     <src_wuid>-4f72b2f2:1889b2e6c7d:-6eba</src_wuid>
     <tgt_path></tgt_path>
@@ -1904,12 +1839,12 @@ $(pv_value)</tooltip>
     <router>0</router>
     <src_path></src_path>
     <src_term>RIGHT</src_term>
-    <src_wuid>-4f72b2f2:1889b2e6c7d:-6f75</src_wuid>
+    <src_wuid>-4f72b2f2:1889b2e6c7d:-6fd1</src_wuid>
     <tgt_path></tgt_path>
-    <tgt_term>LEFT</tgt_term>
-    <tgt_wuid>-4f72b2f2:1889b2e6c7d:-6f59</tgt_wuid>
+    <tgt_term>TOP</tgt_term>
+    <tgt_wuid>-4f72b2f2:1889b2e6c7d:-6eba</tgt_wuid>
     <widget_type>connection</widget_type>
-    <wuid>-4f72b2f2:1889b2e6c7d:-6e33</wuid>
+    <wuid>-4f72b2f2:1889b2e6c7d:-6e3c</wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <anti_alias>true</anti_alias>
@@ -1985,5 +1920,30 @@ $(pv_value)</tooltip>
     <tgt_wuid>-4f72b2f2:1889b2e6c7d:-6fd1</tgt_wuid>
     <widget_type>connection</widget_type>
     <wuid>-4f72b2f2:1889b2e6c7d:-6e6f</wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <anti_alias>true</anti_alias>
+    <arrow_length>15</arrow_length>
+    <arrows>2</arrows>
+    <fill_arrow>true</fill_arrow>
+    <line_color>
+      <color red="0" green="0" blue="0" />
+    </line_color>
+    <line_jump_add>0</line_jump_add>
+    <line_jump_size>10</line_jump_size>
+    <line_jump_style>0</line_jump_style>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>connection</name>
+    <points />
+    <router>0</router>
+    <src_path></src_path>
+    <src_term>RIGHT</src_term>
+    <src_wuid>-4f72b2f2:1889b2e6c7d:-6f75</src_wuid>
+    <tgt_path></tgt_path>
+    <tgt_term>LEFT</tgt_term>
+    <tgt_wuid>-4f72b2f2:1889b2e6c7d:-6f59</tgt_wuid>
+    <widget_type>connection</widget_type>
+    <wuid>-4f72b2f2:1889b2e6c7d:-6e33</wuid>
   </connection>
 </display>
