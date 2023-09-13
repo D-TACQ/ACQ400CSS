@@ -6,6 +6,20 @@ CSS opi project for ACQ400 series digitizers
 http://controlsystemstudio.org/
 
 #### Ready to run images from here: 
+
+* https://www.d-tacq.com/tmp/cs-studio-4.5.9-win32.win32.x86_64.zip
+```
+
+sha1sum cs-studio-4.5.9-win32.win32.x86_64.zip
+dbf8fd112e7650a9c35c3a3422deac87968759dd  cs-studio-4.5.9-win32.win32.x86_64.zip
+
+```
+* https://www.d-tacq.com/tmp/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
+```
+sha1sum cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
+1ee699a9e2005f1acb839fe4a433e751d8e5391b  cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
+
+```
 * http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
 * http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip
 * http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip
