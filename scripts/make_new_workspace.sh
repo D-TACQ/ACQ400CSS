@@ -13,19 +13,32 @@ template_uut=default_uut
 # Set workspace location to the CSS Community edition default.
 # Change this if you chose a custom location or are using an older
 # version of CSS.
-workspace_location=/home/$USER/CSS-Workspaces/
+workspace_location=/home/$USER/CSS-Workspaces/ 
+
+[ -e $workspace_location ] || workspace_location=/home/$USER/CSS-WORKSPACES/ 
+[ -e $workspace_location ] || workspace_location=/home/$USER/CSSWS/;          
+[ -e $workspace_location ] || \
+	(echo "ERROR: workspace_location not found, please edit script to suit your setup"; exit 1)
+
 
 usage() {
-    echo ""
-    echo "Usage example:"
-    echo "./make_new_workspace.sh -n acq2106_999 -t default_uut"
-    echo "The above is the same as:"
-    echo "./make_new_workspace.sh --new_uut=acq2106_999 --template_uut=default_uut"
-    echo ""
-    echo "The new UUT is the UUT which is to be created and the template UUT"\
-    "is the workspace to be used to create the new one."
-    echo ""
-    exit
+	cat - <<EOF
+
+Usage examples:
+./make_new_workspace.sh -n acq2106_999 -t default_uut
+The above is the same as:
+./make_new_workspace.sh --new_uut=acq2106_999 --template_uut=default_uut
+
+The new UUT is the UUT which is to be created and the template UUT
+is the workspace to be used to create the new one.
+
+Make in batch
+./make_new_workspace.sh --template_uut=default_uut -- newuut1 [newuut2 ...]
+
+Make in batch from list of uuts
+./make_new_workspace.sh --template_uut=default_uut -- - < list-of-uuts.txt
+EOF
+    exit 1
 }
 
 
@@ -42,14 +55,34 @@ case "$1" in
     --workspace_location=*) workspace_location="${1#*=}"; shift 1;;
     --help=*) usage; shift 1;;
 
+    --) echo "batch mode"; break;;
     -*) echo "unknown option: $1" >&2; exit 1;;
-    *) handle_argument "$1"; shift 1;;
+    *)  echo "unwanted arg: $1"   >&2; exit 1;;
 esac
 done
 
+# handle batch modes ..
+#
+if [ "x$1" = "x--" ]; then
+	shift
+	if [ "x$1" = "x-" ]; then
+		while read newuut; do
+			#echo $0 --template_uut=$template_uut --new_uut=$newuut
+			$0 --template_uut=$template_uut --new_uut=$newuut
+		done
+	else
+		for newuut in $*; do
+			#echo $0 --template_uut=$template_uut --new_uut=$newuut
+			$0 --template_uut=$template_uut --new_uut=$newuut
+			shift
+		done
+	fi
+	exit 0
+fi
 
+# individual processing ..
 # Determine if the user has input an argument UUT.
-if [ "$new_uut" = "" ]; then
+if [ "x$new_uut" = "x" ]; then
     usage
 fi
 
@@ -63,12 +96,11 @@ if [ -d "$new_uut" ]; then
     echo ""
     echo "This workspace already exists. If you want to create it again then remove it first."
     echo ""
-    exit
+    exit 1
 fi
 
-# Let the user know which template was used just in case.
 echo ""
-echo "Using $template_uut as the template workspace."
+echo "Create ${workspace_location}${new_uut} from template ${workspace_location}${template_uut}"
 
 # Recursively copy a default UUT workspace to the new one.
 cp -r $template_uut/ $new_uut/
@@ -79,6 +111,4 @@ cd $new_uut
 # Do a recursive search and replace for the new hostname.
 find . -type f -exec sed -i 's/'$template_uut'/'$new_uut'/g' {} +
 
-echo ""
-echo "Done!"
-echo ""
+exit 0
