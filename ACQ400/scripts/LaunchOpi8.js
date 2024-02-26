@@ -20,8 +20,14 @@ if(widgetController.getExternalObject(flagName) == null){
 	macroInput.put("SITE", PVUtil.getLong(pvArray[1]));	
        
 	var ch = PVUtil.getLong(pvArray[2]);
+	var ch_max = ch+8;
+	if (ch < 0){                // -5 : count 1..5 for 5chan device..
+		ch_max = -ch;
+		ch = 1;
+	}
 	var chx = "CH";
 	for (var nc = 1; nc <= 8; ++nc, ++ch){
+		if (ch > ch_max) ch = ch_max;         // hack: duplicate PV until end. saves barbies.
 		var ch0x = pad(ch, 2);
 		macroInput.put("CH"+pad(nc, 2), ch0x);
 		if (nc == 1){
