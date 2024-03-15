@@ -37,6 +37,11 @@ Make in batch
 
 Make in batch from list of uuts
 ./make_new_workspace.sh --template_uut=default_uut -- - < list-of-uuts.txt
+
+or with less typing:
+./make_new_workspace.sh -t default_uut -- newuut1 [newuut2 ...]
+./make_new_workspace.sh -t default_uut -- - < list-of-uuts.txt
+
 EOF
     exit 1
 }

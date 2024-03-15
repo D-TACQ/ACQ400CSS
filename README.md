@@ -92,6 +92,11 @@ EDIT | Preferences | CSS Core | Data Sources | Channel Access :
  2. Failing that, you'll need to know the default IP address of the UUT
   * UUT NAME, MAC address and default IP-address are printed on the delivery sheet and on faceplate on rear of the box.
 
+# FAQ
+ * I have many UUT's, it's not practical to have one workspace per UUT.
+  * ANS: oh yes it is. Please create one workspace to use as a template, then clone it many times using our handy [replicator](scripts/make_new_workspace.sh)
+
+
 #### [Quickstart](https://github.com/D-TACQ/ACQ400CSS/blob/master/acq1001_acq430_quickstart.pdf)
 #### [TransientQuickstart](https://github.com/D-TACQ/ACQ400CSS/releases/download/R20210414/acq2106-acq424-transient_capture_quickstart.pdf)
 #### [View8 View multiple UUTS](https://github.com/D-TACQ/ACQ400CSS/releases/download/R211119/view8-setup.pdf)
