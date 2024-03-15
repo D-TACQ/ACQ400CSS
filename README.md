@@ -78,6 +78,7 @@ EDIT | Preferences | CSS Applications | Display | BOY | OPI Runtime
 EDIT | Preferences | CSS Core | Data Sources | Channel Access :
     set Max Array Size to 500000
 </pre>
+![cs-studio-environment-settings](cs-studio-environment-settings.png)
 
 # Apologia
  - Sorry, there are way too many steps!. The good news is we used an excellent open source product. The bad news is we have failed to set the best defaults. But, once it's set up, the workspace keeps your configuration faithfully.
