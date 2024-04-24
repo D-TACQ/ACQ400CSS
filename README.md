@@ -26,7 +26,7 @@ sha1sum cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
 
 ##### version 4.5.9 uses Java 1.8 ("Java8"). 
 
-###### OpenJDK install for Windows users: https://adoptopenjdk.net/
+###### for Windows users: java.com
 
 ###### On Ubuntu: 
 
