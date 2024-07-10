@@ -16,7 +16,7 @@ USER ${USER_NAME}
 
 #Install cs-studio
 WORKDIR /d-tacq/
-RUN curl -O http://eigg/endpoint/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz #change me
+RUN curl -O https://www.d-tacq.com/tmp/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
 RUN tar -xzf cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
 RUN rm cs-studio-4.5.9-linux.gtk.x86_64.tar.gz
 RUN ln -s /usr/lib/jvm/java-8-openjdk-amd64/jre cs-studio/

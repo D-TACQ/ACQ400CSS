@@ -4,7 +4,7 @@ How to install
 ### Linux 
 1) First install docker:
 	[generic-installation-steps](https://docs.docker.com/desktop/install/linux-install/#generic-installation-steps)
-	
+
 	Install through distro package manager do not use snap
 
 2) Clone repo:
