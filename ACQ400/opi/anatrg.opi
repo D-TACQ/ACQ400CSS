@@ -48,7 +48,7 @@
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>636</height>
+    <height>565</height>
     <horizontal_tabs>true</horizontal_tabs>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -129,11 +129,23 @@
     </tab_3_foreground_color>
     <tab_3_icon_path></tab_3_icon_path>
     <tab_3_title>CH25-32</tab_3_title>
-    <tab_count>4</tab_count>
+    <tab_4_background_color>
+      <color red="255" green="255" blue="255" />
+    </tab_4_background_color>
+    <tab_4_enabled>true</tab_4_enabled>
+    <tab_4_font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </tab_4_font>
+    <tab_4_foreground_color>
+      <color red="0" green="0" blue="0" />
+    </tab_4_foreground_color>
+    <tab_4_icon_path></tab_4_icon_path>
+    <tab_4_title>Status</tab_4_title>
+    <tab_count>5</tab_count>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Tabbed Container</widget_type>
-    <width>949</width>
+    <width>895</width>
     <wuid>1bf040ad:16c544dab27:-7d9f</wuid>
     <x>12</x>
     <y>60</y>
@@ -155,7 +167,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>588</height>
+      <height>517</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -173,7 +185,7 @@
       <transparent>true</transparent>
       <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>947</width>
+      <width>893</width>
       <wuid>1bf040ad:16c544dab27:-7d9e</wuid>
       <x>1</x>
       <y>1</y>
@@ -215,8 +227,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d6c</wuid>
-        <x>30</x>
-        <y>61</y>
+        <x>0</x>
+        <y>30</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -255,8 +267,8 @@
         <width>73</width>
         <wrap_words>false</wrap_words>
         <wuid>1bf040ad:16c544dab27:-7d5f</wuid>
-        <x>42</x>
-        <y>31</y>
+        <x>12</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -295,8 +307,8 @@
         <width>127</width>
         <wrap_words>false</wrap_words>
         <wuid>1bf040ad:16c544dab27:-7d5e</wuid>
-        <x>138</x>
-        <y>31</y>
+        <x>108</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -332,11 +344,11 @@
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>127</width>
+        <width>139</width>
         <wrap_words>false</wrap_words>
         <wuid>1bf040ad:16c544dab27:-7d5d</wuid>
-        <x>312</x>
-        <y>31</y>
+        <x>282</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -375,8 +387,8 @@
         <width>127</width>
         <wrap_words>false</wrap_words>
         <wuid>1bf040ad:16c544dab27:-7d5c</wuid>
-        <x>480</x>
-        <y>31</y>
+        <x>450</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -415,8 +427,8 @@
         <width>127</width>
         <wrap_words>false</wrap_words>
         <wuid>1bf040ad:16c544dab27:-7d5b</wuid>
-        <x>636</x>
-        <y>31</y>
+        <x>606</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -456,8 +468,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d5a</wuid>
-        <x>30</x>
-        <y>121</y>
+        <x>0</x>
+        <y>90</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -497,8 +509,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d4d</wuid>
-        <x>30</x>
-        <y>181</y>
+        <x>0</x>
+        <y>150</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -538,8 +550,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d40</wuid>
-        <x>30</x>
-        <y>241</y>
+        <x>0</x>
+        <y>210</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -579,8 +591,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d33</wuid>
-        <x>30</x>
-        <y>301</y>
+        <x>0</x>
+        <y>270</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -620,8 +632,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d26</wuid>
-        <x>30</x>
-        <y>361</y>
+        <x>0</x>
+        <y>330</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -661,8 +673,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d19</wuid>
-        <x>30</x>
-        <y>421</y>
+        <x>0</x>
+        <y>390</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -702,8 +714,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>1bf040ad:16c544dab27:-7d0c</wuid>
-        <x>30</x>
-        <y>481</y>
+        <x>0</x>
+        <y>450</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -750,8 +762,8 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>1bf040ad:16c544dab27:-7cff</wuid>
-        <x>762</x>
-        <y>61</y>
+        <x>732</x>
+        <y>30</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -790,8 +802,8 @@
         <width>61</width>
         <wrap_words>false</wrap_words>
         <wuid>1bf040ad:16c544dab27:-7cec</wuid>
-        <x>762</x>
-        <y>24</y>
+        <x>732</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -827,11 +839,11 @@
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>61</width>
+        <width>79</width>
         <wrap_words>false</wrap_words>
         <wuid>273db50c:1710c48082a:-7a77</wuid>
-        <x>840</x>
-        <y>27</y>
+        <x>810</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -879,8 +891,8 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>273db50c:1710c48082a:-7a3f</wuid>
-        <x>840</x>
-        <y>61</y>
+        <x>810</x>
+        <y>30</y>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -901,7 +913,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>588</height>
+      <height>517</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -919,7 +931,7 @@
       <transparent>true</transparent>
       <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>947</width>
+      <width>893</width>
       <wuid>1bf040ad:16c544dab27:-7cbb</wuid>
       <x>1</x>
       <y>1</y>
@@ -961,8 +973,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-77f3</wuid>
-        <x>48</x>
-        <y>468</y>
+        <x>0</x>
+        <y>453</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1002,8 +1014,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-7801</wuid>
-        <x>48</x>
-        <y>348</y>
+        <x>0</x>
+        <y>333</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1043,8 +1055,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-7b35</wuid>
-        <x>48</x>
-        <y>48</y>
+        <x>0</x>
+        <y>33</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1084,8 +1096,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-7808</wuid>
-        <x>48</x>
-        <y>288</y>
+        <x>0</x>
+        <y>273</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1125,8 +1137,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-78d5</wuid>
-        <x>48</x>
-        <y>168</y>
+        <x>0</x>
+        <y>153</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1173,8 +1185,8 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>700d01d3:1521c122df4:-76f0</wuid>
-        <x>780</x>
-        <y>48</y>
+        <x>732</x>
+        <y>33</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1214,8 +1226,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-77fa</wuid>
-        <x>48</x>
-        <y>408</y>
+        <x>0</x>
+        <y>393</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1255,8 +1267,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-78e9</wuid>
-        <x>48</x>
-        <y>108</y>
+        <x>0</x>
+        <y>93</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1296,248 +1308,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>6d640115:14eee0686b2:-78ce</wuid>
-        <x>48</x>
-        <y>228</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_9</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>CH</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>73</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1bf040ad:16c544dab27:-7ca4</wuid>
-        <x>48</x>
-        <y>6</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>34</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_14</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>TRG</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>61</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1bf040ad:16c544dab27:-7c9f</wuid>
-        <x>780</x>
-        <y>5</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_10</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Mode</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1bf040ad:16c544dab27:-7ca3</wuid>
-        <x>144</x>
-        <y>6</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_11</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Hysterisis %</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1bf040ad:16c544dab27:-7ca2</wuid>
-        <x>318</x>
-        <y>6</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_12</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Level 1 V</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1bf040ad:16c544dab27:-7ca1</wuid>
-        <x>486</x>
-        <y>6</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_13</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Level 2 V</text>
-        <tooltip>Lower level, "inside", "outside" only</tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>1bf040ad:16c544dab27:-7ca0</wuid>
-        <x>642</x>
-        <y>6</y>
+        <x>0</x>
+        <y>213</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1585,8 +1357,208 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>273db50c:1710c48082a:-7a17</wuid>
-        <x>861</x>
-        <y>48</y>
+        <x>813</x>
+        <y>33</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_9</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>CH</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>73</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-6a09</wuid>
+        <x>0</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_10</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Mode</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-6a08</wuid>
+        <x>96</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_11</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Hysterisis %</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>139</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-6a07</wuid>
+        <x>270</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_12</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Level 1 V</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-6a06</wuid>
+        <x>438</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_13</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Level 2 V</text>
+        <tooltip>Lower level, "inside", "outside" only</tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-6a05</wuid>
+        <x>594</x>
+        <y>0</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1616,7 +1588,7 @@
           <keep_wh_ratio>false</keep_wh_ratio>
         </scale_options>
         <scripts />
-        <text>Group</text>
+        <text>TRG</text>
         <tooltip></tooltip>
         <transparent>true</transparent>
         <vertical_alignment>1</vertical_alignment>
@@ -1624,9 +1596,49 @@
         <widget_type>Label</widget_type>
         <width>61</width>
         <wrap_words>false</wrap_words>
-        <wuid>273db50c:1710c48082a:-7a04</wuid>
-        <x>864</x>
-        <y>8</y>
+        <wuid>-cf888c5:192ae257bfb:-6a04</wuid>
+        <x>720</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_15</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>79</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-6a03</wuid>
+        <x>798</x>
+        <y>0</y>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -1647,7 +1659,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>588</height>
+      <height>517</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -1665,7 +1677,7 @@
       <transparent>true</transparent>
       <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>947</width>
+      <width>893</width>
       <wuid>4303e841:170b0ead66e:-7dc7</wuid>
       <x>1</x>
       <y>1</y>
@@ -1707,8 +1719,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7cf0</wuid>
-        <x>54</x>
-        <y>498</y>
+        <x>0</x>
+        <y>453</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1748,8 +1760,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7ce3</wuid>
-        <x>54</x>
-        <y>378</y>
+        <x>0</x>
+        <y>333</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1789,8 +1801,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7cd6</wuid>
-        <x>54</x>
-        <y>78</y>
+        <x>0</x>
+        <y>33</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1830,8 +1842,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7cc9</wuid>
-        <x>54</x>
-        <y>318</y>
+        <x>0</x>
+        <y>273</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1871,8 +1883,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7cbc</wuid>
-        <x>54</x>
-        <y>198</y>
+        <x>0</x>
+        <y>153</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1920,8 +1932,8 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>4303e841:170b0ead66e:-7caf</wuid>
-        <x>786</x>
-        <y>78</y>
+        <x>732</x>
+        <y>33</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -1961,8 +1973,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c9c</wuid>
-        <x>54</x>
-        <y>438</y>
+        <x>0</x>
+        <y>393</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2002,8 +2014,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c8f</wuid>
-        <x>54</x>
-        <y>138</y>
+        <x>0</x>
+        <y>93</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2043,288 +2055,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c82</wuid>
-        <x>54</x>
-        <y>258</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_9</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>CH</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>73</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bd0</wuid>
-        <x>72</x>
-        <y>30</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>34</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_14</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>TRG</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>61</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bcf</wuid>
-        <x>804</x>
-        <y>29</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_10</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Mode</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bce</wuid>
-        <x>168</x>
-        <y>30</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_11</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Hysterisis %</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bcd</wuid>
-        <x>342</x>
-        <y>30</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_12</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Level 1 V</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bcc</wuid>
-        <x>510</x>
-        <y>30</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_13</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Level 2 V</text>
-        <tooltip>Lower level, "inside", "outside" only</tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bcb</wuid>
-        <x>666</x>
-        <y>30</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>34</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_14</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Group</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>61</width>
-        <wrap_words>false</wrap_words>
-        <wuid>273db50c:1710c48082a:-79ed</wuid>
-        <x>870</x>
-        <y>29</y>
+        <x>0</x>
+        <y>213</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2372,8 +2104,288 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>273db50c:1710c48082a:-79e3</wuid>
-        <x>867</x>
-        <y>78</y>
+        <x>813</x>
+        <y>33</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_9</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>CH</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>73</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69f2</wuid>
+        <x>0</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_10</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Mode</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69f1</wuid>
+        <x>96</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_11</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Hysterisis %</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>139</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69f0</wuid>
+        <x>270</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_12</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Level 1 V</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69ef</wuid>
+        <x>438</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_13</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Level 2 V</text>
+        <tooltip>Lower level, "inside", "outside" only</tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69ee</wuid>
+        <x>594</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_14</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>TRG</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>61</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69ed</wuid>
+        <x>720</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_15</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>79</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69ec</wuid>
+        <x>798</x>
+        <y>0</y>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -2394,7 +2406,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>588</height>
+      <height>517</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -2412,7 +2424,7 @@
       <transparent>true</transparent>
       <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
-      <width>947</width>
+      <width>893</width>
       <wuid>4303e841:170b0ead66e:-7dc6</wuid>
       <x>1</x>
       <y>1</y>
@@ -2454,8 +2466,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c61</wuid>
-        <x>54</x>
-        <y>516</y>
+        <x>0</x>
+        <y>456</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2495,8 +2507,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c54</wuid>
-        <x>54</x>
-        <y>396</y>
+        <x>0</x>
+        <y>336</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2536,8 +2548,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c47</wuid>
-        <x>54</x>
-        <y>96</y>
+        <x>0</x>
+        <y>36</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2577,8 +2589,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c3a</wuid>
-        <x>54</x>
-        <y>336</y>
+        <x>0</x>
+        <y>276</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2618,8 +2630,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c2d</wuid>
-        <x>54</x>
-        <y>216</y>
+        <x>0</x>
+        <y>156</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2667,8 +2679,8 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>4303e841:170b0ead66e:-7c20</wuid>
-        <x>786</x>
-        <y>96</y>
+        <x>732</x>
+        <y>36</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2708,8 +2720,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c0d</wuid>
-        <x>54</x>
-        <y>456</y>
+        <x>0</x>
+        <y>396</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2749,8 +2761,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7c00</wuid>
-        <x>54</x>
-        <y>156</y>
+        <x>0</x>
+        <y>96</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -2790,288 +2802,8 @@
         <widget_type>Linking Container</widget_type>
         <width>721</width>
         <wuid>4303e841:170b0ead66e:-7bf3</wuid>
-        <x>54</x>
-        <y>276</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_9</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>CH</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>73</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bbc</wuid>
-        <x>66</x>
-        <y>42</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>34</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_14</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>TRG</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>61</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bbb</wuid>
-        <x>798</x>
-        <y>41</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_10</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Mode</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bba</wuid>
-        <x>162</x>
-        <y>42</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_11</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Hysterisis %</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bb9</wuid>
-        <x>336</x>
-        <y>42</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_12</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Level 1 V</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bb8</wuid>
-        <x>504</x>
-        <y>42</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>31</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_13</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Level 2 V</text>
-        <tooltip>Lower level, "inside", "outside" only</tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>127</width>
-        <wrap_words>false</wrap_words>
-        <wuid>4303e841:170b0ead66e:-7bb7</wuid>
-        <x>660</x>
-        <y>42</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <auto_size>false</auto_size>
-        <background_color>
-          <color red="255" green="255" blue="255" />
-        </background_color>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>1</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>34</height>
-        <horizontal_alignment>1</horizontal_alignment>
-        <name>Label_14</name>
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <text>Group</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
-        <vertical_alignment>1</vertical_alignment>
-        <visible>true</visible>
-        <widget_type>Label</widget_type>
-        <width>61</width>
-        <wrap_words>false</wrap_words>
-        <wuid>273db50c:1710c48082a:-79be</wuid>
-        <x>858</x>
-        <y>41</y>
+        <x>0</x>
+        <y>216</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
@@ -3119,8 +2851,523 @@
         <widget_type>Linking Container</widget_type>
         <width>67</width>
         <wuid>273db50c:1710c48082a:-79b4</wuid>
-        <x>864</x>
-        <y>96</y>
+        <x>810</x>
+        <y>36</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_9</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>CH</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>73</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69db</wuid>
+        <x>0</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_10</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Mode</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69da</wuid>
+        <x>96</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_11</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Hysterisis %</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>139</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69d9</wuid>
+        <x>270</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_12</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Level 1 V</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69d8</wuid>
+        <x>438</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_13</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Level 2 V</text>
+        <tooltip>Lower level, "inside", "outside" only</tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>127</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69d7</wuid>
+        <x>594</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_14</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>TRG</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>61</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69d6</wuid>
+        <x>720</x>
+        <y>0</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <auto_size>false</auto_size>
+        <background_color>
+          <color red="255" green="255" blue="255" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>34</height>
+        <horizontal_alignment>1</horizontal_alignment>
+        <name>Label_15</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <text>Group</text>
+        <tooltip></tooltip>
+        <transparent>true</transparent>
+        <vertical_alignment>1</vertical_alignment>
+        <visible>true</visible>
+        <widget_type>Label</widget_type>
+        <width>79</width>
+        <wrap_words>false</wrap_words>
+        <wuid>-cf888c5:192ae257bfb:-69d5</wuid>
+        <x>798</x>
+        <y>0</y>
+      </widget>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>1</border_width>
+      <enabled>true</enabled>
+      <fc>false</fc>
+      <font>
+        <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>517</height>
+      <lock_children>false</lock_children>
+      <macros>
+        <include_parent_macros>true</include_parent_macros>
+      </macros>
+      <name>Status</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>true</show_scrollbar>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <visible>false</visible>
+      <widget_type>Grouping Container</widget_type>
+      <width>893</width>
+      <wuid>-cf888c5:192ae257bfb:-684c</wuid>
+      <x>1</x>
+      <y>1</y>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B0</CH0>
+          <CH1>B1</CH1>
+          <CH2>B2</CH2>
+          <CH3>B3</CH3>
+          <CH4>B4</CH4>
+          <CH5>B5</CH5>
+          <CH6>B6</CH6>
+          <CH7>B7</CH7>
+        </macros>
+        <name>Linking Container_19</name>
+        <opi_file>anatrg_show.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>-cf888c5:192ae257bfb:-6840</wuid>
+        <x>18</x>
+        <y>12</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B8</CH0>
+          <CH1>B9</CH1>
+          <CH2>BA</CH2>
+          <CH3>BB</CH3>
+          <CH4>BC</CH4>
+          <CH5>BD</CH5>
+          <CH6>BE</CH6>
+          <CH7>BF</CH7>
+        </macros>
+        <name>Linking Container_10</name>
+        <opi_file>anatrg_show.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>-cf888c5:192ae257bfb:-6826</wuid>
+        <x>126</x>
+        <y>12</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B0</CH0>
+          <CH1>B1</CH1>
+          <CH2>B2</CH2>
+          <CH3>B3</CH3>
+          <CH4>B4</CH4>
+          <CH5>B5</CH5>
+          <CH6>B6</CH6>
+          <CH7>B7</CH7>
+          <SR>SRC2</SR>
+        </macros>
+        <name>Linking Container_10</name>
+        <opi_file>anatrg_show.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>-cf888c5:192ae257bfb:-680c</wuid>
+        <x>240</x>
+        <y>12</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <group_name></group_name>
+        <height>472</height>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <CH0>B8</CH0>
+          <CH1>B9</CH1>
+          <CH2>BA</CH2>
+          <CH3>BB</CH3>
+          <CH4>BC</CH4>
+          <CH5>BD</CH5>
+          <CH6>BE</CH6>
+          <CH7>BF</CH7>
+          <SR>SRC2</SR>
+        </macros>
+        <name>Linking Container_10</name>
+        <opi_file>anatrg_show.opi</opi_file>
+        <resize_behaviour>0</resize_behaviour>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <tooltip></tooltip>
+        <visible>true</visible>
+        <widget_type>Linking Container</widget_type>
+        <width>67</width>
+        <wuid>-cf888c5:192ae257bfb:-67f2</wuid>
+        <x>342</x>
+        <y>12</y>
       </widget>
     </widget>
   </widget>
@@ -3205,8 +3452,8 @@ $(pv_value)</tooltip>
     <widget_type>Menu Button</widget_type>
     <width>133</width>
     <wuid>-590430a3:17110e51766:-7b51</wuid>
-    <x>186</x>
-    <y>708</y>
+    <x>150</x>
+    <y>744</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3245,8 +3492,8 @@ $(pv_value)</tooltip>
     <width>145</width>
     <wrap_words>false</wrap_words>
     <wuid>-590430a3:17110e51766:-7b11</wuid>
-    <x>36</x>
-    <y>708</y>
+    <x>18</x>
+    <y>742</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
@@ -3307,8 +3554,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>121</width>
     <wuid>-45b4743c:171543b73f8:-7b17</wuid>
-    <x>618</x>
-    <y>708</y>
+    <x>570</x>
+    <y>742</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
     <actions_from_pv>true</actions_from_pv>
@@ -3351,8 +3598,8 @@ $(pv_value)</tooltip>
     <widget_type>Menu Button</widget_type>
     <width>91</width>
     <wuid>-3ab65852:175bbfeadfb:-7a78</wuid>
-    <x>846</x>
-    <y>708</y>
+    <x>798</x>
+    <y>742</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3391,8 +3638,8 @@ $(pv_value)</tooltip>
     <width>57</width>
     <wrap_words>false</wrap_words>
     <wuid>-3ab65852:175bbfeadfb:-77c2</wuid>
-    <x>768</x>
-    <y>708</y>
+    <x>720</x>
+    <y>742</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3431,8 +3678,8 @@ $(pv_value)</tooltip>
     <width>85</width>
     <wrap_words>false</wrap_words>
     <wuid>-cf888c5:192ae257bfb:-77b0</wuid>
-    <x>336</x>
-    <y>708</y>
+    <x>288</x>
+    <y>742</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3486,7 +3733,290 @@ $(pv_value)</tooltip>
     <widget_type>Spinner</widget_type>
     <width>85</width>
     <wuid>-cf888c5:192ae257bfb:-7720</wuid>
-    <x>432</x>
-    <y>708</y>
+    <x>384</x>
+    <y>742</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>3</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <group_name></group_name>
+    <height>55</height>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <CH>ALL</CH>
+    </macros>
+    <name>Linking Container</name>
+    <opi_file>anatrg_chan.opi</opi_file>
+    <resize_behaviour>0</resize_behaviour>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip></tooltip>
+    <visible>true</visible>
+    <widget_type>Linking Container</widget_type>
+    <width>727</width>
+    <wuid>-cf888c5:192ae257bfb:-6f4e</wuid>
+    <x>12</x>
+    <y>639</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>43</height>
+    <image></image>
+    <name>Action Button_2</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>${UUT}:${SITE}:ANATRG:ALL:SET</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>ALL</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>74</width>
+    <wuid>-cf888c5:192ae257bfb:-6d32</wuid>
+    <x>21</x>
+    <y>645</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>40</height>
+    <image></image>
+    <name>Action Button_3</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>${UUT}:${SITE}:ANATRG:GROUP:ALL:SET</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>SET</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>61</width>
+    <wuid>-cf888c5:192ae257bfb:-6cf3</wuid>
+    <x>828</x>
+    <y>632</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>40</height>
+    <image></image>
+    <name>Action Button_4</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>${UUT}:${SITE}:ANATRG:GROUP:ALL:CLR</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>CLR</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>58</width>
+    <wuid>-cf888c5:192ae257bfb:-6ceb</wuid>
+    <x>831</x>
+    <y>671</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_4</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Group</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>57</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-cf888c5:192ae257bfb:-6859</wuid>
+    <x>762</x>
+    <y>639</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_5</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Group</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>57</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-cf888c5:192ae257bfb:-684d</wuid>
+    <x>762</x>
+    <y>678</y>
   </widget>
 </display>
