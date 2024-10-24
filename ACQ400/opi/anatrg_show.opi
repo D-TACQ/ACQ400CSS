@@ -18,7 +18,7 @@
   <height>600</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <SR>SRC</SR>
+    <SR>LIVE</SR>
   </macros>
   <name></name>
   <rules />
@@ -71,7 +71,7 @@
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH0}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH0}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -129,7 +129,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH1}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH1}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -187,7 +187,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH2}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH2}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -245,7 +245,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH3}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH3}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -303,7 +303,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH4}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH4}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -361,7 +361,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH5}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH5}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -419,7 +419,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH6}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH6}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
@@ -477,7 +477,7 @@ $(pv_value)</tooltip>
       <color red="0" green="255" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <pv_name>${UUT}:${SITE}:ANATRG:${SR}.${CH7}</pv_name>
+    <pv_name>${UUT}:${SITE}:ANATRG:${SR}:${CH7}</pv_name>
     <pv_value />
     <rules />
     <scale_options>
