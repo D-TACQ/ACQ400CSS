@@ -45,7 +45,7 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -61,7 +61,7 @@
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>ACQ1001 ${UUT} CLOCKTREE</text>
+    <text>${UUT} CLOCKTREE</text>
     <tooltip></tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -75,7 +75,7 @@
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -86,12 +86,12 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>34</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_1</name>
     <rules />
@@ -108,15 +108,15 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>67</width>
+    <width>94</width>
     <wrap_words>true</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7f5b</wuid>
     <x>36</x>
-    <y>151</y>
+    <y>138</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="0" green="0" blue="0" />
     </background_color>
@@ -127,12 +127,12 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="255" green="255" blue="255" />
     </foreground_color>
-    <height>19</height>
+    <height>28</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_3</name>
     <rules />
@@ -149,15 +149,15 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>67</width>
+    <width>83</width>
     <wrap_words>true</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7f58</wuid>
-    <x>884</x>
-    <y>127</y>
+    <x>908</x>
+    <y>136</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="139" green="105" blue="20" />
     </background_color>
@@ -168,12 +168,12 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>28</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_5</name>
     <rules />
@@ -190,15 +190,15 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>67</width>
+    <width>71</width>
     <wrap_words>true</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7f53</wuid>
-    <x>884</x>
-    <y>329</y>
+    <x>914</x>
+    <y>330</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -209,12 +209,12 @@
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>28</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_7</name>
     <rules />
@@ -225,15 +225,13 @@
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>MBCLK SETPOINT
-
-</text>
+    <text>MBCLK SETPOINT</text>
     <tooltip></tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>138</width>
+    <width>165</width>
     <wrap_words>true</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7f52</wuid>
     <x>346</x>
@@ -255,7 +253,7 @@
     <buttons_on_left>false</buttons_on_left>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -310,7 +308,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -343,7 +341,7 @@ $(pv_value)</tooltip>
     <width>103</width>
     <wrap_words>false</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7f4f</wuid>
-    <x>754</x>
+    <x>774</x>
     <y>87</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -368,7 +366,7 @@ $(pv_value)</tooltip>
     <effect_3d>true</effect_3d>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -401,7 +399,7 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>25</width>
     <wuid>63b23bac:145dd5ba77f:-7f4e</wuid>
-    <x>905</x>
+    <x>937</x>
     <y>93</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
@@ -420,7 +418,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -453,7 +451,7 @@ $(pv_value)</tooltip>
     <width>103</width>
     <wrap_words>false</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7f4d</wuid>
-    <x>762</x>
+    <x>774</x>
     <y>290</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -478,7 +476,7 @@ $(pv_value)</tooltip>
     <effect_3d>true</effect_3d>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -511,8 +509,8 @@ $(pv_value)</tooltip>
     <widget_type>LED</widget_type>
     <width>25</width>
     <wuid>63b23bac:145dd5ba77f:-7f4c</wuid>
-    <x>904</x>
-    <y>290</y>
+    <x>929</x>
+    <y>283</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -540,7 +538,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -587,12 +585,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>29</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_8</name>
     <rules />
@@ -609,7 +607,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>79</width>
+    <width>109</width>
     <wrap_words>true</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7e3f</wuid>
     <x>523</x>
@@ -641,7 +639,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -672,12 +670,12 @@ $(pv_value)</tooltip>
     <widget_type>Rounded Rectangle</widget_type>
     <width>43</width>
     <wuid>63b23bac:145dd5ba77f:-7dde</wuid>
-    <x>545</x>
-    <y>323</y>
+    <x>549</x>
+    <y>328</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -688,12 +686,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>28</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_10</name>
     <rules />
@@ -710,7 +708,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>79</width>
+    <width>96</width>
     <wrap_words>true</wrap_words>
     <wuid>63b23bac:145dd5ba77f:-7ddc</wuid>
     <x>523</x>
@@ -742,7 +740,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -778,7 +776,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -789,12 +787,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>34</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_2</name>
     <rules />
@@ -811,11 +809,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>67</width>
+    <width>57</width>
     <wrap_words>true</wrap_words>
     <wuid>3e76f4:145e08dc270:-7e09</wuid>
-    <x>36</x>
-    <y>60</y>
+    <x>35</x>
+    <y>51</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -830,7 +828,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <fc>false</fc>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -883,7 +881,7 @@ $(pv_value)</tooltip>
       </fg_gradient_color>
       <fill_level>0.0</fill_level>
       <font>
-        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -919,7 +917,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
-      <auto_size>false</auto_size>
+      <auto_size>true</auto_size>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -930,12 +928,12 @@ $(pv_value)</tooltip>
       <border_width>1</border_width>
       <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
-      <height>25</height>
+      <height>34</height>
       <horizontal_alignment>1</horizontal_alignment>
       <name>Label_4</name>
       <rules />
@@ -952,7 +950,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>67</width>
+      <width>81</width>
       <wrap_words>true</wrap_words>
       <wuid>63b23bac:145dd5ba77f:-7f56</wuid>
       <x>27</x>
@@ -972,7 +970,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <fc>false</fc>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
@@ -1023,7 +1021,7 @@ $(pv_value)</tooltip>
       </fg_gradient_color>
       <fill_level>0.0</fill_level>
       <font>
-        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -1081,7 +1079,7 @@ $(pv_value)</tooltip>
       </fg_gradient_color>
       <fill_level>0.0</fill_level>
       <font>
-        <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+        <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
       </font>
       <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
@@ -1118,7 +1116,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1129,12 +1127,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>34</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_18</name>
     <rules />
@@ -1151,11 +1149,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>67</width>
+    <width>56</width>
     <wrap_words>true</wrap_words>
     <wuid>-227c1fc8:14d52f4b361:-79ff</wuid>
-    <x>36</x>
-    <y>258</y>
+    <x>42</x>
+    <y>235</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1172,13 +1170,13 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>173</height>
+    <height>211</height>
     <horizontal>false</horizontal>
     <items_from_pv>true</items_from_pv>
     <name>Choice Button</name>
@@ -1198,10 +1196,10 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Choice Button</widget_type>
-    <width>90</width>
+    <width>132</width>
     <wuid>-783b29f2:1514946d1f2:-7af4</wuid>
     <x>25</x>
-    <y>290</y>
+    <y>276</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1218,13 +1216,13 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>85</height>
+    <height>96</height>
     <horizontal>false</horizontal>
     <items_from_pv>true</items_from_pv>
     <name>Choice Button_1</name>
@@ -1244,7 +1242,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Choice Button</widget_type>
-    <width>91</width>
+    <width>97</width>
     <wuid>-783b29f2:1514946d1f2:-7987</wuid>
     <x>144</x>
     <y>151</y>
@@ -1264,13 +1262,13 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>85</height>
+    <height>112</height>
     <horizontal>false</horizontal>
     <items_from_pv>true</items_from_pv>
     <name>Choice Button_2</name>
@@ -1290,7 +1288,7 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Choice Button</widget_type>
-    <width>91</width>
+    <width>103</width>
     <wuid>-783b29f2:1514946d1f2:-791a</wuid>
     <x>660</x>
     <y>94</y>
@@ -1310,13 +1308,13 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>85</height>
+    <height>95</height>
     <horizontal>false</horizontal>
     <items_from_pv>true</items_from_pv>
     <name>Choice Button_3</name>
@@ -1336,14 +1334,14 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Choice Button</widget_type>
-    <width>91</width>
+    <width>97</width>
     <wuid>-783b29f2:1514946d1f2:-7906</wuid>
     <x>660</x>
     <y>296</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1354,12 +1352,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>19</height>
+    <height>34</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_19</name>
     <rules />
@@ -1376,52 +1374,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>47</width>
+    <width>40</width>
     <wrap_words>true</wrap_words>
     <wuid>-783b29f2:1514946d1f2:-77d2</wuid>
-    <x>240</x>
-    <y>170</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>19</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_20</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <show_scrollbar>false</show_scrollbar>
-    <text>DIVIDE</text>
-    <tooltip></tooltip>
-    <transparent>false</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>79</width>
-    <wrap_words>true</wrap_words>
-    <wuid>-22776862:151b48662c3:-75bb</wuid>
-    <x>635</x>
-    <y>435</y>
+    <x>244</x>
+    <y>153</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1435,13 +1392,13 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>109</height>
+    <height>133</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <SITE>1</SITE>
@@ -1466,10 +1423,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>951</width>
+    <width>985</width>
     <wuid>-2e2e4276:15807e6cc75:-71e8</wuid>
-    <x>0</x>
-    <y>498</y>
+    <x>-1</x>
+    <y>516</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1483,13 +1440,13 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <group_name></group_name>
-    <height>103</height>
+    <height>133</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <SITE>2</SITE>
@@ -1514,56 +1471,10 @@ $(pv_value)</tooltip>
     <tooltip></tooltip>
     <visible>true</visible>
     <widget_type>Linking Container</widget_type>
-    <width>952</width>
+    <width>986</width>
     <wuid>-2e2e4276:15807e6cc75:-71b2</wuid>
     <x>-1</x>
     <y>648</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Noto Sans" height="11" style="1" pixels="false">Header 3</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>28</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_21</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts>
-      <path pathString="../scripts/showIfSiteMatch.js" checkConnect="true" sfe="false" seoe="false">
-        <pv trig="true">${UUT}:SITELIST</pv>
-        <pv trig="false">loc://colour_${SITE}l(3)</pv>
-        <pv trig="false">loc://clktree_site_${SITE}l("[0-9]")</pv>
-      </path>
-    </scripts>
-    <text>Slave Sites</text>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>132</width>
-    <wrap_words>false</wrap_words>
-    <wuid>-2e2e4276:15807e6cc75:-655f</wuid>
-    <x>25</x>
-    <y>612</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.spinner" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1581,7 +1492,7 @@ $(pv_value)</tooltip>
     <buttons_on_left>false</buttons_on_left>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1636,7 +1547,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1674,7 +1585,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
+    <auto_size>true</auto_size>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1685,12 +1596,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="10" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>16</height>
+    <height>28</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_22</name>
     <rules />
@@ -1701,15 +1612,13 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>MBCLK FIN
-
-</text>
+    <text>MBCLK FIN</text>
     <tooltip></tooltip>
     <transparent>false</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>100</width>
+    <width>103</width>
     <wrap_words>true</wrap_words>
     <wuid>3d9f391:15adc21df74:-7ce6</wuid>
     <x>247</x>
@@ -1731,7 +1640,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+      <opifont.name fontName="Noto Sans" height="12" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1773,81 +1682,6 @@ $(pv_value)</tooltip>
     <arrows>2</arrows>
     <fill_arrow>true</fill_arrow>
     <line_color>
-      <color red="0" green="0" blue="0" />
-    </line_color>
-    <line_jump_add>0</line_jump_add>
-    <line_jump_size>10</line_jump_size>
-    <line_jump_style>0</line_jump_style>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>connection</name>
-    <points />
-    <router>0</router>
-    <src_path></src_path>
-    <src_term>RIGHT</src_term>
-    <src_wuid>63b23bac:145dd5ba77f:-7e53</src_wuid>
-    <tgt_path></tgt_path>
-    <tgt_term>LEFT</tgt_term>
-    <tgt_wuid>-783b29f2:1514946d1f2:-791a</tgt_wuid>
-    <widget_type>connection</widget_type>
-    <wuid>63b23bac:145dd5ba77f:-7e51</wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <anti_alias>true</anti_alias>
-    <arrow_length>15</arrow_length>
-    <arrows>2</arrows>
-    <fill_arrow>true</fill_arrow>
-    <line_color>
-      <color red="139" green="105" blue="20" />
-    </line_color>
-    <line_jump_add>0</line_jump_add>
-    <line_jump_size>10</line_jump_size>
-    <line_jump_style>0</line_jump_style>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>connection</name>
-    <points />
-    <router>0</router>
-    <src_path></src_path>
-    <src_term>RIGHT</src_term>
-    <src_wuid>-783b29f2:1514946d1f2:-7906</src_wuid>
-    <tgt_path></tgt_path>
-    <tgt_term>LEFT</tgt_term>
-    <tgt_wuid>63b23bac:145dd5ba77f:-7f53</tgt_wuid>
-    <widget_type>connection</widget_type>
-    <wuid>63b23bac:145dd5ba77f:-7d29</wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <anti_alias>true</anti_alias>
-    <arrow_length>15</arrow_length>
-    <arrows>2</arrows>
-    <fill_arrow>true</fill_arrow>
-    <line_color>
-      <color red="0" green="0" blue="0" />
-    </line_color>
-    <line_jump_add>0</line_jump_add>
-    <line_jump_size>10</line_jump_size>
-    <line_jump_style>0</line_jump_style>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>connection</name>
-    <points />
-    <router>0</router>
-    <src_path></src_path>
-    <src_term>TOP</src_term>
-    <src_wuid>63b23bac:145dd5ba77f:-7f51</src_wuid>
-    <tgt_path></tgt_path>
-    <tgt_term>BOTTOM</tgt_term>
-    <tgt_wuid>63b23bac:145dd5ba77f:-7f57</tgt_wuid>
-    <widget_type>connection</widget_type>
-    <wuid>63b23bac:145dd5ba77f:-7e7c</wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <anti_alias>true</anti_alias>
-    <arrow_length>15</arrow_length>
-    <arrows>2</arrows>
-    <fill_arrow>true</fill_arrow>
-    <line_color>
       <color red="139" green="105" blue="20" />
     </line_color>
     <line_jump_add>0</line_jump_add>
@@ -1873,7 +1707,7 @@ $(pv_value)</tooltip>
     <arrows>2</arrows>
     <fill_arrow>true</fill_arrow>
     <line_color>
-      <color red="0" green="0" blue="0" />
+      <color red="139" green="105" blue="20" />
     </line_color>
     <line_jump_add>0</line_jump_add>
     <line_jump_size>10</line_jump_size>
@@ -1885,12 +1719,12 @@ $(pv_value)</tooltip>
     <router>0</router>
     <src_path></src_path>
     <src_term>RIGHT</src_term>
-    <src_wuid>-783b29f2:1514946d1f2:-791a</src_wuid>
+    <src_wuid>63b23bac:145dd5ba77f:-7dde</src_wuid>
     <tgt_path></tgt_path>
     <tgt_term>LEFT</tgt_term>
-    <tgt_wuid>63b23bac:145dd5ba77f:-7f58</tgt_wuid>
+    <tgt_wuid>-783b29f2:1514946d1f2:-7906</tgt_wuid>
     <widget_type>connection</widget_type>
-    <wuid>63b23bac:145dd5ba77f:-7d2b</wuid>
+    <wuid>63b23bac:145dd5ba77f:-7e6b</wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <anti_alias>true</anti_alias>
@@ -1910,12 +1744,12 @@ $(pv_value)</tooltip>
     <router>0</router>
     <src_path></src_path>
     <src_term>RIGHT</src_term>
-    <src_wuid>3e76f4:145e08dc270:-7e0a</src_wuid>
+    <src_wuid>-783b29f2:1514946d1f2:-791a</src_wuid>
     <tgt_path></tgt_path>
-    <tgt_term>TOP</tgt_term>
-    <tgt_wuid>-783b29f2:1514946d1f2:-7987</tgt_wuid>
+    <tgt_term>LEFT</tgt_term>
+    <tgt_wuid>63b23bac:145dd5ba77f:-7f58</tgt_wuid>
     <widget_type>connection</widget_type>
-    <wuid>3e76f4:145e08dc270:-7dc3</wuid>
+    <wuid>63b23bac:145dd5ba77f:-7d2b</wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <anti_alias>true</anti_alias>
@@ -1960,12 +1794,141 @@ $(pv_value)</tooltip>
     <router>0</router>
     <src_path></src_path>
     <src_term>RIGHT</src_term>
+    <src_wuid>63b23bac:145dd5ba77f:-7e53</src_wuid>
+    <tgt_path></tgt_path>
+    <tgt_term>LEFT</tgt_term>
+    <tgt_wuid>-783b29f2:1514946d1f2:-791a</tgt_wuid>
+    <widget_type>connection</widget_type>
+    <wuid>63b23bac:145dd5ba77f:-7e51</wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <anti_alias>true</anti_alias>
+    <arrow_length>15</arrow_length>
+    <arrows>2</arrows>
+    <fill_arrow>true</fill_arrow>
+    <line_color>
+      <color red="0" green="0" blue="0" />
+    </line_color>
+    <line_jump_add>0</line_jump_add>
+    <line_jump_size>10</line_jump_size>
+    <line_jump_style>0</line_jump_style>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>connection</name>
+    <points />
+    <router>0</router>
+    <src_path></src_path>
+    <src_term>RIGHT</src_term>
     <src_wuid>-783b29f2:1514946d1f2:-7af4</src_wuid>
     <tgt_path></tgt_path>
     <tgt_term>BOTTOM</tgt_term>
     <tgt_wuid>-783b29f2:1514946d1f2:-7987</tgt_wuid>
     <widget_type>connection</widget_type>
     <wuid>2d3282c1:14de888edb9:-7d89</wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <anti_alias>true</anti_alias>
+    <arrow_length>15</arrow_length>
+    <arrows>2</arrows>
+    <fill_arrow>true</fill_arrow>
+    <line_color>
+      <color red="0" green="0" blue="0" />
+    </line_color>
+    <line_jump_add>0</line_jump_add>
+    <line_jump_size>10</line_jump_size>
+    <line_jump_style>0</line_jump_style>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>connection</name>
+    <points />
+    <router>0</router>
+    <src_path></src_path>
+    <src_term>TOP</src_term>
+    <src_wuid>63b23bac:145dd5ba77f:-7f51</src_wuid>
+    <tgt_path></tgt_path>
+    <tgt_term>BOTTOM</tgt_term>
+    <tgt_wuid>63b23bac:145dd5ba77f:-7f57</tgt_wuid>
+    <widget_type>connection</widget_type>
+    <wuid>63b23bac:145dd5ba77f:-7e7c</wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <anti_alias>true</anti_alias>
+    <arrow_length>15</arrow_length>
+    <arrows>2</arrows>
+    <fill_arrow>true</fill_arrow>
+    <line_color>
+      <color red="0" green="0" blue="0" />
+    </line_color>
+    <line_jump_add>0</line_jump_add>
+    <line_jump_size>10</line_jump_size>
+    <line_jump_style>0</line_jump_style>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>connection</name>
+    <points />
+    <router>0</router>
+    <src_path></src_path>
+    <src_term>RIGHT</src_term>
+    <src_wuid>3e76f4:145e08dc270:-7e0a</src_wuid>
+    <tgt_path></tgt_path>
+    <tgt_term>TOP</tgt_term>
+    <tgt_wuid>-783b29f2:1514946d1f2:-7987</tgt_wuid>
+    <widget_type>connection</widget_type>
+    <wuid>3e76f4:145e08dc270:-7dc3</wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <anti_alias>true</anti_alias>
+    <arrow_length>15</arrow_length>
+    <arrows>2</arrows>
+    <fill_arrow>true</fill_arrow>
+    <line_color>
+      <color red="0" green="0" blue="0" />
+    </line_color>
+    <line_jump_add>0</line_jump_add>
+    <line_jump_size>10</line_jump_size>
+    <line_jump_style>0</line_jump_style>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>connection</name>
+    <points>
+      <point x="296" y="199" />
+      <point x="296" y="68" />
+      <point x="711" y="68" />
+    </points>
+    <router>0</router>
+    <src_path></src_path>
+    <src_term>RIGHT</src_term>
+    <src_wuid>-783b29f2:1514946d1f2:-7987</src_wuid>
+    <tgt_path></tgt_path>
+    <tgt_term>TOP</tgt_term>
+    <tgt_wuid>-783b29f2:1514946d1f2:-791a</tgt_wuid>
+    <widget_type>connection</widget_type>
+    <wuid>63b23bac:145dd5ba77f:-7e71</wuid>
+  </connection>
+  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
+    <anti_alias>true</anti_alias>
+    <arrow_length>15</arrow_length>
+    <arrows>2</arrows>
+    <fill_arrow>true</fill_arrow>
+    <line_color>
+      <color red="139" green="105" blue="20" />
+    </line_color>
+    <line_jump_add>0</line_jump_add>
+    <line_jump_size>10</line_jump_size>
+    <line_jump_style>0</line_jump_style>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>connection</name>
+    <points />
+    <router>0</router>
+    <src_path></src_path>
+    <src_term>RIGHT</src_term>
+    <src_wuid>-783b29f2:1514946d1f2:-7906</src_wuid>
+    <tgt_path></tgt_path>
+    <tgt_term>LEFT</tgt_term>
+    <tgt_wuid>63b23bac:145dd5ba77f:-7f53</tgt_wuid>
+    <widget_type>connection</widget_type>
+    <wuid>63b23bac:145dd5ba77f:-7d29</wuid>
   </connection>
   <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
     <anti_alias>true</anti_alias>
@@ -1991,59 +1954,5 @@ $(pv_value)</tooltip>
     <tgt_wuid>63b23bac:145dd5ba77f:-7f57</tgt_wuid>
     <widget_type>connection</widget_type>
     <wuid>3e76f4:145e08dc270:-7db0</wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <anti_alias>true</anti_alias>
-    <arrow_length>15</arrow_length>
-    <arrows>2</arrows>
-    <fill_arrow>true</fill_arrow>
-    <line_color>
-      <color red="139" green="105" blue="20" />
-    </line_color>
-    <line_jump_add>0</line_jump_add>
-    <line_jump_size>10</line_jump_size>
-    <line_jump_style>0</line_jump_style>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>connection</name>
-    <points />
-    <router>0</router>
-    <src_path></src_path>
-    <src_term>RIGHT</src_term>
-    <src_wuid>63b23bac:145dd5ba77f:-7dde</src_wuid>
-    <tgt_path></tgt_path>
-    <tgt_term>LEFT</tgt_term>
-    <tgt_wuid>-783b29f2:1514946d1f2:-7906</tgt_wuid>
-    <widget_type>connection</widget_type>
-    <wuid>63b23bac:145dd5ba77f:-7e6b</wuid>
-  </connection>
-  <connection typeId="org.csstudio.opibuilder.connection" version="1.0.0">
-    <anti_alias>true</anti_alias>
-    <arrow_length>15</arrow_length>
-    <arrows>2</arrows>
-    <fill_arrow>true</fill_arrow>
-    <line_color>
-      <color red="0" green="0" blue="0" />
-    </line_color>
-    <line_jump_add>0</line_jump_add>
-    <line_jump_size>10</line_jump_size>
-    <line_jump_style>0</line_jump_style>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>connection</name>
-    <points>
-      <point x="294" y="193" />
-      <point x="294" y="67" />
-      <point x="705" y="67" />
-    </points>
-    <router>0</router>
-    <src_path></src_path>
-    <src_term>RIGHT</src_term>
-    <src_wuid>-783b29f2:1514946d1f2:-7987</src_wuid>
-    <tgt_path></tgt_path>
-    <tgt_term>TOP</tgt_term>
-    <tgt_wuid>-783b29f2:1514946d1f2:-791a</tgt_wuid>
-    <widget_type>connection</widget_type>
-    <wuid>63b23bac:145dd5ba77f:-7e71</wuid>
   </connection>
 </display>
