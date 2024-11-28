@@ -1783,7 +1783,7 @@
     <x>714</x>
     <y>330</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
+  <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>false</alarm_pulsing>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
@@ -1797,7 +1797,10 @@
     </border_color>
     <border_style>0</border_style>
     <border_width>1</border_width>
-    <confirm_message>Are you sure you want to do this?</confirm_message>
+    <bulb_border>3</bulb_border>
+    <bulb_border_color>
+      <color red="150" green="150" blue="150" />
+    </bulb_border_color>
     <data_type>0</data_type>
     <effect_3d>true</effect_3d>
     <enabled>true</enabled>
@@ -1806,24 +1809,20 @@
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color red="0" green="0" blue="0" />
+      <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>55</height>
-    <labels_from_pv>false</labels_from_pv>
-    <name>Boolean Button</name>
+    <height>49</height>
+    <name>LED</name>
     <off_color>
-      <color red="0" green="100" blue="0" />
+      <color red="128" green="64" blue="0" />
     </off_color>
     <off_label>OFF</off_label>
     <on_color>
-      <color red="0" green="255" blue="0" />
+      <color name="Minor" red="255" green="128" blue="0" />
     </on_color>
     <on_label>ON</on_label>
-    <password></password>
-    <push_action_index>0</push_action_index>
     <pv_name>${UUT}:${SITE}:ACTIVE</pv_name>
     <pv_value />
-    <released_action_index>0</released_action_index>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -1832,17 +1831,14 @@
     </scale_options>
     <scripts />
     <show_boolean_label>false</show_boolean_label>
-    <show_confirm_dialog>0</show_confirm_dialog>
-    <show_led>true</show_led>
-    <square_button>true</square_button>
-    <toggle_button>true</toggle_button>
+    <square_led>false</square_led>
     <tooltip>$(pv_name)
-Range changes ONLY allowed when DISABLED</tooltip>
+$(pv_value)</tooltip>
     <visible>true</visible>
-    <widget_type>Boolean Button</widget_type>
-    <width>85</width>
-    <wuid>1e382d3e:192f651edf6:-7d2c</wuid>
-    <x>702</x>
-    <y>426</y>
+    <widget_type>LED</widget_type>
+    <width>49</width>
+    <wuid>215d36c3:1937342af22:-79ec</wuid>
+    <x>15</x>
+    <y>243</y>
   </widget>
 </display>
