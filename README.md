@@ -3,7 +3,9 @@ CSS opi project for ACQ400 series digitizers
 
 ## CSS: Control System Studio : 
 ### GUI environment for EPICS
-http://controlsystemstudio.org/
+
+http://controlsystemstudio.org/     
+The current version "Phoebus" unfortunately isn't 100% compatible with our screens. Please use the original version, using ready-to-run executables from the links below:
 
 #### Ready to run images from here: 
 
