@@ -994,7 +994,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>527</width>
       <wuid>-4f72b2f2:1889b2e6c7d:-73a1</wuid>
@@ -3444,7 +3444,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>527</width>
       <wuid>-4f72b2f2:1889b2e6c7d:-739e</wuid>
@@ -3987,8 +3987,8 @@ $(pv_value)</tooltip>
         <widget_type>Action Button</widget_type>
         <width>103</width>
         <wuid>1da43eb4:13fa989d52f:-7f5d</wuid>
-        <x>150</x>
-        <y>102</y>
+        <x>252</x>
+        <y>96</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
         <actions hook="false" hook_all="false">
@@ -4165,6 +4165,66 @@ $(pv_value)</tooltip>
         <wuid>7d3dc80e:18ec1d6a4e3:-760b</wuid>
         <x>384</x>
         <y>12</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+        <actions hook="false" hook_all="false">
+          <action type="WRITE_PV">
+            <pv_name>loc://qen460</pv_name>
+            <value>1</value>
+            <timeout>10</timeout>
+            <confirm_message></confirm_message>
+            <description></description>
+          </action>
+        </actions>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Noto Sans" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>31</height>
+        <image></image>
+        <name>qen_di460</name>
+        <push_action_index>0</push_action_index>
+        <pv_name>loc://qen460(0)</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts>
+          <path pathString="scripts/LaunchOpi.js" checkConnect="true" sfe="false" seoe="false">
+            <pv trig="false">loc://UUT</pv>
+            <pv trig="false">loc://SITE</pv>
+            <pv trig="true">loc://qen460</pv>
+          </path>
+        </scripts>
+        <style>0</style>
+        <text>QEN460</text>
+        <toggle_button>false</toggle_button>
+        <tooltip>Quadrature Encoder (shaft encoder) 
+(where fitted)</tooltip>
+        <visible>true</visible>
+        <widget_type>Action Button</widget_type>
+        <width>100</width>
+        <wuid>8e3133:195c2c8b234:-7be1</wuid>
+        <x>132</x>
+        <y>102</y>
       </widget>
     </widget>
   </widget>
